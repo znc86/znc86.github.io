@@ -127,29 +127,10 @@ h2 {
   font-size: calc(2vw + 16px);
 }
 
-code,
-pre {
-  font-family: monospace;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-p {
-  hyphens: auto;
-}
-
-cite {
-  display: block;
-  font-style: normal;
-}
-
-blockquote cite,
-q {
-  font-style: italic;
-}
-
 img {
   max-width: 100%;
+}
+
+.links {
+  font-size: 1.5rem;
 }

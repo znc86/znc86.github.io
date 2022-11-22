@@ -133,4 +133,30 @@ img {
 
 .links {
   font-size: 1.5rem;
+  list-style: none;
+}
+.form,
+.instagram,
+.discord {
+  display: inline-block;
+  padding-right: 0.25rem;
+}
+.form::before,
+.instagram::before,
+.discord::before {
+  background-size: 1.5rem;
+  content: " ";
+  display: inline-block;
+  margin-right: 0.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.discord::before {
+  background-image: url("/public/discord.ico");
+}
+.form::before {
+  background-image: url("/public/forms.png");
+}
+.instagram::before {
+  background-image: url("/public/instagram.png");
 }

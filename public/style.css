@@ -1,13 +1,3 @@
-/*!
-@author @0xadada
-@url https://mirai.audio/system-font-i18n-css
-@license MIT
-*/
-
-/* system-sans-serif
-A sans-serif style does not have extending adornments attached to the end of
-the letterform.
-============================================================================= */
 body,
 button,
 input,
@@ -18,17 +8,7 @@ select {
   text-size-adjust: none;
   text-rendering: optimizeLegibility /* improved font rendering algorithm    */;
 
-  font-family: "-apple-system"
-      /* Generic system font helper on OS X, macOS, iOS
-       * works on non-Chrome browsers, selects the following:
-       * ".SFNS" / San Francisco on Catalina
-       * ".SFNSText" / San Francisco from El Capitan to Mojave
-       * ".HelveticaNeueDeskInterface" on OS X Yosemite
-       * ".LucidaGrandeUI" on OS X Kodiak...Mavericks                        */,
-    "BlinkMacSystemFont"
-      /* Generic system font helper for Google Chrome
-       * San Francisco, Helvetica Neue, Lucida Grande
-       * depending on the OS X / macOS / iOS version                         */,
+  font-family: "-apple-system", "BlinkMacSystemFont",
     "HiraginoSans" /* CJK typeface on OS X, macOS and iOS. Postscript name   */,
     "Hiragino Sans" /* see above                                             */,
     "Roboto" /* supports more variants and weights on Chrome OS, Android     */,
@@ -90,11 +70,6 @@ body {
   margin: 0;
 }
 
-body {
-  max-width: 60rem; /* 960 = 16 * 60 */
-  margin: 0 auto;
-}
-
 a {
   color: var(--primary-text-color);
 }
@@ -131,10 +106,44 @@ img {
   max-width: 100%;
 }
 
+.page {
+  max-width: 60rem; /* 960 = 16 * 60 */
+  margin: 0 auto;
+}
+
+@media (min-width: 60rem) {
+  .layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.one,
+.two {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .links {
   font-size: 1.5rem;
   list-style: none;
 }
+.links li {
+  font-size: 0.875rem;
+  color: #999;
+  margin: 1rem;
+}
+.links a:link {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
 .form,
 .instagram,
 .discord {
@@ -144,12 +153,12 @@ img {
 .form::before,
 .instagram::before,
 .discord::before {
-  background-size: 1.5rem;
+  background-size: 2.5rem;
   content: " ";
   display: inline-block;
-  margin-right: 0.25rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 .discord::before {
   background-image: url("/public/discord.ico");

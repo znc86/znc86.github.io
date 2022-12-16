@@ -50,7 +50,7 @@ const Home: NextPage = () => {
               <p>{t("pages.index.copy1")}</p>
 
               <p>
-                We drive the
+                {t("pages.index.we drive the")}
                 <ruby>
                   <ruby>
                     Z<rp>(</rp>
@@ -63,8 +63,7 @@ const Home: NextPage = () => {
                   </ruby>
                   <rp> </rp>
                 </ruby>
-                chassis of many names: Scion FR-S, Toyota 86, Toyota GR86,
-                Subaru BRZ.
+                {t("pages.index.chassis")}
               </p>
 
               <Image

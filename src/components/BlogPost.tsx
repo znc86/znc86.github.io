@@ -1,8 +1,8 @@
 import React from "react";
-import { Author } from "src/components/Author";
-import { PostMeta } from "src/components/PostMeta";
-import { Markdown } from "src/components/Markdown";
-import type { PostData } from "src/lib/loader";
+import { Author } from "../components/Author";
+import { PostMeta } from "../components/PostMeta";
+import { Markdown } from "../components/Markdown";
+import type { PostData } from "../lib/loader";
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,

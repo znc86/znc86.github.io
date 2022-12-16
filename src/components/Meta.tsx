@@ -1,6 +1,6 @@
 import React from "react";
 import NextHead from "next/head";
-import { globals } from "src/lib/globals";
+import { globals } from "../lib/globals";
 
 export const Meta: React.FC<{
   meta: {

@@ -1,8 +1,8 @@
 import RSS from "rss";
 import fs from "fs";
 import showdown from "showdown";
-import { globals } from "src/lib/globals";
-import type { PostData } from "src/lib/loader";
+import { globals } from "../lib/globals";
+import type { PostData } from "../lib/loader";
 
 export const generateRSS = async (posts: PostData[]) => {
   posts.map((post) => {

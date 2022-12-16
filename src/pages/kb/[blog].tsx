@@ -1,9 +1,9 @@
 import React from "react";
 import glob from "glob";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Page from "src/components/page";
-import { BlogPost } from "src/components/BlogPost";
-import { loadPost } from "src/lib/loader";
+import Page from "../../components/page";
+import { BlogPost } from "../../components/BlogPost";
+import { loadPost } from "../../lib/loader";
 
 type HomeProps = {
   locale: string;

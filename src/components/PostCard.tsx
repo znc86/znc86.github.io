@@ -1,7 +1,7 @@
 import React from "react";
 import { format } from "fecha";
-import { PostData } from "src/lib/loader";
-import { Tag } from "src/components/Tag";
+import type { PostData } from "../lib/loader";
+import { Tag } from "../components/Tag";
 
 export const PostCard: React.FC<{ post: PostData }> = (props) => {
   const post = props.post;
@@ -25,7 +25,8 @@ export const PostCard: React.FC<{ post: PostData }> = (props) => {
           <div className="flex-spacer"> </div>
           {false && (
             <div className="tag-container">
-              {post.tags && (post.tags || []).map((tag) => <Tag tag={tag} />)}
+              {post.tags &&
+                (post.tags || []).map((tag) => <Tag key={tag} tag={tag} />)}
             </div>
           )}
         </div>

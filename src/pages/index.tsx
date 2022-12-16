@@ -42,8 +42,6 @@ const Home: NextPage = () => {
       </Head>
       <Page>
         <div className={styles.page}>
-          <h1>{t("site.name")}</h1>
-
           <h2>{t("pages.index.title")}</h2>
 
           <div className={styles.layout}>

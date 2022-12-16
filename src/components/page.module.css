@@ -2,3 +2,15 @@
   max-width: 60rem; /* 960 = 16 * 60 */
   margin: 0 auto;
 }
+
+@media (min-width: 30rem) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.name a:link {
+  text-decoration: none;
+}

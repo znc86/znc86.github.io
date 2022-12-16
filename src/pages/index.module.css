@@ -25,6 +25,7 @@
 .links {
   font-size: 1.5rem;
   list-style: none;
+  padding: 0;
 }
 .links li {
   font-size: 0.875rem;
@@ -34,6 +35,7 @@
 .links a:link {
   font-size: 3rem;
   text-decoration: none;
+  line-height: 1.0625;
 }
 
 .form,

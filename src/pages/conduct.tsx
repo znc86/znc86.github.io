@@ -19,12 +19,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>ZNC86 Code of Conduct - ZNC86.club</title>
+        <title>{t("pages.conduct.title")}</title>
 
-        <meta
-          property="og:title"
-          content="ZNC86 Code of Conduct - ZNC86.club"
-        />
+        <meta property="og:title" content={t("pages.conduct.title")} />
         <meta name="description" content="ZNC86 Code of Conduct" />
         <meta property="og:url" content="https://znc86.club/conduct" />
       </Head>

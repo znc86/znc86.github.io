@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "ZNC86.club"
+  },
+  "pages": {
+    "index": {
+      "title": "ZNC86.club - Z N/C 8/6シャシー用モータースポーツサポートチーム",
+      "copy1": "ZNC86はオンラインコミュニティではなく、Z N/C 8/6シャシーでモータースポーツを楽しむために、リソースを共有し、イベントに参加し、学び、問題を解決し、楽しみ、支え合う仲間たちのグループです。",
+      "code of conduct": "行動規範",
+      "code subtitle": "親しみやすく、包括的で、シンプル",
+      "join": "クラブに参加する",
+      "join subtitle": "フォームに記入して、Discordでチャットを開始する",
+      "instagram": "Instagram",
+      "instagram subtitle": "フォローする @znc86.club"
+    }
+  }
+}

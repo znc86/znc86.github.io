@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "ZNC86.club"
+  },
+  "pages": {
+    "index": {
+      "title": "ZNC86.club - equipo de apoyo al automovilismo para el chasis Z N/C 8/6",
+      "copy1": "ZNC86 no es una comunidad online sino un grupo de amigos que comparten recursos, asisten a eventos, aprenden, resuelven problemas, se divierten y se apoyan mutuamente para disfrutar de los placeres del automovilismo deportivo en el chasis Z N/C 8/6.",
+      "code of conduct": "Código de Conducta",
+      "code subtitle": "Amigable, inclusivo y sencillo",
+      "join": "Únete al Club",
+      "join subtitle": "Rellena el formulario y empieza a chatear en Discord",
+      "instagram": "Instagram",
+      "instagram subtitle": "Síguenos en @znc86.club"
+    }
+  }
+}

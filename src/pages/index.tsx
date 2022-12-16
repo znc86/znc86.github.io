@@ -1,10 +1,23 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import Page from "../components/page";
 import styles from "./index.module.css";
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale)),
+      // Will be passed to the page component as props
+    },
+  };
+}
+
 const Home: NextPage = () => {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
@@ -28,19 +41,13 @@ const Home: NextPage = () => {
       </Head>
       <Page>
         <div className={styles.page}>
-          <h1>ZNC86.club</h1>
+          <h1>{t("site.name")}</h1>
 
-          <h2>motorsports support team for the Z N/C 8/6 chassis</h2>
+          <h2>{t("pages.index.title")}</h2>
 
           <div className={styles.layout}>
             <div className={styles.one}>
-              <p>
-                ZNC86 is <em>not an online community</em> but a
-                <strong>group of friends </strong>
-                sharing resources, attending events, learning, solving problems,
-                having fun, and supporting each other to enjoy the pleasures of
-                motoring sport in the Z N/C 8/6 chassis.
-              </p>
+              <p>{t("pages.index.copy1")}</p>
 
               <p>
                 We drive the
@@ -57,24 +64,9 @@ const Home: NextPage = () => {
                   <rp> </rp>
                 </ruby>
                 chassis of many names: Scion FR-S, Toyota 86, Toyota GR86,
-                Subaru BRZ. You can find us at Club Loose, COM SCC time attack,
-                Lock City Drift, North East Drift Coalition, MassTuning events,
-                and more.
+                Subaru BRZ.
               </p>
 
-              <p lang="es">
-                ZNC86 no es una comunidad online, sino un grupo de amigos que
-                comparten recursos, asisten a eventos, aprenden, resuelven
-                problemas, se divierten y se apoyan mutuamente para disfrutar de
-                los placeres del deporte del motor en el chasis Z N/C 8/6.
-              </p>
-
-              <p lang="ja">
-                ZNC86はオンラインコミュニティではなく、リソースを共有し、イベントに参加し、
-                学び、問題を解決し、楽しみ、そしてZ N/C
-                8/6シャーシでのモータースポーツ
-                の楽しみをサポートし合う仲間たちのグループです。
-              </p>
               <Image
                 src="/icon.png"
                 alt="pixel art of a car"
@@ -85,10 +77,10 @@ const Home: NextPage = () => {
             <ul className={`${styles.two} ${styles.links}`}>
               <li>
                 <a href="conduct.html" title="Code of Conduct">
-                  ⚖️ Code of Conduct
+                  ⚖️ {t("pages.index.code of conduct")}
                 </a>
                 <br />
-                Friendly, inclusive, and simple
+                {t("pages.index.code subtitle")}
               </li>
               <li>
                 <a
@@ -96,10 +88,10 @@ const Home: NextPage = () => {
                   href="https://forms.gle/4wmUwEzHdQjkgezo7"
                   title="Join the Discord chat"
                 >
-                  Join the Club
+                  {t("pages.index.join")}
                 </a>
                 <br />
-                Fill out the form and start chatting on Discord
+                {t("pages.index.join subtitle")}
               </li>
               <li>
                 <a
@@ -107,10 +99,10 @@ const Home: NextPage = () => {
                   href="https://instagram.com/znc86.club"
                   rel="external"
                 >
-                  Instagram
+                  {t("pages.index.instagram")}
                 </a>
                 <br />
-                Follow us @znc86.club
+                {t("pages.index.instagram subtitle")}
               </li>
             </ul>
           </div>

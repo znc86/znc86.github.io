@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "ZNC86.club"
+  },
+  "pages": {
+    "index": {
+      "title": "ZNC86.club - motorsports support team for the Z N/C 8/6 chassis",
+      "copy1": "ZNC86 is not an online community but a group of friends sharing resources, attending events, learning, solving problems, having fun, and supporting each other to enjoy the pleasures of motoring sport in the Z N/C 8/6 chassis.",
+      "code of conduct": "Code of Conduct",
+      "code subtitle": "Friendly, inclusive, and simple",
+      "join": "Join the Club",
+      "join subtitle": "Fill out the form and start chatting on Discord",
+      "instagram": "Instagram",
+      "instagram subtitle": "Follow us @znc86.club"
+    }
+  }
+}

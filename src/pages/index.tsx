@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Page from "../components/page";
@@ -75,9 +76,9 @@ const Home: NextPage = () => {
             </div>
             <ul className={`${styles.two} ${styles.links}`}>
               <li>
-                <a href="conduct.html" title="Code of Conduct">
+                <Link href="/conduct" title="Code of Conduct">
                   ⚖️ {t("pages.index.code of conduct")}
-                </a>
+                </Link>
                 <br />
                 {t("pages.index.code subtitle")}
               </li>

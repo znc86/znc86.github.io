@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "./page.module.css";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -10,7 +11,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="home" href="/" />
       </Head>
-      <main>{children}</main>
+      <main className={styles.page}>{children}</main>
     </>
   );
 };

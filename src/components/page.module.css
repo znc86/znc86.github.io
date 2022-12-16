@@ -1,0 +1,4 @@
+.page {
+  max-width: 60rem; /* 960 = 16 * 60 */
+  margin: 0 auto;
+}

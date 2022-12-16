@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 import Page from "../components/page";
 import styles from "./index.module.css";
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       ...(await serverSideTranslations(locale)),

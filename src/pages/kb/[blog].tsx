@@ -20,10 +20,10 @@ function Post(props: any) {
 }
 
 export const getStaticPaths = () => {
-  const blogs = glob.sync("./docs/kb/*.md");
-  const slugs = blogs.map((file: string) => {
+  const articles = glob.sync("./docs/kb/*.md");
+  const slugs = articles.map((file: string) => {
     const popped = file.split("/").pop();
-    if (!popped) throw new Error(`Invalid blog path: ${file}`);
+    if (!popped) throw new Error(`Invalid article path: ${file}`);
     return popped.slice(0, -3).trim();
   });
 

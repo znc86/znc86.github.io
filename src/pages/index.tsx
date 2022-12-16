@@ -4,14 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import Page from "../components/page";
+import Page from "src/components/page";
+import { generateRSS } from "src/lib/rss";
+import { loadBlogPosts } from "src/lib/loader";
 import styles from "./index.module.css";
 
-export async function getStaticProps({ locale }: { locale: string }) {
+type HomeProps = {
+  locale: string;
+};
+export async function getStaticProps({ locale }: HomeProps) {
+  const posts = await loadBlogPosts();
+  await generateRSS(posts); // comment out to disable RSS generation
+
   return {
     props: {
       ...(await serverSideTranslations(locale)),
-      // Will be passed to the page component as props
     },
   };
 }
@@ -41,69 +48,67 @@ const Home: NextPage = () => {
         <meta property="og:image:height" content="1260" />
       </Head>
       <Page>
-        <div className={styles.page}>
-          <h2>{t("pages.index.title")}</h2>
+        <h2>{t("pages.index.title")}</h2>
 
-          <div className={styles.layout}>
-            <div className={styles.one}>
-              <p>{t("pages.index.copy1")}</p>
+        <div className={styles.layout}>
+          <div className={styles.one}>
+            <p>{t("pages.index.copy1")}</p>
 
-              <p>
-                {t("pages.index.we drive the")}
+            <p>
+              {t("pages.index.we drive the")}
+              <ruby>
                 <ruby>
-                  <ruby>
-                    Z<rp>(</rp>
-                    <rt>ZN6</rt>
-                    <rp>)</rp> N/C<rp>(</rp>
-                    <rt>ZN8</rt>
-                    <rp>)</rp> 8/6<rp>(</rp>
-                    <rt>ZC8 ZC6</rt>
-                    <rp>)</rp>
-                  </ruby>
-                  <rp> </rp>
+                  Z<rp>(</rp>
+                  <rt>ZN6</rt>
+                  <rp>)</rp> N/C<rp>(</rp>
+                  <rt>ZN8</rt>
+                  <rp>)</rp> 8/6<rp>(</rp>
+                  <rt>ZC8 ZC6</rt>
+                  <rp>)</rp>
                 </ruby>
-                {t("pages.index.chassis")}
-              </p>
+                <rp> </rp>
+              </ruby>
+              {t("pages.index.chassis")}
+            </p>
 
-              <Image
-                src="/icon.png"
-                alt="pixel art of a car"
-                width="320"
-                height="320"
-              />
-            </div>
-            <ul className={`${styles.two} ${styles.links}`}>
-              <li>
-                <Link href="/conduct" title="Code of Conduct">
-                  ⚖️ {t("pages.index.code of conduct")}
-                </Link>
-                <br />
-                {t("pages.index.code subtitle")}
-              </li>
-              <li>
-                <a
-                  className={styles.discord}
-                  href="https://forms.gle/4wmUwEzHdQjkgezo7"
-                  title="Join the Discord chat"
-                >
-                  {t("pages.index.join")}
-                </a>
-                <br />
-                {t("pages.index.join subtitle")}
-              </li>
-              <li>
-                <a
-                  className={styles.instagram}
-                  href="https://instagram.com/znc86.club"
-                  rel="external"
-                >
-                  {t("pages.index.instagram")}
-                </a>
-                <br />
-                {t("pages.index.instagram subtitle")}
-              </li>
-            </ul>
+            <Image
+              src="/icon.png"
+              alt="pixel art of a car"
+              width="320"
+              height="320"
+            />
           </div>
+          <ul className={`${styles.two} ${styles.links}`}>
+            <li>
+              <Link href="/conduct" title="Code of Conduct">
+                ⚖️ {t("pages.index.code of conduct")}
+              </Link>
+              <br />
+              {t("pages.index.code subtitle")}
+            </li>
+            <li>
+              <a
+                className={styles.discord}
+                href="https://forms.gle/4wmUwEzHdQjkgezo7"
+                title="Join the Discord chat"
+              >
+                {t("pages.index.join")}
+              </a>
+              <br />
+              {t("pages.index.join subtitle")}
+            </li>
+            <li>
+              <a
+                className={styles.instagram}
+                href="https://instagram.com/znc86.club"
+                rel="external"
+              >
+                {t("pages.index.instagram")}
+              </a>
+              <br />
+              {t("pages.index.instagram subtitle")}
+            </li>
+          </ul>
         </div>
       </Page>
     </>

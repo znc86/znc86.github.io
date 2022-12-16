@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import styles from "./page.module.css";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { t } = useTranslation("common");
+  const { locale, pathname } = useRouter();
 
   return (
     <>
@@ -21,15 +23,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Link href="/">{t("site.name")}</Link>{" "}
           </h1>
           <div className={styles.lang}>
-            <Link href="/" locale="en-US">
-              English (US)
-            </Link>{" "}
-            <Link href="/" locale="es">
-              Español
-            </Link>{" "}
-            <Link href="/" locale="ja">
-              日本語
-            </Link>
+            {locale !== "en-US" && (
+              <Link href={pathname} locale="en-US">
+                English (US)
+              </Link>
+            )}{" "}
+            {locale !== "es" && (
+              <Link href={pathname} locale="es">
+                Español
+              </Link>
+            )}{" "}
+            {locale !== "ja" && (
+              <Link href={pathname} locale="ja">
+                日本語
+              </Link>
+            )}
           </div>
         </header>
         <main>{children}</main>

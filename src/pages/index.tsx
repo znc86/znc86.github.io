@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import Page from "src/components/page";
-import { generateRSS } from "src/lib/rss";
-import { loadBlogPosts } from "src/lib/loader";
+import Page from "../components/page";
+import { generateRSS } from "../lib/rss";
+import { loadBlogPosts } from "../lib/loader";
 import styles from "./index.module.css";
 
 type HomeProps = {

@@ -1,6 +1,6 @@
 import React from "react";
-import { PostData } from "src/lib/loader";
-import { Meta } from "src/components/Meta";
+import type { PostData } from "../lib/loader";
+import { Meta } from "../components/Meta";
 
 export const PostMeta: React.FC<{ post: PostData }> = ({ post }) => {
   return (

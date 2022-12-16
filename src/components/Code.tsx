@@ -16,7 +16,7 @@ export default class Code extends React.PureComponent<{
         language={(language === "ts" ? "typescript" : language) || "typescript"}
         style={darcula}
       >
-        {value}
+        {value || ""}
       </SyntaxHighlighter>
     );
   }

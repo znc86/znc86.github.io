@@ -1,5 +1,5 @@
 import React from "react";
-import Code from "src/components/Code";
+import Code from "../components/Code";
 import ReactMarkdown from "react-markdown/with-html";
 
 export const Markdown: React.FC<{ source: string }> = (props) => {

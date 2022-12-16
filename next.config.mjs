@@ -10,8 +10,8 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["en-US", "es", "ja"],
+    defaultLocale: "en-US",
   },
 };
 export default config;

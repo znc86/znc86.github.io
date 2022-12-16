@@ -41,6 +41,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </header>
         <main>{children}</main>
+        <footer>
+          <a href="/rss.xml">RSS</a>
+        </footer>
       </div>
     </>
   );

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Fri, 16 Dec 2022 22:13:54 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2022 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Decoding Toyota 86 / Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
+then you've heard it.  If you've ever heard people talk about their Nissan 240SX
+or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
+refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
+you've heard BMW 3-series owners saying "E30" or "E92" then you've heard it.
+They're referring to the first two letters of the applied model code.</p>
+<p>The Applied Model (also called a Chassis Code) is a 7-digit code number that is
+used by Subaru to identify a car’s specification, but unlike the Chassis Number 
+or VIN, this does not uniquely identify an individual car. Almost all Subaru 
+cars have the Applied Model stamped on a metal plate that can be found riveted 
+to the top of the near-side strut tower, although some cars have the plate in 
+one of the front door frames.</p>
+<figure>
+  <img src="/kb/2020-12-20-subaru-vin-plate-location.jpg" alt="Location of the Subaru Applied Model plate">
+  <figcaption>
+    Location of the Subaru Applied Model plate
+  </figcaption>
+</figure>
+<p>The information encoded within the Applied Model number contains details of the
+vehicle’s model, body type, engine type, gearbox, trim-level and period of 
+production.</p>
+<figure>
+  <img src="/kb/2020-12-20-subaru-vin-plate.svg" alt="Applied Model Decoder">
+  <figcaption>
+    Applied Model Decoder
+  </figcaption>
+</figure>
+<p>Each letter in the applied model designates a code:</p>
+<p>| Code | Description |
+| :--- | :---------- |
+| <strong>series</strong> | Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester |
+| <strong>body style</strong> | body style describes coupe, sedan, wagon, hatchback |
+| <strong>engine</strong> | engine type |
+| <strong>model year</strong> | the production year and month |
+| <strong># of doors</strong> | number of doors |
+| <strong>trim</strong> | specific equipment package and accessories |
+| <strong>transmission</strong> | transmission type, e.g. manual or automatic and number of speeds |</p>
+<h2 id="seriescode">Series Code</h2>
+<p>The <strong>Series</strong> code is the first letter, it tells you which model in the Subaru lineup it belongs to:</p>
+<p>| Code | Model |
+| :--- | :---- |
+| A | Leone/Loyale
+| B | Legacy |
+| C | SVX |
+| G | Impreza, XV, Outback Sport |
+| F | Domingo |
+| K | Justy/Rex/Vivio/Sambar (Before 1998) |
+| N | Trezia |
+| R | Pleo, R1, R2, Stella |
+| S | Forester |
+| T | Sambar (After 1998) |
+| V | WRX |
+| W | Tribeca/Ascent |
+| Y | Exiga |
+| Z | BRZ |</p>
+<p>Thus, the BRZ starts with 'Z'.</p>
+<h2 id="appliedmodelcode">Applied Model Code</h2>
+<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people 
+commonly refer to when trying to most accurately designate their vehicle:</p>
+<p>| Code | Brand &amp; Model |
+| :--- | :------------ |
+| ZN | Scion FR-S (Before 2017) 2013-2016 |
+| ZN | Toyota 86, Toyota GT86 2013-2020 |
+| ZC | Subaru BRZ 2013-2020 |</p>
+<h2 id="enginecode">Engine code</h2>
+<p>The 3rd-letter in the applied model code. For the 86 platform, there has only 
+been one engine across all markets.</p>
+<p>| Code | Description |
+| :--- | :---------- |
+| 6 | 2.0L DOHC RWD (Naturally Aspirated) (<code>FA20D</code>) |
+| 8 | 2.4L DOHC RWD (Naturally Aspirated) (<code>FA24D</code>) |</p>
+<h2 id="modelyear">Model Year</h2>
+<p>The model year is the date of production, often times these start the year prior
+to the marketed year. This is because production of a vehicle starts early, and
+sales follow. </p>
+<p>| Code | Year/Month | Notes |
+| :--- | :--------- | :---- |
+| A | 2012/03 - 2013/09 | Zenki (2012-2015) |
+| B | 2013/09 - 2014/06 | |
+| C | 2014/07 2015/01 | |
+| D | 2015/02 - 2016/07 | |
+| E | 2016/07 - 2017/03 | Kouki (2016-2020): new facelift for both BRZ &amp; 86, more horsepower, track modes: increased throttle response, disables traction control. Marketed as the "2017 BRZ" in the US. |
+| F | 2017/10 - 2018/09 | |
+| G | 2018/09 - 2019/03 | |
+| H | 2019/04 - 2020 2020 | is the final model year of the ZN6/ZC6 platform |</p>
+<h2 id="destinationcode">Destination Code</h2>
+<p>The 5th-letter is the destination code, which denotes the sales region the
+vehicle is destined for.</p>
+<p>| Code | Destination market |
+| :--- | :----------------- |
+| Y | USA or Canada |
+| 2 | Japan |
+| K | Europe | </p>
+<h2 id="trimcode">Trim Code</h2>
+<p>The 6th-letter is the trim code, which tells you which marketing package,
+equipment and accessories are included in the vehicle. This list is incomplete,
+if you know any others, please let us know.</p>
+<p>| Code | Trim name |
+| :--- | :-------- |
+| A | RA, RA Racing (Japan BRZ), FC, "86 Racing" (Japan 86) |
+| B | Premium USA BRZ |
+| C | Standard Grade (FR-S) |
+| G | Japan 86 |
+| E | Limited (USA BRZ), Sport Tech (Canada BRZ) | 
+| P | 860 Edition |
+| R | (Japan BRZ) or |
+| S | (Japan BRZ) or GT (Japan 86) Grade |</p>
+<h2 id="transmissioncode">Transmission Code</h2>
+<p>The 7th-letter is the transmission code, tells you if its a manual or automatic.</p>
+<p>| Code | Transmission type |
+| :--- | :---------------- |
+| 7 | Auto 6AT (<code>TX6A</code>) |
+| 8 | Manual 6MT (<code>TL70</code>) |</p>
+<h2 id="examples">Examples</h2>
+<p>Putting this all together, we can formulate our own applied models from this
+information:</p>
+<p>| Applied model | Description |
+| :------------ | :---------- |
+| ZC6AYE8 | Subaru BRZ, 2.0l FA20D engine, 2012 MY for US market, Limited manual |
+| ZC6EYE8 | Subaru BRZ, 2.0l FA20D engine, 2016 MY for US market, Limited, manual |
+| ZN6E2A8 | Toyota 86, 2.0l FA20D engine, 2016 MY for Japan market, FC trim, manual |</p>
+<p>Can you find your applied model code? Are we missing your trim code? Tell us on 
+email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/2020-12-20-decoding-subaru-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/2020-12-20-decoding-subaru-applied-model-chassis-codes</guid><dc:creator><![CDATA[anonymous]]></dc:creator><pubDate>Tue, 20 Oct 2020 14:28:00 GMT</pubDate></item></channel></rss>

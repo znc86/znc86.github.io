@@ -10,8 +10,19 @@ const { i18n } = nexti18next;
 
 /** @type {import("next").NextConfig} */
 const config = {
+  i18n,
   reactStrictMode: true,
   swcMinify: true,
-  i18n,
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "raw-loader",
+    });
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "~": process.cwd(),
+    };
+    return config;
+  },
 };
 export default config;

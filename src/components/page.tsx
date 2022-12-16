@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { t } = useTranslation("common");
-  const { locale, pathname } = useRouter();
+  const { locale, asPath } = useRouter();
 
   return (
     <>
@@ -24,17 +24,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </h1>
           <div className={styles.lang}>
             {locale !== "en-US" && (
-              <Link href={pathname} locale="en-US">
+              <Link href={asPath} locale="en-US">
                 English (US)
               </Link>
             )}{" "}
             {locale !== "es" && (
-              <Link href={pathname} locale="es">
+              <Link href={asPath} locale="es">
                 Español
               </Link>
             )}{" "}
             {locale !== "ja" && (
-              <Link href={pathname} locale="ja">
+              <Link href={asPath} locale="ja">
                 日本語
               </Link>
             )}
@@ -42,7 +42,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </header>
         <main>{children}</main>
         <footer>
-          <a href="/rss.xml">RSS</a>
+          <Link href="/">Home</Link> <Link href="/kb">Knowledge Base</Link>{" "}
+          <Link href="/rss.xml">RSS</Link>
         </footer>
       </div>
     </>

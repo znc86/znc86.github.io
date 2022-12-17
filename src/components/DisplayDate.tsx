@@ -7,7 +7,7 @@ export default function DateFormatter({ datetime }: { datetime: string }) {
   const displayDate = format(date, TOKEN);
   const dateTime = date.toISOString();
   return (
-    <time className="dt-published" dateTime={dateTime}>
+    <time class="published updated dt-published" dateTime={dateTime}>
       {displayDate}
     </time>
   );

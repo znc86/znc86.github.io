@@ -3,7 +3,7 @@ import { Author } from "../components/Author";
 import { PostMeta } from "../components/PostMeta";
 import { Markdown } from "../components/Markdown";
 import DisplayDate from "../components/DisplayDate";
-
+import styles from "./BlogPost.module.css";
 import type { PostData } from "../lib/loader";
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
@@ -11,19 +11,27 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
 }) => {
   const { title, subtitle } = post;
   return (
-    <div>
+    <article className="hentry h-entry">
       <PostMeta post={post} />
-      <div>
-        {title && <h1>{title}</h1>}
-        {subtitle && <h2>{subtitle}</h2>}
-        <br />
-        <Author post={post} />
-        <DisplayDate datetime={post.datePublished} />
-      </div>
 
-      <div>
+      <header>
+        <h1 className="entry-title p-name">{title}</h1>
+
+        {subtitle && <h2>{subtitle}</h2>}
+
+        <div className={styles.byline}>
+          <DisplayDate datetime={post.datePublished} />
+          <br />
+          <Author post={post} />
+        </div>
+      </header>
+
+      <div className="entry-content e-content">
         <Markdown source={post.content} />
       </div>
-    </div>
+      <footer>
+        <aside>Tags: {post.tags.join(", ")}</aside>
+      </footer>
+    </article>
   );
 };

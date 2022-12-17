@@ -10,7 +10,7 @@ export type PostData = {
   description?: string;
   canonicalUrl?: string;
   published: boolean;
-  datePublished: number;
+  datePublished: string;
   author?: string;
   authorPhoto?: string;
   authorTwitter?: string;

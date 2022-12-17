@@ -1,5 +1,4 @@
 import React from "react";
-import { format } from "fecha";
 import { type PostData } from "../lib/loader";
 
 export const FollowButton = () => {
@@ -37,11 +36,6 @@ export const AuthorLines: React.FC<{ post: PostData }> = (props) => {
             >{`@${props.post.authorTwitter}`}</a>{" "}
           </span>
         )}
-      </p>
-      <p className="author-line subtle">
-        {props.post.datePublished
-          ? format(new Date(props.post.datePublished), "MMMM Do, YYYY")
-          : ""}
       </p>
     </div>
   );

@@ -1,6 +1,6 @@
 ---
 title: "Decoding Toyota 86 / Subaru BRZ Applied Model Codes"
-datePublished: 1603204080000
+datePublished: 2020-10-20 03:28:00 -0700
 published: true
 author: Ron. A (@brz_typera)
 tags:
@@ -10,9 +10,7 @@ tags:
   - zc6
   - zn8
   - zc8
-authorPhoto: /favicon.png
 thumbnailPhoto: /kb/2020-12-20-subaru-vin-plate.svg
-canonicalUrl: https://znc86.club/kb/2020-12-20-decoding-subaru-applied-model-chassis-codes
 ---
 
 If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",

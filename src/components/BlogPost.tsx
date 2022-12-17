@@ -2,6 +2,8 @@ import React from "react";
 import { Author } from "../components/Author";
 import { PostMeta } from "../components/PostMeta";
 import { Markdown } from "../components/Markdown";
+import DisplayDate from "../components/DisplayDate";
+
 import type { PostData } from "../lib/loader";
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
@@ -11,12 +13,12 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   return (
     <div>
       <PostMeta post={post} />
-      {post.bannerPhoto && <img src={post.bannerPhoto} alt=" " />}
       <div>
         {title && <h1>{title}</h1>}
         {subtitle && <h2>{subtitle}</h2>}
         <br />
         <Author post={post} />
+        <DisplayDate datetime={post.datePublished} />
       </div>
 
       <div>

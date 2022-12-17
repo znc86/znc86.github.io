@@ -33,8 +33,8 @@ const Kb: NextPage = (props: any) => {
         <ol>
           {props.posts.map((post: any, j: any) => {
             return (
-              <li>
-                <PostCard post={post} key={j} />
+              <li key={j}>
+                <PostCard post={post} />
               </li>
             );
           })}

@@ -30,7 +30,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
         <Markdown source={post.content} />
       </div>
       <footer>
-        <aside>Tags: {post.tags.join(", ")}</aside>
+        <aside>Tags: {post.tags && post.tags.join(", ")}</aside>
       </footer>
     </article>
   );

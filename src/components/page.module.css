@@ -14,3 +14,7 @@
 .name a:link {
   text-decoration: none;
 }
+
+.footer {
+  margin-top: 3rem;
+}

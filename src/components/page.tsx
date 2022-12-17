@@ -41,7 +41,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </header>
         <main>{children}</main>
-        <footer>
+        <footer className={styles.footer}>
           <Link href="/">Home</Link> <Link href="/kb">Knowledge Base</Link>{" "}
           <Link href="/rss.xml">RSS</Link>
         </footer>

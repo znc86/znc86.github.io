@@ -17,7 +17,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       <header>
         <h1 className="entry-title p-name">{title}</h1>
 
-        {subtitle && <h2>{subtitle}</h2>}
+        {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
 
         <div className={styles.byline}>
           <DisplayDate datetime={post.datePublished} />

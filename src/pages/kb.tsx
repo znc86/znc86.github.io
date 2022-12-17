@@ -30,9 +30,15 @@ const Kb: NextPage = (props: any) => {
         <title>Knowledge Base - ZNC86.club</title>
       </Head>
       <Page>
-        {props.posts.map((post: any, j: any) => {
-          return <PostCard post={post} key={j} />;
-        })}
+        <ol>
+          {props.posts.map((post: any, j: any) => {
+            return (
+              <li>
+                <PostCard post={post} key={j} />
+              </li>
+            );
+          })}
+        </ol>
       </Page>
     </>
   );

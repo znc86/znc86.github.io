@@ -78,5 +78,9 @@ export const loadBlogPosts = async (): Promise<PostData[]> => {
   )
     .map(mdToPost)
     .filter((p) => p.published)
-    .sort((a, b) => (b.datePublished || 0) - (a.datePublished || 0));
+    .sort(
+      (a, b) =>
+        (new Date(b.datePublished).getTime() || 0) -
+        (new Date(a.datePublished).getTime() || 0)
+    );
 };

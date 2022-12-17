@@ -10,7 +10,7 @@ tags:
   - zc6
   - zn8
   - zc8
-thumbnailPhoto: /kb/2020-12-20-subaru-vin-plate.svg
+thumbnailPhoto: /kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg
 ---
 
 If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
@@ -28,7 +28,7 @@ to the top of the near-side strut tower, although some cars have the plate in
 one of the front door frames.
 
 <figure>
-  <img src="/kb/2020-12-20-subaru-vin-plate-location.jpg" alt="Location of the Subaru Applied Model plate">
+  <img src="/kb/decoding-subaru-applied-model-chassis-codes/applied-code-location.jpg" alt="Location of the Subaru Applied Model plate">
   <figcaption>
     Location of the Subaru Applied Model plate
   </figcaption>
@@ -39,7 +39,7 @@ vehicle’s model, body type, engine type, gearbox, trim-level and period of
 production.
 
 <figure>
-  <img src="/kb/2020-12-20-subaru-vin-plate.svg" alt="Applied Model Decoder">
+  <img src="/kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg" alt="Applied Model Decoder">
   <figcaption>
     Applied Model Decoder
   </figcaption>
@@ -167,9 +167,14 @@ information:
 
 | Applied model | Description |
 | :------------ | :---------- |
+| ZC6 | Subaru BRZ, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen) |
+| ZN6 | Toyota 86, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen) |
+| ZC8 | Subaru BRZ, 2.4l FA24D engine, 2022 MY (generic 2nd gen) |
+| ZN8 | Toyota GR86, 2.4l FA24D engine, 2022 MY (generic 2nd gen) |
 | ZC6AYE8 | Subaru BRZ, 2.0l FA20D engine, 2012 MY for US market, Limited manual |
 | ZC6EYE8 | Subaru BRZ, 2.0l FA20D engine, 2016 MY for US market, Limited, manual |
 | ZN6E2A8 | Toyota 86, 2.0l FA20D engine, 2016 MY for Japan market, FC trim, manual |
+
 
 Can you find your applied model code? Are we missing your trim code? Tell us on 
 email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.

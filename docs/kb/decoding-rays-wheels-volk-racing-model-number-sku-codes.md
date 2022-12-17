@@ -1,12 +1,13 @@
 ---
 title: "Decoding Rays Wheels Volk Racing Model Number SKU Codes"
+subtitle: "How to determine size, offset, PCD bolt pattern, and color from Rays Wheels SKUs and how to reverse-engineer them"
 datePublished: 2022-08-04 02:44:00 -0700
 published: true
 author: Ron. A (@brz_typera)
 tags:
   - wheels
-  - Volk Racing
-  - Rays Wheels
+  - volk racing
+  - rays wheels
 thumbnailPhoto: /kb/decoding-rays-wheels-volk-racing-model-number-sku-codes/rays-wheels.png
 ---
 

@@ -4,8 +4,8 @@ import { useTranslation } from "next-i18next";
 import Page from "../components/page";
 import { PostCard } from "../components/PostCard";
 import { loadBlogPosts } from "../lib/loader";
-import type { PostData } from "../lib/loader";
 import type { NextPage } from "next";
+import styles from "./kb.module.css";
 
 type HomeProps = {
   locale: string;
@@ -27,10 +27,11 @@ const Kb: NextPage = (props: any) => {
   return (
     <>
       <Head>
-        <title>Knowledge Base - ZNC86.club</title>
+        <title>{t("pages.kb.page title")}</title>
       </Head>
       <Page>
-        <ol>
+        <h1>{t("pages.kb.title")}</h1>
+        <ol className={styles.list}>
           {props.posts.map((post: any, j: any) => {
             return (
               <li key={j}>

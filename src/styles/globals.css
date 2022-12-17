@@ -105,3 +105,20 @@ h2 {
 img {
   max-width: 100%;
 }
+
+table {
+  width: 100%;
+  border: 2pt solid var(--primary-text-color);
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table td,
+table th {
+  border: 2pt solid var(--primary-text-color);
+  padding: 0.25rem;
+  vertical-align: top;
+}
+table tr td:first-child,
+table tr th:first-child {
+  width: 25%;
+}

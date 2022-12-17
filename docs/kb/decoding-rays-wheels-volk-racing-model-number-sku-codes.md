@@ -7,7 +7,7 @@ tags:
   - wheels
   - Volk Racing
   - Rays Wheels
-thumbnailPhoto: /kb/decoding-rays-wheels-volk-racing-model-number-sku-codes.png
+thumbnailPhoto: /kb/decoding-rays-wheels-volk-racing-model-number-sku-codes/rays-wheels.png
 ---
 
 Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
@@ -22,7 +22,7 @@ source of historical SKU numbers, so we can search for these numbers on eBay or 
 where we may find rare wheels that others may not have found.
 
 <figure>
-  <img src="/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes.png" alt="Volks Racing TE37SL from the 2021 Catalog">
+  <img src="/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes/rays-wheels.png" alt="Volks Racing TE37SL from the 2021 Catalog">
   <figcaption>
     Volks Racing TE37SL from the 2021 catalog
   </figcaption>

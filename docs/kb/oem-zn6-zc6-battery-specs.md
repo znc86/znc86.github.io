@@ -1,6 +1,6 @@
 ---
 title: "OEM ZN6 ZC6 Battery Specs"
-subtitle: Detailed part specifications for the ZNC/ZC6 battery
+subtitle: Detailed part specifications for the ZN6/ZC6 battery
 datePublished: 2022-12-17 02:44:00 -0700
 published: true
 author: Ron. A (@brz_typera)
@@ -12,6 +12,7 @@ tags:
   - zc6
 ---
 
+Specifications for Subaru BRZ, Toyota 86 OEM battery.
 
 Subaru part `82110AA012` 
 - Panasonic `55D23L-MF`

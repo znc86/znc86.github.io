@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 17 Dec 2022 20:02:14 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2022 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Subaru part <code>82110AA012</code> </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Dec 2022 17:29:14 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2022 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[OEM ZN6 ZC6 Maintenance Fluids Specifications]]></title><description><![CDATA[<h3 id="engineoilspecs">Engine Oil Specs</h3>
+<p>| Subaru Recommended Viscosity grade | Quality grade |
+|:---|:---|
+| <code>0W-20</code> (synthetic oil)                | <strong>API Certified</strong> Product contains SN "Resource Conserving" logo <br /> <strong>ILSAC Certified</strong> Product contains GF-5 "Starbust Mark" logo |
+| <code>5W-30</code> (synthetic oil) |  Recommended for racing application |</p>
+<h3 id="engineoilfilllevels">Engine Oil Fill Levels</h3>
+<p>| Engine oil fill level | Notes |
+|:---|:---|
+| <code>5L (5.4 US Quarts)</code> | OEM fill level |
+| <code>5.6L (5.4 to 6 US Quarts)</code> | With aftermarket HKS oil filter |</p>
+<h3 id="otherfluids">Other Fluids</h3>
+<p>| Type | Amount (L, US Quart) | Our recommended product |
+|:---|:---|
+| Manual transmission oil | <code>2.2L</code>, <code>2.3 Quart</code> | Motul Gear 300 75W90 Fully Synthetic Gearbox Oil, MG Gear Oil Special II (API GL-3, SAE 75W-90) part number <code>0888501513</code> |
+| Rear differential fluid | <code>1.1L</code> to <code>1.2L</code> (<code>1.1Qt</code> to <code>1.3qt</code>) for OEM diff housing | Red Line GL-5 Gear Oil 75W-86 50104 |
+| Rear differential fluid | <code>1.6L</code> to <code>1.7L</code> (<code>1.7Qt</code> to <code>1.7qt</code>) with Cusco Rear Differential Cover | Red Line GL-5 Gear Oil 75W-86 50104 |
+| Brake fluid &amp; Clutch fluid | ?? |  FMVSS No.116 DOT3 or DOT4, Motul RBF 600 |</p>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[transmission]]></category><category><![CDATA[drivetrain]]></category><category><![CDATA[rear differential]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sun, 18 Dec 2022 15:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Specifications for Subaru BRZ, Toyota 86 OEM battery.</p>
+<p>Subaru part <code>82110AA012</code> </p>
 <ul>
 <li>Panasonic <code>55D23L-MF</code></li>
 <li>supersession(s): <code>82110AA010</code> <code>82110AA011</code>  </li>
@@ -17,7 +34,7 @@
 <li>width: <code>25cm</code></li>
 <li>length: <code>17cm</code></li>
 <li>height: <code>15-20cm</code></li>
-</ul>]]></description><link>https://znc86.club/kb/OEM-zn6-zc6-battery-specs</link><guid isPermaLink="true">https://znc86.club/kb/OEM-zn6-zc6-battery-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[battery]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 17 Dec 2022 09:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Rays Wheels Volk Racing Model Number SKU Codes]]></title><description><![CDATA[<p>Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
+</ul>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-battery-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-battery-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[battery]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 17 Dec 2022 09:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Rays Wheels Volk Racing Model Number SKU Codes]]></title><description><![CDATA[<p>Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
 the generation of the forging mold, wheel size &amp; offset, and color. This SKU is
 used by retailers to exactly determine the wheels specification. Some authorized
 retailers (e.g. Vivid Racing) display the Rays Wheels SKU on their product detail
@@ -298,7 +315,641 @@ information:</p>
 <p>This list only covers Volk Racing, and some Gram Lights, and isn't exhaustive, feel free
 to reach out and send me your SKUs and i'll add them to this list.</p>
 <p>Can you find your SKU code? Are we missing your size, offset, model or color code? Tell us on 
-email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 09:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Toyota 86 / Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
+email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 09:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
+then you've heard it.  If you've ever heard people talk about their Nissan 240SX
+or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
+refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
+you've heard BMW 3-series owners saying "E30" or "E92" then you've heard it.
+They're referring to the first two letters of the applied model code.</p>
+<p>The Applied Model (also called a Chassis Code) is a 7-digit code number that is
+used by Subaru to identify a car’s specification, but unlike the Chassis Number 
+or VIN, this does not uniquely identify an individual car. Almost all Subaru 
+cars have the Applied Model stamped on a metal plate that can be found riveted 
+to the top of the near-side strut tower, although some cars have the plate in 
+one of the front door frames.</p>
+<figure>
+  <img src="/kb/decoding-subaru-applied-model-chassis-codes/applied-code-location.jpg" alt="Location of the Subaru Applied Model plate">
+  <figcaption>
+    Location of the Subaru Applied Model plate
+  </figcaption>
+</figure>
+<p>The information encoded within the Applied Model number contains details of the
+vehicle’s model, body type, engine type, gearbox, trim-level and period of 
+production.</p>
+<figure>
+  <img src="/kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg" alt="Applied Model Decoder">
+  <figcaption>
+    Applied Model Decoder
+  </figcaption>
+</figure>
+<p>Each letter in the applied model designates a code:</p>
+<p>| Code | Description |
+| :--- | :---------- |
+| <strong>series</strong> | Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester |
+| <strong>body style</strong> | body style describes coupe, sedan, wagon, hatchback |
+| <strong>engine</strong> | engine type |
+| <strong>model year</strong> | the production year and month |
+| <strong># of doors</strong> | number of doors |
+| <strong>trim</strong> | specific equipment package and accessories |
+| <strong>transmission</strong> | transmission type, e.g. manual or automatic and number of speeds |</p>
+<h2 id="seriescode">Series Code</h2>
+<p>The <strong>Series</strong> code is the first letter, it tells you which model in the Subaru lineup it belongs to:</p>
+<p>| Code | Model |
+| :--- | :---- |
+| A | Leone/Loyale
+| B | Legacy |
+| C | SVX |
+| G | Impreza, XV, Outback Sport |
+| F | Domingo |
+| K | Justy/Rex/Vivio/Sambar (Before 1998) |
+| N | Trezia |
+| R | Pleo, R1, R2, Stella |
+| S | Forester |
+| T | Sambar (After 1998) |
+| V | WRX |
+| W | Tribeca/Ascent |
+| Y | Exiga |
+| Z | BRZ |</p>
+<p>Thus, the Impreza WRX starts with 'G'.</p>
+<h2 id="bodystylecode">Body Style code</h2>
+<p>The second letter is the <strong>Body style</strong> code, it'll tell you if the vehicle is a
+sedan, coupe, wagon, etc.</p>
+<p>| Code | Body style |
+| :--- | :--------- |
+| A, C, E, V | sedan |
+| M | coupe |
+| F | 5-door wagon |
+| H, R | 5-door hatchback |</p>
+<h2 id="appliedmodelcode">Applied Model Code</h2>
+<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people 
+commonly refer to when trying to casually designate their vehicle:</p>
+<p>| Years | Code | Model |
+| :---- | :--- | :------------ |
+| 1992 - 2000 | GC | sedan |
+| 1992 - 2000 | GM | coupe |
+| 1992 - 2000 | GF | wagon |
+| 2001 - 2007 | GD | sedan |
+| 2001 - 2007 | GG | wagon |
+| 2007 - 2014 | GH | WRX hatchback |
+| 2007 - 2014 | GR | WRX STI hatchback |
+| 2007 - 2014 | GE | WRX sedan |
+| 2007 - 2014 | GV | WRX STI sedan |
+| 2015 - 2021 | VA | WRX &amp; WRX STI sedan |</p>
+<h2 id="enginecode">Engine code</h2>
+<p>The 3rd-letter in the applied model code. For the WRX STI platform, the EJ207 was
+mostly commonly used in Japan, while the US got the EJ257.</p>
+<p>| Code | Description |
+| :--- | :---------- |
+| 8, B | EJ207 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) Turbo is a IHI VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA) |
+| A | EJ205 2.0ℓ turbo WRX in all 1999-2005 models |
+| 6, F | EJ257 - 2.5ℓ turbo in USDM WRX STi IHI VF48 |</p>
+<h2 id="modelyear">Model Year</h2>
+<p>The 4th letter in the code, the model year is the date of production, often 
+times these start the year prior to the marketed year. This is because 
+production of a vehicle starts early, and sales follow.</p>
+<p>A is the first year of the generation, B the second, etc. When the model changes
+generation, (e.g. Mean Eye to Bugeye), this letter is reset back to 'A'.</p>
+<ul>
+<li>A "Mean Eye" GC8 first year has a A, thus GC8<strong>A</strong>, which is 1992.</li>
+<li>A "Mean Eye" GC8 second year has a B, thus GC8<strong>B</strong>, which is 1993, etc.</li>
+<li>A "Bug Eye" GDB second year has a A, thus GDB<strong>A</strong>, which is 2000.</li>
+<li>A "Bug Eye" GDB second year has a B, thus GDB<strong>B</strong>, which is 2001, etc.</li>
+</ul>
+<h2 id="numberofdoors">Number of Doors</h2>
+<p>The 5th letter is the number of doors on the vehicle. Simply put, the coupe has
+a code of 2, sedan 4, and wagon &amp; hatch 5.</p>
+<h2 id="trimcode">Trim Code</h2>
+<p>The 6th-letter is the trim code, which tells you which marketing package,
+equipment and accessories are included in the vehicle. This list is incomplete,
+if you know any others, please let us know.</p>
+<p>| Code | Name |
+| :--- | :-------- |
+| 7 | type RA |
+| 8 | WRX |
+| D | STI Type R &amp; Type RA |
+| E | STI |</p>
+<h2 id="transmissioncode">Transmission Code</h2>
+<p>The 7th-letter is the transmission code, tells you if its a manual or automatic.</p>
+<p>| Code | Transmission type |
+| :--- | :---------------- |
+| D | 5MT |
+| 4, P | E-4AT |
+| H | 6MT |</p>
+<h2 id="examples">Examples</h2>
+<p>In the examples below, I didn't include the number of doors, trim, or transmission
+codes. Putting this all together, we can see a list of significant applied 
+models:</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left; width: 12% !important">Code</th>
+      <th style="text-align: left" width="8%">Years</th>
+      <th style="text-align: left" width="32%">Description</th>
+      <th style="text-align: left" width="32%">Engine</th>
+      <th style="text-align: left">Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GC8A</td>
+      <td>1992/05 - 1993/08</td>
+      <td>1st generation WRX STI sedan</td>
+      <td>EJ20G 3 2.0ℓ turbo WRX in early GC8 models Mitsubishi TD05H</td>
+      <td>Version 1</td>
+    </tr>
+    <tr>
+      <td>GC8B</td>
+      <td>1993/05 - 1994/09</td>
+      <td>WRX STi Version sedan</td>
+      <td>EJ20G 3 2.0ℓ turbo WRX in early GC8 models Mitsubishi TD05H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GC8C</td>
+      <td>1994/06 - 1996/08</td>
+      <td>WRX STi Version I or II sedan</td>
+      <td>EJ20G 3 2.0ℓ turbo WRX in early GC8 models Mitsubishi TD05H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GC8D</td>
+      <td>1996/04 - 1997/07</td>
+      <td>WRX STi Version III sedan</td>
+      <td>
+        EJ20K 2 2.0ℓ turbo in WRX STi Version III &amp; IV models V.III: IHI
+        VF23, V.IV IHI VF24
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GC8E</td>
+      <td>1997/04 - 1998/07</td>
+      <td>WRX STi Version IV coupe/sedan</td>
+      <td>
+        EJ20K 2 2.0ℓ turbo in WRX STi Version III &amp; IV models V.III: IHI
+        VF23, V.IV IHI VF24
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GC8E2SD*</td>
+      <td>1998/03 - 1998/08</td>
+      <td>22B STi Version</td>
+      <td>EJ22G 1 2.2ℓ turbo 22B STi Version</td>
+      <td>*Wide bodied, 22B limited edition</td>
+    </tr>
+    <tr>
+      <td>GC8F*</td>
+      <td>1998/04 - 1999/07</td>
+      <td>WRX STi Version V coupe/sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        *Minor change Introduced the EJ207 engine Introduce the signature large
+        double-wing
+      </td>
+    </tr>
+    <tr>
+      <td>GC8G</td>
+      <td>1999/04 - 2000/07</td>
+      <td>WRX STi Version VI coupe/sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GC8G4DD</td>
+      <td>1998/01</td>
+      <td>Impreza WRX Type RA STi Version 6</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        A favorite GC8 sedan, The Type RA was a 4dr race-ready and last best
+        version of the GC8 chassis
+      </td>
+    </tr>
+    <tr>
+      <td>GC8G2FD</td>
+      <td>1999/11 - 2000/08</td>
+      <td>Impreza WRX STi Type R Version 6 Limited</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>A favorite GC8 coupe, the Type R STi Version 6 Limited</td>
+    </tr>
+    <tr>
+      <td>GDAA*</td>
+      <td>2000/02 - 2001/08</td>
+      <td>"New Age"/"Bugeye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td>Model change * (First WRX model available in the US)</td>
+    </tr>
+    <tr>
+      <td>GDBA</td>
+      <td>2000/02 - 2001/08</td>
+      <td>JDM "New Age" "Bugeye" WRX STi sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Not available in the US</td>
+    </tr>
+    <tr>
+      <td>GDAB</td>
+      <td>2001/06 - 2002/10</td>
+      <td>"Bugeye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDBB</td>
+      <td>2001/06 - 2002/10</td>
+      <td>JDM "Bugeye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Not available in the US</td>
+    </tr>
+    <tr>
+      <td>GDBB4FH</td>
+      <td>2002</td>
+      <td>JDM "Bugeye" WRX STi Type RA Spec C sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>The most raw race-ready form of the Bugeye</td>
+    </tr>
+    <tr>
+      <td>GDBB4FH</td>
+      <td>2002</td>
+      <td>JDM "Bugeye" WRX STi S202</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>The highest end of the Bugeyes, in Yellow</td>
+    </tr>
+    <tr>
+      <td>GDAC*</td>
+      <td>2002/09 - 2003/07</td>
+      <td>"Blob Eye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td>* (Minor change: introduces the Blob Eye)</td>
+    </tr>
+    <tr>
+      <td>GDBC</td>
+      <td>2002/09 - 2003/07</td>
+      <td>JDM "Blob Eye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Not available in the US</td>
+    </tr>
+    <tr>
+      <td>GD6C*</td>
+      <td>2002/09 - 2003/07</td>
+      <td>USDM "Blob Eye" WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td>* (First WRX STi Version available in the US)</td>
+    </tr>
+    <tr>
+      <td>GDAD</td>
+      <td>2003/06 - 2004/05</td>
+      <td>"Blob Eye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDBD</td>
+      <td>2003/06 - 2004/05</td>
+      <td>JDM "Blob Eye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Not available in the US</td>
+    </tr>
+    <tr>
+      <td>GD6D</td>
+      <td>2003/06 - 2004/05</td>
+      <td>USDM "Blob Eye" WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDAE</td>
+      <td>2004/04 - 2005/05</td>
+      <td>"Blob Eye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDBE*</td>
+      <td>2004/04 - 2005/05</td>
+      <td>"Blob Eye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        Not available in the US * (Switched to the 5x114.3 PCD, small rear
+        over-fenders) * This is the best Blob Eye, IMHO
+      </td>
+    </tr>
+    <tr>
+      <td>GDBE4FH</td>
+      <td>2004 - 2005</td>
+      <td>"Blob Eye" WRX STi Version Spec C</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        Not available in the US * This is the latest Spec C version of the blob
+        eye
+      </td>
+    </tr>
+    <tr>
+      <td>GDBE4FH</td>
+      <td>2004 - 2005</td>
+      <td>"Blob Eye" WRX STi Version Spec C Type RA</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        Not available in the US * This is the latest Spec C Type RA version of
+        the blob eye
+      </td>
+    </tr>
+    <tr>
+      <td>GDBE4EH</td>
+      <td>2005</td>
+      <td>"Blob Eye" WRX STi S203</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>The famed S203</td>
+    </tr>
+    <tr>
+      <td>GD6E*</td>
+      <td>2004/04 - 2005/05</td>
+      <td>"Blob Eye" WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td>
+        * (Switched to the 5x114.3 PCD, small rear over-fenders) * This is the
+        best blob-eye to get in the States
+      </td>
+    </tr>
+    <tr>
+      <td>GDAF*</td>
+      <td>2005/04 - 2006/06</td>
+      <td>"Hawk Eye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td>* (Minor change)</td>
+    </tr>
+    <tr>
+      <td>GDBF</td>
+      <td>2005/04 - 2006/06</td>
+      <td>"Hawk Eye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Not available in the US</td>
+    </tr>
+    <tr>
+      <td>GD6F*</td>
+      <td>2005/04 - 2006/06</td>
+      <td>"Hawk Eye" WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDAG</td>
+      <td>2006/04 - 2007/04</td>
+      <td>"Hawk Eye" WRX sedan</td>
+      <td>EJ205 8 2.0ℓ turbo WRX in all 1999-2005 models</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDBG</td>
+      <td>2006/04 - 2007/04</td>
+      <td>JDM "Hawk Eye" WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GD6G</td>
+      <td>2006/04 - 2007/04</td>
+      <td>USDM "Hawk Eye" WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDBG4LH</td>
+      <td>2007</td>
+      <td>JDM "Hawk Eye" WRX STi Spec C RA-R</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>
+        The famed final best version of the Hawk Eye Not available in the US
+      </td>
+    </tr>
+    <tr>
+      <td>GH8A</td>
+      <td>2007/03 - 2014/04</td>
+      <td>(JDM "S-GT") (USDM "WRX") hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>* (Model change: introduces the "Stink Eye" Impreza)</td>
+    </tr>
+    <tr>
+      <td>GRBA*</td>
+      <td>2007/ 03 - 2008/ 06</td>
+      <td>JDM WRX STI hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>* (Model change: introduces the "Stink Eye" WRX)</td>
+    </tr>
+    <tr>
+      <td>GRFA</td>
+      <td>2007/ 03 - 2008/ 06</td>
+      <td>USDM WRX STI hatchback</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRBB</td>
+      <td>2008/07 - 2009/06</td>
+      <td>JDM WRX STI hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GHB</td>
+      <td>2008/ 07 - 2009/ 06</td>
+      <td>(JDM "S-GT") (USDM "WRX") hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRFB</td>
+      <td>2008/07 - 2009/06</td>
+      <td>USDM WRX STI hatchback</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GE</td>
+      <td>2008+</td>
+      <td>WRX Sedan sedan</td>
+      <td>?</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRBC*</td>
+      <td>2009/07 - 2010/03</td>
+      <td>JDM WRX STI hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Minor change</td>
+    </tr>
+    <tr>
+      <td>GRFC*</td>
+      <td>2009/07 - 2010/03</td>
+      <td>USDM WRX STI hatchback</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td>Minor change</td>
+    </tr>
+    <tr>
+      <td>GVBC</td>
+      <td>2009/07 - 2010/03</td>
+      <td>JDM WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td>Re-introduces the WRX STI sedan model</td>
+    </tr>
+    <tr>
+      <td>GVFC</td>
+      <td>2009/07 - 2010/03</td>
+      <td>USDM WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td>Re-introduces the WRX STI sedan model</td>
+    </tr>
+    <tr>
+      <td>GRBD</td>
+      <td>2010/04 - 2013/06</td>
+      <td>JDM WRX STI hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRFD</td>
+      <td>2010/04 - 2013/06</td>
+      <td>USDM WRX STI hatchback</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GVBD</td>
+      <td>2010/04 - 2013/06</td>
+      <td>JDM WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GVFD</td>
+      <td>2010/04 - 2013/06</td>
+      <td>USDM WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRBE</td>
+      <td>2013/06 - 2014/04</td>
+      <td>JDM WRX STI hatchback</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRFE</td>
+      <td>2013/06 - 2014/04</td>
+      <td>USDM WRX STI hatchback</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GVBE</td>
+      <td>2013/06 - 2014/04</td>
+      <td>JDM WRX STI sedan</td>
+      <td>
+        EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
+        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GVFE</td>
+      <td>2013/06 - 2014/04</td>
+      <td>USDM WRX STI sedan</td>
+      <td>EJ257 14 2.5ℓ turbo in USDM WRX STi IHI VF48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VA</td>
+      <td>2015 - 2021</td>
+      <td>WRX STI sedan (Subaru dropped the "Impreza" name)</td>
+      <td>FA20D, EJ207, EJ257</td>
+      <td>
+        Model change. "Evo Eye" WRX Drops the hatchback Drops the "Impreza" name
+        WRX Moves to the FA20D engine (EJ207 &amp; EJ257 continues in STI)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>Can you find your applied model code? Are we missing your trim code? Shoot us an
+email or find us as 
+<a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[impreza]]></category><category><![CDATA[impreza wrx]]></category><category><![CDATA[impreza wrx sti]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 29 Dec 2020 14:21:00 GMT</pubDate></item><item><title><![CDATA[Decoding Toyota 86 / Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
 refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 

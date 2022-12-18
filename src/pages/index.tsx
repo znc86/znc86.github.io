@@ -98,6 +98,13 @@ const Home: NextPage = () => {
               {t("pages.index.join subtitle")}
             </li>
             <li>
+              <Link href="/kb" title={t("pages.index.kb")}>
+                🧑‍💻 {t("pages.index.kb")}
+              </Link>
+              <br />
+              {t("pages.index.kb subtitle")}
+            </li>
+            <li>
               <a
                 className={styles.instagram}
                 href="https://instagram.com/znc86.club"

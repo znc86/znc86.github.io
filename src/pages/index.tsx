@@ -98,7 +98,7 @@ const Home: NextPage = () => {
               {t("pages.index.join subtitle")}
             </li>
             <li>
-              <Link href="/kb" title={t("pages.index.kb")}>
+              <Link href="/kb" title={t("pages.index.kb") || ""}>
                 🧑‍💻 {t("pages.index.kb")}
               </Link>
               <br />

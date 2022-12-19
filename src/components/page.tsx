@@ -16,6 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="home" href="/" />
+        <meta property="og:site_name" content="ZNC86" />
       </Head>
       <div className={styles.page}>
         <header className={styles.header}>

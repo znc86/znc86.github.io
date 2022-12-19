@@ -33,15 +33,9 @@ const Home: NextPage = () => {
           ZNC86.club - motorsports support team for the Z N/C 8/6 chassis
         </title>
 
-        <meta property="og:site_name" content="ZNC86" />
-        <meta
-          property="og:title"
-          content="ZNC86 motorsports support team for the Z N/C 8/6 chassis"
-        />
-        <meta
-          name="description"
-          content="ZNC86 motorsports support team for the Z N/C 8/6 chassis"
-        />
+        <meta property="og:title" content={t("pages.index.title") || ""} />
+        <meta name="description" content={t("pages.index.copy1") || ""} />
+        <meta name="og:description" content={t("pages.index.copy1") || ""} />
         <meta property="og:url" content="https://znc86.club/" />
         <meta property="og:image" content="https://znc86.club/icon.png" />
         <meta property="og:image:width" content="1260" />

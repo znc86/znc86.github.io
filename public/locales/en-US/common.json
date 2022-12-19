@@ -36,7 +36,8 @@
     },
     "kb": {
       "page title": "Knowledge Base - ZNC86.club",
-      "title": "Knowledge Base"
+      "title": "Knowledge Base",
+      "kb subtitle": "Find technical references on diagrams, specifications, how-to articles the club has collected"
     }
   }
 }

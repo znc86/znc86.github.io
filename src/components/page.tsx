@@ -17,6 +17,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="home" href="/" />
         <meta property="og:site_name" content="ZNC86" />
+        <link
+          type="application/atom+xml"
+          rel="alternate"
+          href="/rss.xml"
+          title="ZNC86"
+        />
+        <link
+          rel="sitemap"
+          type="application/xml"
+          href="/sitemap.xml"
+          title="sitemap"
+        />
       </Head>
       <div className={styles.page}>
         <header className={styles.header}>

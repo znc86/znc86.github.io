@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Page from "../components/page";
 import { generateRSS } from "../lib/rss";
+import { generateSitemap } from "../lib/sitemap";
 import { loadBlogPosts } from "../lib/loader";
 import styles from "./index.module.css";
 
@@ -15,6 +16,7 @@ type HomeProps = {
 export async function getStaticProps({ locale }: HomeProps) {
   const posts = await loadBlogPosts();
   await generateRSS(posts); // comment out to disable RSS generation
+  await generateSitemap(); // comment out to disable sitemap generation
 
   return {
     props: {

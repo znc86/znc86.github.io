@@ -1,7 +1,7 @@
 ---
 title: "OEM ZN6 ZC6 Maintenance Fluids Specifications"
 subtitle: Detailed specifications for ZN6/ZC6 engine oil, transmission fluid, rear differential fluid
-datePublished: 2022-12-18 08:44:00 -0700
+datePublished: "2022-12-18T08:44:00"
 published: true
 author: Ron. A (@brz_typera)
 tags:

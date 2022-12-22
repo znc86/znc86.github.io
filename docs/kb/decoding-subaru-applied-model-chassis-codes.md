@@ -1,7 +1,7 @@
 ---
 title: "Decoding Toyota 86 / GR86 / GT86 Subaru BRZ Applied Model Codes"
 subtitle: How to determine 86 / BRZ year, make, engine, trim, transmission, and color from Subaru and Toyota Applied Model codes
-datePublished: 2020-10-20 03:28:00 -0700
+datePublished: "2020-10-20T03:28:00"
 published: true
 author: Ron. A (@brz_typera)
 tags:

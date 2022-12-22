@@ -1,7 +1,7 @@
 ---
 title: "Decoding Subaru Impreza WRX and STI Applied Model Codes"
 subtitle: How to determine WRX year, make, engine, trim, transmission, and color from Subaru Applied Model codes
-datePublished: 2020-12-29 10:21:00 -0400
+datePublished: "2020-12-29T10:21:00"
 published: true
 author: Ron. A (@brz_typera)
 thumbnailPhoto: /kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg

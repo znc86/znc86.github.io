@@ -1,7 +1,7 @@
 ---
 title: "OEM ZN6 ZC6 Battery Specs"
 subtitle: Detailed part specifications for the ZN6/ZC6 battery
-datePublished: 2022-12-17 02:44:00 -0700
+datePublished: "2022-12-17T02:44:00"
 published: true
 author: Ron. A (@brz_typera)
 tags:

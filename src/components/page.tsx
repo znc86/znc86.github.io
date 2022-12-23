@@ -55,8 +55,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </header>
         <main>{children}</main>
         <footer className={styles.footer}>
-          <Link href="/">Home</Link> <Link href="/kb">Knowledge Base</Link>{" "}
-          <Link href="/rss.xml">RSS</Link>
+          <div className={styles.footerAlpha}>
+            <Link href="/">Home</Link> <Link href="/kb">Knowledge Base</Link>{" "}
+            <Link href="/rss.xml">RSS</Link>
+          </div>
+          <div className={styles.footerBeta}>
+            <ruby className={styles.motto}>
+              <ruby lang="ja">
+                暴力<rp>(</rp><rt>ぼうりょく</rt><rp>)</rp>
+                馬車<rp>(</rp><rt>ばしゃ</rt><rp>)</rp>
+                機動<rp>(</rp><rt>きどう</rt><rp>)</rp>
+                協会<rp>(</rp><rt>きょうかい</rt><rp>)</rp>
+              </ruby>
+              <rp>(</rp><rt lang={locale}>{t("components.page.motto")}</rt><rp>)</rp>
+            </ruby>
+          </div>
         </footer>
       </div>
     </>

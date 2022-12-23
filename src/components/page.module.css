@@ -18,3 +18,20 @@
 .footer {
   margin-top: 3rem;
 }
+
+@media (min-width: 30rem) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.motto {
+  font-size: 2rem;
+}
+@media (min-width: 30rem) {
+  .motto {
+    writing-mode: vertical-rl;
+  }
+}

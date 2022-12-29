@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import { Author } from "../components/Author";
 import { PostMeta } from "../components/PostMeta";
 import { Markdown } from "../components/Markdown";
@@ -30,7 +31,13 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
         <Markdown source={post.content} />
       </div>
       <footer>
-        <aside>Tags: {post.tags && post.tags.join(", ")}</aside>
+        <aside>
+          {post.tags && post.tags.map(tag => {
+            return (
+              <Link href={`/kb/tags/${tag}`} key={tag} locale="en-US">{tag}</Link>
+            );
+          })}
+        </aside>
       </footer>
     </article>
   );

@@ -32,11 +32,17 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       </div>
       <footer>
         <aside>
-          {post.tags && post.tags.map(tag => {
-            return (
-              <Link href={`/kb/tags/${tag}`} key={tag} locale="en-US">{tag}</Link>
-            );
-          })}
+          <h3>Tags</h3>
+
+          {post.tags && (
+            <ul>
+              {post.tags.map(tag => (
+                <li key={tag}>
+                  <Link href={`/kb/tags/${tag}`} locale="en-US">{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </aside>
       </footer>
     </article>

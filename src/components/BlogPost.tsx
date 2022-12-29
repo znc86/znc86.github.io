@@ -14,7 +14,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
     <article className="hentry h-entry">
       <PostMeta post={post} />
 
-      <header>
+      <header className={styles.header}>
         <h1 className="entry-title p-name">{title}</h1>
 
         {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}

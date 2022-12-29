@@ -3,6 +3,7 @@ import Page from '../../../../src/components/page';
 import { PostCard } from "../../../components/PostCard";
 import { loadBlogPosts } from '../../../lib/loader';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import styles from './[tag].module.css';
 import type { NextPage } from 'next'
 
 
@@ -45,16 +46,11 @@ const TagPage: NextPage = (props) => {
     <Page>
       <h1>{props.tag}</h1>
 
-      {props.posts.length > 0 && <ul>
-        {props.posts.map((post: PostData, j: number) => {
-          return (
-            <li key={j}>
-              <PostCard post={post} />
-            </li>
-          );
-        })}
-      </ul>}
-
+      {props.posts.length > 0 && (
+        <ul className={styles.list}>
+          {props.posts.map((post: PostData, j: number) => <li key={j}><PostCard post={post} /></li>)}
+        </ul>
+      )}
     </Page>
   );
 }

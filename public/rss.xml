@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 03 Jan 2023 21:00:36 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2023 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[OEM ZC6 ZN6 EDAs Electronic Driving Aids]]></title><description><![CDATA[<p>| EDA | Purpose |
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Fri, 06 Jan 2023 18:41:26 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2023 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[OEM ZC6 ZN6 EDAs Electronic Driving Aids]]></title><description><![CDATA[<p>| EDA | Purpose |
 |:---|:---|
 | <strong>VSC</strong> | Vehicle Stability Control, often known generically as&nbsp;<strong>ESC</strong>&nbsp;or Electronic Stability Control). This program identifies understeer (running wide, needing more and more lock to turn) and oversteer (back slipping out).&nbsp;It then corrects the car’s course by braking individual wheels, and in extreme cases, also reducing throttle to avoid making things worse. Subaru called VSC by the generic term of&nbsp;<strong>ESC</strong>. |
 | <strong>TRC</strong> | Engine Traction Control. If you have both rear wheels spinning this system figures out you’re going nowhere and reduces the throttle.&nbsp;The 86/BRZ refers to this as TRC, or Traction Control, although it is a distinct programme from brake traction control (below). In 86-speak, TRC stands for “Traction Control System”. No, I don’t know why. Subaru call it&nbsp;<strong>TCS</strong>, or Traction Control System. |
@@ -321,7 +321,44 @@ information:</p>
 <p>This list only covers Volk Racing, and some Gram Lights, and isn't exhaustive, feel free
 to reach out and send me your SKUs and i'll add them to this list.</p>
 <p>Can you find your SKU code? Are we missing your size, offset, model or color code? Tell us on 
-email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 06:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
+email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 06:44:00 GMT</pubDate></item><item><title><![CDATA[Diagnosing trouble codes for the Toyota 86 ZN6 Subaru BRZ ZC6 with Toyota Techstream ODB-II code reader]]></title><description><![CDATA[<figure>
+  <img src="/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader/laptop.png" alt="ODB-II diagnosis with Toyota Techstream">
+  <figcaption>
+    ODB-II diagnosis with Toyota Techstream
+  </figcaption>
+</figure>
+<p>Toyota Techstream is diagnostic software that allows you to diagnose and troubleshoot issues with Toyota and some Subaru vehicles. It reads and clears diagnostic trouble codes (DTCs) that are stored in the vehicle's on-board computer. It also provides access to various functions and systems in the vehicle, such as the engine control system, transmission system, and ABS (anti-lock brake system), so that technicians can perform tests and make adjustments as needed.</p>
+<p>To read codes with Toyota Techstream, you will need to connect a ODB-II to USB cable to the vehicle's ODB-II port. The technician will then start the Techstream software and follow the prompts to access the diagnostic functions of the vehicle. Once the diagnostic functions are accessed, the technician can retrieve the stored DTCs and use them to diagnose and fix the issue with the vehicle.</p>
+<p>Subaru SSM4 is Toyota's equivalent of Techstream, their dealer tool to read, set and manipulate values in the ECU, but there isn't much difference of the capabilities.</p>
+<h2 id="buyaodbiiminivcicable">Buy a ODB-II Mini-VCI Cable</h2>
+<p>Buy a USB to Mini-VCI ODB-II cable, you can buy them on <a href="https://www.amazon.com/gp/product/B097YC5LSR/">Amazon</a> or <a href="https://www.ebay.com/itm/314111811780?mkevt=1&mkcid=1&mkrid=711-53200-19255-0&siteid=0&customid=&campid=5337589904&toolid=10001&mpt=9031539">eBay</a></p>
+<h2 id="downloadandinstallvirtualbox">Download and install VirtualBox</h2>
+<ul>
+<li><a href="https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-Win.exe">Windows</a></li>
+<li><a href="https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-OSX.dmg">Apple Intel macOS</a></li>
+<li><a href="https://github.com/utmapp/UTM/releases/latest/download/UTM.dmg">Apple M1, M2 macOS</a></li>
+</ul>
+<p>On Windows: Double-Click downloaded file, on macOS Double-Click downloaded file, run installer or drag Applications folder.</p>
+<h2 id="downloadandinstalltechstream">Download and install TechStream</h2>
+<ul>
+<li><a href="https://mega.nz/#!fsEizJyC!aH_2a1hQnX6LpicDS1Bq-gEKVEU57cotd3_QesN2_M0">Windows / Apple Intel macOS</a> v12.20.024</li>
+<li><a href="https://mega.nz/file/rkNlgAIS#2KhsbV9__V3u1Q3XvqXCTEbhZ8Q5t9MwQ0yHGaFkT7M">Apple M1, M2 macOS</a></li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<figure>
+  <img src="/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader/screenshot.jpg" alt="ODB-II diagnosis with Toyota Techstream">
+  <figcaption>
+    ODB-II diagnosis with Toyota Techstream
+  </figcaption>
+</figure>
+<ol>
+<li>Plug ODB-II Mini-VCI cable into the ODB-II port of the vehicle, located under the steering wheel. Plug the USB side into computer</li>
+<li>Verify the USB controller is enabled on the Techstream image<ul>
+<li>in VirtualBox, click the Settings icon, navigate to Ports, USB, and verify the "Enable USB controller" is checked</li></ul></li>
+<li>Run Techstream image in VirtualBox, wait for Windows to boot</li>
+<li>Run the installed Techstream software, located on the Windows Desktop "TechStream"</li>
+<li>Click the "Connect to Vehicle" button</li>
+</ol>]]></description><link>https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</link><guid isPermaLink="true">https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</guid><category><![CDATA[software]]></category><category><![CDATA[diagnostics]]></category><category><![CDATA[electronics]]></category><category><![CDATA[ECU]]></category><category><![CDATA[toyota techstream]]></category><category><![CDATA[ODB-II]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 06 Jan 2022 19:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
 refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 

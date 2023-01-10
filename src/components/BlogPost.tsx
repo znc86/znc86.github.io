@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import { Author } from "../components/Author";
 import { PostMeta } from "../components/PostMeta";
 import { Markdown } from "../components/Markdown";
@@ -14,7 +15,7 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
     <article className="hentry h-entry">
       <PostMeta post={post} />
 
-      <header>
+      <header className={styles.header}>
         <h1 className="entry-title p-name">{title}</h1>
 
         {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
@@ -30,7 +31,19 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
         <Markdown source={post.content} />
       </div>
       <footer>
-        <aside>Tags: {post.tags && post.tags.join(", ")}</aside>
+        <aside>
+          <h3>Tags</h3>
+
+          {post.tags && (
+            <ul>
+              {post.tags.map(tag => (
+                <li key={tag}>
+                  <Link href={`/kb/tags/${tag}`} locale="en-US">{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </aside>
       </footer>
     </article>
   );

@@ -56,8 +56,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <main>{children}</main>
         <footer className={styles.footer}>
           <div className={styles.footerAlpha}>
-            <Link href="/">Home</Link> <Link href="/kb">Knowledge Base</Link>{" "}
-            <Link href="/rss.xml">RSS</Link>
+            <Link href="/">Home</Link> <Link href="/kb" locale="en-US">Knowledge Base</Link>{" "}
+            <Link href="/rss.xml" locale="en-US">RSS</Link>
           </div>
           <div className={styles.footerBeta}>
             <ruby className={styles.motto}>

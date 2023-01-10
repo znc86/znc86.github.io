@@ -4,13 +4,14 @@ import { PostCard } from "../../../components/PostCard";
 import { loadBlogPosts } from '../../../lib/loader';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import styles from './[tag].module.css';
-import type { NextPage } from 'next'
+import type { GetStaticProps, GetStaticPropsResult} from 'next'
+import type { PostData } from '../../../lib/loader';
 
 
 export const getStaticPaths = async () => {
   // const tags = ['a', 'b', 'c'];
   const posts = await loadBlogPosts();
-  let uniqueTags = new Set<string>();
+  const uniqueTags = new Set<string>();
   posts.forEach(post => post.tags?.forEach(tag => uniqueTags.add(tag)));
 
   const tags = Array.from(uniqueTags);
@@ -27,13 +28,18 @@ export const getStaticPaths = async () => {
   }
 }
 
-export async function getStaticProps({locale, params }) {
+interface TagPageProps {
+  tag: string;
+  posts: Array<PostData>;
+}
+
+export const getStaticProps: GetStaticProps = async ({ locale, params }): Promise<GetStaticPropsResult<TagPageProps>> => {
   const posts = await loadBlogPosts();
-  const tagPosts = posts.filter(post => post.tags?.includes(params.tag));
+  const tagPosts = posts.filter(post => post.tags?.includes(params?.tag as string));
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
-      tag: params.tag,
+      ...(await serverSideTranslations(locale as string)),
+      tag: params?.tag as string,
       posts: tagPosts,
     },
   };
@@ -41,18 +47,18 @@ export async function getStaticProps({locale, params }) {
 
 
 
-const TagPage: NextPage = (props) => {
+export default function TagPage(props: TagPageProps) {
   return (
     <Page>
       <h1>{props.tag}</h1>
 
       {props.posts.length > 0 && (
         <ul className={styles.list}>
-          {props.posts.map((post: PostData, j: number) => <li key={j}><PostCard post={post} /></li>)}
+          {props.posts.map((post: PostData, j: number) => (
+            <li key={j}><PostCard post={post} /></li>)
+          )}
         </ul>
       )}
     </Page>
   );
 }
-
-export default TagPage;

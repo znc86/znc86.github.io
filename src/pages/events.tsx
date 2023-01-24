@@ -30,7 +30,7 @@ export default function Kb() {
   return (
     <>
       <Head>
-        <title>{t("pages.events.page_title")}</title>
+        <title>{t("pages.events.title")}</title>
         <meta property="og:title" content={t("pages.events.title") || ""} />
         <meta name="description" content={t("pages.events.subtitle") || ""} />
         <meta name="og:description" content={t("pages.events.subtitle") || ""} />

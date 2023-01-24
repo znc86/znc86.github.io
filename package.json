@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@emotion/react": "^11.10.5",
+    "@ericz1803/react-google-calendar": "^4.2.2",
     "date-fns": "^2.29.3",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
     "i18next": "^22.4.5",
     "next": "13.0.2",
     "next-i18next": "^13.0.2",
+    "next-transpile-modules": "^10.0.0",
     "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

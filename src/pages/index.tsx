@@ -101,6 +101,13 @@ const Home: NextPage = () => {
               {t("pages.index.kb subtitle")}
             </li>
             <li>
+              <Link href="/events" title={t("pages.events.title") || ""}>
+                🏁 {t("pages.events.title")}
+              </Link>
+              <br />
+              {t("pages.events.subtitle")}
+            </li>
+            <li>
               <a
                 className={styles.instagram}
                 href="https://instagram.com/znc86.club"

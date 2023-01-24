@@ -21,7 +21,6 @@ export async function getStaticProps({ locale }: EventsProps) {
 export default function Kb() {
   const { t } = useTranslation("common");
 
-  const API_KEY = "AIzaSyAedlwz2Uypmja6WOpI4mkMFAYmAPAKg6U";
   const calendars = [
     { calendarId: "dpshlst16bu2i322nie1rs4u9tru2ksi@import.calendar.google.com" },
   ];
@@ -42,7 +41,7 @@ export default function Kb() {
       <Page>
         <h1>{t("pages.events.title")}</h1>
         <p>{t("pages.events.subtitle")}</p>
-        <Calendar apiKey={API_KEY} calendars={calendars} />
+        <Calendar apiKey={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY} calendars={calendars} />
       </Page>
     </>
   );

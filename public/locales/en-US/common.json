@@ -39,6 +39,10 @@
       "six": "Do not share intentionally false or misleading information. No conspiracy theories.",
       "seven": "No commercial accounts, advertising, or excessive promotion."
     },
+    "events": {
+      "title": "Events",
+      "subtitle": "Calendar of scheduled motorsports"
+    },
     "kb": {
       "page title": "Knowledge Base - ZNC86.club",
       "title": "Knowledge Base",

@@ -8,6 +8,10 @@
     }
   },
   "pages": {
+    "404": {
+      "title": "404",
+      "subtitle": "This page could not be found"
+    },
     "index": {
       "title": "ZNC86.club - motorsports support team for the Z N/C 8/6 chassis",
       "copy1": "ZNC86 is not an online community but a group of friends sharing resources, attending events, learning, solving problems, having fun, and supporting each other to enjoy the pleasures of motoring sport in the Z N/C 8/6 chassis.",

@@ -1,5 +1,8 @@
 import nexti18next from "./next-i18next.config.js";
+import ntm from "next-transpile-modules";
+
 const { i18n } = nexti18next;
+const withTM = ntm(["@ericz1803/react-google-calendar"]);
 
 // @ts-check
 /**
@@ -13,7 +16,7 @@ const config = {
   i18n,
   reactStrictMode: true,
   swcMinify: true,
-  webpack: function (config) {
+  webpack: function(config) {
     config.module.rules.push({
       test: /\.md$/,
       use: "raw-loader",
@@ -25,4 +28,4 @@ const config = {
     return config;
   },
 };
-export default config;
+export default withTM(config);

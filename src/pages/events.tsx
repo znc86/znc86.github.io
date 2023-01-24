@@ -2,6 +2,7 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import React from "react";
+// @ts-ignore
 import Calendar from "@ericz1803/react-google-calendar";
 import Page from "../components/page";
 
@@ -21,7 +22,7 @@ export default function Kb() {
   const { t } = useTranslation("common");
 
   const API_KEY = "AIzaSyAedlwz2Uypmja6WOpI4mkMFAYmAPAKg6U";
-  let calendars = [
+  const calendars = [
     { calendarId: "dpshlst16bu2i322nie1rs4u9tru2ksi@import.calendar.google.com" },
   ];
 

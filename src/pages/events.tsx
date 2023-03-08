@@ -22,7 +22,8 @@ export default function Kb() {
   const { t } = useTranslation("common");
 
   const calendars = [
-    { calendarId: "dpshlst16bu2i322nie1rs4u9tru2ksi@import.calendar.google.com" },
+    { calendarId: "dpshlst16bu2i322nie1rs4u9tru2ksi@import.calendar.google.com" }, /* motorsports */
+    { calendarId: "jo2v8hedovnfbe9n659libt3j07bn4ec@import.calendar.google.com" }, /* lock city drift */
   ];
 
 

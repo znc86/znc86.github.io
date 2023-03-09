@@ -66,9 +66,11 @@ export default function Kb() {
   const [activeCalendars, setActiveCalendars] = useState(calendars);
   const [allCalendars, setAllCalendars] = useState(calendars);
 
+  // @ts-ignore
   function toggleCalendar(calendar, index, state) {
     const all = [...allCalendars];
     const activeCalendars = calendars.filter(c => c.calendarId !== calendar.calendarId);
+    // @ts-ignore
     all[index]['enabled'] = state;
     setAllCalendars(all);
     setActiveCalendars(activeCalendars);
@@ -91,7 +93,7 @@ export default function Kb() {
         <p>{t("pages.events.subtitle")}</p>
         <ul>
           {allCalendars.map((calendar, index) => (
-            <li>
+            <li key={calendar.calendarId}>
               <input type="checkbox" onChange={() => toggleCalendar(calendar, index, !calendar.enabled)} checked={calendar.enabled} />{calendar.name}
             </li>
           ))}

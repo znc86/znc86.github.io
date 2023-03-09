@@ -69,11 +69,17 @@ export default function Kb() {
   // @ts-ignore
   function toggleCalendar(calendar, index, state) {
     const all = [...allCalendars];
+    // @ts-ignore
     all[index]['enabled'] = state;
     const active = all.filter(calendar => calendar.enabled);
     // @ts-ignore
     setAllCalendars(all);
     setActiveCalendars(active);
+  }
+
+  // @ts-ignore
+  function MyCal(props) {
+    return <Calendar apiKey={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY} calendars={props.calendars} />
   }
 
   return (
@@ -98,8 +104,7 @@ export default function Kb() {
             </li>
           ))}
         </ul>
-        {activeCalendars.map(cal => <span>{cal.name}</span>)}
-        <Calendar apiKey={process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY} calendars={activeCalendars} />
+        <MyCal calendars={activeCalendars} />
       </Page>
     </>
   );

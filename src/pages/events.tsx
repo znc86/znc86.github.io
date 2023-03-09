@@ -69,14 +69,9 @@ export default function Kb() {
   // @ts-ignore
   function toggleCalendar(calendar, index, state) {
     const all = [...allCalendars];
-    const active = [...allCalendars];
-    if(state === false) {
-      active.splice(index, 1);
-    } else {
-      active.splice(index, 0, calendar);
-    }
-    // @ts-ignore
     all[index]['enabled'] = state;
+    const active = all.filter(calendar => calendar.enabled);
+    // @ts-ignore
     setAllCalendars(all);
     setActiveCalendars(active);
   }

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // @ts-ignore
 import Calendar from "@ericz1803/react-google-calendar";
 import Page from "../components/page";
+import styles from "./events.module.css";
 
 type EventsProps = {
   locale: string;
@@ -98,10 +99,13 @@ export default function Kb() {
       <Page>
         <h1>{t("pages.events.title")}</h1>
         <p>{t("pages.events.subtitle")}</p>
-        <ul>
+        <ul className={styles.picker}>
           {allCalendars.map((calendar, index) => (
-            <li key={calendar.calendarId}>
-              <input type="checkbox" onChange={() => toggleCalendar(calendar, index, !calendar.enabled)} checked={calendar.enabled} />{calendar.name}
+            <li key={calendar.calendarId} className={styles.item} style={{backgroundColor: calendar.color}}>
+              <label>
+                <input type="checkbox" onChange={() => toggleCalendar(calendar, index, !calendar.enabled)} checked={calendar.enabled} />
+                {calendar.name}
+              </label>
             </li>
           ))}
         </ul>

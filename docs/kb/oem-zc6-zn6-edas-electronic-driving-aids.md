@@ -8,9 +8,17 @@ tags:
   - zc6
   - zn6
   - electroncics
+thumbnailPhoto: /kb/oem-zc6-zn6-edas-electronic-driving-aids/button.png
 ---
 
 Going on track, drift, or otherwise pushing the car to the limits, you'll want to disable all the FR-S/86/BRZ traction and stability controls, **turn on the car and press and hold the Traction Control button for 5 seconds** until both the Traction Control and Slip lights come on. Don't bother with the various "Track Mode" buttons as they still have ignition-cut and brake modulation enabled.
+
+<figure>
+  <img src="/kb/oem-zc6-zn6-edas-electronic-driving-aids/button.png" alt="Traction control button on the left">
+  <figcaption>
+    Location of the Traction Control button
+  </figcaption>
+</figure>
 
 | EDA | Purpose |
 |:---|:---|

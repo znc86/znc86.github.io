@@ -10,6 +10,8 @@ tags:
   - electroncics
 ---
 
+Going on track, drift, or otherwise pushing the car to the limits, you'll want to disable all the FR-S/86/BRZ traction and stability controls, **turn on the car and press and hold the Traction Control button for 5 seconds** until both the Traction Control and Slip lights come on. Don't bother with the various "Track Mode" buttons as they still have ignition-cut and brake modulation enabled.
+
 | EDA | Purpose |
 |:---|:---|
 | **VSC** | Vehicle Stability Control, often known generically as **ESC** or Electronic Stability Control). This program identifies understeer (running wide, needing more and more lock to turn) and oversteer (back slipping out). It then corrects the car’s course by braking individual wheels, and in extreme cases, also reducing throttle to avoid making things worse. Subaru called VSC by the generic term of **ESC**. |

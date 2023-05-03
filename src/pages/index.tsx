@@ -85,7 +85,7 @@ const Home: NextPage = () => {
             <li>
               <a
                 className={styles.discord}
-                href="https://forms.gle/4wmUwEzHdQjkgezo7"
+                href="https://discord.gg/fNSwB46Xhf"
                 title="Join the Discord chat"
               >
                 {t("pages.index.join")}

@@ -47,6 +47,12 @@ export default function Kb() {
       name: "Club Loose",
     },
     {
+      calendarId: "2s5c5k7b4vna1nemimfa576140l4mqjm@import.calendar.google.com", /* SCCA Track Night */
+      color: "#9e69af",
+      enabled: true,
+      name: "SCCA Track Night",
+    },
+    {
       calendarId: "d7bjifjscgbtg7qgcpv9f402jknkl56a@import.calendar.google.com", /* Northeast Track Club */
       color: "#ec3e7c",
       enabled: true,

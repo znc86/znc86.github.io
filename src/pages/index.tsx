@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                   <rp>)</rp> N/C<rp>(</rp>
                   <rt>ZN8</rt>
                   <rp>)</rp> 8/6<rp>(</rp>
-                  <rt>ZC8 ZC6</rt>
+                  <rt>ZD8 ZC6</rt>
                   <rp>)</rp>
                 </ruby>
                 <rp> </rp>

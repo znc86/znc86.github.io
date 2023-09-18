@@ -5,14 +5,14 @@ datePublished: "2023-04-21T02:44:00"
 published: true
 author: Ron. A (@brz_typera)
 tags:
-  - zc8
+  - zd8
   - zn8
   - suspension
 ---
 
 The second generation of the Subaru BRZ/Toyota GR86 platform was introduced in the 2022 model year.
 
-The 2022 ZC8 Subaru BRZ has two small changes that are not seen on the 2022 ZN8 Toyota GR86. That is the front aluminum
+The 2022 ZD8 Subaru BRZ has two small changes that are not seen on the 2022 ZN8 Toyota GR86. That is the front aluminum
 uprights (which reduce unsprung weight) and the rear swaybar mounting method. Both of these changes are good, but fairly
 minor overall.
 

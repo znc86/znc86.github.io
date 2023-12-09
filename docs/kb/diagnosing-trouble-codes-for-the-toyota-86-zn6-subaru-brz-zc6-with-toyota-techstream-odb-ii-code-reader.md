@@ -59,8 +59,9 @@ On Windows: Double-Click downloaded file, on macOS Double-Click downloaded file,
 2. Verify the USB controller is enabled on the Techstream image
     - in VirtualBox, click the Settings icon, navigate to Ports, USB, and verify the "Enable USB controller" is checked
 3. Run Techstream image in VirtualBox, wait for Windows to boot
-4. Run the installed Techstream software, located on the Windows Desktop "TechStream"
-5. Click the "Connect to Vehicle" button
+4. Start the car
+5. Run the installed Techstream software, located on the Windows Desktop "TechStream"
+6. Click the "Connect to Vehicle" button
 
 
 

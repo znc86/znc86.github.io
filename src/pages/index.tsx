@@ -83,17 +83,6 @@ const Home: NextPage = () => {
               {t("pages.index.code subtitle")}
             </li>
             <li>
-              <a
-                className={styles.discord}
-                href="https://discord.gg/fNSwB46Xhf"
-                title="Join the Discord chat"
-              >
-                {t("pages.index.join")}
-              </a>
-              <br />
-              {t("pages.index.join subtitle")}
-            </li>
-            <li>
               <Link href="/kb" title={t("pages.index.kb") || ""}>
                 🧑‍💻 {t("pages.index.kb")}
               </Link>

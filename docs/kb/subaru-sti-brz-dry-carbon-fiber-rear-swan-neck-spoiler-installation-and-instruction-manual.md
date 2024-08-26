@@ -68,23 +68,23 @@ The following symbols are displayed for important points, which must be observed
 
 ## Mounting Instructions
 
-**1. Part number and applicable car models**
+### 1. Part number and applicable car models
 
 | STI Part Number |                       Part Name                        | Applicable car models                                                                                                                                                                                         |
 | :-------------: | :----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `ST96050ZM000`  | DRY CARBON REAR SPOILER (ドライカーボンリヤスポイラー) | Applied model code: A Jul. 2021-May 2022 `ZD8A`<br /> Applied model code: B May 2022-Sept. 2023 `ZD8B`<br /> Applied model code: C From Sept. 2023- `ZD8C`<br /> Applied model code: D From Jul. 2024- `ZD8D` |
 
-**2. Parts manifest**
+### 2. Parts manifest
 
-| Num Part (Count)                                                                                                                                                                                |                                                                                                                                                                                            |                                                                                                                                                                                                          |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ① Spoiler (1 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-01-spoiler.png" alt="Spoiler" />                                 | ② Reinforcement bracket (2 pcs. left/right) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-02-brackets.png" alt="Brackets" /> | ③ Bolt (6 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-03-bolt.png" alt="Bolt" />                                                   |
-| ④ Washer (6 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-04-washer.png" alt="Washer" />                                    | ⑤ Nut (4 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-05-nut.png" alt="Nut" />                                        | ⑥ Grommets Sheet (2 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-06-grommet.png" alt="Grommet" />                                   |
-| ⑦ Drilling gauge (1 pcs. left/right) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-07-drilling-gauge.png" alt="Drilling gauge" /> | ⑧ Template stencil (1 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-08-template.png" alt="Template" />                 | ⑨ Installation and Operating Manual (this manual) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-09-instructions.png" alt="Instructions" /> |
+| Num Part (Count)                                                                                                                                                                                     |                                                                                                                                                                                                 |                                                                                                                                                                                                               |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ① Spoiler (1 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-01-spoiler.png" alt="Spoiler" />                                 | ② Reinforcement bracket (2 pcs. left/right)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-02-brackets.png" alt="Brackets" /> | ③ Bolt (6 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-03-bolt.png" alt="Bolt" />                                                   |
+| ④ Washer (6 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-04-washer.png" alt="Washer" />                                    | ⑤ Nut (4 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-05-nut.png" alt="Nut" />                                        | ⑥ Grommets Sheet (2 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-06-grommet.png" alt="Grommet" />                                   |
+| ⑦ Drilling gauge (1 pcs. left/right)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-07-drilling-gauge.png" alt="Drilling gauge" /> | ⑧ Template stencil (1 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-08-template.png" alt="Template" />                 | ⑨ Installation and Operating Manual (this manual)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-09-instructions.png" alt="Instructions" /> |
 
 <small>Please check the number of members first. If any item is missing or different, please contact your dealer.</small>
 
-**3. Tool manifest (Use of Tools)**
+### 3. Tool manifest (Use of Tools)
 
 | Tool                            | Tool                                                  |
 | :------------------------------ | :---------------------------------------------------- |
@@ -98,7 +98,7 @@ The following symbols are displayed for important points, which must be observed
 | Magic marker                    | Socket wrench (10mm deep)                             |
 | Hammer                          | Torque wrench (7.5 Nm)                                |
 
-**4. Installation Precautions**
+### 4. Installation Precautions
 
 <details>
   <summary>⚠️ Warning</summary>
@@ -118,3 +118,149 @@ The following symbols are displayed for important points, which must be observed
 - Tighten the bolts to the specified torque. Tightening the bolts/nuts outside the specified torque may cause damage or loosening of the bolts/nuts.
 
 </details>
+
+### 5. Simultaneous replacement, non-reusable parts
+
+None
+
+### 6. Work Procedure
+
+Getting Started:
+
+- This work should be performed by two or more persons.
+- Before installation, wipe off any dirt or oil film on the trunk lid with a rag moistened with a degreaser (recommended nonane).
+- When installing a new trunk lid, it is necessary to drill holes in the panel.
+- This manual describes the left side of the trunk lid.
+- Perform the work on the right side as well.
+- Use a hole saw without a shavings removal function. If the hole saw has a shavings release function, use it in such a way that the shavings release function does not work.
+- If the shavings release function is present, cutting shavings may enter the trunk lid, causing abnormal noise and rusting.
+- Use a hole saw with a tip drill length of 10 mm or less. (Fig. 1)
+
+<figure>
+  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-01.png" alt="Hole saw" />
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+#### (1) Marking and punching on trunk inner panel
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-02.png" alt="Trunk panel" />
+    <figcaption>Figure 2</figcaption>
+  </figure>
+  <p>
+    (1.1) Remove the trim panel trunk rear.<br />
+    (1.1.1) Open the trunk lid, remove the 7 clips securing the trim panel trunk rear, and then remove the trim. (Fig. 2)<br />
+    ※ Refer to the SUBARU Service Manual for details.
+  </p>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-03.png" alt="Trunk guide" />
+    <figcaption>Figure 3</figcaption>
+  </figure>
+  <p>
+    (1.2) Performing the hole punching through the trunk lid inner panel.<br />
+    (1.2.1) Align the position of the drilling gauge with the inner panel using the protrusion of indicated labels 'I' and "II" as a reference in Figure 3.<br />
+    ※ Drilling gauge is provided for both LH/RH sides.
+  </p>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-04.png" alt="Trunk guide" />
+    <figcaption>Figure 4</figcaption>
+  </figure>
+  <p>
+    (1.2.2) Secure the drilling gauge with masking tape, etc., and while holding it down so that it does not slide out of place.<br />
+    Mark 5 holes on the panel surface with a magic marker.<br />
+    (Fig. 4) 5 holes on each side (10 holes total).<br />
+    (1.2.3) Remove the drilling gauge and punch in the marked positions.<br />
+    (1.2.4) Two of the five locations are ⏀15 holes to be drilled, so as a landmark, place a circle around the punch mark at the location shown in the figure.
+    The hole gauge indicates the size of the finished hole, so check to see if the circles are in the correct position.<br />
+    (1.2.5) Close the trunk lid.
+  </p>
+</div>
+
+#### (2) Punching out the trunk outer panel
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-05.png" alt="Trunk template alignment" />
+    <figcaption>Figure 5</figcaption>
+  </figure>
+  <div>
+    (2.1) Performing the hole punching through the trunk lid outer skin.<br />
+    (2.1.1) Cut out the hole punching template. Cut out carefully along the cut line.<br />
+    (2.1.2) Secure the the template to the shape of the outer panel by aligning it with the panel and securing it with masking tape (Fig. 5)
+    <details>
+      <summary>⚠️  Attention</summary>Please note that any misalignment in the setting of the stencil will affect the installation of the spoiler.
+    </details>
+  </div> 
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-06.png" alt="Trunk punching" />
+    <figcaption>Figure 6</figcaption>
+  </figure>
+  <div>
+    (2.1.3) Align the punch with the center of the hole in the secured template. (Fig. 6) Punch 2 holes per wing bracket (4 holes total)<br />
+    (2.1.4) Neatly remove the template.
+    <details>
+      <summary>⚠️  Attention</summary>Do not punch forcefully. If the panel is deformed too much, it will interfere with the installation of parts.
+    </details>
+  </div> 
+</div>
+
+#### Wiring harness removal and drilling preparation
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips" />
+    <figcaption>Figure 7</figcaption>
+  </figure>
+  <div>
+    (3.1) Disconnecting the wiring harness.<br />
+    (3.1.1) Remove the drivers side harness clip from the panel (Fig. 7)<br />
+    (3.1.2) Pull out the harness and secure it with cloth adhesive tape. (Fig. 8)<br />
+    Make sure that the harness does not pass behind the drilling area.
+  </div> 
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-08.png" alt="Harness clips" />
+    <figcaption>Figure 8</figcaption>
+  </figure>
+  <div>
+    <details open>
+      <summary>⚠️  Attention</summary>Failure to follow this precaution may result in damage to the harness when drilling into the trunk lid.
+    </details>
+  </div> 
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-09.png" alt="Harness clips" />
+    <figcaption>Figure 9</figcaption>
+  </figure>
+  <div>
+    (3.2) Prepare for drilling.<br />
+    (3.2.1) To prevent shavings from sticking, protect the inside of the trunk compartment and the surrounding area with drop cloth, newspaper, etc. (Fig. 9)<br />
+    (3.2.2) Wrap about 10 wraps of tape tightly around the drill to prevent it from penetrating (Fig. 10)<br />
+    (3.2.3) Wrap about 10 wraps of tape tightly around the hole saw to prevent scratching on the trunk lid during penetration. Make sure that there is no shavings collector. (Fig. 11)
+  </div> 
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-10.png" alt="Drill prep" />
+    <figcaption>Figure 10</figcaption>
+  </figure>
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-11.png" alt="Drill prep" />
+    <figcaption>Figure 11</figcaption>
+  </figure>
+</div>

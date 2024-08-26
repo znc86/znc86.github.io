@@ -8,7 +8,9 @@ select {
   text-size-adjust: none;
   text-rendering: optimizeLegibility /* improved font rendering algorithm    */;
 
-  font-family: "-apple-system", "BlinkMacSystemFont",
+  font-family:
+    "-apple-system",
+    "BlinkMacSystemFont",
     "HiraginoSans" /* CJK typeface on OS X, macOS and iOS. Postscript name   */,
     "Hiragino Sans" /* see above                                             */,
     "Roboto" /* supports more variants and weights on Chrome OS, Android     */,
@@ -24,7 +26,8 @@ select {
     "Apple Color Emoji" /* OS X, macOS, iOS Emoji                            */,
     "Noto Color Emoji" /* Android, Chrome OS Emoji                           */,
     "Symbola" /* Linux, open source Emoji                                    */,
-    "Segoe UI Emoji", "Segoe UI Symbol" /* Windows Emoji                     */;
+    "Segoe UI Emoji",
+    "Segoe UI Symbol" /* Windows Emoji                     */;
 }
 
 :root {
@@ -121,4 +124,13 @@ table th {
 table tr td:first-child,
 table tr th:first-child {
   width: 25%;
+}
+
+.cols-2 {
+  display: flex;
+  align-items: center;
+}
+.cols-2 > * {
+  margin: 0;
+  width: 100%;
 }

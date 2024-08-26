@@ -128,9 +128,15 @@ table tr th:first-child {
 
 .cols-2 {
   display: flex;
-  align-items: center;
+  margin: 2rem auto;
 }
 .cols-2 > * {
   margin: 0;
   width: 100%;
+}
+.cols-2 > figure {
+  margin-right: 1rem;
+}
+.cols-2 figcaption {
+  font-size: 0.75rem;
 }

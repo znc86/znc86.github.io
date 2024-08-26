@@ -357,3 +357,60 @@ Allow the paint to dry thoroughly for at least 30 minutes.
     </figure>  
   </div>
 </div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-18.png" alt="Installation" />
+    <figcaption>Figure 18</figcaption>
+  </figure>
+  <div>
+    (7.1.2) Temporarily fasten the reinforcement bracket with (3) bolts and (4) washers (3 places on each side) (Fig 18)<br />
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-19.png" alt="Installation" />
+    <figcaption>Figure 19</figcaption>
+  </figure>
+  <div>
+    (7.1.3) Close the trunk lid.<br />
+    (7.1.4) From the outside of the trunk lid, align the center of the hole in the trunk outer panel with the center of the hole in the reinforcement bracket. (Fig. 19)
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-20.png" alt="Installation" />
+    <figcaption>Figure 20</figcaption>
+  </figure>
+  <div>
+    (7.2) Installing the spoiler.<br />
+    (7.1.4) From the outside of the trunk lid, align the center of the hole in the trunk outer panel with the center of the hole in the reinforcement bracket. (Fig. 19)<br />
+    (7.2.1) ① Insert the four bolts from the stay portion of the spoiler into the holes in the trunk lid. (Fig. 20)
+    (7.2.2) Insert the spoiler into the holes in the trunk lid, being careful not to scratch the painted surface of the trunk lid with the bolts.<br />
+    (7.2.2) Open the trunk lid slowly while holding the spoiler to prevent it from falling off.<br />
+    (7.2.3) Temporarily tighten the nuts (⑤) on the stud bolts.<br />
+    (Fig. 21) 2 places on each side (4 places total)
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-21.png" alt="Installation" />
+    <figcaption>Figure 21</figcaption>
+  </figure>
+  <details open>
+    <summary>⚠️ Attention</summary>Be careful not to drop the nut into the trunk lid.
+  </details>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-22.png" alt="Installation" />
+    <figcaption>Figure 22</figcaption>
+  </figure>
+  <div>
+    (7.2.4) Gently close the trunk lid and check that there is no abnormality such as (1) spoiler left-right difference (Fig. 22)
+  </div>
+</div>

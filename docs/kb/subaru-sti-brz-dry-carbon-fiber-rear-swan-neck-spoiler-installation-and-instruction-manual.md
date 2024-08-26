@@ -141,7 +141,7 @@ Getting Started:
   <figcaption>Figure 1</figcaption>
 </figure>
 
-#### (1) Marking and punching on trunk inner panel
+#### 1. Marking and punching on trunk inner panel
 
 <div className="cols-2">
   <figure>
@@ -183,7 +183,7 @@ Getting Started:
   </p>
 </div>
 
-#### (2) Punching out the trunk outer panel
+#### 2. Punching out the trunk outer panel
 
 <div className="cols-2">
   <figure>
@@ -214,7 +214,7 @@ Getting Started:
   </div> 
 </div>
 
-#### Wiring harness removal and drilling preparation
+#### 3. Wiring harness removal and drilling preparation
 
 <div className="cols-2">
   <figure>
@@ -265,7 +265,7 @@ Getting Started:
   </figure>
 </div>
 
-#### Drilling holes in trunk lid inner panel
+#### 4. Drilling holes in trunk lid inner panel
 
 <div className="cols-2">
   <figure>
@@ -290,7 +290,7 @@ Getting Started:
   </div>
 </div>
 
-#### Drilling holes in trunk lid outer panel
+#### 5. Drilling holes in trunk lid outer panel
 
 <div className="cols-2">
   <figure>
@@ -318,4 +318,42 @@ Getting Started:
     Vacuum frequently to remove shavings, etc., as they can easily scratch the trunk lid.<br />
     When starting drilling, check the position of the harness so that it does not get caught in the trunk lid.
   </details>
+</div>
+
+#### 6. Deburring and touch-up work
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15.png" alt="Touch up" />
+    <figcaption>Figure 15</figcaption>
+  </figure>
+  <div>
+    (6.1) Remove burrs (front and back) from all holes. (Fig. 15)<br />
+    (6.2) Remove the protective film, newspaper, etc., and clean the shavings with a vacuum cleaner, etc. Clean and degrease the area around the holes and the entire spoiler mounting surface.<br />
+    (6.3) After deburring, be sure to apply touch-up paint to 4 locations on each trunk outer panel and 5 locations on each side of the trunk inner panel to prevent rust from forming.<br />
+Allow the paint to dry thoroughly for at least 30 minutes.
+  </div>
+</div>
+
+#### 7. Spoiler installation
+
+<figure>
+  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15-b.png" alt="Bracket install" />
+  <figcaption>Figure 15-b: Reinforcement bracket</figcaption>
+</figure>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-16.png" alt="Installation" />
+    <figcaption>Figure 16</figcaption>
+  </figure>
+  <div>
+    (7.1) Installation of Reinforcement bracket<br />
+    (7.1.1) Insert the bracket through the opening in the trunk inner panel.<br />
+    The direction of the angled head is angled twoards the outside of the vehicle. (Fig 17)<br />
+    <figure>
+      <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-17.png" alt="Bracket orientation" />
+      <figcaption>Figure 17</figcaption>
+    </figure>  
+  </div>
 </div>

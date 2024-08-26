@@ -264,3 +264,58 @@ Getting Started:
     <figcaption>Figure 11</figcaption>
   </figure>
 </div>
+
+#### Drilling holes in trunk lid inner panel
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-12.png" alt="Drill prep" />
+    <figcaption>Figure 12</figcaption>
+  </figure>
+  <div>
+    (4.1) Perform drilling.<br />
+    (4.1.1) Drill holes at the positions of the punches struck in step (1.2.3, see fig. 12)<br />
+    - ⏀8mm: 3 locations per side (6 locations total)<br />
+    - Drill ⏀4mm → Drill ⏀8mm<br />
+    - Drill ⏀15mm: 2 locations per side (4 locations total)<br />
+    - Drill a 15mm hole in the one circled with a circle around the punching point.<br />
+    - Drill ⏀4mm → hole saw ⏀15mm<br />
+    <details><summary>⚠️ Attention</summary>
+      Wear protective equipment when drilling.<br />
+      The hole saw should be set up directly on the surface for drilling.<br />
+      Vacuum frequently to remove shavings, etc., as the trunk lid is easily scratched by shavings.<br />
+      Since the trunk lid is in the form of a box, be careful not to allow debris from the hole saw to get inside the trunk lid.<br />
+      At the start of drilling, check the harness position to ensure that the harness in the trunk lid does not get caught in the trunk lid.
+    </details>
+  </div>
+</div>
+
+#### Drilling holes in trunk lid outer panel
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-13.png" alt="Drill prep" />
+    <figcaption>Figure 13</figcaption>
+  </figure>
+  <div>
+    (5.1) Protect the area around the trunk lid with newspaper, etc. (Fig. 13)<br />
+    (5.2) Drilling the holes<br />
+    Drill holes at the punch position punched in step (2.1.3). (Fig 14)<br />
+    Ф 10mm: 2 locations on one side (4 locations in total)<br />
+    Drill Ф 4mm→ Hole saw - Ф10mm
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-14.png" alt="Drill prep" />
+    <figcaption>Figure 14</figcaption>
+  </figure>
+  <details>
+    <summary>⚠️ Warning</summary>
+    Wear protective equipment when drilling.<br />
+    Drill holes with the hole saw standing straight on the surface.<br />
+    Vacuum frequently to remove shavings, etc., as they can easily scratch the trunk lid.<br />
+    When starting drilling, check the position of the harness so that it does not get caught in the trunk lid.
+  </details>
+</div>

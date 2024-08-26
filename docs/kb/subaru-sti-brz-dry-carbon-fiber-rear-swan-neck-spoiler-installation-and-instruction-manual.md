@@ -414,3 +414,72 @@ Allow the paint to dry thoroughly for at least 30 minutes.
     (7.2.4) Gently close the trunk lid and check that there is no abnormality such as (1) spoiler left-right difference (Fig. 22)
   </div>
 </div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-23.png" alt="Installation" />
+    <figcaption>Figure 23</figcaption>
+  </figure>
+  <div>
+    (7.2.5) Gently open the trunk lid again and tighten the (3) bolt and (5) nut. (Fig. 23)<br />
+    Tightening torque: 7.5Nm<br />
+    (5) Nut: 2 places on each side (4 places total)<br />
+    Bolt ③: 3 places on each side (6 places total)<br />
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-24.png" alt="Installation" />
+    <figcaption>Figure 24</figcaption>
+  </figure>
+  <div>
+    (7.3) Reassemble the parts.<br />
+    (7.3.1) Insert the harness clip removed in (3.1.1) in its original position. (Fig. 24)<br />
+    (7.3.2) Inside the trunk lid, reinstall the trim panel. (7 clips, see Fig. 2)
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-25.png" alt="Installation" />
+    <figcaption>Figure 25</figcaption>
+  </figure>
+  <div>
+    (7.3.3) Degrease the area around the ⏀15 hole and attach the ⑥ grommet sheet. (2 locations left and right, see Fig. 25)<br />
+    (7.3.4) If the trunk lid and trunk compartment are dirty, clean them.<br />
+    (7.3.5) If the spoiler is dirty, wipe it off with a clean rag.
+  </div>
+</div>
+
+#### 8. Adjustment
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-26.png" alt="Adjustment" />
+    <figcaption>Figure 26</figcaption>
+  </figure>
+  <div>
+    (8.1) Stopper height adjustment<br />
+    (8.1.1) Place a piece of paper between Stopper-A and the applied surface of the Trunk hinge assy., close the trunk lid gently, then press the center of the trunk lid to lock it. (Fig. 26)<br />
+    ※ Please pay attention to panel deformation, etc.<br />
+    (8.1.2) Pull the paper between the gaps of the trunk lid.<br />
+    If the paper comes out without resistance → Go to (8.1.3)<br />
+    If the paper does not come out→ Go to (8.1.5)
+  </div>
+</div>
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-27.png" alt="Adjustment" />
+    <figcaption>Figure 27</figcaption>
+  </figure>
+  <div>
+    (8.1.3) Open the trunk lid and turn stopper A clockwise 1/4 turn (90 degrees). (Fig. 27)<br />
+    (8.1.4) Return to (8.1.1) and repeat until no more paper comes out.<br />
+    ※ Adjust within 1 turn from the starting position.<br />
+    (8.1.5) Check that there is no abnormality in the surface deviation of the trunk lid.
+  </div>
+</div>
+
+This completes the installation process.

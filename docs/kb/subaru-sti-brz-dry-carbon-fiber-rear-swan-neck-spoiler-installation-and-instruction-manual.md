@@ -10,7 +10,7 @@ tags:
   - aerodynamics
 ---
 
-**1. Introduction**
+## Introduction
 
 Thank you very much for purchasing this product.
 This manual describes the installation, handling, and precautions to be taken for this product.
@@ -483,3 +483,44 @@ Allow the paint to dry thoroughly for at least 30 minutes.
 </div>
 
 This completes the installation process.
+
+## How to Adjust Spoiler Angle
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-28.png" alt="Adjustment" />
+    <figcaption>Figure 28</figcaption>
+  </figure>
+  <div>
+    ※This product can be used to change the angle of the spoiler (B or C in the figure) to obtain more downforce by selecting the coupling holes for the bolts. (Fig. 28)
+    <br />
+    B: Standard shipping condition<br />
+    C: Angle up → Higher downforce Note that the bolt A should not be loosened when adjusting the angle.<br />
+    The angle can be adjusted without loosening it.<br />
+    Adjustment tools<br />
+    Torque wrench, T20 bit<br />
+    Tightening torque: 7.5Nm
+  </div>
+</div>
+
+## Precautions
+
+<div className="cols-2">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-29.png" alt="Complete" />
+    <figcaption>Figure 29</figcaption>
+  </figure>
+  <details open>
+    <summary>⚠️ Attention</summary>
+    The installation of this product will change the feel of the trunk lid opening and closing operation.<br />
+    The installation of this product will reduce the amount of pop-up of the trunk lid when the trunk lid is opened, making it difficult to recognize the appearance of the trunk lid.<br />
+    Please make sure that the trunk lid is closed before driving.<br />
+    Carbon products are structurally designed so that the shading of the carbon mesh, irregular gaps, and undulation of the fibers may be visible. These are due to the characteristics of real carbon. Please understand this in advance.<br />
+    To protect the product from scratches, deformation, and damage, please pay attention to the following.<br />
+    Do not hold the spoiler when opening and closing the trunk lid.<br />
+    Do not operate the trunk lid suddenly when opening or closing it.<br />
+    For cleaning, use plenty of water to lift sand and dust, and wash it off gently with a soft sponge or the like.<br />
+    Do not scrub hard in parts.<br />
+    To prevent damage, please do not use a car wash machine.
+  </details>
+</div>

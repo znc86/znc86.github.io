@@ -1,5 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 25 Jul 2023 18:26:25 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2023 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Changes In the 2022 Subaru BRZ Toyota GR86 ZC8/ZN8 Chassis and Suspension]]></title><description><![CDATA[<p>The second generation of the Subaru BRZ/Toyota GR86 platform was introduced in the 2022 model year.</p>
-<p>The 2022 ZC8 Subaru BRZ has two small changes that are not seen on the 2022 ZN8 Toyota GR86. That is the front aluminum
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ZNC86.club]]></title><description><![CDATA[Motorsports support team for the Z N/C 8/6 chassis]]></description><link>https://znc86.club</link><image><url>https://znc86.club/favicon.png</url><title>ZNC86.club</title><link>https://znc86.club</link></image><generator>RSS for Node</generator><lastBuildDate>Sun, 25 Aug 2024 23:48:08 GMT</lastBuildDate><atom:link href="https://znc86.club/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 14 Nov 2022 04:00:00 GMT</pubDate><copyright><![CDATA[2024 ZNC86]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Subaru STI BRZ Dry Carbon Fiber Rear Swan Neck Spoiler Installation and Instruction Manual]]></title><description><![CDATA[<p><strong>1. Introduction</strong></p>
+<p>Thank you very much for purchasing this product.
+This manual describes the installation, handling, and precautions to be taken for this product.
+Please read "Precautions for Handling" carefully before using this product and use it properly.
+Please keep this manual in the glove box, etc., and read it whenever you have any questions.</p>
+<p>The following symbols are displayed for important points, which must be observed.</p>
+<p>| Note         |                                                                                                    |
+| :----------- | :------------------------------------------------------------------------------------------------- |
+| ⚠️ Warning   | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
+| ⚠️ Attention | For your safety and that of your vehicle (mishandling may result in injury or accident)            |
+| ※ Advice     | What you need to know. Things you should know.                                                     |</p>
+<p><details>
+  <summary>⚠️ Warning</summary></p>
+<ul>
+<li>Never attempt to process or modify this product.</li>
+<li>Doing so may damage the product and result in serious injury.</li>
+<li>For safety reasons, be sure to <strong>always stop the engine</strong> when performing any work.</li>
+<li>Tighten bolts and nuts securely.</li>
+<li>Check the bolts and nuts after 100 km of driving and periodically after installation, and retighten them if necessary.</li>
+<li>If any abnormality (abnormal noise, vibration, etc.) occurs during driving, immediately stop the car in a safe place, inspect the mounting bolts, etc., and retighten them. If the problem persists, inspect and repair the product immediately.</li>
+<li>Continued operation may result in damage to the vehicle or an accident.</li>
+<li>If this product deteriorates or is damaged, or is subjected to a strong impact due to an accident, it will not be able to maintain its original performance.</li>
+</ul>
+<p></details></p>
+<p><details>
+  <summary>⚠️  Attention</summary></p>
+<ul>
+<li>Never attempt to process or modify this product.</li>
+<li>Doing so may damage the product and result in serious injury.</li>
+<li>For safety reasons, be sure to stop the engine when performing any work.</li>
+<li>Tighten bolts and nuts securely.</li>
+<li>Check the bolts and nuts after 100 km of driving and periodically after installation, and retighten them if necessary.</li>
+<li>If any abnormality (abnormal noise, vibration, etc.) occurs during driving, immediately stop the car in a safe place, inspect the mounting bolts, etc., and retighten them. If the problem persists, inspect and repair the product immediately.</li>
+<li>Continued operation may result in damage to the vehicle or an accident.</li>
+<li>If this product deteriorates or is damaged, or is subjected to a strong impact due to an accident, it will not be able to maintain its original performance.</li>
+</ul>
+<p></details></p>
+<p><details>
+  <summary>※ Advice</summary></p>
+<ul>
+<li>We are not responsible for any direct or indirect damages caused by malfunctions or other defects resulting from incorrect installation or handling of this product.</li>
+<li>Please note that we are not responsible for any direct or indirect damage caused by malfunctions or other defects resulting from improper installation or handling of this product.</li>
+<li>The vehicle warranty of SUBARU Corporation may not apply to any defects that may occur due to the installation of this product.</li>
+<li>Please note that the product may not be covered by SUBARU's vehicle warranty against defects that may occur as a result of the installation of the product.</li>
+<li>The specifications of this product are subject to change without notice.</li>
+<li>The data described in this document may vary depending on the measurement conditions.</li>
+<li>Installation of this product may cause deterioration of ride quality or significant changes in driving characteristics.</li>
+</ul>
+<p></details></p>
+<h2 id="mountinginstructions">Mounting Instructions</h2>
+<p><strong>1. Part number and applicable car models</strong></p>
+<p>| STI Part Number |                       Part Name                        | Applicable car models                                                                                                                                                                                         |
+| :-------------: | :----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>ST96050ZM000</code>  | DRY CARBON REAR SPOILER (ドライカーボンリヤスポイラー) | Applied model code: A Jul. 2021-May 2022 <code>ZD8A</code><br /> Applied model code: B May 2022-Sept. 2023 <code>ZD8B</code><br /> Applied model code: C From Sept. 2023- <code>ZD8C</code><br /> Applied model code: D From Jul. 2024- <code>ZD8D</code> |</p>
+<p><strong>2. Parts manifest</strong></p>
+<p>| Num Part (Count)                                                                                                                                                                                |                                                                                                                                                                                            |                                                                                                                                                                                                          |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ① Spoiler (1 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-01-spoiler.png" alt="Spoiler" />                                 | ② Reinforcement bracket (2 pcs. left/right) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-02-brackets.png" alt="Brackets" /> | ③ Bolt (6 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-03-bolt.png" alt="Bolt" />                                                   |
+| ④ Washer (6 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-04-washer.png" alt="Washer" />                                    | ⑤ Nut (4 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-05-nut.png" alt="Nut" />                                        | ⑥ Grommets Sheet (2 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-06-grommet.png" alt="Grommet" />                                   |
+| ⑦ Drilling gauge (1 pcs. left/right) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-07-drilling-gauge.png" alt="Drilling gauge" /> | ⑧ Template stencil (1 pcs.) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-08-template.png" alt="Template" />                 | ⑨ Installation and Operating Manual (this manual) <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-09-instructions.png" alt="Instructions" /> |</p>
+<p><small>Please check the number of members first. If any item is missing or different, please contact your dealer.</small></p>
+<p><strong>3. Tool manifest (Use of Tools)</strong></p>
+<p>| Tool                            | Tool                                                  |
+| :------------------------------ | :---------------------------------------------------- |
+| Scissors                        | Punch                                                 |
+| Waste rag                       | Drill（Medium 4, 08)                                  |
+| Degreaser (recommended Nonane)  | Hole saw (⏀ 10,⏀ 15) guide 10 mm or less, no shavings |
+| Clip Remover                    | Safety Glasses                                        |
+| Masking paper (newspaper, etc.) | Deburring tool                                        |
+| Cloth tape                      | Vacuum cleaner                                        |
+| Masking Tape                    | Touch-up paint                                        |
+| Magic marker                    | Socket wrench (10mm deep)                             |
+| Hammer                          | Torque wrench (7.5 Nm)                                |</p>
+<p><strong>4. Installation Precautions</strong></p>
+<p><details>
+  <summary>⚠️ Warning</summary></p>
+<ul>
+<li>For safety reasons, always disconnect the minus terminal of the battery while the engine is stopped.</li>
+<li>Tighten bolts and nuts securely.</li>
+</ul>
+<p></details></p>
+<p><details>
+  <summary>⚠️ Attention</summary></p>
+<ul>
+<li>The descriptions in this manual are intended for automobile mechanics or persons with basic knowledge of maintenance.</li>
+<li>Please do not attempt to install this product by inexperienced persons only, as it may cause injury or vehicle trouble while driving, and is dangerous.</li>
+<li>For proper installation and proper functioning of the product, it is recommended that the product be installed at a Subaru authorized factory.</li>
+<li>Please be sure to follow the instructions in this manual in accordance with the service manual for the vehicle model concerned issued by SUBARU Corporation.</li>
+<li>Tighten the bolts to the specified torque. Tightening the bolts/nuts outside the specified torque may cause damage or loosening of the bolts/nuts.</li>
+</ul>
+<p></details></p>
+<p><strong>5. Simultaneous replacement, non-reusable parts</strong></p>
+<p>None</p>
+<p><strong>6. Work Procedure</strong></p>
+<p>Getting Started:</p>
+<ul>
+<li>This work should be performed by two or more persons.</li>
+<li>Before installation, wipe off any dirt or oil film on the trunk lid with a rag moistened with a degreaser (recommended nonane).</li>
+<li>When installing a new trunk lid, it is necessary to drill holes in the panel.</li>
+<li>This manual describes the left side of the trunk lid.</li>
+<li>Perform the work on the right side as well.</li>
+<li>Use a hole saw without a shavings removal function. If the hole saw has a shavings release function, use it in such a way that the shavings release function does not work.</li>
+<li>If the shavings release function is present, cutting shavings may enter the trunk lid, causing abnormal noise and rusting.</li>
+<li>Use a hole saw with a tip drill length of 10 mm or less. (Fig. 1)</li>
+</ul>
+<figure>
+  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-01.png" alt="Hole saw" />
+  <figcaption>Figure 1</figcaption>
+</figure>
+<p>(1) Marking and punching on trunk inner panel</p>
+<div style="display:flex">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-02.png" alt="Trunk panel" />
+    <figcaption>Figure 2</figcaption>
+  </figure>
+  <p>
+    (1.1) Remove the trim panel trunk rear.<br />
+    (1.1.1) Open the trunk lid, remove the 7 clips securing the trim panel trunk rear, and then remove the trim. (Fig. 2)<br />
+    ※ Refer to the SUBARU Service Manual for details.
+  </p>
+</div>
+<div style="display:flex">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-03.png" alt="Trunk guide" />
+    <figcaption>Figure 3</figcaption>
+  </figure>
+  <p>
+    (1.2) Punch the hole position to the trunk inner panel.<br />
+    (1.2.1) Align the position of the drilling gauge with the inner panel using the protrusion of indicated labels 'I' and "II" as a reference in Figure 3.<br />
+    ※ Drilling gauge is provided for both LH/RH sides.
+  </p>
+</div>
+<div style="display:flex">
+  <figure>
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-04.png" alt="Trunk guide" />
+    <figcaption>Figure 4</figcaption>
+  </figure>
+  <p>
+    (1.2.2) Secure the drilling gauge with masking tape, etc., and while holding it down so that it does not slide out of place.<br />
+    Mark 5 holes on the panel surface with a magic marker.<br />
+    (Fig. 4) 5 holes on each side (10 holes total).
+  </p>
+</div>]]></description><link>https://znc86.club/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual</link><guid isPermaLink="true">https://znc86.club/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual</guid><category><![CDATA[zd8]]></category><category><![CDATA[zn8]]></category><category><![CDATA[aerodynamics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Wed, 21 Aug 2024 06:44:00 GMT</pubDate></item><item><title><![CDATA[Changes In the 2022 Subaru BRZ Toyota GR86 ZC8/ZN8 Chassis and Suspension]]></title><description><![CDATA[<p>The second generation of the Subaru BRZ/Toyota GR86 platform was introduced in the 2022 model year.</p>
+<p>The 2022 ZD8 Subaru BRZ has two small changes that are not seen on the 2022 ZN8 Toyota GR86. That is the front aluminum
 uprights (which reduce unsprung weight) and the rear swaybar mounting method. Both of these changes are good, but fairly
 minor overall.</p>
 <p>Three other changes to the second generation are as follows:</p>
@@ -23,7 +165,7 @@ car will feel slightly firmer with the same spring rates.</p>
 <p>An important consideration is that a car with a stiffer chassis structure (second generation) will be more sensitive to
 suspension changes than one a softer chassis structure (first generation). This means that while poorly chosen spring
 rates on an earlier car is not a complete disaster, a properly designed suspension is necessary for the later cars to
-maintain a good handling balance and performance.</p>]]></description><link>https://znc86.club/kb/2022-brz-gr86-zc8-zn88-chassis-and-suspension-changes</link><guid isPermaLink="true">https://znc86.club/kb/2022-brz-gr86-zc8-zn88-chassis-and-suspension-changes</guid><category><![CDATA[zc8]]></category><category><![CDATA[zn8]]></category><category><![CDATA[suspension]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 21 Apr 2023 02:44:00 GMT</pubDate></item><item><title><![CDATA[Diagnosing trouble codes for the Toyota 86 ZN6 Subaru BRZ ZC6 with Toyota Techstream ODB-II code reader]]></title><description><![CDATA[<figure>
+maintain a good handling balance and performance.</p>]]></description><link>https://znc86.club/kb/2022-brz-gr86-zc8-zn88-chassis-and-suspension-changes</link><guid isPermaLink="true">https://znc86.club/kb/2022-brz-gr86-zc8-zn88-chassis-and-suspension-changes</guid><category><![CDATA[zd8]]></category><category><![CDATA[zn8]]></category><category><![CDATA[suspension]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 21 Apr 2023 06:44:00 GMT</pubDate></item><item><title><![CDATA[Diagnosing trouble codes for the Toyota 86 ZN6 Subaru BRZ ZC6 with Toyota Techstream ODB-II code reader]]></title><description><![CDATA[<figure>
   <img src="/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader/laptop.png" alt="ODB-II diagnosis with Toyota Techstream">
   <figcaption>
     ODB-II diagnosis with Toyota Techstream
@@ -58,9 +200,10 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 <li>Verify the USB controller is enabled on the Techstream image<ul>
 <li>in VirtualBox, click the Settings icon, navigate to Ports, USB, and verify the "Enable USB controller" is checked</li></ul></li>
 <li>Run Techstream image in VirtualBox, wait for Windows to boot</li>
+<li>Start the car</li>
 <li>Run the installed Techstream software, located on the Windows Desktop "TechStream"</li>
 <li>Click the "Connect to Vehicle" button</li>
-</ol>]]></description><link>https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</link><guid isPermaLink="true">https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</guid><category><![CDATA[software]]></category><category><![CDATA[diagnostics]]></category><category><![CDATA[electronics]]></category><category><![CDATA[ECU]]></category><category><![CDATA[toyota techstream]]></category><category><![CDATA[ODB-II]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 06 Jan 2023 14:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZC6 ZN6 EDAs Electronic Driving Aids]]></title><description><![CDATA[<p>Going on track, drift, or otherwise pushing the car to the limits, you'll want to disable all the FR-S/86/BRZ traction and stability controls, <strong>turn on the car and press and hold the Traction Control button for 5 seconds</strong> until both the Traction Control and Slip lights come on. Don't bother with the various "Track Mode" buttons as they still have ignition-cut and brake modulation enabled.</p>
+</ol>]]></description><link>https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</link><guid isPermaLink="true">https://znc86.club/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader</guid><category><![CDATA[software]]></category><category><![CDATA[diagnostics]]></category><category><![CDATA[electronics]]></category><category><![CDATA[ECU]]></category><category><![CDATA[toyota techstream]]></category><category><![CDATA[ODB-II]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 06 Jan 2023 19:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZC6 ZN6 EDAs Electronic Driving Aids]]></title><description><![CDATA[<p>Going on track, drift, or otherwise pushing the car to the limits, you'll want to disable all the FR-S/86/BRZ traction and stability controls, <strong>turn on the car and press and hold the Traction Control button for 5 seconds</strong> until both the Traction Control and Slip lights come on. Don't bother with the various "Track Mode" buttons as they still have ignition-cut and brake modulation enabled.</p>
 <figure>
   <img src="/kb/oem-zc6-zn6-edas-electronic-driving-aids/button.png" alt="Traction control button on the left">
   <figcaption>
@@ -73,7 +216,7 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 | <strong>TRC</strong> | Engine Traction Control. If you have both rear wheels spinning this system figures out you’re going nowhere and reduces the throttle.&nbsp;The 86/BRZ refers to this as TRC, or Traction Control, although it is a distinct programme from brake traction control (below). In 86-speak, TRC stands for “Traction Control System”. No, I don’t know why. Subaru call it&nbsp;<strong>TCS</strong>, or Traction Control System. |
 | <strong>B-TRC</strong> / <strong>Brake-LSD</strong> (name from MY17 onwards) | Brake Traction Control. If one drive wheel spins up faster than the other this system detects that spin and brakes the spinning wheel&nbsp;which sends torque (“drive”) to the other wheel, so you can keep moving forwards.&nbsp;There is no official acronym for this system because it is not mentioned anywhere, but nevertheless it exists. For the purposes of this guide it’ll be known as B-TRC, because it is traction control operated via brakes as opposed to traction control by modulation of the throttle. This system is also known as an ‘LSD mode’, or limited-slip differential mode.&nbsp;That’s technically true but massively confusing because it’s not an LSD, it just acts a like one in some respects, and most 86/BRZs have a true, mechanical limited-slip differential in the form of a Torsen unit on the rear axle. Subaru’s term is&nbsp;<strong>TCS Limited Slip Device</strong>. Except it’s not a device, it’s just software. I did mention the names were confusing. |
 | <strong>ABS</strong> | Anti-lock brakes. Detects that a wheel is about to lock and momentarily reduces brake pressure on that wheel to prevent the wheel locking up. Both Subaru and Toyota agree on this name. |
-| <strong>EBD & EBA</strong> | Electronic Brakeforce Distribution. Cars are naturally designed to brake the front wheels more than the rear for safety reasons. Unfortunately, this means there is unused braking capacity on the rear wheels.&nbsp;EBD distributes braking force between all four wheels for maximum braking efficiency.&nbsp;Plain ABS just stops a wheel locking.&nbsp;There’s also EBA, Electronic Brake Assist and this helps you apply the brakes hard in an emergency by detecting how quickly your foot moved from accelerator to brake and if you don’t push the pedal all the way to the floor, it’ll help you. Both Subaru and Toyota agree on this name. |</p>]]></description><link>https://znc86.club/kb/oem-zc6-zn6-edas-electronic-driving-aids</link><guid isPermaLink="true">https://znc86.club/kb/oem-zc6-zn6-edas-electronic-driving-aids</guid><category><![CDATA[zc6]]></category><category><![CDATA[zn6]]></category><category><![CDATA[electroncics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 23 Dec 2022 02:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Maintenance Fluids Specifications]]></title><description><![CDATA[<h3 id="engineoilspecs">Engine Oil Specs</h3>
+| <strong>EBD & EBA</strong> | Electronic Brakeforce Distribution. Cars are naturally designed to brake the front wheels more than the rear for safety reasons. Unfortunately, this means there is unused braking capacity on the rear wheels.&nbsp;EBD distributes braking force between all four wheels for maximum braking efficiency.&nbsp;Plain ABS just stops a wheel locking.&nbsp;There’s also EBA, Electronic Brake Assist and this helps you apply the brakes hard in an emergency by detecting how quickly your foot moved from accelerator to brake and if you don’t push the pedal all the way to the floor, it’ll help you. Both Subaru and Toyota agree on this name. |</p>]]></description><link>https://znc86.club/kb/oem-zc6-zn6-edas-electronic-driving-aids</link><guid isPermaLink="true">https://znc86.club/kb/oem-zc6-zn6-edas-electronic-driving-aids</guid><category><![CDATA[zc6]]></category><category><![CDATA[zn6]]></category><category><![CDATA[electroncics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 23 Dec 2022 07:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Maintenance Fluids Specifications]]></title><description><![CDATA[<h3 id="engineoilspecs">Engine Oil Specs</h3>
 <p>| Subaru Recommended Viscosity grade | Quality grade |
 |:---|:---|
 | <code>0W-20</code> (synthetic oil)                | <strong>API Certified</strong> Product contains SN "Resource Conserving" logo <br /> <strong>ILSAC Certified</strong> Product contains GF-5 "Starbust Mark" logo |
@@ -89,7 +232,7 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 | Manual transmission oil | <code>2.2L</code>, <code>2.3 Quart</code> | Motul Gear 300 75W90 Fully Synthetic Gearbox Oil, MG Gear Oil Special II (API GL-3, SAE 75W-90) part number <code>0888501513</code> |
 | Rear differential fluid | <code>1.1L</code> to <code>1.2L</code> (<code>1.1Qt</code> to <code>1.3qt</code>) for OEM diff housing | Red Line GL-5 Gear Oil 75W-86 50104 |
 | Rear differential fluid | <code>1.6L</code> to <code>1.7L</code> (<code>1.7Qt</code> to <code>1.7qt</code>) with Cusco Rear Differential Cover | Red Line GL-5 Gear Oil 75W-86 50104 |
-| Brake fluid &amp; Clutch fluid | ?? |  FMVSS No.116 DOT3 or DOT4, Motul RBF 600 |</p>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[transmission]]></category><category><![CDATA[drivetrain]]></category><category><![CDATA[rear differential]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sun, 18 Dec 2022 08:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Specifications for Subaru BRZ, Toyota 86 OEM battery.</p>
+| Brake fluid &amp; Clutch fluid | ?? |  FMVSS No.116 DOT3 or DOT4, Motul RBF 600 |</p>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-maintenance-fluids-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[transmission]]></category><category><![CDATA[drivetrain]]></category><category><![CDATA[rear differential]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sun, 18 Dec 2022 13:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Specifications for Subaru BRZ, Toyota 86 OEM battery.</p>
 <p>Subaru part <code>82110AA012</code> </p>
 <ul>
 <li>Panasonic <code>55D23L-MF</code></li>
@@ -109,7 +252,7 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 <li>width: <code>25cm</code></li>
 <li>length: <code>17cm</code></li>
 <li>height: <code>15-20cm</code></li>
-</ul>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-battery-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-battery-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[battery]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 17 Dec 2022 02:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Rays Wheels Volk Racing Model Number SKU Codes]]></title><description><![CDATA[<p>Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
+</ul>]]></description><link>https://znc86.club/kb/oem-zn6-zc6-battery-specs</link><guid isPermaLink="true">https://znc86.club/kb/oem-zn6-zc6-battery-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[battery]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 17 Dec 2022 07:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Rays Wheels Volk Racing Model Number SKU Codes]]></title><description><![CDATA[<p>Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
 the generation of the forging mold, wheel size &amp; offset, and color. This SKU is
 used by retailers to exactly determine the wheels specification. Some authorized
 retailers (e.g. Vivid Racing) display the Rays Wheels SKU on their product detail
@@ -390,7 +533,7 @@ information:</p>
 <p>This list only covers Volk Racing, and some Gram Lights, and isn't exhaustive, feel free
 to reach out and send me your SKUs and i'll add them to this list.</p>
 <p>Can you find your SKU code? Are we missing your size, offset, model or color code? Tell us on 
-email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 02:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
+email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 06:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
 refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
@@ -1024,7 +1167,7 @@ models:</p>
 </table>
 <p>Can you find your applied model code? Are we missing your trim code? Shoot us an
 email or find us as 
-<a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[impreza]]></category><category><![CDATA[impreza wrx]]></category><category><![CDATA[impreza wrx sti]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 29 Dec 2020 10:21:00 GMT</pubDate></item><item><title><![CDATA[Decoding Toyota 86 / GR86 / GT86 Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
+<a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[impreza]]></category><category><![CDATA[impreza wrx]]></category><category><![CDATA[impreza wrx sti]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 29 Dec 2020 15:21:00 GMT</pubDate></item><item><title><![CDATA[Decoding Toyota 86 / GR86 / GT86 Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
 refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
@@ -1150,4 +1293,4 @@ information:</p>
 | ZC6EYE8 | Subaru BRZ, 2.0l FA20D engine, 2016 MY for US market, Limited, manual |
 | ZN6E2A8 | Toyota 86, 2.0l FA20D engine, 2016 MY for Japan market, FC trim, manual |</p>
 <p>Can you find your applied model code? Are we missing your trim code? Tell us on 
-email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-subaru-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-subaru-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[toyota]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><category><![CDATA[zn8]]></category><category><![CDATA[zc8]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 20 Oct 2020 03:28:00 GMT</pubDate></item></channel></rss>
+email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://znc86.club/kb/decoding-subaru-applied-model-chassis-codes</link><guid isPermaLink="true">https://znc86.club/kb/decoding-subaru-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[toyota]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><category><![CDATA[zn8]]></category><category><![CDATA[zc8]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 20 Oct 2020 07:28:00 GMT</pubDate></item></channel></rss>

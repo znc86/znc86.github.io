@@ -30,8 +30,3 @@
 .motto {
   font-size: 2rem;
 }
-@media (min-width: 30rem) {
-  .motto {
-    writing-mode: vertical-rl;
-  }
-}

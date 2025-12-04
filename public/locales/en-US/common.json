@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "ZNC86.club"
+    "name": "Type-RA.org"
   },
   "components": {
     "page": {
@@ -13,8 +13,8 @@
       "subtitle": "This page could not be found"
     },
     "index": {
-      "title": "ZNC86.club - motorsports support team for the Toyota 86 & GR86,  GT86, FR-S, and Subaru BRZ chassis",
-      "copy1": "ZNC86 a group of people sharing resources, making friends, learning, solving problems, having fun, and supporting each other to enjoy the pleasures of motoring sport in the Z N/C 8/6 chassis.",
+      "title": "Motorsports garage for the Toyota 86 & GR86, GT86, FR-S, and Subaru BRZ chassis",
+      "copy1": "Type RA is a garage outside of Boston specialized in the pleasures of motoring sport.",
       "we drive the": "we drive the",
       "chassis": "chassis of many names: Toyota GR86/86/GT86/FT86, Subaru BRZ, Scion FR-S.",
       "code of conduct": "Code of Conduct",
@@ -24,11 +24,11 @@
       "kb": "Knowledge Base",
       "kb subtitle": "Find technical references on diagrams, specifications, how-to articles the club has collected",
       "instagram": "Instagram",
-      "instagram subtitle": "Follow us @znc86.club"
+      "instagram subtitle": "Follow us @tra_typera"
     },
     "conduct": {
-      "title": "ZNC86 Code of Conduct - ZNC86.club",
-      "display title": "ZNC86 Code of Conduct",
+      "title": "Type RA Code of Conduct - Type-RA.org",
+      "display title": "Type RA Code of Conduct",
       "last updated": "Last updated 2022/11/21",
       "make friends": "Make friends not enemies. Strive for kindness, be polite, assume others are acting in good faith, be gracious when others are not. Do not tolerate assholes, negativity, report harassment and hate. Act like youʼll meet these people face-to-face tomorrow.",
       "diversity": " Diversity: Everyone is Welcome",
@@ -48,7 +48,7 @@
       "subtitle": "Calendar of scheduled motorsports"
     },
     "kb": {
-      "page title": "Knowledge Base - ZNC86.club",
+      "page title": "Knowledge Base - Type-RA.org",
       "title": "Knowledge Base",
       "kb subtitle": "Find technical references on diagrams, specifications, how-to articles the club has collected"
     }

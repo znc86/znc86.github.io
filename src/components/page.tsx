@@ -16,12 +16,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="home" href="/" />
-        <meta property="og:site_name" content="ZNC86" />
+        <meta property="og:site_name" content="Type RA" />
         <link
           type="application/atom+xml"
           rel="alternate"
           href="/rss.xml"
-          title="ZNC86"
+          title="Type RA"
         />
         <link
           rel="sitemap"
@@ -56,18 +56,33 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <main>{children}</main>
         <footer className={styles.footer}>
           <div className={styles.footerAlpha}>
-            <Link href="/">Home</Link> <Link href="/kb" locale="en-US">Knowledge Base</Link>{" "}
-            <Link href="/rss.xml" locale="en-US">RSS</Link>
+            <Link href="/">Home</Link>{" "}
+            <Link href="/kb" locale="en-US">
+              Knowledge Base
+            </Link>{" "}
+            <Link href="/rss.xml" locale="en-US">
+              RSS
+            </Link>
           </div>
           <div className={styles.footerBeta}>
             <ruby className={styles.motto}>
               <ruby lang="ja">
-                暴力<rp>(</rp><rt>ぼうりょく</rt><rp>)</rp>
-                馬車<rp>(</rp><rt>ばしゃ</rt><rp>)</rp>
-                機動<rp>(</rp><rt>きどう</rt><rp>)</rp>
-                協会<rp>(</rp><rt>きょうかい</rt><rp>)</rp>
+                暴力<rp>(</rp>
+                <rt>ぼうりょく</rt>
+                <rp>)</rp>
+                馬車<rp>(</rp>
+                <rt>ばしゃ</rt>
+                <rp>)</rp>
+                機動<rp>(</rp>
+                <rt>きどう</rt>
+                <rp>)</rp>
+                協会<rp>(</rp>
+                <rt>きょうかい</rt>
+                <rp>)</rp>
               </ruby>
-              <rp>(</rp><rt lang={locale}>{t("components.page.motto")}</rt><rp>)</rp>
+              <rp>(</rp>
+              <rt lang={locale}>{t("components.page.motto")}</rt>
+              <rp>)</rp>
             </ruby>
           </div>
         </footer>

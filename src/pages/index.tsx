@@ -32,14 +32,14 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>
-          ZNC86.club - motorsports support team for the Z N/C 8/6 chassis
+          Type-RA.org - motorsports garage for the ZN6, ZC6, ZN8, ZD8 chassis
         </title>
 
         <meta property="og:title" content={t("pages.index.title") || ""} />
         <meta name="description" content={t("pages.index.copy1") || ""} />
         <meta name="og:description" content={t("pages.index.copy1") || ""} />
-        <meta property="og:url" content="https://znc86.club/" />
-        <meta property="og:image" content="https://znc86.club/icon.png" />
+        <meta property="og:url" content="https://type-ra.org/" />
+        <meta property="og:image" content="https://type-ra.org/icon.png" />
         <meta property="og:image:width" content="1260" />
         <meta property="og:image:height" content="1260" />
       </Head>
@@ -52,26 +52,14 @@ const Home: NextPage = () => {
 
             <p>
               {t("pages.index.we drive the")}
-              <ruby>
-                <ruby>
-                  Z<rp>(</rp>
-                  <rt>ZN6</rt>
-                  <rp>)</rp> N/C<rp>(</rp>
-                  <rt>ZN8</rt>
-                  <rp>)</rp> 8/6<rp>(</rp>
-                  <rt>ZD8 ZC6</rt>
-                  <rp>)</rp>
-                </ruby>
-                <rp> </rp>
-              </ruby>
               {t("pages.index.chassis")}
             </p>
 
             <Image
               src="/icon.png"
-              alt="pixel art of a car"
-              width="320"
-              height="320"
+              alt="Type RA logo"
+              width="328"
+              height="328"
             />
           </div>
           <ul className={`${styles.two} ${styles.links}`}>
@@ -99,7 +87,7 @@ const Home: NextPage = () => {
             <li>
               <a
                 className={styles.instagram}
-                href="https://instagram.com/znc86.club"
+                href="https://instagram.com/tra_typera"
                 rel="external"
               >
                 {t("pages.index.instagram")}

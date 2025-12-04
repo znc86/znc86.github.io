@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "ZNC86.club"
+    "name": "Type-RA.org"
   },
   "components": {
     "page": {
@@ -13,8 +13,8 @@
       "subtitle": "No se ha podido encontrar esta página"
     },
     "index": {
-      "title": "ZNC86.club - equipo de apoyo al automovilismo para el chasis Toyota 86 & GR86, Scion FR-S, Subaru BRZ",
-      "copy1": "ZNC86 un grupo de personas que comparten recursos, hacen amigos, aprenden, resuelven problemas, se divierten y se apoyan mutuamente para disfrutar de los placeres del automovilismo deportivo en el chasis Z N/C 8/6.",
+      "title": "Equipo de apoyo al automovilismo para el chasis Toyota 86 & GR86, Scion FR-S, Subaru BRZ",
+      "copy1": "Type RA un grupo de personas que comparten recursos, hacen amigos, aprenden, resuelven problemas, se divierten y se apoyan mutuamente para disfrutar de los placeres del automovilismo deportivo en el chasis Z N/C 8/6.",
       "we drive the": "conducimos el chasis",
       "chassis": "de muchos nombres: Scion FR-S, Toyota GT86/FT86/86/GR86, Subaru BRZ.",
       "code of conduct": "Código de Conducta",
@@ -24,11 +24,11 @@
       "join": "Únete al Club",
       "join subtitle": "Rellena el formulario y empieza a chatear en Discord",
       "instagram": "Instagram",
-      "instagram subtitle": "Síguenos en @znc86.club"
+      "instagram subtitle": "Síguenos en @tra_typera"
     },
     "conduct": {
-      "title": "Código de conducta de ZNC86 - ZNC86.club",
-      "display title": "ZNC86 Código de conducta",
+      "title": "Código de conducta de Type-RA.org",
+      "display title": "Type RA Código de conducta",
       "last updated": "Última actualización 2022/11/21",
       "make friends": "Haz amigos, no enemigos. Esfuérzate por ser amable, sé educado, asume que los demás actúan de buena fe, sé cortés cuando los demás no lo sean. No tolere a los imbéciles, la negatividad, el acoso y el odio. Actúa como si mañana fueras a conocer a esas personas cara a cara.",
       "diversity": "Diversidad: Todos son bienvenidos",
@@ -48,7 +48,7 @@
       "subtitle": "Calendario de actos programados"
     },
     "kb": {
-      "page title": "Base de Conocimientos - ZNC86.club",
+      "page title": "Base de Conocimientos - Type-RA.org",
       "title": "Base de Conocimientos",
       "kb subtitle": "Encuentre referencias técnicas sobre diagramas, especificaciones y artículos prácticos que el club ha recopilado"
     }

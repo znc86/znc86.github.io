@@ -34,8 +34,8 @@ export default function Kb({ posts }: KbProps) {
         <meta property="og:title" content={t("pages.kb.page title") || ""} />
         <meta name="description" content={t("pages.kb.kb subtitle") || ""} />
         <meta name="og:description" content={t("pages.kb.kb subtitle") || ""} />
-        <meta property="og:url" content="https://znc86.club/kb" />
-        <meta property="og:image" content="https://znc86.club/icon.png" />
+        <meta property="og:url" content="https://type-ra.org/kb" />
+        <meta property="og:image" content="https://type-ra.org/icon.png" />
         <meta property="og:image:width" content="1260" />
         <meta property="og:image:height" content="1260" />
       </Head>

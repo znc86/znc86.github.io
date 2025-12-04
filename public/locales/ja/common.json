@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "ZNC86.club"
+    "name": "Type-RA.org"
   },
   "components": {
     "page": {
@@ -13,8 +13,8 @@
       "subtitle": "このページは見つかりませんでした"
     },
     "index": {
-      "title": "ZNC86.club - Z N/C 8/6シャシー用モータースポーツサポートチーム",
-      "copy1": "ZNC86 Z N/C 8/6シャーシでモータースポーツの楽しさを味わうために、リソースを共有し、友人を作り、学び、問題を解決し、楽しみ、そしてサポートし合う人々のグループである。",
+      "title": "Z N/C 8/6シャシー用モータースポーツサポートチーム",
+      "copy1": "Type RA Z N/C 8/6シャーシでモータースポーツの楽しさを味わうために、リソースを共有し、友人を作り、学び、問題を解決し、楽しみ、そしてサポートし合う人々のグループである。",
       "code of conduct": "行動規範",
       "code subtitle": "親しみやすく、包括的で、シンプル",
       "kb": "ナレッジベース",
@@ -24,11 +24,11 @@
       "join": "クラブに参加する",
       "join subtitle": "フォームに記入して、Discordでチャットを開始する",
       "instagram": "Instagram",
-      "instagram subtitle": "フォローする @znc86.club"
+      "instagram subtitle": "フォローする @TRA_TypeRA"
     },
     "conduct": {
-      "title": "ZNC86行動規範 - ZNC86.club",
-      "display title": "ZNC86行動規範",
+      "title": "Type RA行動規範 - Type-RA.org",
+      "display title": "Type RA行動規範",
       "last updated": "最終更新日：2022/11/21",
       "make friends": "敵ではなく、友を作れ。親切にすること、礼儀正しくすること、相手が善意で行動していると思うこと、相手がそうでないときは丁重にすること。嫌な奴、否定的な奴、嫌がらせや憎しみを許さないこと。明日にでもこの人たちと顔を合わせるつもりで行動してください。",
       "diversity": "多様性。誰でもウェルカム",
@@ -48,7 +48,7 @@
       "subtitle": "予定されているイベントのカレンダーです"
     },
     "kb": {
-      "page title": "ナレッジベース - ZNC86.club",
+      "page title": "ナレッジベース - Type-RA.org",
       "title": "ナレッジベース",
       "kb subtitle": "クラブが収集した図面、仕様書、ハウツー記事などの技術文献を探すことができます"
     }

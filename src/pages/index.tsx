@@ -45,7 +45,12 @@ const Home: NextPage = () => {
       </Head>
       <Page>
         <h2>{t("pages.index.title")}</h2>
-
+        <Image
+          src="/type-ra-garage.jpg"
+          alt="Type RA"
+          width="960"
+          height="838"
+        />
         <div className={styles.layout}>
           <div className={styles.one}>
             <p>{t("pages.index.copy1")}</p>
@@ -56,7 +61,7 @@ const Home: NextPage = () => {
             </p>
 
             <Image
-              src="/icon.png"
+              src="/logo.svg"
               alt="Type RA logo"
               width="328"
               height="328"

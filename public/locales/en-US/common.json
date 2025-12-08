@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Type-RA.org"
+    "name": "Type RA"
   },
   "components": {
     "page": {
@@ -13,9 +13,9 @@
       "subtitle": "This page could not be found"
     },
     "index": {
-      "title": "Motorsports garage for the Toyota 86 & GR86, GT86, FR-S, and Subaru BRZ chassis",
+      "title": "Motorsports Garage / Excite Car Lifestyle",
       "copy1": "Type RA is a garage outside of Boston specialized in the pleasures of motoring sport.",
-      "we drive the": "we drive the",
+      "we drive the": "we drive the ",
       "chassis": "chassis of many names: Toyota GR86/86/GT86/FT86, Subaru BRZ, Scion FR-S.",
       "code of conduct": "Code of Conduct",
       "code subtitle": "Friendly, inclusive, and simple",

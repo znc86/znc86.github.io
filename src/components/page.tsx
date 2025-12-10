@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import styles from "./page.module.css";
@@ -33,7 +34,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className={styles.page}>
         <header className={styles.header}>
           <h1 className={styles.name}>
-            <Link href="/">{t("site.name")}</Link>{" "}
+            <Link href="/">
+              <Image src="/logo.svg" alt="Type RA" width="64" height="64" />
+            </Link>{" "}
           </h1>
           <div className={styles.lang}>
             {locale !== "en-US" && (

@@ -32,9 +32,8 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>
-          Type-RA.org - motorsports garage for the ZN6, ZC6, ZN8, ZD8 chassis
+          Type RA - Motorsports garage for the ZN6, ZC6, ZN8, ZD8 chassis
         </title>
-
         <meta property="og:title" content={t("pages.index.title") || ""} />
         <meta name="description" content={t("pages.index.copy1") || ""} />
         <meta name="og:description" content={t("pages.index.copy1") || ""} />
@@ -45,26 +44,19 @@ const Home: NextPage = () => {
       </Head>
       <Page>
         <h2>{t("pages.index.title")}</h2>
-        <Image
-          src="/type-ra-garage.jpg"
-          alt="Type RA"
-          width="960"
-          height="838"
-        />
         <div className={styles.layout}>
           <div className={styles.one}>
             <p>{t("pages.index.copy1")}</p>
 
             <p>
-              {t("pages.index.we drive the")}
-              {t("pages.index.chassis")}
+              {t("pages.index.we drive the")} {t("pages.index.chassis")}
             </p>
 
             <Image
-              src="/logo.svg"
-              alt="Type RA logo"
-              width="328"
-              height="328"
+              src="/type-ra-garage.jpg"
+              alt="Type RA"
+              width="960"
+              height="838"
             />
           </div>
           <ul className={`${styles.two} ${styles.links}`}>

@@ -11,7 +11,7 @@ type HomeProps = {
   locale: string;
 };
 export async function getStaticProps({ locale }: HomeProps) {
-  const posts = await loadBlogPosts("kb/*.md");
+  const posts = await loadBlogPosts("cars/*.md");
 
   return {
     props: {
@@ -30,18 +30,24 @@ export default function Kb({ posts }: KbProps) {
   return (
     <>
       <Head>
-        <title>{t("pages.kb.page title")}</title>
-        <meta property="og:title" content={t("pages.kb.page title") || ""} />
-        <meta name="description" content={t("pages.kb.kb subtitle") || ""} />
-        <meta name="og:description" content={t("pages.kb.kb subtitle") || ""} />
-        <meta property="og:url" content="https://type-ra.org/kb" />
+        <title>{t("pages.cars.page title")}</title>
+        <meta property="og:title" content={t("pages.cars.page title") || ""} />
+        <meta
+          name="description"
+          content={t("pages.cars.cars subtitle") || ""}
+        />
+        <meta
+          name="og:description"
+          content={t("pages.cars.cars subtitle") || ""}
+        />
+        <meta property="og:url" content="https://type-ra.org/cars" />
         <meta property="og:image" content="https://type-ra.org/icon.png" />
         <meta property="og:image:width" content="1260" />
         <meta property="og:image:height" content="1260" />
       </Head>
       <Page>
-        <h1>{t("pages.kb.title")}</h1>
-        <p>{t("pages.kb.kb subtitle")}</p>
+        <h1>{t("pages.cars.title")}</h1>
+        <p>{t("pages.cars.cars subtitle")}</p>
         <ol className={styles.list}>
           {posts.map((post: PostData, j: number) => {
             return (

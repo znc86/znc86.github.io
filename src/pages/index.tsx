@@ -61,11 +61,11 @@ const Home: NextPage = () => {
           </div>
           <ul className={`${styles.two} ${styles.links}`}>
             <li>
-              <Link href="/conduct" title="Code of Conduct">
-                ⚖️ {t("pages.index.code of conduct")}
+              <Link href="/cars" title={t("pages.index.cars") || ""}>
+                🏎️ {t("pages.index.cars")}
               </Link>
               <br />
-              {t("pages.index.code subtitle")}
+              {t("pages.index.cars subtitle")}
             </li>
             <li>
               <Link href="/kb" title={t("pages.index.kb") || ""}>
@@ -91,6 +91,13 @@ const Home: NextPage = () => {
               </a>
               <br />
               {t("pages.index.instagram subtitle")}
+            </li>
+            <li>
+              <Link href="/conduct" title="Code of Conduct">
+                ⚖️ {t("pages.index.code of conduct")}
+              </Link>
+              <br />
+              {t("pages.index.code subtitle")}
             </li>
           </ul>
         </div>

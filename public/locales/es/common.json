@@ -13,12 +13,14 @@
       "subtitle": "No se ha podido encontrar esta página"
     },
     "index": {
-      "title": "Equipo de apoyo al automovilismo para el chasis Toyota 86 & GR86, Scion FR-S, Subaru BRZ",
-      "copy1": "Type RA un grupo de personas que comparten recursos, hacen amigos, aprenden, resuelven problemas, se divierten y se apoyan mutuamente para disfrutar de los placeres del automovilismo deportivo en el chasis Z N/C 8/6.",
+      "title": "Type RA / Garaje de automovilismo / Estilo de vida emocionante los coches",
+      "copy1": "Type RA es un taller situado a las afueras de Boston especializado en los placeres del automovilismo deportivo.",
       "we drive the": "conducimos el chasis",
-      "chassis": "de muchos nombres: Scion FR-S, Toyota GT86/FT86/86/GR86, Subaru BRZ.",
+      "chassis": "de muchos nombres: Scion FR-S, Toyota 86, GT86, GR86, Subaru BRZ.",
       "code of conduct": "Código de Conducta",
       "code subtitle": "Amigable, inclusivo y sencillo",
+      "cars": "Coches",
+      "cars subtitle": "Nuestros proyectos de autos y construcciones",
       "kb": "Base de Conocimientos",
       "kb subtitle": "Encuentre referencias técnicas sobre diagramas, especificaciones y artículos prácticos que el club ha recopilado",
       "join": "Únete al Club",
@@ -51,6 +53,11 @@
       "page title": "Base de Conocimientos - Type-RA.org",
       "title": "Base de Conocimientos",
       "kb subtitle": "Encuentre referencias técnicas sobre diagramas, especificaciones y artículos prácticos que el club ha recopilado"
+    },
+    "cars": {
+      "page title": "Coches - Type RA",
+      "title": "Coches",
+      "cars subtitle": "A lo largo de los años hemos construido varios coches, aquí están algunos de ellos."
     }
   }
 }

@@ -60,8 +60,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <footer className={styles.footer}>
           <div className={styles.footerAlpha}>
             <Link href="/">Home</Link>{" "}
+            <Link href="/cars" locale="en-US">
+              Cars
+            </Link>{" "}
             <Link href="/kb" locale="en-US">
               Knowledge Base
+            </Link>{" "}
+            <Link href="/events" locale="en-US">
+              Events
             </Link>{" "}
             <Link href="/rss.xml" locale="en-US">
               RSS

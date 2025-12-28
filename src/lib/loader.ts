@@ -64,7 +64,7 @@ export const loadMarkdownFiles = async (path: string) => {
     blogPaths.map((blogPath) => {
       const modPath = blogPath.slice(blogPath.indexOf(`docs/`) + 5);
       return loadMarkdownFile(`${modPath}`);
-    })
+    }),
   );
   return postDataList;
 };
@@ -74,15 +74,15 @@ export const loadPost = async (path: string): Promise<PostData> => {
   return mdToPost(file);
 };
 
-export const loadBlogPosts = async (): Promise<PostData[]> => {
+export const loadBlogPosts = async (path = `kb/*.md`): Promise<PostData[]> => {
   return await (
-    await loadMarkdownFiles(`kb/*.md`)
+    await loadMarkdownFiles(path)
   )
     .map(mdToPost)
     .filter((p) => p.published)
     .sort(
       (a, b) =>
         (new Date(b.datePublished).getTime() || 0) -
-        (new Date(a.datePublished).getTime() || 0)
+        (new Date(a.datePublished).getTime() || 0),
     );
 };

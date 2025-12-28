@@ -19,6 +19,8 @@
       "chassis": "chassis of many names: Subaru BRZ, Toyota GR86, 86, or Scion FR-S.",
       "code of conduct": "Code of Conduct",
       "code subtitle": "Friendly, inclusive, and simple",
+      "cars": "Cars",
+      "cars subtitle": "Our project cars and builds",
       "join": "Join the Club",
       "join subtitle": "Fill out the form and start chatting on Discord",
       "kb": "Knowledge Base",
@@ -48,9 +50,14 @@
       "subtitle": "Calendar of scheduled motorsports"
     },
     "kb": {
-      "page title": "Knowledge Base - Type-RA.org",
+      "page title": "Knowledge Base - Type RA",
       "title": "Knowledge Base",
-      "kb subtitle": "Find technical references on diagrams, specifications, how-to articles the club has collected"
+      "kb subtitle": "Find technical references on diagrams, specifications, how-to articles we have collected"
+    },
+    "cars": {
+      "page title": "Cars - Type RA",
+      "title": "Cars",
+      "cars subtitle": "Over the years we've built a few cars, here are a few of them."
     }
   }
 }

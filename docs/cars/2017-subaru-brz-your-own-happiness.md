@@ -49,8 +49,8 @@ It’s fulfilling its intended role as a driver’s car.
 ![2017 Subaru BRZ Type RA at Thompson Speedway](/cars/2017-subaru-brz-your-own-happiness/thompson-garages.jpg)
 
 As the build evolved, so did my community around it.
-What started as solitary nights in the garage gradually became small gatherings.
-A friend dropped by to help bleed brakes; another came by to mount the wing before a track event.
+What started as solitary efforts working on the streets gradually became small gatherings in my garage.
+A friend dropped by to help bleed brakes; another came by to lend a hand mounting the STI wing before a track event.
 A local Subaru meetup invited me to join, talking camber settings and tire choices.
 The BRZ gave me a reason to show up, but the conversations gave me something I had been missing:
 a sense of belonging not based on job title or accomplishments, but on shared passion.
@@ -106,7 +106,7 @@ It did not let me hide behind excess, it requires finesse and rewards consistenc
 
 Tomei Japan EXPREME Ti equal-length manifold,
 Fujitsubo Authorize R TypeS cat back exhaust,
-ECUTek tune (188hp/145.6tq) by [R Tuned](https://getrtuned.com) at Kinetic Motorsports,
+ECUTek tune (188hp/145.6tq) by [R Tuned](https://getrtuned.com) at Kinetic Motorworks,
 HKS oil cooler,
 Odyssey PC1100 battery,
 Beat Rush sound generator delete,
@@ -117,7 +117,7 @@ Perrin fuel rail brackets.
 ![Transmission with BattleGarage RS throwout bearing and Verus clutch fork](/cars/2017-subaru-brz-your-own-happiness/drivetrain.jpg)
 
 The drivetrain has slowly grown more serious.
-A 1.5-way Cusco limited-slip differential replaced the stock unit,
+A 1.5-way Cusco limited-slip differential replaced the stock unit, installed and shimmed by Tailored Chassis Solutions,
 providing more consistent behavior under power and on corner entry.
 Engine and transmission mounts, along with key bushings, were upgraded to firmer Cusco pieces,
 trading a bit more vibration for clearer feedback during transitions.

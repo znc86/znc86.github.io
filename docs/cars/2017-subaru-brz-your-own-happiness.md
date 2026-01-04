@@ -70,6 +70,8 @@ The BRZ gave me a practice of self-directed work, one where the metrics were not
 I could decide, on any given weekend, whether “good” meant shaving a second off a lap, perfecting a heel-toe sequence,
 or simply finishing a maintenance task that had been bothering me for months.
 
+![Wingless style](/cars/2017-subaru-brz-your-own-happiness/wingless.jpg)
+
 I named the car “Your Own Happiness” not because I expected the car to deliver on its namesake,
 but the car was a canvas I could feel, a project of complete involvement with a feedback loop measured
 in tire wear, lap times, and hours under the car.
@@ -125,6 +127,8 @@ This was not the sort of thing a casual passenger would notice, but I did.
 Each time I tipped into the throttle at corner exit, the car’s response had less slop, less delay.
 It was like speaking a second language with fewer pauses.
 
+![Cusco differential and housing](/cars/2017-subaru-brz-your-own-happiness/cusco-diff.jpg)
+
 Cusco engine mounts,
 Cusco steering rack bushings,
 Cusco shift lever bushings,
@@ -146,6 +150,8 @@ I wanted a more precise connection, something that could survive the heat cycles
 without turning the commute into a punishment.
 Öhlins Road & Track coilovers became the centerpiece of the suspension,
 chosen as much for their consistency as for their adjustability and maintainability.
+
+![Öhlins Road & Track coilovers custom valved](/cars/2017-subaru-brz-your-own-happiness/suspension.jpg)
 
 Öhlins Road & Track coilovers custom valved,
 Swift springs with helpers,
@@ -189,6 +195,9 @@ Rays Engineering VOLK Racing TE-37 Saga SL 17x9.5+45 on Michelin Pilot Sport 4S 
 ## Exterior
 
 ![Front 3/4 view](/cars/2017-subaru-brz-your-own-happiness/then-vs-now-now.jpg)
+
+The exterior is mostly OEM parts from TRD and STI.
+I run the Subaru STI wing on track, and have another trunk for that wingless look when I feel like it.
 
 Subaru STI bumper lip and lip skirt,
 Subaru STI Carbon Fiber Swan Neck wing (for ZD8 retrofit to ZC6),

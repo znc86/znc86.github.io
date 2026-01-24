@@ -100,15 +100,38 @@ soundtrack from silenced purr into a lumpy rumble that is assertive over 4000 RP
 
 The ECU tune tied everything together.
 With the header and exhaust in place, a conservative calibration on 93 octane via ECUTek nudged the FA20 to
-188 horsepower and 145 lb-ft of torque at the wheels, but the real improvement lived in the curve, not the peak.
+188 horsepower and 149 lb-ft of torque at the wheels, but the real improvement lived in the curve, not the peak.
 The midrange dip smoothed out, throttle response sharpened, and the car pulled more cleanly from corner to corner.
 It was still, by any modern standard, a modest number, and that was precisely the point.
 The BRZ remained a car that demanded momentum and rewarded discipline.
 It did not let me hide behind excess, it requires finesse and rewards consistency.
 
+In January 2026 I was looking for more power across the powerband, so I took a 2000 mile road trip from Boston to
+ASMotorsports in Wisconsin Rapids to swap the FA20 for a low milage 640mi FA24D from a 2024 ZN8 GR86. I reused
+the Tomei exhaust & headers, transmission, and Cusco engine mounts. We modified the FA20 engine harness with wiring changes
+to adapt to the FA24D. Adaptations included a different fuel pressure sensor & connector. The zenki FA20 crank
+position sensor doesnߴt use a Hall Effect sensor, while the 2017-2020 switched to Hall Effect, but uses a different
+connector which had to be wired in. The FA24D coolant temp sensor on the crossover pipe is in a different location than
+the FA20 and uses different connector, requires lengthening and repinning. The oil temp sensor is a different connector
+and required repinning. I had Cusco motor mounts, which had to be machined slightly but otherwise worked. We used a
+Link G5 plug-in ECU, model 241-4000 paired to a Link CAN Lambda module 125-1000.
+
+We initially retrofit the wrinkle red intake manifold that was unique to kouki ZC6 manual Subaru BRZs. We wanted
+to see how it compared to the black plastic FA24 intake manifold. The red manifold got us to 175hp/170tq. We fit the
+OEM black plastic intake manifold and it immediately yielded gains across the entire powerband to 200hp/177tq, nettinng
+25hp/7tq—well worth it.
+
+Reusing the same exhaust system, the FA24 swap gained 12HP and 28TQ, which looks lackluster on paper, but feels like a
+significant bump across the operating range when in motion.
+
+Next I'll be opening the exhaust with a free flowing front-pipe as the car still has the FA20 OEM part which has a
+smaller ID than the FA24 and is likely causing backpressure.
+
+FA24D Engine swap from a ZN8 2024 GR86,
+Link G5 plug-in ECU,
+Link CAN Lambda module,
 Tomei Japan EXPREME Ti equal-length manifold,
 Fujitsubo Authorize R TypeS cat back exhaust,
-ECUTek tune (188hp/145.6tq) by [R Tuned](https://getrtuned.com) at Kinetic Motorworks,
 HKS oil cooler,
 Odyssey PC1100 battery,
 Beat Rush sound generator delete,
@@ -145,6 +168,10 @@ Cusco 1.5-way LSD,
 Cusco differential cover.
 
 ## Suspension/Brakes
+
+One of the major improvements in the FA24D over the FA20 was the introduction of a brake booster pump, which creates
+consistent brake pedal feel that is independent of the engine RPM. The FA20 suffered from inconsistent brake boost
+assist when engine RPM dropped.
 
 I wanted a more precise connection, something that could survive the heat cycles and curbing abuse of track days
 without turning the commute into a punishment.

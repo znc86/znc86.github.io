@@ -30,19 +30,6 @@ The following symbols are displayed for important points, which must be observed
   This product cannot be installed on unregistered vehicles. Installation must be performed after vehicle registration.
 </details>
 
-<div className="cols-2">
-  <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips" />
-    <figcaption>Figure 7</figcaption>
-  </figure>
-  <div>
-    (3.1) Disconnecting the wiring harness.<br />
-    (3.1.1) Remove the drivers side harness clip from the panel (Fig. 7)<br />
-    (3.1.2) Pull out the harness and secure it with cloth adhesive tape. (Fig. 8)<br />
-    Make sure that the harness does not pass behind the drilling area.
-  </div> 
-</div>
-
 ### Part Number・Compatible Vehicle Models
 
 | Part number    | Paint color                                    |        Notes        |
@@ -56,8 +43,6 @@ The following symbols are displayed for important points, which must be observed
 - For the latest compatibility information, please visit the TRD catalog site. [trdparts.jp](http://www.trdparts.jp/)
 
 ### Parts Manifest
-
-- Confirmation: Upon arrival of this product, immediately check that the main unit is undamaged and that all accessories are included.
 
 | No. | Product name                        | Qty | Notes          |
 | --: | :---------------------------------- | :-- | :------------- |
@@ -78,6 +63,8 @@ The following items are included only with MS344-18005-NP (Unpainted Parts Set)
 |   ⑩ | Moulding (only included with unpainted set MS344‑18005‑NP | 2 colors | each 2 pieces, approx. Length=2200mm) |
 |   ⑪ | PAC primer                                                | 1        | K‑500                                 |
 
+Confirmation: Upon arrival of this product, immediately check that the main unit is undamaged and that all accessories are included.
+
 ### Parts List
 
 <figure>
@@ -91,53 +78,54 @@ The following items are included only with MS344-18005-NP (Unpainted Parts Set)
 
 ### Installation Precautions (For Installers)
 
-#### ⚠️ WARNING
+<details>
+  <summary>⚠️ Warning</summary>
 
-Do not modify or process this product, and do not install it on vehicles other than those listed as compatible. Doing so may cause serious accidents or failures.
+- Do not modify or process this product, and do not install it on vehicles other than those listed as compatible.
+  Doing so may cause serious accidents or failures.
+- Follow the repair manual for the applicable vehicle (issued by Toyota Motor Corporation) and observe the precautions
+  in this document when installing or replacing this product.
+- Tighten all fasteners to the specified torque values. Insufficient tightening may cause the product to come off,
+  leading to serious accidents or failures.
+- Before installation, check that all main and component parts are present and that there is no damage or defect.
+  Claims for damage or defects discovered after installation may not be accepted.
+- To prevent scratches, handle the product on a protective sheet, and protect the vehicle body around the installation
+  area with suitable protective material. Take sufficient care to avoid scratching or damaging the product or vehicle during installation.
 
-Follow the repair manual for the applicable vehicle (issued by Toyota Motor Corporation) and observe the precautions in this document when installing or replacing this product.
-
-Tighten all fasteners to the specified torque values. Insufficient tightening may cause the product to come off, leading to serious accidents or failures.
-
-#### ⚠️ CAUTION
-
-Before installation, check that all main and component parts are present and that there is no damage or defect. Claims for damage or defects discovered after installation may not be accepted.
-
-To prevent scratches, handle the product on a protective sheet, and protect the vehicle body around the installation area with suitable protective material. Take sufficient care to avoid scratching or damaging the product or vehicle during installation.
+</details>
 
 #### Degreasing Work
 
 Also refer to the separate “Degreasing Procedure” sheet.
 
-When performing degreasing, use a clean cloth and use white gasoline, isopropyl alcohol (IPA), or “Silicone Off” handled by TACTI Co., Ltd., to degrease thoroughly. Do not use silicone-off products other than the specified one.
+- When performing degreasing, use a clean cloth and use white gasoline, isopropyl alcohol (IPA), or “Silicone Off”
+  handled by TACTI Co., Ltd., to degrease thoroughly. Do not use silicone-off products other than the specified one.
+- Do not use body coating base agents, parts cleaners, brake cleaner, or other solvents for degreasing. Inadequate
+  degreasing will cause lifting and peeling.
 
-Do not use body coating base agents, parts cleaners, brake cleaner, or other solvents for degreasing. Inadequate degreasing will cause lifting and peeling.
+#### Double‑sided Tape
 
-### Double‑sided Tape
-
-If degreasing is insufficient, the double‑sided tape will peel off even if it is applied.
-
-Once the double‑sided tape is applied and then peeled off, its adhesive strength will decrease and it cannot be reused.
-
-The adhesive performance of the double‑sided tape supplied with this product is significantly reduced at ambient temperatures of 20 °C or lower. If the temperature is too low, the tape may peel.
-
-Press the double‑sided tape firmly with a pressure of at least 49 N (5 kgf, enough to make the vehicle shake lightly). Insufficient pressure will cause peeling.
-
-For 24 hours after installing this product, do not allow car washing, water (including wiping with water), or rain to contact the product. Failure to observe this may cause lifting or peeling.
+- If degreasing is insufficient, the double‑sided tape will peel off even if it is applied.
+- Once the double‑sided tape is applied and then peeled off, its adhesive strength will decrease and it cannot be reused.
+- The adhesive performance of the double‑sided tape supplied with this product is significantly reduced at ambient
+  temperatures of 20 °C or lower. If the temperature is too low, the tape may peel.
+- Press the double‑sided tape firmly with a pressure of at least 49 N (5 kgf, enough to make the vehicle shake
+  lightly). Insufficient pressure will cause peeling.
+- For 24 hours after installing this product, do not allow car washing, water (including wiping with water), or rain to
+  contact the product. Failure to observe this may cause lifting or peeling.
 
 #### Painting Work for Unpainted Product
 
-Before painting this product, undercoat treatment is required. Always start with surfacer (primer) painting.
+- Before painting this product, undercoat treatment is required. Always start with surfacer (primer) painting.
+- When painting this product, mask all double‑sided tape areas completely.
+- When drying, fix the product in a way that prevents deformation. High drying temperatures may cause deformation or
+  cracking; therefore, dry at 70 °C or lower.
 
-When painting this product, mask all double‑sided tape areas completely.
+#### After Installation
 
-When drying, fix the product in a way that prevents deformation. High drying temperatures may cause deformation or cracking; therefore, dry at 70 °C or lower.
-
-### After Installation
-
-After installation, check that this product does not interfere with the vehicle body.
-
-If you disconnected the negative terminal of the battery during work, be sure to perform system setting and confirmation after completing the work.
+- After installation, check that this product does not interfere with the vehicle body.
+- If you disconnected the negative terminal of the battery during work, be sure to perform system setting and
+  confirmation after completing the work.
 
 ---
 

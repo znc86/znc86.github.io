@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Type-RA.org]]></title><description><![CDATA[Motorsports garage for the ZN6 ZC6 ZN8 ZD8 chassis]]></description><link>https://type-ra.org</link><image><url>https://type-ra.org/favicon.png</url><title>Type-RA.org</title><link>https://type-ra.org</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Feb 2026 17:19:13 GMT</lastBuildDate><atom:link href="https://type-ra.org/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 14 Nov 2025 04:00:00 GMT</pubDate><copyright><![CDATA[2026 Type RA]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Toyota TRD Sideskirts for 86 or BRZ (Kouki/MY2017-MY2020) MS344-180004/5 Installation and Instruction Manual]]></title><description><![CDATA[<p>№ 1606-T1436001</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Type-RA.org]]></title><description><![CDATA[Motorsports garage for the ZN6 ZC6 ZN8 ZD8 chassis]]></description><link>https://type-ra.org</link><image><url>https://type-ra.org/favicon.png</url><title>Type-RA.org</title><link>https://type-ra.org</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Feb 2026 17:26:46 GMT</lastBuildDate><atom:link href="https://type-ra.org/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 14 Nov 2025 04:00:00 GMT</pubDate><copyright><![CDATA[2026 Type RA]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Toyota TRD Sideskirts for 86 or BRZ (Kouki/MY2017-MY2020) MS344-180004/5 Installation and Instruction Manual]]></title><description><![CDATA[<p>№ 1606-T1436001</p>
 <h2 id="introduction">Introduction</h2>
 <p>Thank you very much for purchasing the side skirts. This document describes procedures and precautions for installing
 and using this product. Please be sure to read it before installation and carry out correct installation and handling.
@@ -12,18 +12,6 @@ Be sure to hand these handling precautions (for the customer using the product) 
   <summary>☝️ Advice</summary>
   This product cannot be installed on unregistered vehicles. Installation must be performed after vehicle registration.
 </details></p>
-<div className="cols-2">
-  <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips" />
-    <figcaption>Figure 7</figcaption>
-  </figure>
-  <div>
-    (3.1) Disconnecting the wiring harness.<br />
-    (3.1.1) Remove the drivers side harness clip from the panel (Fig. 7)<br />
-    (3.1.2) Pull out the harness and secure it with cloth adhesive tape. (Fig. 8)<br />
-    Make sure that the harness does not pass behind the drilling area.
-  </div> 
-</div>
 <h3 id="partnumbercompatiblevehiclemodels">Part Number・Compatible Vehicle Models</h3>
 <p>| Part number    | Paint color                                    |        Notes        |
 | :------------- | :--------------------------------------------- | :-----------------: |
@@ -36,9 +24,6 @@ Be sure to hand these handling precautions (for the customer using the product) 
 <li>For the latest compatibility information, please visit the TRD catalog site. <a href="http://www.trdparts.jp/">trdparts.jp</a></li>
 </ul>
 <h3 id="partsmanifest">Parts Manifest</h3>
-<ul>
-<li>Confirmation: Upon arrival of this product, immediately check that the main unit is undamaged and that all accessories are included.</li>
-</ul>
 <p>| No. | Product name                        | Qty | Notes          |
 | --: | :---------------------------------- | :-- | :------------- |
 |   ① | Side skirt RH                       | 1   |                |
@@ -55,6 +40,7 @@ Be sure to hand these handling precautions (for the customer using the product) 
 | --: | :-------------------------------------------------------- | :------- | :------------------------------------ |
 |   ⑩ | Moulding (only included with unpainted set MS344‑18005‑NP | 2 colors | each 2 pieces, approx. Length=2200mm) |
 |   ⑪ | PAC primer                                                | 1        | K‑500                                 |</p>
+<p>Confirmation: Upon arrival of this product, immediately check that the main unit is undamaged and that all accessories are included.</p>
 <h3 id="partslist">Parts List</h3>
 <figure>
   <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-01.png" alt="Parts list" />
@@ -63,30 +49,53 @@ Be sure to hand these handling precautions (for the customer using the product) 
 <hr />
 <p>(Page 2)</p>
 <h3 id="installationprecautionsforinstallers">Installation Precautions (For Installers)</h3>
-<h4 id="warning">⚠️ WARNING</h4>
-<p>Do not modify or process this product, and do not install it on vehicles other than those listed as compatible. Doing so may cause serious accidents or failures.</p>
-<p>Follow the repair manual for the applicable vehicle (issued by Toyota Motor Corporation) and observe the precautions in this document when installing or replacing this product.</p>
-<p>Tighten all fasteners to the specified torque values. Insufficient tightening may cause the product to come off, leading to serious accidents or failures.</p>
-<h4 id="caution">⚠️ CAUTION</h4>
-<p>Before installation, check that all main and component parts are present and that there is no damage or defect. Claims for damage or defects discovered after installation may not be accepted.</p>
-<p>To prevent scratches, handle the product on a protective sheet, and protect the vehicle body around the installation area with suitable protective material. Take sufficient care to avoid scratching or damaging the product or vehicle during installation.</p>
+<p><details>
+  <summary>⚠️ Warning</summary></p>
+<ul>
+<li>Do not modify or process this product, and do not install it on vehicles other than those listed as compatible.
+Doing so may cause serious accidents or failures.</li>
+<li>Follow the repair manual for the applicable vehicle (issued by Toyota Motor Corporation) and observe the precautions
+in this document when installing or replacing this product.</li>
+<li>Tighten all fasteners to the specified torque values. Insufficient tightening may cause the product to come off,
+leading to serious accidents or failures.</li>
+<li>Before installation, check that all main and component parts are present and that there is no damage or defect.
+Claims for damage or defects discovered after installation may not be accepted.</li>
+<li>To prevent scratches, handle the product on a protective sheet, and protect the vehicle body around the installation
+area with suitable protective material. Take sufficient care to avoid scratching or damaging the product or vehicle during installation.</li>
+</ul>
+<p></details></p>
 <h4 id="degreasingwork">Degreasing Work</h4>
 <p>Also refer to the separate “Degreasing Procedure” sheet.</p>
-<p>When performing degreasing, use a clean cloth and use white gasoline, isopropyl alcohol (IPA), or “Silicone Off” handled by TACTI Co., Ltd., to degrease thoroughly. Do not use silicone-off products other than the specified one.</p>
-<p>Do not use body coating base agents, parts cleaners, brake cleaner, or other solvents for degreasing. Inadequate degreasing will cause lifting and peeling.</p>
-<h3 id="doublesidedtape">Double‑sided Tape</h3>
-<p>If degreasing is insufficient, the double‑sided tape will peel off even if it is applied.</p>
-<p>Once the double‑sided tape is applied and then peeled off, its adhesive strength will decrease and it cannot be reused.</p>
-<p>The adhesive performance of the double‑sided tape supplied with this product is significantly reduced at ambient temperatures of 20 °C or lower. If the temperature is too low, the tape may peel.</p>
-<p>Press the double‑sided tape firmly with a pressure of at least 49 N (5 kgf, enough to make the vehicle shake lightly). Insufficient pressure will cause peeling.</p>
-<p>For 24 hours after installing this product, do not allow car washing, water (including wiping with water), or rain to contact the product. Failure to observe this may cause lifting or peeling.</p>
+<ul>
+<li>When performing degreasing, use a clean cloth and use white gasoline, isopropyl alcohol (IPA), or “Silicone Off”
+handled by TACTI Co., Ltd., to degrease thoroughly. Do not use silicone-off products other than the specified one.</li>
+<li>Do not use body coating base agents, parts cleaners, brake cleaner, or other solvents for degreasing. Inadequate
+degreasing will cause lifting and peeling.</li>
+</ul>
+<h4 id="doublesidedtape">Double‑sided Tape</h4>
+<ul>
+<li>If degreasing is insufficient, the double‑sided tape will peel off even if it is applied.</li>
+<li>Once the double‑sided tape is applied and then peeled off, its adhesive strength will decrease and it cannot be reused.</li>
+<li>The adhesive performance of the double‑sided tape supplied with this product is significantly reduced at ambient
+temperatures of 20 °C or lower. If the temperature is too low, the tape may peel.</li>
+<li>Press the double‑sided tape firmly with a pressure of at least 49 N (5 kgf, enough to make the vehicle shake
+lightly). Insufficient pressure will cause peeling.</li>
+<li>For 24 hours after installing this product, do not allow car washing, water (including wiping with water), or rain to
+contact the product. Failure to observe this may cause lifting or peeling.</li>
+</ul>
 <h4 id="paintingworkforunpaintedproduct">Painting Work for Unpainted Product</h4>
-<p>Before painting this product, undercoat treatment is required. Always start with surfacer (primer) painting.</p>
-<p>When painting this product, mask all double‑sided tape areas completely.</p>
-<p>When drying, fix the product in a way that prevents deformation. High drying temperatures may cause deformation or cracking; therefore, dry at 70 °C or lower.</p>
-<h3 id="afterinstallation">After Installation</h3>
-<p>After installation, check that this product does not interfere with the vehicle body.</p>
-<p>If you disconnected the negative terminal of the battery during work, be sure to perform system setting and confirmation after completing the work.</p>
+<ul>
+<li>Before painting this product, undercoat treatment is required. Always start with surfacer (primer) painting.</li>
+<li>When painting this product, mask all double‑sided tape areas completely.</li>
+<li>When drying, fix the product in a way that prevents deformation. High drying temperatures may cause deformation or
+cracking; therefore, dry at 70 °C or lower.</li>
+</ul>
+<h4 id="afterinstallation">After Installation</h4>
+<ul>
+<li>After installation, check that this product does not interfere with the vehicle body.</li>
+<li>If you disconnected the negative terminal of the battery during work, be sure to perform system setting and
+confirmation after completing the work.</li>
+</ul>
 <hr />
 <p>(Page 3)</p>
 <h3 id="tableofcontents">Table of Contents</h3>

@@ -142,7 +142,8 @@ Perrin fuel rail brackets.
 ![Transmission with BattleGarage RS throwout bearing and Verus clutch fork](/cars/2017-subaru-brz-your-own-happiness/drivetrain.jpg)
 
 The drivetrain has slowly grown more serious.
-A 1.5-way Cusco limited-slip differential replaced the stock unit, installed and shimmed by Tailored Chassis Solutions,
+A 1.5-way Cusco limited-slip differential replaced the stock unit
+driving retrofit axles from the 2nd gen–
 providing more consistent behavior under power and on corner entry.
 Engine and transmission mounts, along with key bushings, were upgraded to firmer Cusco pieces,
 trading a bit more vibration for clearer feedback during transitions.
@@ -163,6 +164,7 @@ Cusco braided steel clutch hose,
 Verus Engineering forged clutch fork & pivot,
 BattleGarage RS throwout bearing,
 PBM rear subframe bushings,
+retrofit OEM ZD8 axles,
 Cusco rear differential bushings,
 Cusco 1.5-way LSD,
 Cusco differential cover.

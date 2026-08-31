@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <p>{t("pages.index.copy1")}</p>
 
             <p>
-              {t("pages.index.we drive the")} {t("pages.index.chassis")}
+              {t("pages.index.chassis")}
             </p>
 
             <Image

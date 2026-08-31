@@ -5,6 +5,15 @@
   "components": {
     "page": {
       "motto": "Violent Carriage Maneuvering Club"
+    },
+    "calendar": {
+      "previousYear": "Previous year",
+      "nextYear": "Next year",
+      "loading": "Loading events…",
+      "missingApiKey": "The Google Calendar API key is not configured.",
+      "loadError": "Could not load {{name}}:",
+      "allDay": "All day",
+      "noEvents": "No events scheduled this year."
     }
   },
   "pages": {

@@ -23,7 +23,11 @@ export type PostData = {
 type RawFile = { path: string; contents: string };
 
 export const loadMarkdownFile = async (path: string): Promise<RawFile> => {
-  const mdFile = await import(`docs/${path}`);
+  // Relative, not the bare `docs/...` specifier this used to use: that only
+  // resolved because Next 13's webpack config put the project root on the
+  // module search path. Next 16 does not, and a relative request also works
+  // under Turbopack. The `.md` extension is handled by raw-loader.
+  const mdFile = await import(`../../docs/${path}`);
   return { path, contents: mdFile.default };
 };
 

@@ -2,8 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
+import { useTranslation } from "next-i18next/pages";
 import Page from "../components/page";
 import { generateRSS } from "../lib/rss";
 import { generateSitemap } from "../lib/sitemap";
@@ -49,14 +49,22 @@ const Home: NextPage = () => {
             <p>{t("pages.index.copy1")}</p>
 
             <p>
-              {t("pages.index.we drive the")} {t("pages.index.chassis")}
+              {t("pages.index.chassis")}
             </p>
 
             <Image
               src="/type-ra-garage.jpg"
-              alt="Type RA"
-              width="960"
-              height="838"
+              alt="Type RA garage interior"
+              width={1440}
+              height={1505}
+              // This is the page's LCP element, so it must not be lazy-loaded.
+              // `priority` sets fetchpriority="high" and loading="eager".
+              priority
+              // `.one` is flex-basis:50% of the 60rem page, so the image is
+              // only ~480px wide on desktop and full-width on narrow screens.
+              // Without this, next/image would assume 100vw and pick a
+              // needlessly large candidate from the srcset.
+              sizes="(min-width: 60rem) 480px, (min-width: 30rem) 50vw, 100vw"
             />
           </div>
           <ul className={`${styles.two} ${styles.links}`}>

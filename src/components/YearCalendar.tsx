@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 import {
   fetchYearEvents,
   startOfDay,
@@ -23,6 +23,15 @@ const DAY_NUMBERS = Array.from({ length: DAY_COLUMNS }, (_, index) => index + 1)
 
 const FALLBACK_COLOR = "#767676";
 
+/* Stable identities for useSyncExternalStore; the value never changes after hydration. */
+const subscribeNoop = () => () => {};
+const getTrue = () => true;
+const getFalse = () => false;
+
+/* Stable identities so a pending fetch does not invalidate downstream useMemo deps. */
+const NO_EVENTS: CalendarEvent[] = [];
+const NO_ERRORS: CalendarFetchError[] = [];
+
 type YearCalendarProps = {
   apiKey?: string;
   /** Calendars to fetch and display. Colors and names come from here. */
@@ -39,51 +48,61 @@ export default function YearCalendar({ apiKey, calendars }: YearCalendarProps) {
   const { locale } = useRouter();
   const resolvedLocale = locale ?? "en-US";
 
-  // `today` and `year` stay null until after mount. This page is statically
-  // generated, so reading the clock during render would bake the build date
-  // into the HTML and mismatch on hydration.
-  const [today, setToday] = useState<Date | null>(null);
-  const [year, setYear] = useState<number | null>(null);
-  const [events, setEvents] = useState<CalendarEvent[]>([]);
-  const [errors, setErrors] = useState<CalendarFetchError[]>([]);
-  const [loading, setLoading] = useState(false);
+  // This page is statically generated, so reading the clock during render would
+  // bake the build date into the HTML and mismatch on hydration. useSyncExternalStore
+  // reports false for the server snapshot and true once hydrated, which gives a
+  // client-only value without setting state from an effect.
+  const isHydrated = useSyncExternalStore(subscribeNoop, getTrue, getFalse);
+  const today = useMemo(
+    () => (isHydrated ? startOfDay(new Date()) : null),
+    [isHydrated],
+  );
 
-  useEffect(() => {
-    const now = new Date();
-    setToday(startOfDay(now));
-    setYear(now.getFullYear());
-  }, []);
+  // Year is derived from `today` until the user navigates away from it.
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const year = selectedYear ?? today?.getFullYear() ?? null;
 
-  // The id list drives fetching, but the caller rebuilds the `calendars` array
-  // on every render (and mutates `enabled` when toggling). Depending on a
-  // joined key keeps the effect stable; the ref supplies the current ids.
+  // The caller rebuilds the `calendars` array on every render and swaps `enabled`
+  // when toggling, so the fetch keys off this joined id string instead. Calendar
+  // ids are email-shaped and cannot contain a comma.
   const calendarIdKey = calendars.map((calendar) => calendar.calendarId).join(",");
-  const calendarIdsRef = useRef<string[]>([]);
-  calendarIdsRef.current = calendars.map((calendar) => calendar.calendarId);
+
+  // One key identifies a single fetch. Deriving `loading` and the event list by
+  // comparing it against the loaded result avoids a synchronous setState in the
+  // effect, which would cause a cascading render.
+  const requestKey =
+    year === null || !apiKey ? null : `${year}|${resolvedLocale}|${calendarIdKey}`;
+
+  const [result, setResult] = useState<{
+    key: string;
+    events: CalendarEvent[];
+    errors: CalendarFetchError[];
+  } | null>(null);
 
   useEffect(() => {
-    if (year === null || !apiKey) return;
+    if (requestKey === null || year === null || !apiKey) return;
 
     const controller = new AbortController();
-    setLoading(true);
+    const calendarIds = calendarIdKey.split(",").filter(Boolean);
 
-    fetchYearEvents(calendarIdsRef.current, apiKey, year, resolvedLocale, controller.signal)
-      .then((result) => {
+    fetchYearEvents(calendarIds, apiKey, year, resolvedLocale, controller.signal)
+      .then((fetched) => {
         if (controller.signal.aborted) return;
-        setEvents(result.events);
-        setErrors(result.errors);
-        setLoading(false);
+        setResult({ key: requestKey, ...fetched });
       })
       .catch((error: unknown) => {
         if (controller.signal.aborted) return;
         const message = error instanceof Error ? error.message : String(error);
-        setEvents([]);
-        setErrors([{ calendarId: "", message }]);
-        setLoading(false);
+        setResult({ key: requestKey, events: [], errors: [{ calendarId: "", message }] });
       });
 
     return () => controller.abort();
-  }, [year, apiKey, resolvedLocale, calendarIdKey]);
+  }, [requestKey, year, apiKey, resolvedLocale, calendarIdKey]);
+
+  const isCurrent = result !== null && result.key === requestKey;
+  const loading = requestKey !== null && !isCurrent;
+  const events = isCurrent ? result.events : NO_EVENTS;
+  const errors = isCurrent ? result.errors : NO_ERRORS;
 
   const sourceById = useMemo(() => {
     const map = new Map<string, CalendarSource>();
@@ -117,7 +136,7 @@ export default function YearCalendar({ apiKey, calendars }: YearCalendarProps) {
         <button
           type="button"
           className={styles.navButton}
-          onClick={() => setYear(year - 1)}
+          onClick={() => setSelectedYear(year - 1)}
           aria-label={t("components.calendar.previousYear") || undefined}
         >
           ← {year - 1}
@@ -126,7 +145,7 @@ export default function YearCalendar({ apiKey, calendars }: YearCalendarProps) {
         <button
           type="button"
           className={styles.navButton}
-          onClick={() => setYear(year + 1)}
+          onClick={() => setSelectedYear(year + 1)}
           aria-label={t("components.calendar.nextYear") || undefined}
         >
           {year + 1} →

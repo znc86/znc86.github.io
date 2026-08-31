@@ -1,56 +1,174 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Type-RA.org]]></title><description><![CDATA[Motorsports garage for the ZN6 ZC6 ZN8 ZD8 chassis]]></description><link>https://type-ra.org</link><image><url>https://type-ra.org/favicon.png</url><title>Type-RA.org</title><link>https://type-ra.org</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Feb 2026 21:37:27 GMT</lastBuildDate><atom:link href="https://type-ra.org/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 14 Nov 2025 04:00:00 GMT</pubDate><copyright><![CDATA[2026 Type RA]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Toyota TRD Sideskirts for 86 or BRZ (Kouki/MY2017-MY2020) MS344-180004/5 Installation and Instruction Manual]]></title><description><![CDATA[<p>№ 1606-T1436001</p>
-<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Type-RA.org]]></title><description><![CDATA[Motorsports garage for the ZN6 ZC6 ZN8 ZD8 chassis]]></description><link>https://type-ra.org</link><image><url>https://type-ra.org/favicon.png</url><title>Type-RA.org</title><link>https://type-ra.org</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 31 Aug 2026 18:15:20 GMT</lastBuildDate><atom:link href="https://type-ra.org/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 14 Nov 2025 04:00:00 GMT</pubDate><copyright><![CDATA[2026 Type RA]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[ron@0xadada.pub]]></managingEditor><webMaster><![CDATA[ron@0xadada.pub]]></webMaster><ttl>60</ttl><item><title><![CDATA[Toyota TRD Sideskirts for 86 or BRZ (Kouki/MY2017-MY2020) MS344-180004/5 Installation and Instruction Manual]]></title><description><![CDATA[<p>№ 1606-T1436001</p>
+<h2>Introduction</h2>
 <p>Thank you very much for purchasing the side skirts. This document describes procedures and precautions for installing
 and using this product. Please be sure to read it before installation and carry out correct installation and handling.
 Be sure to hand these handling precautions (for the customer using the product) to the customer.</p>
 <p>The following symbols are displayed for important points, which must be observed.</p>
-<p>| Note       |                                                                                                    |
-| :--------- | :------------------------------------------------------------------------------------------------- |
-| ⚠️ Warning | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
-| ☝️ Advice  | Describes information that is useful for performing the work efficiently.                          |</p>
-<p><details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Note</th><th align="left"></th></tr></thead><tbody><tr><td align="left">⚠️ Warning</td><td align="left">Safety precautions that must be observed (Improper handling may result in death or serious injury)</td></tr><tr><td align="left">☝️ Advice</td><td align="left">Describes information that is useful for performing the work efficiently.</td></tr></tbody></table>
+<details>
   <summary>☝️ Advice</summary>
   This product cannot be installed on unregistered vehicles. Installation must be performed after vehicle registration.
-</details></p>
-<h3 id="partnumbercompatiblevehiclemodels">Part Number・Compatible Vehicle Models</h3>
-<p>| Part number    | Paint color                                    |        Notes        |
-| :------------- | :--------------------------------------------- | :-----------------: |
-| MS344-18004-A1 | Crystal White Pearl (K1X)                      | MY2017-MY2020/Kouki |
-| MS344-18004-C0 | Crystal Black Silica (D4S) MY2017-MY2020/Kouki |
-| MS344-18004-D1 | Pure Red (M7Y)                                 | MY2017-MY2020/Kouki |
-| MS344-18004-E0 | Orange Metallic (H8R)                          | MY2017-MY2020/Kouki |
-| MS344-18005-NP | Unpainted (Primer-Treated)                     | MY2017-MY2020/Kouki |</p>
+</details>
+<h3>Part Number・Compatible Vehicle Models</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Part number</th><th align="left">Paint color</th><th align="center">Notes</th></tr></thead><tbody><tr><td align="left">MS344-18004-A1</td><td align="left">Crystal White Pearl (K1X)</td><td align="center">MY2017-MY2020/Kouki</td></tr><tr><td align="left">MS344-18004-C0</td><td align="left">Crystal Black Silica (D4S) MY2017-MY2020/Kouki</td><td align="center"></td></tr><tr><td align="left">MS344-18004-D1</td><td align="left">Pure Red (M7Y)</td><td align="center">MY2017-MY2020/Kouki</td></tr><tr><td align="left">MS344-18004-E0</td><td align="left">Orange Metallic (H8R)</td><td align="center">MY2017-MY2020/Kouki</td></tr><tr><td align="left">MS344-18005-NP</td><td align="left">Unpainted (Primer-Treated)</td><td align="center">MY2017-MY2020/Kouki</td></tr></tbody></table>
 <ul>
 <li>For the latest compatibility information, please visit the TRD catalog site. <a href="http://www.trdparts.jp/">trdparts.jp</a></li>
 </ul>
-<h3 id="partsmanifest">Parts Manifest</h3>
-<p>| No. | Product name                        | Qty | Notes          |
-| --: | :---------------------------------- | :-- | :------------- |
-|   ① | Side skirt RH                       | 1   |                |
-|   ② | Side skirt LH                       | 1   |                |
-|   ③ | J‑nut                               | 4   |
-|   ④ | Tapping screw                       | 4   | 6×20           |
-|   ⑤ | Clip                                | 4   | (for φ7 dia.)  |
-|   ⑥ | Clip                                | 2   | (for φ6 dia.)  |
-|   ⑦ | Clip                                | 10  | (for φ18 dia.) |
-|   ⑧ | Template                            | 1   |                |
-|   ⑨ | Installation manual (this document) | 1   |                |</p>
+<h3>Parts Manifest</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="right">No.</th><th align="left">Product name</th><th align="left">Qty</th><th align="left">Notes</th></tr></thead><tbody><tr><td align="right">①</td><td align="left">Side skirt RH</td><td align="left">1</td><td align="left"></td></tr><tr><td align="right">②</td><td align="left">Side skirt LH</td><td align="left">1</td><td align="left"></td></tr><tr><td align="right">③</td><td align="left">J‑nut</td><td align="left">4</td><td align="left"></td></tr><tr><td align="right">④</td><td align="left">Tapping screw</td><td align="left">4</td><td align="left">6×20</td></tr><tr><td align="right">⑤</td><td align="left">Clip</td><td align="left">4</td><td align="left">(for φ7 dia.)</td></tr><tr><td align="right">⑥</td><td align="left">Clip</td><td align="left">2</td><td align="left">(for φ6 dia.)</td></tr><tr><td align="right">⑦</td><td align="left">Clip</td><td align="left">10</td><td align="left">(for φ18 dia.)</td></tr><tr><td align="right">⑧</td><td align="left">Template</td><td align="left">1</td><td align="left"></td></tr><tr><td align="right">⑨</td><td align="left">Installation manual (this document)</td><td align="left">1</td><td align="left"></td></tr></tbody></table>
 <p>The following items are included only with MS344-18005-NP (Unpainted Parts Set)</p>
-<p>| No. | Product name                                              | Qty      | Notes                                 |
-| --: | :-------------------------------------------------------- | :------- | :------------------------------------ |
-|   ⑩ | Moulding (only included with unpainted set MS344‑18005‑NP | 2 colors | each 2 pieces, approx. Length=2200mm) |
-|   ⑪ | PAC primer                                                | 1        | K‑500                                 |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="right">No.</th><th align="left">Product name</th><th align="left">Qty</th><th align="left">Notes</th></tr></thead><tbody><tr><td align="right">⑩</td><td align="left">Moulding (only included with unpainted set MS344‑18005‑NP</td><td align="left">2 colors</td><td align="left">each 2 pieces, approx. Length=2200mm)</td></tr><tr><td align="right">⑪</td><td align="left">PAC primer</td><td align="left">1</td><td align="left">K‑500</td></tr></tbody></table>
 <p>Confirmation: Upon arrival of this product, immediately check that the main unit is undamaged and that all accessories are included.</p>
-<h3 id="partslist">Parts List</h3>
+<h3>Parts List</h3>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-01.png" alt="Parts list" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-01.png" alt="Parts list">
   <figcaption>Figure 1</figcaption>
 </figure>
-<hr />
+<hr>
 <p>(Page 2)</p>
-<h3 id="installationprecautionsforinstallers">Installation Precautions (For Installers)</h3>
-<p><details>
-  <summary>⚠️ Warning</summary></p>
+<h3>Installation Precautions (For Installers)</h3>
+<details>
+  <summary>⚠️ Warning</summary>
 <ul>
 <li>Do not modify or process this product, and do not install it on vehicles other than those listed as compatible.
 Doing so may cause serious accidents or failures.</li>
@@ -63,8 +181,8 @@ Claims for damage or defects discovered after installation may not be accepted.<
 <li>To prevent scratches, handle the product on a protective sheet, and protect the vehicle body around the installation
 area with suitable protective material. Take sufficient care to avoid scratching or damaging the product or vehicle during installation.</li>
 </ul>
-<p></details></p>
-<h4 id="degreasingwork">Degreasing Work</h4>
+</details>
+<h4>Degreasing Work</h4>
 <p>Also refer to the separate “Degreasing Procedure” sheet.</p>
 <ul>
 <li>When performing degreasing, use a clean cloth and use white gasoline, isopropyl alcohol (IPA), or “Silicone Off”
@@ -72,7 +190,7 @@ handled by TACTI Co., Ltd., to degrease thoroughly. Do not use silicone-off prod
 <li>Do not use body coating base agents, parts cleaners, brake cleaner, or other solvents for degreasing. Inadequate
 degreasing will cause lifting and peeling.</li>
 </ul>
-<h4 id="doublesidedtape">Double‑sided Tape</h4>
+<h4>Double‑sided Tape</h4>
 <ul>
 <li>If degreasing is insufficient, the double‑sided tape will peel off even if it is applied.</li>
 <li>Once the double‑sided tape is applied and then peeled off, its adhesive strength will decrease and it cannot be reused.</li>
@@ -83,22 +201,22 @@ lightly). Insufficient pressure will cause peeling.</li>
 <li>For 24 hours after installing this product, do not allow car washing, water (including wiping with water), or rain to
 contact the product. Failure to observe this may cause lifting or peeling.</li>
 </ul>
-<h4 id="paintingworkforunpaintedproduct">Painting Work for Unpainted Product</h4>
+<h4>Painting Work for Unpainted Product</h4>
 <ul>
 <li>Before painting this product, undercoat treatment is required. Always start with surfacer (primer) painting.</li>
 <li>When painting this product, mask all double‑sided tape areas completely.</li>
 <li>When drying, fix the product in a way that prevents deformation. High drying temperatures may cause deformation or
 cracking; therefore, dry at 70 °C or lower.</li>
 </ul>
-<h4 id="afterinstallation">After Installation</h4>
+<h4>After Installation</h4>
 <ul>
 <li>After installation, check that this product does not interfere with the vehicle body.</li>
 <li>If you disconnected the negative terminal of the battery during work, be sure to perform system setting and
 confirmation after completing the work.</li>
 </ul>
-<hr />
+<hr>
 <p>(Page 3)</p>
-<h3 id="tableofcontents">Table of Contents</h3>
+<h3>Table of Contents</h3>
 <ul>
 <li>Cover, compatibility list, components list, component diagram … 1</li>
 <li>Installation / handling precautions (for installers) … 2</li>
@@ -106,7 +224,7 @@ confirmation after completing the work.</li>
 <li>Installation procedures … 4–8</li>
 <li>Post‑installation checks / inspection … 8</li>
 </ul>
-<h3 id="requiredtoolsprotectiveequipmentconsumables">Required Tools, Protective Equipment, Consumables</h3>
+<h3>Required Tools, Protective Equipment, Consumables</h3>
 <ul>
 <li>Cutting tools (scissors, cutter, etc.)</li>
 <li>File</li>
@@ -118,15 +236,15 @@ confirmation after completing the work.</li>
 <li>White gasoline or isopropyl alcohol (IPA)</li>
 <li>Clean cloth (lint‑free)</li>
 </ul>
-<h3 id="installationlayoutdiagram">Installation Layout Diagram</h3>
+<h3>Installation Layout Diagram</h3>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-02.png" alt="Sideskirt LH ②" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-02.png" alt="Sideskirt LH ②">
   <figcaption>Sideskirt LH ②</figcaption>
 </figure>
-<h3 id="paintingthesideskirts">Painting the Side Skirts</h3>
+<h3>Painting the Side Skirts</h3>
 <p>Note: These instructions mainly illustrate the LH side. Perform the same procedures for the RH side.</p>
-<p><details>
-  <summary>⚠️ Warning</summary></p>
+<details>
+  <summary>⚠️ Warning</summary>
 <ul>
 <li>When degreasing, use IPA or white gasoline. Do not use silicone off or thinner, as there is a risk of dissolving the primer.</li>
 <li>If the drying temperature exceeds 70 °C, deformation or cracking of the product may occur. Pay close attention to
@@ -134,44 +252,44 @@ drying temperature. When force drying, fix the product so that it does not defor
 <li>Do not paint the moulding attachment surface or double‑sided tape surfaces. Adhesive strength will be reduced. Mask
 these areas using masking tape, etc.</li>
 </ul>
-<p></details></p>
+</details>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-03.png" alt="Sideskirt painting" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-03.png" alt="Sideskirt painting">
   <figcaption>Figure 3: Paint the side skirt ② in the body color as shown in Figure 3</figcaption>
 </figure>
-<hr />
+<hr>
 <p>(Page 4)</p>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-04.png" alt="Sideskirt painting" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-04.png" alt="Sideskirt painting">
   <figcaption>Figure 4: Mask the side skirt ② as shown in Figure 2 and paint it with a matte black equivalent (Gloss 10).</figcaption>
 </figure>
-<h3 id="degreasingandprimerapplicationformoulding">Degreasing and Primer Application for Moulding</h3>
-<p><details>
-  <summary>⚠️ Warning</summary></p>
+<h3>Degreasing and Primer Application for Moulding</h3>
+<details>
+  <summary>⚠️ Warning</summary>
 <ul>
 <li>When performing degreasing, do not use solvents other than those specified. Remaining oil/grease can cause tape to peel.</li>
 <li>If the primer spreads beyond the specified area, it may cause staining. Apply carefully.</li>
 </ul>
-<p></details></p>
-<p><details>
-  <summary>☝️ Advice</summary></p>
+</details>
+<details>
+  <summary>☝️ Advice</summary>
 <ul>
 <li>When performing degreasing, do not use solvents other than those specified. Remaining oil/grease can cause tape to peel.</li>
 <li>If the primer spreads beyond the specified area, it may cause staining. Apply carefully.</li>
 <li>After degreasing and applying primer, allow it to dry for at least 10 minutes.</li>
 </ul>
-<p></details></p>
+</details>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-05.png" alt="Figure 5" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-05.png" alt="Figure 5">
   <figcaption>
     As shown in Fig. 5, remove dirt from the moulding attachment area. Wipe in one direction with IPA or white gasoline
     to degrease, then apply PAC primer ⑪ to the defined area (E, F, G regions), following the step edges as a guide.
     </figcaption>
 </figure>
-<hr />
+<hr>
 <p>(Page 5)</p>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-06.png" alt="Figure 6" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-06.png" alt="Figure 6">
   <figcaption>
     Figure 6: Apply the molding tape ⑩ to the side skirt ② while peeling off the release paper, ensuring it is firmly pressed into place, (e.g. 49 N/5kgf or more)
     </figcaption>
@@ -180,9 +298,9 @@ these areas using masking tape, etc.</li>
 <p>☝️ Advice: To maximize the adhesive strength of the double-sided tape, warm both the tape surface and the spoiler's
 mounting area to approximately 40°C (104°F) using a hair dryer or similar device before application.</p>
 <p>☝️ Advice: Molding ⑩ is packaged with two colors. Select the molding color matching your paint finish and apply it accordingly.</p>
-<h3 id="preparationforinstallationonvehicle">Preparation for Installation on Vehicle</h3>
+<h3>Preparation for Installation on Vehicle</h3>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-07.png" alt="Figure 7" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-07.png" alt="Figure 7">
   <figcaption>
     Figure 7: 
     </figcaption>
@@ -191,7 +309,7 @@ mounting area to approximately 40°C (104°F) using a hair dryer or similar devi
 <li>Remove the vehicle clips (6 positions per side). The removed clips will not be reused.</li>
 </ol>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-08.png" alt="Figure 8" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-08.png" alt="Figure 8">
   <figcaption>
     Figure 8: (view of outer panel lower surface) 
     </figcaption>
@@ -201,10 +319,10 @@ mounting area to approximately 40°C (104°F) using a hair dryer or similar devi
 <li>If there is sealant on the attachment surface, remove it completely and touch up the exposed panel surface with
 touch‑up paint.</li>
 </ol>
-<hr />
+<hr>
 <p>(Page 6)</p>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-09.png" alt="Figure 9" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-09.png" alt="Figure 9">
   <figcaption>
     Figure 9 
     </figcaption>
@@ -215,7 +333,7 @@ touch‑up paint.</li>
 <li>Remove template ⑧, leaving only the height mark for the J‑nuts on the masking tape.</li>
 </ol>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-10.png" alt="Figure 10" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-10.png" alt="Figure 10">
   <figcaption>
     Figure 10 
     </figcaption>
@@ -226,7 +344,7 @@ aligning the lower edge of the J‑nut with the marked line.</li>
 <li>Remove the masking tape used for the J‑nut③ height mark.</li>
 </ol>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-11.png" alt="Figure 11" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-11.png" alt="Figure 11">
   <figcaption>
     Figure 11
     </figcaption>
@@ -235,11 +353,11 @@ aligning the lower edge of the J‑nut with the marked line.</li>
 <li>As shown in Fig. 11, remove dirt from the side skirt ② attachment area on the vehicle outer panel and wipe in one
 direction with IPA or white gasoline to degrease.</li>
 </ol>
-<hr />
+<hr>
 <p>(Page 7)</p>
-<h3 id="installationinstructions">Installation Instructions</h3>
+<h3>Installation Instructions</h3>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-12.png" alt="Figure 12" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-12.png" alt="Figure 12">
   <figcaption>
     Figure 12
     </figcaption>
@@ -252,7 +370,7 @@ correct positioning of the product will not be possible.</p>
 with masking tape, etc.</li>
 </ol>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-13.png" alt="Figure 13" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-13.png" alt="Figure 13">
   <figcaption>
     Figure 13
     </figcaption>
@@ -264,10 +382,10 @@ with masking tape, etc.</li>
 clip ⑥ (1 position per side), and clips ⑦ (5 positions per side).
 Temporarily tighten tapping screws ④ (2 positions per side).</li>
 </ol>
-<hr />
+<hr>
 <p>(Page 8)</p>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-14.png" alt="Figure 14" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-14.png" alt="Figure 14">
   <figcaption>
     Figure 14
     </figcaption>
@@ -278,7 +396,7 @@ panel, then peel the release liners of the double‑sided tape (6 locations) in 
 them firmly. Required pressure: at least 49N/5kgf.</li>
 </ol>
 <figure>
-  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-15.png" alt="Figure 15" />
+  <img src="/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual/figure-15.png" alt="Figure 15">
   <figcaption>
     Figure 15
     </figcaption>
@@ -287,8 +405,8 @@ them firmly. Required pressure: at least 49N/5kgf.</li>
 <li>(See Figure 15) Fully tighten tapping screws ④ (2 positions per side) that were temporarily tightened in Fig. 13.</li>
 <li>Peel off the remaining product height position on template ⑧. (One spot on each side)</li>
 </ol>
-<p><details>
-  <summary>☝️ Advice</summary></p>
+<details>
+  <summary>☝️ Advice</summary>
 <ul>
 <li>Excessive tightening torque may damage tapping screws and J‑nuts. Tighten only to the specified torque.</li>
 <li>To maximize the adhesive strength of the double‑sided tape, warm both the tape area and the vehicle attachment area
@@ -299,25 +417,42 @@ to about 40 °C with a dryer before attaching.</li>
 ensure an open (static) time of at least about 3 hours during which strong vibration or wind pressure (including
 vehicle movement) does not act on the product.</li>
 </ul>
-<p></details></p>
-<h3 id="postinstallationchecksandprecautions">Post‑installation Checks and Precautions</h3>
+</details>
+<h3>Post‑installation Checks and Precautions</h3>
 <ol>
 <li>Check that the side skirts are securely attached to the vehicle by the tapping screws and clips.</li>
 <li>Check that the side skirts and vehicle parts have no scratches.</li>
 <li>Check around the entire product to ensure there is no lifting or peeling.</li>
-</ol>]]></description><link>https://type-ra.org/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual</link><guid isPermaLink="true">https://type-ra.org/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual</guid><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><category><![CDATA[aerodynamics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 07 Feb 2026 07:44:00 GMT</pubDate></item><item><title><![CDATA[Subaru STI BRZ Dry Carbon Fiber Rear Swan Neck Spoiler Installation and Instruction Manual]]></title><description><![CDATA[<h2 id="introduction">Introduction</h2>
+</ol>]]></description><link>https://type-ra.org/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual</link><guid isPermaLink="true">https://type-ra.org/kb/toyota-trd-86-brz-kouki-sideskirts-ms344-1800045-installation-and-instruction-manual</guid><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><category><![CDATA[aerodynamics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 07 Feb 2026 07:44:00 GMT</pubDate></item><item><title><![CDATA[Subaru STI BRZ Dry Carbon Fiber Rear Swan Neck Spoiler Installation and Instruction Manual]]></title><description><![CDATA[<h2>Introduction</h2>
 <p>Thank you very much for purchasing this product.
 This manual describes the installation, handling, and precautions to be taken for this product.
 Please read "Precautions for Handling" carefully before using this product and use it properly.
 Please keep this manual in the glove box, etc., and read it whenever you have any questions.</p>
 <p>The following symbols are displayed for important points, which must be observed.</p>
-<p>| Note         |                                                                                                    |
-| :----------- | :------------------------------------------------------------------------------------------------- |
-| ⚠️ Warning   | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
-| ⚠️ Attention | For your safety and that of your vehicle (mishandling may result in injury or accident)            |
-| ※ Advice     | What you need to know. Things you should know.                                                     |</p>
-<p><details>
-  <summary>⚠️ Warning</summary></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Note</th><th align="left"></th></tr></thead><tbody><tr><td align="left">⚠️ Warning</td><td align="left">Safety precautions that must be observed (Improper handling may result in death or serious injury)</td></tr><tr><td align="left">⚠️ Attention</td><td align="left">For your safety and that of your vehicle (mishandling may result in injury or accident)</td></tr><tr><td align="left">※ Advice</td><td align="left">What you need to know. Things you should know.</td></tr></tbody></table>
+<details>
+  <summary>⚠️ Warning</summary>
 <ul>
 <li>Never attempt to process or modify this product.</li>
 <li>Doing so may damage the product and result in serious injury.</li>
@@ -328,9 +463,9 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
 <li>Continued operation may result in damage to the vehicle or an accident.</li>
 <li>If this product deteriorates or is damaged, or is subjected to a strong impact due to an accident, it will not be able to maintain its original performance.</li>
 </ul>
-<p></details></p>
-<p><details>
-  <summary>⚠️  Attention</summary></p>
+</details>
+<details>
+  <summary>⚠️  Attention</summary>
 <ul>
 <li>Never attempt to process or modify this product.</li>
 <li>Doing so may damage the product and result in serious injury.</li>
@@ -341,9 +476,9 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
 <li>Continued operation may result in damage to the vehicle or an accident.</li>
 <li>If this product deteriorates or is damaged, or is subjected to a strong impact due to an accident, it will not be able to maintain its original performance.</li>
 </ul>
-<p></details></p>
-<p><details>
-  <summary>※ Advice</summary></p>
+</details>
+<details>
+  <summary>※ Advice</summary>
 <ul>
 <li>We are not responsible for any direct or indirect damages caused by malfunctions or other defects resulting from incorrect installation or handling of this product.</li>
 <li>Please note that we are not responsible for any direct or indirect damage caused by malfunctions or other defects resulting from improper installation or handling of this product.</li>
@@ -353,41 +488,110 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
 <li>The data described in this document may vary depending on the measurement conditions.</li>
 <li>Installation of this product may cause deterioration of ride quality or significant changes in driving characteristics.</li>
 </ul>
-<p></details></p>
-<h2 id="mountinginstructions">Mounting Instructions</h2>
-<h3 id="1partnumberandapplicablecarmodels">1. Part number and applicable car models</h3>
-<p>| STI Part Number |                       Part Name                        | Applicable car models                                                                                                                                                                                         |
-| :-------------: | :----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <code>ST96050ZM000</code>  | DRY CARBON REAR SPOILER (ドライカーボンリヤスポイラー) | Applied model code: A Jul. 2021-May 2022 <code>ZD8A</code><br /> Applied model code: B May 2022-Sept. 2023 <code>ZD8B</code><br /> Applied model code: C From Sept. 2023- <code>ZD8C</code><br /> Applied model code: D From Jul. 2024- <code>ZD8D</code> |</p>
-<h3 id="2partsmanifest">2. Parts manifest</h3>
-<p>| Num Part (Count)                                                                                                                                                                                     |                                                                                                                                                                                                 |                                                                                                                                                                                                               |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ① Spoiler (1 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-01-spoiler.png" alt="Spoiler" />                                 | ② Reinforcement bracket (2 pcs. left/right)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-02-brackets.png" alt="Brackets" /> | ③ Bolt (6 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-03-bolt.png" alt="Bolt" />                                                   |
-| ④ Washer (6 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-04-washer.png" alt="Washer" />                                    | ⑤ Nut (4 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-05-nut.png" alt="Nut" />                                        | ⑥ Grommets Sheet (2 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-06-grommet.png" alt="Grommet" />                                   |
-| ⑦ Drilling gauge (1 pcs. left/right)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-07-drilling-gauge.png" alt="Drilling gauge" /> | ⑧ Template stencil (1 pcs.)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-08-template.png" alt="Template" />                 | ⑨ Installation and Operating Manual (this manual)<br /><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-09-instructions.png" alt="Instructions" /> |</p>
+</details>
+<h2>Mounting Instructions</h2>
+<h3>1. Part number and applicable car models</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">STI Part Number</th><th align="center">Part Name</th><th align="left">Applicable car models</th></tr></thead><tbody><tr><td align="center"><code>ST96050ZM000</code></td><td align="center">DRY CARBON REAR SPOILER (ドライカーボンリヤスポイラー)</td><td align="left">Applied model code: A Jul. 2021-May 2022 <code>ZD8A</code><br> Applied model code: B May 2022-Sept. 2023 <code>ZD8B</code><br> Applied model code: C From Sept. 2023- <code>ZD8C</code><br> Applied model code: D From Jul. 2024- <code>ZD8D</code></td></tr></tbody></table>
+<h3>2. Parts manifest</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Num Part (Count)</th><th align="left"></th><th align="left"></th></tr></thead><tbody><tr><td align="left">① Spoiler (1 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-01-spoiler.png" alt="Spoiler"></td><td align="left">② Reinforcement bracket (2 pcs. left/right)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-02-brackets.png" alt="Brackets"></td><td align="left">③ Bolt (6 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-03-bolt.png" alt="Bolt"></td></tr><tr><td align="left">④ Washer (6 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-04-washer.png" alt="Washer"></td><td align="left">⑤ Nut (4 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-05-nut.png" alt="Nut"></td><td align="left">⑥ Grommets Sheet (2 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-06-grommet.png" alt="Grommet"></td></tr><tr><td align="left">⑦ Drilling gauge (1 pcs. left/right)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-07-drilling-gauge.png" alt="Drilling gauge"></td><td align="left">⑧ Template stencil (1 pcs.)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-08-template.png" alt="Template"></td><td align="left">⑨ Installation and Operating Manual (this manual)<br><img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/02-09-instructions.png" alt="Instructions"></td></tr></tbody></table>
 <p><small>Please check the number of members first. If any item is missing or different, please contact your dealer.</small></p>
-<h3 id="3toolmanifestuseoftools">3. Tool manifest (Use of Tools)</h3>
-<p>| Tool                            | Tool                                                  |
-| :------------------------------ | :---------------------------------------------------- |
-| Scissors                        | Punch                                                 |
-| Waste rag                       | Drill（Medium 4, 08)                                  |
-| Degreaser (recommended Nonane)  | Hole saw (⏀ 10,⏀ 15) guide 10 mm or less, no shavings |
-| Clip Remover                    | Safety Glasses                                        |
-| Masking paper (newspaper, etc.) | Deburring tool                                        |
-| Cloth tape                      | Vacuum cleaner                                        |
-| Masking Tape                    | Touch-up paint                                        |
-| Magic marker                    | Socket wrench (10mm deep)                             |
-| Hammer                          | Torque wrench (7.5 Nm)                                |</p>
-<h3 id="4installationprecautions">4. Installation Precautions</h3>
-<p><details>
-  <summary>⚠️ Warning</summary></p>
+<h3>3. Tool manifest (Use of Tools)</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Tool</th><th align="left">Tool</th></tr></thead><tbody><tr><td align="left">Scissors</td><td align="left">Punch</td></tr><tr><td align="left">Waste rag</td><td align="left">Drill（Medium 4, 08)</td></tr><tr><td align="left">Degreaser (recommended Nonane)</td><td align="left">Hole saw (⏀ 10,⏀ 15) guide 10 mm or less, no shavings</td></tr><tr><td align="left">Clip Remover</td><td align="left">Safety Glasses</td></tr><tr><td align="left">Masking paper (newspaper, etc.)</td><td align="left">Deburring tool</td></tr><tr><td align="left">Cloth tape</td><td align="left">Vacuum cleaner</td></tr><tr><td align="left">Masking Tape</td><td align="left">Touch-up paint</td></tr><tr><td align="left">Magic marker</td><td align="left">Socket wrench (10mm deep)</td></tr><tr><td align="left">Hammer</td><td align="left">Torque wrench (7.5 Nm)</td></tr></tbody></table>
+<h3>4. Installation Precautions</h3>
+<details>
+  <summary>⚠️ Warning</summary>
 <ul>
 <li>For safety reasons, always disconnect the minus terminal of the battery while the engine is stopped.</li>
 <li>Tighten bolts and nuts securely.</li>
 </ul>
-<p></details></p>
-<p><details>
-  <summary>⚠️ Attention</summary></p>
+</details>
+<details>
+  <summary>⚠️ Attention</summary>
 <ul>
 <li>The descriptions in this manual are intended for automobile mechanics or persons with basic knowledge of maintenance.</li>
 <li>Please do not attempt to install this product by inexperienced persons only, as it may cause injury or vehicle trouble while driving, and is dangerous.</li>
@@ -395,10 +599,10 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
 <li>Please be sure to follow the instructions in this manual in accordance with the service manual for the vehicle model concerned issued by SUBARU Corporation.</li>
 <li>Tighten the bolts to the specified torque. Tightening the bolts/nuts outside the specified torque may cause damage or loosening of the bolts/nuts.</li>
 </ul>
-<p></details></p>
-<h3 id="5simultaneousreplacementnonreusableparts">5. Simultaneous replacement, non-reusable parts</h3>
+</details>
+<h3>5. Simultaneous replacement, non-reusable parts</h3>
 <p>None</p>
-<h3 id="6workprocedure">6. Work Procedure</h3>
+<h3>6. Work Procedure</h3>
 <p>Getting Started:</p>
 <ul>
 <li>This work should be performed by two or more persons.</li>
@@ -411,91 +615,91 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
 <li>Use a hole saw with a tip drill length of 10 mm or less. (Fig. 1)</li>
 </ul>
 <figure>
-  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-01.png" alt="Hole saw" />
+  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-01.png" alt="Hole saw">
   <figcaption>Figure 1</figcaption>
 </figure>
-<h4 id="1markingandpunchingontrunkinnerpanel">1. Marking and punching on trunk inner panel</h4>
-<div className="cols-2">
+<h4>1. Marking and punching on trunk inner panel</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-02.png" alt="Trunk panel" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-02.png" alt="Trunk panel">
     <figcaption>Figure 2</figcaption>
   </figure>
   <p>
-    (1.1) Remove the trim panel trunk rear.<br />
-    (1.1.1) Open the trunk lid, remove the 7 clips securing the trim panel trunk rear, and then remove the trim. (Fig. 2)<br />
+    (1.1) Remove the trim panel trunk rear.<br>
+    (1.1.1) Open the trunk lid, remove the 7 clips securing the trim panel trunk rear, and then remove the trim. (Fig. 2)<br>
     ※ Refer to the SUBARU Service Manual for details.
   </p>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-03.png" alt="Trunk guide" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-03.png" alt="Trunk guide">
     <figcaption>Figure 3</figcaption>
   </figure>
   <p>
-    (1.2) Performing the hole punching through the trunk lid inner panel.<br />
-    (1.2.1) Align the position of the drilling gauge with the inner panel using the protrusion of indicated labels 'I' and "II" as a reference in Figure 3.<br />
+    (1.2) Performing the hole punching through the trunk lid inner panel.<br>
+    (1.2.1) Align the position of the drilling gauge with the inner panel using the protrusion of indicated labels 'I' and "II" as a reference in Figure 3.<br>
     ※ Drilling gauge is provided for both LH/RH sides.
   </p>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-04.png" alt="Trunk guide" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-04.png" alt="Trunk guide">
     <figcaption>Figure 4</figcaption>
   </figure>
   <p>
-    (1.2.2) Secure the drilling gauge with masking tape, etc., and while holding it down so that it does not slide out of place.<br />
-    Mark 5 holes on the panel surface with a magic marker.<br />
-    (Fig. 4) 5 holes on each side (10 holes total).<br />
-    (1.2.3) Remove the drilling gauge and punch in the marked positions.<br />
+    (1.2.2) Secure the drilling gauge with masking tape, etc., and while holding it down so that it does not slide out of place.<br>
+    Mark 5 holes on the panel surface with a magic marker.<br>
+    (Fig. 4) 5 holes on each side (10 holes total).<br>
+    (1.2.3) Remove the drilling gauge and punch in the marked positions.<br>
     (1.2.4) Two of the five locations are ⏀15 holes to be drilled, so as a landmark, place a circle around the punch mark at the location shown in the figure.
-    The hole gauge indicates the size of the finished hole, so check to see if the circles are in the correct position.<br />
+    The hole gauge indicates the size of the finished hole, so check to see if the circles are in the correct position.<br>
     (1.2.5) Close the trunk lid.
   </p>
 </div>
-<h4 id="2punchingoutthetrunkouterpanel">2. Punching out the trunk outer panel</h4>
-<div className="cols-2">
+<h4>2. Punching out the trunk outer panel</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-05.png" alt="Trunk template alignment" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-05.png" alt="Trunk template alignment">
     <figcaption>Figure 5</figcaption>
   </figure>
   <div>
-    (2.1) Performing the hole punching through the trunk lid outer skin.<br />
-    (2.1.1) Cut out the hole punching template. Cut out carefully along the cut line.<br />
+    (2.1) Performing the hole punching through the trunk lid outer skin.<br>
+    (2.1.1) Cut out the hole punching template. Cut out carefully along the cut line.<br>
     (2.1.2) Secure the the template to the shape of the outer panel by aligning it with the panel and securing it with masking tape (Fig. 5)
     <details>
       <summary>⚠️  Attention</summary>Please note that any misalignment in the setting of the stencil will affect the installation of the spoiler.
     </details>
   </div> 
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-06.png" alt="Trunk punching" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-06.png" alt="Trunk punching">
     <figcaption>Figure 6</figcaption>
   </figure>
   <div>
-    (2.1.3) Align the punch with the center of the hole in the secured template. (Fig. 6) Punch 2 holes per wing bracket (4 holes total)<br />
+    (2.1.3) Align the punch with the center of the hole in the secured template. (Fig. 6) Punch 2 holes per wing bracket (4 holes total)<br>
     (2.1.4) Neatly remove the template.
     <details>
       <summary>⚠️  Attention</summary>Do not punch forcefully. If the panel is deformed too much, it will interfere with the installation of parts.
     </details>
   </div> 
 </div>
-<h4 id="3wiringharnessremovalanddrillingpreparation">3. Wiring harness removal and drilling preparation</h4>
-<div className="cols-2">
+<h4>3. Wiring harness removal and drilling preparation</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips">
     <figcaption>Figure 7</figcaption>
   </figure>
   <div>
-    (3.1) Disconnecting the wiring harness.<br />
-    (3.1.1) Remove the drivers side harness clip from the panel (Fig. 7)<br />
-    (3.1.2) Pull out the harness and secure it with cloth adhesive tape. (Fig. 8)<br />
+    (3.1) Disconnecting the wiring harness.<br>
+    (3.1.1) Remove the drivers side harness clip from the panel (Fig. 7)<br>
+    (3.1.2) Pull out the harness and secure it with cloth adhesive tape. (Fig. 8)<br>
     Make sure that the harness does not pass behind the drilling area.
   </div> 
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-08.png" alt="Harness clips" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-08.png" alt="Harness clips">
     <figcaption>Figure 8</figcaption>
   </figure>
   <div>
@@ -504,259 +708,259 @@ Please keep this manual in the glove box, etc., and read it whenever you have an
     </details>
   </div> 
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-09.png" alt="Harness clips" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-09.png" alt="Harness clips">
     <figcaption>Figure 9</figcaption>
   </figure>
   <div>
-    (3.2) Prepare for drilling.<br />
-    (3.2.1) To prevent shavings from sticking, protect the inside of the trunk compartment and the surrounding area with drop cloth, newspaper, etc. (Fig. 9)<br />
-    (3.2.2) Wrap about 10 wraps of tape tightly around the drill to prevent it from penetrating (Fig. 10)<br />
+    (3.2) Prepare for drilling.<br>
+    (3.2.1) To prevent shavings from sticking, protect the inside of the trunk compartment and the surrounding area with drop cloth, newspaper, etc. (Fig. 9)<br>
+    (3.2.2) Wrap about 10 wraps of tape tightly around the drill to prevent it from penetrating (Fig. 10)<br>
     (3.2.3) Wrap about 10 wraps of tape tightly around the hole saw to prevent scratching on the trunk lid during penetration. Make sure that there is no shavings collector. (Fig. 11)
   </div> 
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-10.png" alt="Drill prep" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-10.png" alt="Drill prep">
     <figcaption>Figure 10</figcaption>
   </figure>
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-11.png" alt="Drill prep" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-11.png" alt="Drill prep">
     <figcaption>Figure 11</figcaption>
   </figure>
 </div>
-<h4 id="4drillingholesintrunklidinnerpanel">4. Drilling holes in trunk lid inner panel</h4>
-<div className="cols-2">
+<h4>4. Drilling holes in trunk lid inner panel</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-12.png" alt="Drill prep" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-12.png" alt="Drill prep">
     <figcaption>Figure 12</figcaption>
   </figure>
   <div>
-    (4.1) Perform drilling.<br />
-    (4.1.1) Drill holes at the positions of the punches struck in step (1.2.3, see fig. 12)<br />
-    - ⏀8mm: 3 locations per side (6 locations total)<br />
-    - Drill ⏀4mm → Drill ⏀8mm<br />
-    - Drill ⏀15mm: 2 locations per side (4 locations total)<br />
-    - Drill a 15mm hole in the one circled with a circle around the punching point.<br />
-    - Drill ⏀4mm → hole saw ⏀15mm<br />
+    (4.1) Perform drilling.<br>
+    (4.1.1) Drill holes at the positions of the punches struck in step (1.2.3, see fig. 12)<br>
+    - ⏀8mm: 3 locations per side (6 locations total)<br>
+    - Drill ⏀4mm → Drill ⏀8mm<br>
+    - Drill ⏀15mm: 2 locations per side (4 locations total)<br>
+    - Drill a 15mm hole in the one circled with a circle around the punching point.<br>
+    - Drill ⏀4mm → hole saw ⏀15mm<br>
     <details><summary>⚠️ Attention</summary>
-      Wear protective equipment when drilling.<br />
-      The hole saw should be set up directly on the surface for drilling.<br />
-      Vacuum frequently to remove shavings, etc., as the trunk lid is easily scratched by shavings.<br />
-      Since the trunk lid is in the form of a box, be careful not to allow debris from the hole saw to get inside the trunk lid.<br />
+      Wear protective equipment when drilling.<br>
+      The hole saw should be set up directly on the surface for drilling.<br>
+      Vacuum frequently to remove shavings, etc., as the trunk lid is easily scratched by shavings.<br>
+      Since the trunk lid is in the form of a box, be careful not to allow debris from the hole saw to get inside the trunk lid.<br>
       At the start of drilling, check the harness position to ensure that the harness in the trunk lid does not get caught in the trunk lid.
     </details>
   </div>
 </div>
-<h4 id="5drillingholesintrunklidouterpanel">5. Drilling holes in trunk lid outer panel</h4>
-<div className="cols-2">
+<h4>5. Drilling holes in trunk lid outer panel</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-13.png" alt="Drill prep" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-13.png" alt="Drill prep">
     <figcaption>Figure 13</figcaption>
   </figure>
   <div>
-    (5.1) Protect the area around the trunk lid with newspaper, etc. (Fig. 13)<br />
-    (5.2) Drilling the holes<br />
-    Drill holes at the punch position punched in step (2.1.3). (Fig 14)<br />
-    Ф 10mm: 2 locations on one side (4 locations in total)<br />
+    (5.1) Protect the area around the trunk lid with newspaper, etc. (Fig. 13)<br>
+    (5.2) Drilling the holes<br>
+    Drill holes at the punch position punched in step (2.1.3). (Fig 14)<br>
+    Ф 10mm: 2 locations on one side (4 locations in total)<br>
     Drill Ф 4mm→ Hole saw - Ф10mm
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-14.png" alt="Drill prep" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-14.png" alt="Drill prep">
     <figcaption>Figure 14</figcaption>
   </figure>
   <details>
     <summary>⚠️ Warning</summary>
-    Wear protective equipment when drilling.<br />
-    Drill holes with the hole saw standing straight on the surface.<br />
-    Vacuum frequently to remove shavings, etc., as they can easily scratch the trunk lid.<br />
+    Wear protective equipment when drilling.<br>
+    Drill holes with the hole saw standing straight on the surface.<br>
+    Vacuum frequently to remove shavings, etc., as they can easily scratch the trunk lid.<br>
     When starting drilling, check the position of the harness so that it does not get caught in the trunk lid.
   </details>
 </div>
-<h4 id="6deburringandtouchupwork">6. Deburring and touch-up work</h4>
-<div className="cols-2">
+<h4>6. Deburring and touch-up work</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15.png" alt="Touch up" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15.png" alt="Touch up">
     <figcaption>Figure 15</figcaption>
   </figure>
   <div>
-    (6.1) Remove burrs (front and back) from all holes. (Fig. 15)<br />
-    (6.2) Remove the protective film, newspaper, etc., and clean the shavings with a vacuum cleaner, etc. Clean and degrease the area around the holes and the entire spoiler mounting surface.<br />
-    (6.3) After deburring, be sure to apply touch-up paint to 4 locations on each trunk outer panel and 5 locations on each side of the trunk inner panel to prevent rust from forming.<br />
+    (6.1) Remove burrs (front and back) from all holes. (Fig. 15)<br>
+    (6.2) Remove the protective film, newspaper, etc., and clean the shavings with a vacuum cleaner, etc. Clean and degrease the area around the holes and the entire spoiler mounting surface.<br>
+    (6.3) After deburring, be sure to apply touch-up paint to 4 locations on each trunk outer panel and 5 locations on each side of the trunk inner panel to prevent rust from forming.<br>
 Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
-<h4 id="7spoilerinstallation">7. Spoiler installation</h4>
+<h4>7. Spoiler installation</h4>
 <figure>
-  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15-b.png" alt="Bracket install" />
+  <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15-b.png" alt="Bracket install">
   <figcaption>Figure 15-b: Reinforcement bracket</figcaption>
 </figure>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-16.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-16.png" alt="Installation">
     <figcaption>Figure 16</figcaption>
   </figure>
   <div>
-    (7.1) Installation of Reinforcement bracket<br />
-    (7.1.1) Insert the bracket through the opening in the trunk inner panel.<br />
-    The direction of the angled head is angled twoards the outside of the vehicle. (Fig 17)<br />
+    (7.1) Installation of Reinforcement bracket<br>
+    (7.1.1) Insert the bracket through the opening in the trunk inner panel.<br>
+    The direction of the angled head is angled twoards the outside of the vehicle. (Fig 17)<br>
     <figure>
-      <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-17.png" alt="Bracket orientation" />
+      <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-17.png" alt="Bracket orientation">
       <figcaption>Figure 17</figcaption>
     </figure>  
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-18.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-18.png" alt="Installation">
     <figcaption>Figure 18</figcaption>
   </figure>
   <div>
-    (7.1.2) Temporarily fasten the reinforcement bracket with (3) bolts and (4) washers (3 places on each side) (Fig 18)<br />
+    (7.1.2) Temporarily fasten the reinforcement bracket with (3) bolts and (4) washers (3 places on each side) (Fig 18)<br>
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-19.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-19.png" alt="Installation">
     <figcaption>Figure 19</figcaption>
   </figure>
   <div>
-    (7.1.3) Close the trunk lid.<br />
+    (7.1.3) Close the trunk lid.<br>
     (7.1.4) From the outside of the trunk lid, align the center of the hole in the trunk outer panel with the center of the hole in the reinforcement bracket. (Fig. 19)
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-20.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-20.png" alt="Installation">
     <figcaption>Figure 20</figcaption>
   </figure>
   <div>
-    (7.2) Installing the spoiler.<br />
-    (7.1.4) From the outside of the trunk lid, align the center of the hole in the trunk outer panel with the center of the hole in the reinforcement bracket. (Fig. 19)<br />
+    (7.2) Installing the spoiler.<br>
+    (7.1.4) From the outside of the trunk lid, align the center of the hole in the trunk outer panel with the center of the hole in the reinforcement bracket. (Fig. 19)<br>
     (7.2.1) ① Insert the four bolts from the stay portion of the spoiler into the holes in the trunk lid. (Fig. 20)
-    (7.2.2) Insert the spoiler into the holes in the trunk lid, being careful not to scratch the painted surface of the trunk lid with the bolts.<br />
-    (7.2.2) Open the trunk lid slowly while holding the spoiler to prevent it from falling off.<br />
-    (7.2.3) Temporarily tighten the nuts (⑤) on the stud bolts.<br />
+    (7.2.2) Insert the spoiler into the holes in the trunk lid, being careful not to scratch the painted surface of the trunk lid with the bolts.<br>
+    (7.2.2) Open the trunk lid slowly while holding the spoiler to prevent it from falling off.<br>
+    (7.2.3) Temporarily tighten the nuts (⑤) on the stud bolts.<br>
     (Fig. 21) 2 places on each side (4 places total)
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-21.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-21.png" alt="Installation">
     <figcaption>Figure 21</figcaption>
   </figure>
   <details open>
     <summary>⚠️ Attention</summary>Be careful not to drop the nut into the trunk lid.
   </details>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-22.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-22.png" alt="Installation">
     <figcaption>Figure 22</figcaption>
   </figure>
   <div>
     (7.2.4) Gently close the trunk lid and check that there is no abnormality such as (1) spoiler left-right difference (Fig. 22)
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-23.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-23.png" alt="Installation">
     <figcaption>Figure 23</figcaption>
   </figure>
   <div>
-    (7.2.5) Gently open the trunk lid again and tighten the (3) bolt and (5) nut. (Fig. 23)<br />
-    Tightening torque: 7.5Nm<br />
-    (5) Nut: 2 places on each side (4 places total)<br />
-    Bolt ③: 3 places on each side (6 places total)<br />
+    (7.2.5) Gently open the trunk lid again and tighten the (3) bolt and (5) nut. (Fig. 23)<br>
+    Tightening torque: 7.5Nm<br>
+    (5) Nut: 2 places on each side (4 places total)<br>
+    Bolt ③: 3 places on each side (6 places total)<br>
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-24.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-24.png" alt="Installation">
     <figcaption>Figure 24</figcaption>
   </figure>
   <div>
-    (7.3) Reassemble the parts.<br />
-    (7.3.1) Insert the harness clip removed in (3.1.1) in its original position. (Fig. 24)<br />
+    (7.3) Reassemble the parts.<br>
+    (7.3.1) Insert the harness clip removed in (3.1.1) in its original position. (Fig. 24)<br>
     (7.3.2) Inside the trunk lid, reinstall the trim panel. (7 clips, see Fig. 2)
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-25.png" alt="Installation" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-25.png" alt="Installation">
     <figcaption>Figure 25</figcaption>
   </figure>
   <div>
-    (7.3.3) Degrease the area around the ⏀15 hole and attach the ⑥ grommet sheet. (2 locations left and right, see Fig. 25)<br />
-    (7.3.4) If the trunk lid and trunk compartment are dirty, clean them.<br />
+    (7.3.3) Degrease the area around the ⏀15 hole and attach the ⑥ grommet sheet. (2 locations left and right, see Fig. 25)<br>
+    (7.3.4) If the trunk lid and trunk compartment are dirty, clean them.<br>
     (7.3.5) If the spoiler is dirty, wipe it off with a clean rag.
   </div>
 </div>
-<h4 id="8adjustment">8. Adjustment</h4>
-<div className="cols-2">
+<h4>8. Adjustment</h4>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-26.png" alt="Adjustment" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-26.png" alt="Adjustment">
     <figcaption>Figure 26</figcaption>
   </figure>
   <div>
-    (8.1) Stopper height adjustment<br />
-    (8.1.1) Place a piece of paper between Stopper-A and the applied surface of the Trunk hinge assy., close the trunk lid gently, then press the center of the trunk lid to lock it. (Fig. 26)<br />
-    ※ Please pay attention to panel deformation, etc.<br />
-    (8.1.2) Pull the paper between the gaps of the trunk lid.<br />
-    If the paper comes out without resistance → Go to (8.1.3)<br />
+    (8.1) Stopper height adjustment<br>
+    (8.1.1) Place a piece of paper between Stopper-A and the applied surface of the Trunk hinge assy., close the trunk lid gently, then press the center of the trunk lid to lock it. (Fig. 26)<br>
+    ※ Please pay attention to panel deformation, etc.<br>
+    (8.1.2) Pull the paper between the gaps of the trunk lid.<br>
+    If the paper comes out without resistance → Go to (8.1.3)<br>
     If the paper does not come out→ Go to (8.1.5)
   </div>
 </div>
-<div className="cols-2">
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-27.png" alt="Adjustment" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-27.png" alt="Adjustment">
     <figcaption>Figure 27</figcaption>
   </figure>
   <div>
-    (8.1.3) Open the trunk lid and turn stopper A clockwise 1/4 turn (90 degrees). (Fig. 27)<br />
-    (8.1.4) Return to (8.1.1) and repeat until no more paper comes out.<br />
-    ※ Adjust within 1 turn from the starting position.<br />
+    (8.1.3) Open the trunk lid and turn stopper A clockwise 1/4 turn (90 degrees). (Fig. 27)<br>
+    (8.1.4) Return to (8.1.1) and repeat until no more paper comes out.<br>
+    ※ Adjust within 1 turn from the starting position.<br>
     (8.1.5) Check that there is no abnormality in the surface deviation of the trunk lid.
   </div>
 </div>
 <p>This completes the installation process.</p>
-<h2 id="howtoadjustspoilerangle">How to Adjust Spoiler Angle</h2>
-<div className="cols-2">
+<h2>How to Adjust Spoiler Angle</h2>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-28.png" alt="Adjustment" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-28.png" alt="Adjustment">
     <figcaption>Figure 28</figcaption>
   </figure>
   <div>
     ※This product can be used to change the angle of the spoiler (B or C in the figure) to obtain more downforce by selecting the coupling holes for the bolts. (Fig. 28)
-    <br />
-    B: Standard shipping condition<br />
-    C: Angle up → Higher downforce Note that the bolt A should not be loosened when adjusting the angle.<br />
-    The angle can be adjusted without loosening it.<br />
-    Adjustment tools<br />
-    Torque wrench, T20 bit<br />
+    <br>
+    B: Standard shipping condition<br>
+    C: Angle up → Higher downforce Note that the bolt A should not be loosened when adjusting the angle.<br>
+    The angle can be adjusted without loosening it.<br>
+    Adjustment tools<br>
+    Torque wrench, T20 bit<br>
     Tightening torque: 7.5Nm
   </div>
 </div>
-<h2 id="precautions">Precautions</h2>
-<div className="cols-2">
+<h2>Precautions</h2>
+<div class="cols-2">
   <figure>
-    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-29.png" alt="Complete" />
+    <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-29.png" alt="Complete">
     <figcaption>Figure 29</figcaption>
   </figure>
   <details open>
     <summary>⚠️ Attention</summary>
-    The installation of this product will change the feel of the trunk lid opening and closing operation.<br />
-    The installation of this product will reduce the amount of pop-up of the trunk lid when the trunk lid is opened, making it difficult to recognize the appearance of the trunk lid.<br />
-    Please make sure that the trunk lid is closed before driving.<br />
-    Carbon products are structurally designed so that the shading of the carbon mesh, irregular gaps, and undulation of the fibers may be visible. These are due to the characteristics of real carbon. Please understand this in advance.<br />
-    To protect the product from scratches, deformation, and damage, please pay attention to the following.<br />
-    Do not hold the spoiler when opening and closing the trunk lid.<br />
-    Do not operate the trunk lid suddenly when opening or closing it.<br />
-    For cleaning, use plenty of water to lift sand and dust, and wash it off gently with a soft sponge or the like.<br />
-    Do not scrub hard in parts.<br />
+    The installation of this product will change the feel of the trunk lid opening and closing operation.<br>
+    The installation of this product will reduce the amount of pop-up of the trunk lid when the trunk lid is opened, making it difficult to recognize the appearance of the trunk lid.<br>
+    Please make sure that the trunk lid is closed before driving.<br>
+    Carbon products are structurally designed so that the shading of the carbon mesh, irregular gaps, and undulation of the fibers may be visible. These are due to the characteristics of real carbon. Please understand this in advance.<br>
+    To protect the product from scratches, deformation, and damage, please pay attention to the following.<br>
+    Do not hold the spoiler when opening and closing the trunk lid.<br>
+    Do not operate the trunk lid suddenly when opening or closing it.<br>
+    For cleaning, use plenty of water to lift sand and dust, and wash it off gently with a soft sponge or the like.<br>
+    Do not scrub hard in parts.<br>
     To prevent damage, please do not use a car wash machine.
   </details>
 </div>]]></description><link>https://type-ra.org/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual</link><guid isPermaLink="true">https://type-ra.org/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual</guid><category><![CDATA[zd8]]></category><category><![CDATA[zn8]]></category><category><![CDATA[aerodynamics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Wed, 21 Aug 2024 06:44:00 GMT</pubDate></item><item><title><![CDATA[Changes In the 2022 Subaru BRZ Toyota GR86 ZC8/ZN8 Chassis and Suspension]]></title><description><![CDATA[<p>The second generation of the Subaru BRZ/Toyota GR86 platform was introduced in the 2022 model year.</p>
@@ -769,15 +973,15 @@ minor overall.</p>
 <li>Increased rear track width</li>
 <li>Chassis stiffening</li>
 </ul>
-<p>An increase in rear motion ratio on the&nbsp;second generation cars (due to a slight change in rear spring/shock mounting points)
+<p>An increase in rear motion ratio on the second generation cars (due to a slight change in rear spring/shock mounting points)
 means that with identical springs, the newer car will have a slightly stiffer wheel rate, or spring rate at the wheels,
-compared to the&nbsp;first generation.</p>
+compared to the first generation.</p>
 <p>For example, a 300 lbs/in rear spring on the first generation car equates to about 173 lbs/in in wheel rate. On the second
 generation car, that same spring would mean about 183 lbs/in in wheel rate. A small difference that means a slight increase
 in the tendency to oversteer.</p>
 <p>Meanwhile, the slight increase in rear track width reduces rear weight transfer in a corner and reduces overall weight
 transfer. This means slightly more rear grip and less oversteer. An analysis of the total lateral load transfer distribution
-(TLLTD) of each car indicates that <em>these&nbsp;two changes do essentially balance out</em> in terms of oversteer and understeer.</p>
+(TLLTD) of each car indicates that <em>these two changes do essentially balance out</em> in terms of oversteer and understeer.</p>
 <p>A key change to the second generation car is the stiffer chassis structure itself. This can be felt from the driver’s
 seat but is difficult to quantify. Reducing chassis flex has the effect of an overall increase in spring rate and the
 car will feel slightly firmer with the same spring rates.</p>
@@ -793,21 +997,21 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 <p>Toyota Techstream is diagnostic software that allows you to diagnose and troubleshoot issues with Toyota and some Subaru vehicles. It reads and clears diagnostic trouble codes (DTCs) that are stored in the vehicle's on-board computer. It also provides access to various functions and systems in the vehicle, such as the engine control system, transmission system, and ABS (anti-lock brake system), so that technicians can perform tests and make adjustments as needed.</p>
 <p>To read codes with Toyota Techstream, you will need to connect a ODB-II to USB cable to the vehicle's ODB-II port. The technician will then start the Techstream software and follow the prompts to access the diagnostic functions of the vehicle. Once the diagnostic functions are accessed, the technician can retrieve the stored DTCs and use them to diagnose and fix the issue with the vehicle.</p>
 <p>Subaru SSM4 is Toyota's equivalent of Techstream, their dealer tool to read, set and manipulate values in the ECU, but there isn't much difference of the capabilities.</p>
-<h2 id="buyaodbiiminivcicable">Buy a ODB-II Mini-VCI Cable</h2>
-<p>Buy a USB to Mini-VCI ODB-II cable, you can buy them on <a href="https://www.amazon.com/gp/product/B097YC5LSR/">Amazon</a> or <a href="https://www.ebay.com/itm/314111811780?mkevt=1&mkcid=1&mkrid=711-53200-19255-0&siteid=0&customid=&campid=5337589904&toolid=10001&mpt=9031539">eBay</a></p>
-<h2 id="downloadandinstallvirtualbox">Download and install VirtualBox</h2>
+<h2>Buy a ODB-II Mini-VCI Cable</h2>
+<p>Buy a USB to Mini-VCI ODB-II cable, you can buy them on <a href="https://www.amazon.com/gp/product/B097YC5LSR/">Amazon</a> or <a href="https://www.ebay.com/itm/314111811780?mkevt=1&#x26;mkcid=1&#x26;mkrid=711-53200-19255-0&#x26;siteid=0&#x26;customid=&#x26;campid=5337589904&#x26;toolid=10001&#x26;mpt=9031539">eBay</a></p>
+<h2>Download and install VirtualBox</h2>
 <ul>
 <li><a href="https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-Win.exe">Windows</a></li>
 <li><a href="https://download.virtualbox.org/virtualbox/7.0.2/VirtualBox-7.0.2-154219-OSX.dmg">Apple Intel macOS</a></li>
 <li><a href="https://github.com/utmapp/UTM/releases/latest/download/UTM.dmg">Apple M1, M2 macOS</a></li>
 </ul>
 <p>On Windows: Double-Click downloaded file, on macOS Double-Click downloaded file, run installer or drag Applications folder.</p>
-<h2 id="downloadandinstalltechstream">Download and install TechStream</h2>
+<h2>Download and install TechStream</h2>
 <ul>
 <li><a href="https://mega.nz/#!fsEizJyC!aH_2a1hQnX6LpicDS1Bq-gEKVEU57cotd3_QesN2_M0">Windows / Apple Intel macOS</a> v12.20.024</li>
 <li><a href="https://mega.nz/file/rkNlgAIS#2KhsbV9__V3u1Q3XvqXCTEbhZ8Q5t9MwQ0yHGaFkT7M">Apple M1, M2 macOS</a></li>
 </ul>
-<h2 id="instructions">Instructions</h2>
+<h2>Instructions</h2>
 <figure>
   <img src="/kb/diagnosing-trouble-codes-for-the-toyota-86-zn6-subaru-brz-zc6-with-toyota-techstream-odb-ii-code-reader/screenshot.jpg" alt="ODB-II diagnosis with Toyota Techstream">
   <figcaption>
@@ -816,8 +1020,11 @@ maintain a good handling balance and performance.</p>]]></description><link>http
 </figure>
 <ol>
 <li>Plug ODB-II Mini-VCI cable into the ODB-II port of the vehicle, located under the steering wheel. Plug the USB side into computer</li>
-<li>Verify the USB controller is enabled on the Techstream image<ul>
-<li>in VirtualBox, click the Settings icon, navigate to Ports, USB, and verify the "Enable USB controller" is checked</li></ul></li>
+<li>Verify the USB controller is enabled on the Techstream image
+<ul>
+<li>in VirtualBox, click the Settings icon, navigate to Ports, USB, and verify the "Enable USB controller" is checked</li>
+</ul>
+</li>
 <li>Run Techstream image in VirtualBox, wait for Windows to boot</li>
 <li>Start the car</li>
 <li>Run the installed Techstream software, located on the Windows Desktop "TechStream"</li>
@@ -829,53 +1036,138 @@ maintain a good handling balance and performance.</p>]]></description><link>http
     Location of the Traction Control button
   </figcaption>
 </figure>
-<p>| EDA | Purpose |
-|:---|:---|
-| <strong>VSC</strong> | Vehicle Stability Control, often known generically as&nbsp;<strong>ESC</strong>&nbsp;or Electronic Stability Control). This program identifies understeer (running wide, needing more and more lock to turn) and oversteer (back slipping out).&nbsp;It then corrects the car’s course by braking individual wheels, and in extreme cases, also reducing throttle to avoid making things worse. Subaru called VSC by the generic term of&nbsp;<strong>ESC</strong>. |
-| <strong>TRC</strong> | Engine Traction Control. If you have both rear wheels spinning this system figures out you’re going nowhere and reduces the throttle.&nbsp;The 86/BRZ refers to this as TRC, or Traction Control, although it is a distinct programme from brake traction control (below). In 86-speak, TRC stands for “Traction Control System”. No, I don’t know why. Subaru call it&nbsp;<strong>TCS</strong>, or Traction Control System. |
-| <strong>B-TRC</strong> / <strong>Brake-LSD</strong> (name from MY17 onwards) | Brake Traction Control. If one drive wheel spins up faster than the other this system detects that spin and brakes the spinning wheel&nbsp;which sends torque (“drive”) to the other wheel, so you can keep moving forwards.&nbsp;There is no official acronym for this system because it is not mentioned anywhere, but nevertheless it exists. For the purposes of this guide it’ll be known as B-TRC, because it is traction control operated via brakes as opposed to traction control by modulation of the throttle. This system is also known as an ‘LSD mode’, or limited-slip differential mode.&nbsp;That’s technically true but massively confusing because it’s not an LSD, it just acts a like one in some respects, and most 86/BRZs have a true, mechanical limited-slip differential in the form of a Torsen unit on the rear axle. Subaru’s term is&nbsp;<strong>TCS Limited Slip Device</strong>. Except it’s not a device, it’s just software. I did mention the names were confusing. |
-| <strong>ABS</strong> | Anti-lock brakes. Detects that a wheel is about to lock and momentarily reduces brake pressure on that wheel to prevent the wheel locking up. Both Subaru and Toyota agree on this name. |
-| <strong>EBD & EBA</strong> | Electronic Brakeforce Distribution. Cars are naturally designed to brake the front wheels more than the rear for safety reasons. Unfortunately, this means there is unused braking capacity on the rear wheels.&nbsp;EBD distributes braking force between all four wheels for maximum braking efficiency.&nbsp;Plain ABS just stops a wheel locking.&nbsp;There’s also EBA, Electronic Brake Assist and this helps you apply the brakes hard in an emergency by detecting how quickly your foot moved from accelerator to brake and if you don’t push the pedal all the way to the floor, it’ll help you. Both Subaru and Toyota agree on this name. |</p>]]></description><link>https://type-ra.org/kb/oem-zc6-zn6-edas-electronic-driving-aids</link><guid isPermaLink="true">https://type-ra.org/kb/oem-zc6-zn6-edas-electronic-driving-aids</guid><category><![CDATA[zc6]]></category><category><![CDATA[zn6]]></category><category><![CDATA[electroncics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 23 Dec 2022 07:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Maintenance Fluids Specifications]]></title><description><![CDATA[<h3 id="engineoilspecs">Engine Oil Specs</h3>
-<p>| Subaru Recommended Viscosity grade | Quality grade |
-|:---|:---|
-| <code>0W-20</code> (synthetic oil)                | <strong>API Certified</strong> Product contains SN "Resource Conserving" logo <br /> <strong>ILSAC Certified</strong> Product contains GF-5 "Starbust Mark" logo |
-| <code>5W-30</code> (synthetic oil) |  Recommended for racing application |</p>
-<h3 id="engineoilfilllevels">Engine Oil Fill Levels</h3>
-<p>| Engine oil fill level | Notes |
-|:---|:---|
-| <code>5L (5.4 US Quarts)</code> | OEM fill level |
-| <code>5.6L (5.4 to 6 US Quarts)</code> | With aftermarket HKS oil filter |</p>
-<h3 id="otherfluids">Other Fluids</h3>
-<p>| Type | Amount (L, US Quart) | Our recommended product |
-|:---|:---|
-| Manual transmission oil | <code>2.2L</code>, <code>2.3 Quart</code> | Motul Gear 300 75W90 Fully Synthetic Gearbox Oil, MG Gear Oil Special II (API GL-3, SAE 75W-90) part number <code>0888501513</code> |
-| Rear differential fluid | <code>1.1L</code> to <code>1.2L</code> (<code>1.1Qt</code> to <code>1.3qt</code>) for OEM diff housing | Red Line GL-5 Gear Oil 75W-86 50104 |
-| Rear differential fluid | <code>1.6L</code> to <code>1.7L</code> (<code>1.7Qt</code> to <code>1.7qt</code>) with Cusco Rear Differential Cover | Red Line GL-5 Gear Oil 75W-86 50104 |
-| Brake fluid &amp; Clutch fluid | ?? |  FMVSS No.116 DOT3 or DOT4, Motul RBF 600 |</p>]]></description><link>https://type-ra.org/kb/oem-zn6-zc6-maintenance-fluids-specs</link><guid isPermaLink="true">https://type-ra.org/kb/oem-zn6-zc6-maintenance-fluids-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[transmission]]></category><category><![CDATA[drivetrain]]></category><category><![CDATA[rear differential]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sun, 18 Dec 2022 13:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Specifications for Subaru BRZ, Toyota 86 OEM battery.</p>
-<p>Subaru part <code>82110AA012</code> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">EDA</th><th align="left">Purpose</th></tr></thead><tbody><tr><td align="left"><strong>VSC</strong></td><td align="left">Vehicle Stability Control, often known generically as <strong>ESC</strong> or Electronic Stability Control). This program identifies understeer (running wide, needing more and more lock to turn) and oversteer (back slipping out). It then corrects the car’s course by braking individual wheels, and in extreme cases, also reducing throttle to avoid making things worse. Subaru called VSC by the generic term of <strong>ESC</strong>.</td></tr><tr><td align="left"><strong>TRC</strong></td><td align="left">Engine Traction Control. If you have both rear wheels spinning this system figures out you’re going nowhere and reduces the throttle. The 86/BRZ refers to this as TRC, or Traction Control, although it is a distinct programme from brake traction control (below). In 86-speak, TRC stands for “Traction Control System”. No, I don’t know why. Subaru call it <strong>TCS</strong>, or Traction Control System.</td></tr><tr><td align="left"><strong>B-TRC</strong> / <strong>Brake-LSD</strong> (name from MY17 onwards)</td><td align="left">Brake Traction Control. If one drive wheel spins up faster than the other this system detects that spin and brakes the spinning wheel which sends torque (“drive”) to the other wheel, so you can keep moving forwards. There is no official acronym for this system because it is not mentioned anywhere, but nevertheless it exists. For the purposes of this guide it’ll be known as B-TRC, because it is traction control operated via brakes as opposed to traction control by modulation of the throttle. This system is also known as an ‘LSD mode’, or limited-slip differential mode. That’s technically true but massively confusing because it’s not an LSD, it just acts a like one in some respects, and most 86/BRZs have a true, mechanical limited-slip differential in the form of a Torsen unit on the rear axle. Subaru’s term is <strong>TCS Limited Slip Device</strong>. Except it’s not a device, it’s just software. I did mention the names were confusing.</td></tr><tr><td align="left"><strong>ABS</strong></td><td align="left">Anti-lock brakes. Detects that a wheel is about to lock and momentarily reduces brake pressure on that wheel to prevent the wheel locking up. Both Subaru and Toyota agree on this name.</td></tr><tr><td align="left"><strong>EBD &#x26; EBA</strong></td><td align="left">Electronic Brakeforce Distribution. Cars are naturally designed to brake the front wheels more than the rear for safety reasons. Unfortunately, this means there is unused braking capacity on the rear wheels. EBD distributes braking force between all four wheels for maximum braking efficiency. Plain ABS just stops a wheel locking. There’s also EBA, Electronic Brake Assist and this helps you apply the brakes hard in an emergency by detecting how quickly your foot moved from accelerator to brake and if you don’t push the pedal all the way to the floor, it’ll help you. Both Subaru and Toyota agree on this name.</td></tr></tbody></table>]]></description><link>https://type-ra.org/kb/oem-zc6-zn6-edas-electronic-driving-aids</link><guid isPermaLink="true">https://type-ra.org/kb/oem-zc6-zn6-edas-electronic-driving-aids</guid><category><![CDATA[zc6]]></category><category><![CDATA[zn6]]></category><category><![CDATA[electroncics]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Fri, 23 Dec 2022 07:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Maintenance Fluids Specifications]]></title><description><![CDATA[<h3>Engine Oil Specs</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Subaru Recommended Viscosity grade</th><th align="left">Quality grade</th></tr></thead><tbody><tr><td align="left"><code>0W-20</code> (synthetic oil)</td><td align="left"><strong>API Certified</strong> Product contains SN "Resource Conserving" logo <br> <strong>ILSAC Certified</strong> Product contains GF-5 "Starbust Mark" logo</td></tr><tr><td align="left"><code>5W-30</code> (synthetic oil)</td><td align="left">Recommended for racing application</td></tr></tbody></table>
+<h3>Engine Oil Fill Levels</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Engine oil fill level</th><th align="left">Notes</th></tr></thead><tbody><tr><td align="left"><code>5L (5.4 US Quarts)</code></td><td align="left">OEM fill level</td></tr><tr><td align="left"><code>5.6L (5.4 to 6 US Quarts)</code></td><td align="left">With aftermarket HKS oil filter</td></tr></tbody></table>
+<h3>Other Fluids</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Type</th><th align="left">Amount (L, US Quart)</th><th align="left">Our recommended product</th></tr></thead><tbody><tr><td align="left">Manual transmission oil</td><td align="left"><code>2.2L</code>, <code>2.3 Quart</code></td><td align="left">Motul Gear 300 75W90 Fully Synthetic Gearbox Oil, MG Gear Oil Special II (API GL-3, SAE 75W-90) part number <code>0888501513</code></td></tr><tr><td align="left">Rear differential fluid</td><td align="left"><code>1.1L</code> to <code>1.2L</code> (<code>1.1Qt</code> to <code>1.3qt</code>) for OEM diff housing</td><td align="left">Red Line GL-5 Gear Oil 75W-86 50104</td></tr><tr><td align="left">Rear differential fluid</td><td align="left"><code>1.6L</code> to <code>1.7L</code> (<code>1.7Qt</code> to <code>1.7qt</code>) with Cusco Rear Differential Cover</td><td align="left">Red Line GL-5 Gear Oil 75W-86 50104</td></tr><tr><td align="left">Brake fluid &#x26; Clutch fluid</td><td align="left">??</td><td align="left">FMVSS No.116 DOT3 or DOT4, Motul RBF 600</td></tr></tbody></table>]]></description><link>https://type-ra.org/kb/oem-zn6-zc6-maintenance-fluids-specs</link><guid isPermaLink="true">https://type-ra.org/kb/oem-zn6-zc6-maintenance-fluids-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[transmission]]></category><category><![CDATA[drivetrain]]></category><category><![CDATA[rear differential]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sun, 18 Dec 2022 13:44:00 GMT</pubDate></item><item><title><![CDATA[OEM ZN6 ZC6 Battery Specs]]></title><description><![CDATA[<p>Specifications for Subaru BRZ, Toyota 86 OEM battery.</p>
+<p>Subaru part <code>82110AA012</code></p>
 <ul>
-<li>Panasonic <code>55D23L-MF</code></li>
-<li>supersession(s): <code>82110AA010</code> <code>82110AA011</code>  </li>
+<li>Panasonic <code>55D23L-MF</code>
+<ul>
+<li>supersession(s): <code>82110AA010</code> <code>82110AA011</code></li>
 <li>Panasonic part no # <code>75D23</code></li>
 <li>Type: <code>L TYPE</code> ONLY</li>
-<li>Volts:&nbsp;<code>12v</code></li>
-<li>Capacity 20hrs (Ah):&nbsp; <code>65</code></li>
-<li>CCA:&nbsp;<code>533</code></li>
+<li>Volts: <code>12v</code></li>
+<li>Capacity 20hrs (Ah):  <code>65</code></li>
+<li>CCA: <code>533</code></li>
 <li>Reserve capacity (mins): <code>118</code></li>
 <li>Terminal type: <code>BIG</code> / <code>SAE</code></li>
-<li>Dimensions (mm/in)<ul>
-<li>(L) 232mm&nbsp;(W) 173mm,&nbsp; (H) 204mm,&nbsp; (TH) 227mm</li>
-<li>(L) 9.13in&nbsp;(W) 6.81in,&nbsp; (H) 8.03in,&nbsp; (TH) 8.94in</li></ul></li>
-<li>Weight (with electrolyte)(Lbs/Kg):&nbsp;<code>35.05</code>lbs / 15.9kg</li>
-<li>OEM battery box size </li>
+<li>Dimensions (mm/in)
+<ul>
+<li>(L) 232mm (W) 173mm,  (H) 204mm,  (TH) 227mm</li>
+<li>(L) 9.13in (W) 6.81in,  (H) 8.03in,  (TH) 8.94in</li>
+</ul>
+</li>
+<li>Weight (with electrolyte)(Lbs/Kg): <code>35.05</code>lbs / 15.9kg</li>
+</ul>
+</li>
+<li>OEM battery box size
+<ul>
 <li>width: <code>25cm</code></li>
 <li>length: <code>17cm</code></li>
 <li>height: <code>15-20cm</code></li>
+</ul>
+</li>
 </ul>]]></description><link>https://type-ra.org/kb/oem-zn6-zc6-battery-specs</link><guid isPermaLink="true">https://type-ra.org/kb/oem-zn6-zc6-battery-specs</guid><category><![CDATA[OEM]]></category><category><![CDATA[battery]]></category><category><![CDATA[specifications]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Sat, 17 Dec 2022 07:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Rays Wheels Volk Racing Model Number SKU Codes]]></title><description><![CDATA[<p>Rays Wheels uses a 10+ letter SKU that encodes the wheels model in their lineup,
-the generation of the forging mold, wheel size &amp; offset, and color. This SKU is
+the generation of the forging mold, wheel size &#x26; offset, and color. This SKU is
 used by retailers to exactly determine the wheels specification. Some authorized
 retailers (e.g. Vivid Racing) display the Rays Wheels SKU on their product detail
-page while others do not. </p>
+page while others do not.</p>
 <p>Decoding the Rays Wheels SKU is useful since it allows us to synthetically re-create
 SKU numbers that may (or may not) have existed in the past, in lieu of an authoritative
 source of historical SKU numbers, so we can search for these numbers on eBay or elsewhere,
@@ -889,280 +1181,1035 @@ where we may find rare wheels that others may not have found.</p>
 <p>The information encoded within the SKU number contains details of the
 wheels’s model, generation, wheel size, and color.</p>
 <p>Each letter in the SKU designates a code:</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| <strong>model</strong> | Model in the Volk Racing model line |
-| <strong>size</strong> | Wheel width by height |
-| <strong>offset</strong> | Wheel offset |
-| <strong>PCD</strong> | Wheel PCD or bolt pattern |
-| <strong>color</strong> | Wheel color |</p>
-<h2 id="modelcode">Model Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><strong>model</strong></td><td align="left">Model in the Volk Racing model line</td></tr><tr><td align="left"><strong>size</strong></td><td align="left">Wheel width by height</td></tr><tr><td align="left"><strong>offset</strong></td><td align="left">Wheel offset</td></tr><tr><td align="left"><strong>PCD</strong></td><td align="left">Wheel PCD or bolt pattern</td></tr><tr><td align="left"><strong>color</strong></td><td align="left">Wheel color</td></tr></tbody></table>
+<h2>Model Code</h2>
 <p>The <strong>Model</strong> code is the first 3-4 letters, it tells you which model in the Volk Racing line it belongs:</p>
-<p>| Code | Model |
-| :--- | :---- |
-| WGAA | Gram Lights 57ANA |
-| WGAB | Gram Lights 57BNA |
-| WGI | Gram Lights 57DR |
-| WGC6 | Gram Lights 57C6 |
-| WGCR | Gram Lights 57CR |
-| WGAC | Gram Lights 57CNA |
-| WGIX | Gram Lights 57DR-X |
-| WGFZ | Gram Lights 57FXZ |
-| WGJ | Gram Lights 57XTREME |
-| WGJD | Gram Lights 57XTREME SPEC-D |
-| WGJX | Gram Lights 57XTREME REV LIMIT |
-| WGJR | Gram Lights 57XR |
-| WGTR | Gram Lights 57TRANSCEND |
-| WGTX | Gram Lights 57TRANS-X |
-| WGTL | Gram Lights 57TRANSCEND REV LIMIT |
-| WGTM | Gram Lights 57TRANSCEND UNLIMIT |
-| WGTU | Gram Lights 57TRANS-X OVERSEAS |
-| WGTO | Gram Lights 57TRANSCEND OVERSEAS |
-| WGVX | Gram Lights 57VALKYRIE |
-| WGX | Gram Lights 57XTC |
-| WHDB | HOMURA 2X10BD |
-| WH1T | HOMURA 2X7TW |
-| WHPA | HOMURA HUYGA HP10 |
-| WK2 | Volk Racing 21C |
-| WKN | Volk Racing NE24 |
-| WKZ | Volk Racing ZE40 / Volk Racing ZE40MA |
-| WKZR | Volk Racing ZE40 RW |
-| WKZT | Volk Racing ZE40 TIME ATTACK III / Volk Racing ZE40 Time Attack II / Volk Racing ZE40 Time Attack |
-| WK6 | Volk Racing G16 |
-| WKC0 | Volk Racing G025 / Volk Racing G025 DB/C |
-| WKC | Volk Racing G25 |
-| WKCE | Volk Racing G25 EDGE |
-| WKDA | Volk Racing G27 |
-| WKDP | Volk Racing G27 PM / Volk Racing G27 PREMIUM VERSION |
-| WKE | Volk Racing G50 |
-| WRM | NISMO LMGT4 OMORI SPEC |
-| WTG1 | Volk Racing V.V.10S |
-| WTJ | VERSUS V.V.52S / VERSUS VARIANCE V.V.52S |
-| WTJC | VERSUS V.V.52S CRAFT |
-| WTS | VERSUS SALVATORE / VERSUS SALVATORRE |
-| WTVC | VERSUS VMF C-01 |
-| WTJ | VERSUS VV52S |
-| WV2 | Volk Racing CE28N / Volk Racing CE28SL |
-| WV2C | Volk Racing CE28 Club Racer II / Volk Racing CE28 CLUB RACER II BK |
-| WVD | Volk Racing TE73SL / Volk Racing TE37RT BLACK EDITION / Volk Racing TE37SL BK-II / Volk Racing TE37SL BK-III / Volk Racing TE37SL BLACK EDITION |
-| WVDO | Volk Racing TE37XT M-SPEC |
-| WVD6 | Volk Racing TE037 6061 |
-| WVDB | Volk Racing TE37 LARGE PCD PROGRESSIVE |
-| WVDV | Volk Racing TE37V / Volk Racing TE37 VSL / Volk Racing TE37V MK-II |
-| WVDG | Volk Racing TE37 SAGA SL / Volk Racing TE37 SAGA / TE37 SAGA TIME ATTACK |
-| WVDG2 | Volk Racing TE37 SAGA / Volk Racing TE37 SAGA S-PLUS |
-| WVDS | Volk Racing TE37 SONIC SL / Volk Racing TE37 SONIC |
-| WVDU | Volk Racing TE37 ULTRA / Volk Racing TE37 ULTRA LARGE PCD / Volk Racing TE37 ULTRA M-SPEC / Volk Racing TE37 ULTRA TRACK EDITION II |
-| WVDV9 | Volk Racing TE37VSL 1920 LIMITED |</p>
-<h2 id="sizecode">Size Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Model</th></tr></thead><tbody><tr><td align="left">WGAA</td><td align="left">Gram Lights 57ANA</td></tr><tr><td align="left">WGAB</td><td align="left">Gram Lights 57BNA</td></tr><tr><td align="left">WGI</td><td align="left">Gram Lights 57DR</td></tr><tr><td align="left">WGC6</td><td align="left">Gram Lights 57C6</td></tr><tr><td align="left">WGCR</td><td align="left">Gram Lights 57CR</td></tr><tr><td align="left">WGAC</td><td align="left">Gram Lights 57CNA</td></tr><tr><td align="left">WGIX</td><td align="left">Gram Lights 57DR-X</td></tr><tr><td align="left">WGFZ</td><td align="left">Gram Lights 57FXZ</td></tr><tr><td align="left">WGJ</td><td align="left">Gram Lights 57XTREME</td></tr><tr><td align="left">WGJD</td><td align="left">Gram Lights 57XTREME SPEC-D</td></tr><tr><td align="left">WGJX</td><td align="left">Gram Lights 57XTREME REV LIMIT</td></tr><tr><td align="left">WGJR</td><td align="left">Gram Lights 57XR</td></tr><tr><td align="left">WGTR</td><td align="left">Gram Lights 57TRANSCEND</td></tr><tr><td align="left">WGTX</td><td align="left">Gram Lights 57TRANS-X</td></tr><tr><td align="left">WGTL</td><td align="left">Gram Lights 57TRANSCEND REV LIMIT</td></tr><tr><td align="left">WGTM</td><td align="left">Gram Lights 57TRANSCEND UNLIMIT</td></tr><tr><td align="left">WGTU</td><td align="left">Gram Lights 57TRANS-X OVERSEAS</td></tr><tr><td align="left">WGTO</td><td align="left">Gram Lights 57TRANSCEND OVERSEAS</td></tr><tr><td align="left">WGVX</td><td align="left">Gram Lights 57VALKYRIE</td></tr><tr><td align="left">WGX</td><td align="left">Gram Lights 57XTC</td></tr><tr><td align="left">WHDB</td><td align="left">HOMURA 2X10BD</td></tr><tr><td align="left">WH1T</td><td align="left">HOMURA 2X7TW</td></tr><tr><td align="left">WHPA</td><td align="left">HOMURA HUYGA HP10</td></tr><tr><td align="left">WK2</td><td align="left">Volk Racing 21C</td></tr><tr><td align="left">WKN</td><td align="left">Volk Racing NE24</td></tr><tr><td align="left">WKZ</td><td align="left">Volk Racing ZE40 / Volk Racing ZE40MA</td></tr><tr><td align="left">WKZR</td><td align="left">Volk Racing ZE40 RW</td></tr><tr><td align="left">WKZT</td><td align="left">Volk Racing ZE40 TIME ATTACK III / Volk Racing ZE40 Time Attack II / Volk Racing ZE40 Time Attack</td></tr><tr><td align="left">WK6</td><td align="left">Volk Racing G16</td></tr><tr><td align="left">WKC0</td><td align="left">Volk Racing G025 / Volk Racing G025 DB/C</td></tr><tr><td align="left">WKC</td><td align="left">Volk Racing G25</td></tr><tr><td align="left">WKCE</td><td align="left">Volk Racing G25 EDGE</td></tr><tr><td align="left">WKDA</td><td align="left">Volk Racing G27</td></tr><tr><td align="left">WKDP</td><td align="left">Volk Racing G27 PM / Volk Racing G27 PREMIUM VERSION</td></tr><tr><td align="left">WKE</td><td align="left">Volk Racing G50</td></tr><tr><td align="left">WRM</td><td align="left">NISMO LMGT4 OMORI SPEC</td></tr><tr><td align="left">WTG1</td><td align="left">Volk Racing V.V.10S</td></tr><tr><td align="left">WTJ</td><td align="left">VERSUS V.V.52S / VERSUS VARIANCE V.V.52S</td></tr><tr><td align="left">WTJC</td><td align="left">VERSUS V.V.52S CRAFT</td></tr><tr><td align="left">WTS</td><td align="left">VERSUS SALVATORE / VERSUS SALVATORRE</td></tr><tr><td align="left">WTVC</td><td align="left">VERSUS VMF C-01</td></tr><tr><td align="left">WTJ</td><td align="left">VERSUS VV52S</td></tr><tr><td align="left">WV2</td><td align="left">Volk Racing CE28N / Volk Racing CE28SL</td></tr><tr><td align="left">WV2C</td><td align="left">Volk Racing CE28 Club Racer II / Volk Racing CE28 CLUB RACER II BK</td></tr><tr><td align="left">WVD</td><td align="left">Volk Racing TE73SL / Volk Racing TE37RT BLACK EDITION / Volk Racing TE37SL BK-II / Volk Racing TE37SL BK-III / Volk Racing TE37SL BLACK EDITION</td></tr><tr><td align="left">WVDO</td><td align="left">Volk Racing TE37XT M-SPEC</td></tr><tr><td align="left">WVD6</td><td align="left">Volk Racing TE037 6061</td></tr><tr><td align="left">WVDB</td><td align="left">Volk Racing TE37 LARGE PCD PROGRESSIVE</td></tr><tr><td align="left">WVDV</td><td align="left">Volk Racing TE37V / Volk Racing TE37 VSL / Volk Racing TE37V MK-II</td></tr><tr><td align="left">WVDG</td><td align="left">Volk Racing TE37 SAGA SL / Volk Racing TE37 SAGA / TE37 SAGA TIME ATTACK</td></tr><tr><td align="left">WVDG2</td><td align="left">Volk Racing TE37 SAGA / Volk Racing TE37 SAGA S-PLUS</td></tr><tr><td align="left">WVDS</td><td align="left">Volk Racing TE37 SONIC SL / Volk Racing TE37 SONIC</td></tr><tr><td align="left">WVDU</td><td align="left">Volk Racing TE37 ULTRA / Volk Racing TE37 ULTRA LARGE PCD / Volk Racing TE37 ULTRA M-SPEC / Volk Racing TE37 ULTRA TRACK EDITION II</td></tr><tr><td align="left">WVDV9</td><td align="left">Volk Racing TE37VSL 1920 LIMITED</td></tr></tbody></table>
+<h2>Size Code</h2>
 <p>Wheel size in diameter x height in inches.</p>
-<p>| Code | Size |
-| :--- | :------------ |
-| 1 | 19X8 |
-| 2 | 19X8.5 |
-| 3 | 19X9 |
-| 4 | 19X9.5 |
-| 5 | 19X10.0 |
-| 6 | 19X10.5 |
-| A6 | 20X11 |
-| A8 | 20X12.0 |
-| AC | 18X10.5 |
-| AE | 18X11.0 |
-| AG | 18X12.0 |
-| AV | 20X8.5 |
-| AW | 20X9 |
-| AX | 20X9.5 |
-| AY | 20X10 |
-| AZ | 20X10.5 |
-| B | 15X6.5 |
-| B1 | 19X11 |
-| B6 | 21X11 |
-| E | 15X8 |
-| E4 | 15X10 |
-| H | 16X7 |
-| I | 16X7.5 |
-| J | 16X8 |
-| M | 17X7 |
-| N | 17x7.5 |
-| O | 17X8 |
-| P | 17X8.5 |
-| Q | 17X9 |
-| R | 17X9.5 |
-| S | 17X10 |
-| T | 18X7.5 |
-| U | 18X8 |
-| V | 18X8.5 |
-| W | 18X9 |
-| X | 18X9.5 |
-| Y | 18X10 |</p>
-<h2 id="offsetcode">Offset Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Size</th></tr></thead><tbody><tr><td align="left">1</td><td align="left">19X8</td></tr><tr><td align="left">2</td><td align="left">19X8.5</td></tr><tr><td align="left">3</td><td align="left">19X9</td></tr><tr><td align="left">4</td><td align="left">19X9.5</td></tr><tr><td align="left">5</td><td align="left">19X10.0</td></tr><tr><td align="left">6</td><td align="left">19X10.5</td></tr><tr><td align="left">A6</td><td align="left">20X11</td></tr><tr><td align="left">A8</td><td align="left">20X12.0</td></tr><tr><td align="left">AC</td><td align="left">18X10.5</td></tr><tr><td align="left">AE</td><td align="left">18X11.0</td></tr><tr><td align="left">AG</td><td align="left">18X12.0</td></tr><tr><td align="left">AV</td><td align="left">20X8.5</td></tr><tr><td align="left">AW</td><td align="left">20X9</td></tr><tr><td align="left">AX</td><td align="left">20X9.5</td></tr><tr><td align="left">AY</td><td align="left">20X10</td></tr><tr><td align="left">AZ</td><td align="left">20X10.5</td></tr><tr><td align="left">B</td><td align="left">15X6.5</td></tr><tr><td align="left">B1</td><td align="left">19X11</td></tr><tr><td align="left">B6</td><td align="left">21X11</td></tr><tr><td align="left">E</td><td align="left">15X8</td></tr><tr><td align="left">E4</td><td align="left">15X10</td></tr><tr><td align="left">H</td><td align="left">16X7</td></tr><tr><td align="left">I</td><td align="left">16X7.5</td></tr><tr><td align="left">J</td><td align="left">16X8</td></tr><tr><td align="left">M</td><td align="left">17X7</td></tr><tr><td align="left">N</td><td align="left">17x7.5</td></tr><tr><td align="left">O</td><td align="left">17X8</td></tr><tr><td align="left">P</td><td align="left">17X8.5</td></tr><tr><td align="left">Q</td><td align="left">17X9</td></tr><tr><td align="left">R</td><td align="left">17X9.5</td></tr><tr><td align="left">S</td><td align="left">17X10</td></tr><tr><td align="left">T</td><td align="left">18X7.5</td></tr><tr><td align="left">U</td><td align="left">18X8</td></tr><tr><td align="left">V</td><td align="left">18X8.5</td></tr><tr><td align="left">W</td><td align="left">18X9</td></tr><tr><td align="left">X</td><td align="left">18X9.5</td></tr><tr><td align="left">Y</td><td align="left">18X10</td></tr></tbody></table>
+<h2>Offset Code</h2>
 <p>Wheel  offset (or inset, if you please). Its just the value.</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| -40 | -40mm |
-| ⋮ |  ⋮ |
-| 38 | 38mm |
-| 42 | 42mm |
-| 44 | 44mm |
-| ⋮ | ⋮ |
-| 52 | 52mm |</p>
-<h2 id="pcdcode">PCD Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">-40</td><td align="left">-40mm</td></tr><tr><td align="left">⋮</td><td align="left">⋮</td></tr><tr><td align="left">38</td><td align="left">38mm</td></tr><tr><td align="left">42</td><td align="left">42mm</td></tr><tr><td align="left">44</td><td align="left">44mm</td></tr><tr><td align="left">⋮</td><td align="left">⋮</td></tr><tr><td align="left">52</td><td align="left">52mm</td></tr></tbody></table>
+<h2>PCD Code</h2>
 <p>The Bolt pattern or P.C.D.</p>
-<p>| Code | PCD |
-| :--- | :--------- |
-| A | 4-100 |
-| B | 4-114.3 |
-| D | 5-100 |
-| E | 5-114.3 |
-| K | 6-139.7 |
-| M | 5-112 |
-| O | 5-110 |
-| R | 5-108 |
-| U | 6-135 |
-| V | 5-127 |
-| W | 5-120 |</p>
-<h2 id="colorcode">Color Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">PCD</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">4-100</td></tr><tr><td align="left">B</td><td align="left">4-114.3</td></tr><tr><td align="left">D</td><td align="left">5-100</td></tr><tr><td align="left">E</td><td align="left">5-114.3</td></tr><tr><td align="left">K</td><td align="left">6-139.7</td></tr><tr><td align="left">M</td><td align="left">5-112</td></tr><tr><td align="left">O</td><td align="left">5-110</td></tr><tr><td align="left">R</td><td align="left">5-108</td></tr><tr><td align="left">U</td><td align="left">6-135</td></tr><tr><td align="left">V</td><td align="left">5-127</td></tr><tr><td align="left">W</td><td align="left">5-120</td></tr></tbody></table>
+<h2>Color Code</h2>
 <p>These are 1-3 letter codes for the color of the wheel.</p>
-<p>| Code | Color |
-| :--- | :----------------- |
-| A | Bronze Almite |
-| A2 | Bronze II |
-| AH8 | SUPER DARK GUNMETAL |
-| AS | SUNLIGHT SILVER |
-| BG | GUNMETAL / DC |
-| BK | Black |
-| DAGP | ALMITE GOLD |
-| DGB | GUNBLUE |
-| DHR | HYPER RED |
-| DQNK | GRACE SILVER |
-| DX | Diamond Dark Gunmetal |
-| DY | LUMINOUS YELLOW |
-| E1F | MERCURY SILVER / SPOKE FDMC (NF) |
-| E1F | MERCURY SILVER/SPOKE FDMC |
-| E2 | FORMULA SILVER |
-| E9 | GLOSS BLACK / BLACK PEARL ENGRAVING / NISMO BLack |
-| E9R | BLACK/ MACHINING/ E-PRO COAT |
-| EA | DARK BRONZE/MACHINING |
-| EAR | MATTE BLACK / REDOT |
-| EB9J | BLACK/ RIM EDGE DMC |
-| ECPP | CERAMIC PEARL |
-| ED | DARK BLUE |
-| EDW | DASH WHITE |
-| EDX | DIAMOND DARK GUNMETAL |
-| EEBP | ETERNAL BLUE PEARL (EBP) |
-| EFAJ | DC / SIDE DARK SHINING SILVER |
-| EG2 | GUNBLUE 2 |
-| EGB | GUN BLUE |
-| EGR | GT-GREEN |
-| EGX | GLOSSY BLACK |
-| EH | MATTE BLACK |
-| EHF | SUPER DARK GUNMETAL / DC |
-| EHR | HYPER RED (HR) |
-| EMG | MATTE GRAPHITE / MACHINING |
-| EMK | MATTE GUNBLACK / DC |
-| EMRP | MILANO RED |
-| EP9 | PRESSED BLACK CLEAR |
-| EPB | DIAMOND BLACK |
-| EPB3 | PRESSED BLACK / REDOT |
-| EPBB | BLAST BRONZE |
-| EPE | HYPER BLUE |
-| EPG | PRESSED GRAPHITE |
-| EPHF | PRESSED MATTE BLACK / SPOKE DC (KC) |
-| EPIG | RACING GREEN |
-| EPK | HYPER GREEN / LUMINOUS PINK |
-| EPMA | HI-META BRONZE |
-| EPP | SAKURA PINK |
-| EPW | CHAMPION WHITE |
-| EQAZ | DMC/ SIDE GRACE SILVER |
-| ER | RED |
-| ERM | REFAB/ SIDE DARK GUNMETAL |
-| ERW | DASH WHITE / REDOT |
-| ERX | REFAB / SIDE BRIGHTENING METAL DARK/MC |
-| ES | SILVER / DC / SUNLIGHT SILVER (SU) |
-| ESA | SHINING SILVER/ DC/ MACHINING |
-| ESE | SPATTA BLUE |
-| ESP | SPARK PLATED SILVER |
-| ESSJ | CROMO IBRIDO + MC |
-| ETF | TITANIUM SILVER / SPOKE DC (TC) |
-| EVC | DARK GUNMETAL/ RIM DC |
-| EW | WHITE |
-| EZ | GOLD |
-| GB | Gunblue (Blue Gunmetal) |
-| GM | Gunmetal |
-| GO | Gold |
-| KBC | BLAST BLACK |
-| KMA | MATTE RED |
-| M2F | FORMULA SILVER / BLACK CLEAR / DC |
-| MA2 | BRONZE 2 |
-| MA3J | SUPER DARK GUNMETAL/MACHINING/E-PRO COAT |
-| MB |  Matte Black |
-| MG2 | GUNBLUE II |
-| MGP | DARK PURPLE GUNMETAL / DC (GP) |
-| MHM | SHINING BLACK METAL |
-| MLD | DARK BLUE / DC |
-| MMG | MATTE GRAPHITE/MACHINING |
-| MPB2 | PRESSED BLACK/ REDOT |
-| MSA | SHINING SILVER/DC/MACHINING |
-| MSR | SPATTA RED |
-| OH | FLAT BLACK |
-| PDB | Pressed Double Black |
-| PG | Pressed Graphite |
-| UA | DARK BRONZE |
-| W1F | MERCURY SILVER/DC RIM |
-| W7 | RBC |
-| W9R | BLACK &amp; MACHINING/E-PRO COAT / REDOT |
-| WAPJ | MATTE SUPER DARK GUNMETAL |
-| WBE | PRESSED BLACK |
-| WD | MAG BLUE |
-| WEBP | ETERNAL BLUE PEARL |
-| WEGP | E8 GOLD |
-| WG | GUNMETAL |
-| WGBP | GLASS BLACK |
-| WH | SEMI GLOSS BLACK |
-| WHF | SUPER DARK GUNMETAL/ DC/ MACHINING |
-| WHGP | HS GUNMETALLIC |
-| WME | BRIGHTENING METAL DARK |
-| WMEG | MATTE BLUE GUNMETAL |
-| WMGS | MATT GRAPHITE / MACHINING |
-| WP9 | PRESSED BLACK CLEAR (KK) |
-| WPB2 | PRESSED BLACK / RIM REDOT |
-| WPDB | PRESSED DOUBLE BLACK |
-| WS | DC / SIDE VARIABLE SILVER (VV) |
-| WUR | MATTE GUNBLACK / REDOT |</p>
-<h2 id="examples">Examples</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Color</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">Bronze Almite</td></tr><tr><td align="left">A2</td><td align="left">Bronze II</td></tr><tr><td align="left">AH8</td><td align="left">SUPER DARK GUNMETAL</td></tr><tr><td align="left">AS</td><td align="left">SUNLIGHT SILVER</td></tr><tr><td align="left">BG</td><td align="left">GUNMETAL / DC</td></tr><tr><td align="left">BK</td><td align="left">Black</td></tr><tr><td align="left">DAGP</td><td align="left">ALMITE GOLD</td></tr><tr><td align="left">DGB</td><td align="left">GUNBLUE</td></tr><tr><td align="left">DHR</td><td align="left">HYPER RED</td></tr><tr><td align="left">DQNK</td><td align="left">GRACE SILVER</td></tr><tr><td align="left">DX</td><td align="left">Diamond Dark Gunmetal</td></tr><tr><td align="left">DY</td><td align="left">LUMINOUS YELLOW</td></tr><tr><td align="left">E1F</td><td align="left">MERCURY SILVER / SPOKE FDMC (NF)</td></tr><tr><td align="left">E1F</td><td align="left">MERCURY SILVER/SPOKE FDMC</td></tr><tr><td align="left">E2</td><td align="left">FORMULA SILVER</td></tr><tr><td align="left">E9</td><td align="left">GLOSS BLACK / BLACK PEARL ENGRAVING / NISMO BLack</td></tr><tr><td align="left">E9R</td><td align="left">BLACK/ MACHINING/ E-PRO COAT</td></tr><tr><td align="left">EA</td><td align="left">DARK BRONZE/MACHINING</td></tr><tr><td align="left">EAR</td><td align="left">MATTE BLACK / REDOT</td></tr><tr><td align="left">EB9J</td><td align="left">BLACK/ RIM EDGE DMC</td></tr><tr><td align="left">ECPP</td><td align="left">CERAMIC PEARL</td></tr><tr><td align="left">ED</td><td align="left">DARK BLUE</td></tr><tr><td align="left">EDW</td><td align="left">DASH WHITE</td></tr><tr><td align="left">EDX</td><td align="left">DIAMOND DARK GUNMETAL</td></tr><tr><td align="left">EEBP</td><td align="left">ETERNAL BLUE PEARL (EBP)</td></tr><tr><td align="left">EFAJ</td><td align="left">DC / SIDE DARK SHINING SILVER</td></tr><tr><td align="left">EG2</td><td align="left">GUNBLUE 2</td></tr><tr><td align="left">EGB</td><td align="left">GUN BLUE</td></tr><tr><td align="left">EGR</td><td align="left">GT-GREEN</td></tr><tr><td align="left">EGX</td><td align="left">GLOSSY BLACK</td></tr><tr><td align="left">EH</td><td align="left">MATTE BLACK</td></tr><tr><td align="left">EHF</td><td align="left">SUPER DARK GUNMETAL / DC</td></tr><tr><td align="left">EHR</td><td align="left">HYPER RED (HR)</td></tr><tr><td align="left">EMG</td><td align="left">MATTE GRAPHITE / MACHINING</td></tr><tr><td align="left">EMK</td><td align="left">MATTE GUNBLACK / DC</td></tr><tr><td align="left">EMRP</td><td align="left">MILANO RED</td></tr><tr><td align="left">EP9</td><td align="left">PRESSED BLACK CLEAR</td></tr><tr><td align="left">EPB</td><td align="left">DIAMOND BLACK</td></tr><tr><td align="left">EPB3</td><td align="left">PRESSED BLACK / REDOT</td></tr><tr><td align="left">EPBB</td><td align="left">BLAST BRONZE</td></tr><tr><td align="left">EPE</td><td align="left">HYPER BLUE</td></tr><tr><td align="left">EPG</td><td align="left">PRESSED GRAPHITE</td></tr><tr><td align="left">EPHF</td><td align="left">PRESSED MATTE BLACK / SPOKE DC (KC)</td></tr><tr><td align="left">EPIG</td><td align="left">RACING GREEN</td></tr><tr><td align="left">EPK</td><td align="left">HYPER GREEN / LUMINOUS PINK</td></tr><tr><td align="left">EPMA</td><td align="left">HI-META BRONZE</td></tr><tr><td align="left">EPP</td><td align="left">SAKURA PINK</td></tr><tr><td align="left">EPW</td><td align="left">CHAMPION WHITE</td></tr><tr><td align="left">EQAZ</td><td align="left">DMC/ SIDE GRACE SILVER</td></tr><tr><td align="left">ER</td><td align="left">RED</td></tr><tr><td align="left">ERM</td><td align="left">REFAB/ SIDE DARK GUNMETAL</td></tr><tr><td align="left">ERW</td><td align="left">DASH WHITE / REDOT</td></tr><tr><td align="left">ERX</td><td align="left">REFAB / SIDE BRIGHTENING METAL DARK/MC</td></tr><tr><td align="left">ES</td><td align="left">SILVER / DC / SUNLIGHT SILVER (SU)</td></tr><tr><td align="left">ESA</td><td align="left">SHINING SILVER/ DC/ MACHINING</td></tr><tr><td align="left">ESE</td><td align="left">SPATTA BLUE</td></tr><tr><td align="left">ESP</td><td align="left">SPARK PLATED SILVER</td></tr><tr><td align="left">ESSJ</td><td align="left">CROMO IBRIDO + MC</td></tr><tr><td align="left">ETF</td><td align="left">TITANIUM SILVER / SPOKE DC (TC)</td></tr><tr><td align="left">EVC</td><td align="left">DARK GUNMETAL/ RIM DC</td></tr><tr><td align="left">EW</td><td align="left">WHITE</td></tr><tr><td align="left">EZ</td><td align="left">GOLD</td></tr><tr><td align="left">GB</td><td align="left">Gunblue (Blue Gunmetal)</td></tr><tr><td align="left">GM</td><td align="left">Gunmetal</td></tr><tr><td align="left">GO</td><td align="left">Gold</td></tr><tr><td align="left">KBC</td><td align="left">BLAST BLACK</td></tr><tr><td align="left">KMA</td><td align="left">MATTE RED</td></tr><tr><td align="left">M2F</td><td align="left">FORMULA SILVER / BLACK CLEAR / DC</td></tr><tr><td align="left">MA2</td><td align="left">BRONZE 2</td></tr><tr><td align="left">MA3J</td><td align="left">SUPER DARK GUNMETAL/MACHINING/E-PRO COAT</td></tr><tr><td align="left">MB</td><td align="left">Matte Black</td></tr><tr><td align="left">MG2</td><td align="left">GUNBLUE II</td></tr><tr><td align="left">MGP</td><td align="left">DARK PURPLE GUNMETAL / DC (GP)</td></tr><tr><td align="left">MHM</td><td align="left">SHINING BLACK METAL</td></tr><tr><td align="left">MLD</td><td align="left">DARK BLUE / DC</td></tr><tr><td align="left">MMG</td><td align="left">MATTE GRAPHITE/MACHINING</td></tr><tr><td align="left">MPB2</td><td align="left">PRESSED BLACK/ REDOT</td></tr><tr><td align="left">MSA</td><td align="left">SHINING SILVER/DC/MACHINING</td></tr><tr><td align="left">MSR</td><td align="left">SPATTA RED</td></tr><tr><td align="left">OH</td><td align="left">FLAT BLACK</td></tr><tr><td align="left">PDB</td><td align="left">Pressed Double Black</td></tr><tr><td align="left">PG</td><td align="left">Pressed Graphite</td></tr><tr><td align="left">UA</td><td align="left">DARK BRONZE</td></tr><tr><td align="left">W1F</td><td align="left">MERCURY SILVER/DC RIM</td></tr><tr><td align="left">W7</td><td align="left">RBC</td></tr><tr><td align="left">W9R</td><td align="left">BLACK &#x26; MACHINING/E-PRO COAT / REDOT</td></tr><tr><td align="left">WAPJ</td><td align="left">MATTE SUPER DARK GUNMETAL</td></tr><tr><td align="left">WBE</td><td align="left">PRESSED BLACK</td></tr><tr><td align="left">WD</td><td align="left">MAG BLUE</td></tr><tr><td align="left">WEBP</td><td align="left">ETERNAL BLUE PEARL</td></tr><tr><td align="left">WEGP</td><td align="left">E8 GOLD</td></tr><tr><td align="left">WG</td><td align="left">GUNMETAL</td></tr><tr><td align="left">WGBP</td><td align="left">GLASS BLACK</td></tr><tr><td align="left">WH</td><td align="left">SEMI GLOSS BLACK</td></tr><tr><td align="left">WHF</td><td align="left">SUPER DARK GUNMETAL/ DC/ MACHINING</td></tr><tr><td align="left">WHGP</td><td align="left">HS GUNMETALLIC</td></tr><tr><td align="left">WME</td><td align="left">BRIGHTENING METAL DARK</td></tr><tr><td align="left">WMEG</td><td align="left">MATTE BLUE GUNMETAL</td></tr><tr><td align="left">WMGS</td><td align="left">MATT GRAPHITE / MACHINING</td></tr><tr><td align="left">WP9</td><td align="left">PRESSED BLACK CLEAR (KK)</td></tr><tr><td align="left">WPB2</td><td align="left">PRESSED BLACK / RIM REDOT</td></tr><tr><td align="left">WPDB</td><td align="left">PRESSED DOUBLE BLACK</td></tr><tr><td align="left">WS</td><td align="left">DC / SIDE VARIABLE SILVER (VV)</td></tr><tr><td align="left">WUR</td><td align="left">MATTE GUNBLACK / REDOT</td></tr></tbody></table>
+<h2>Examples</h2>
 <p>Putting this all together, we can formulate our own applied models from this
 information:</p>
-<p>| SKU | Description |
-| :------------ | :---------- |
-| WV2CQ41DMM | Volk Racing CE28 Club Racer II 17x9 +41 Diamond Dark Gunmetal |
-| WV2Q44DPG | Volk Racing CE28SL 17x9 +44 (Face-3) Pressed Graphite |
-| WVDVP30DPG | Volk Racing TE37VSL 2021 Limited 17x8.5 +30 Pressed Graphite |
-| WVDG2Q42DA | Volk Racing TE37 SAGA 17x9 +42 (Face-3 deeper) |
-| WVDG2Q42DDX | Volk Racing TE37 Saga S-plus 17x9 +42 Diamond Dark Gunmetal (Face-3) |
-| WVDP45DPG | Volk Racing TE37 SL 17x8.5 +45 Pressed Graphite (Face-2) |
-| WVDGQ44DPG | Volk Racing TE37 Saga SL 17x9 +44 Pressed Graphite (Face-3) | 
-| WVDP45DPDB | Volk Racing TE37 SL 17x8.5 +45 Pressed Double Black |
-| WVDV1P30DA | Volk Racing TE37V 10th Anniversary Edition 17x8.5 5x100 +30mm |
-| WKZO38DA | Volk Racing ZE40 17x8 5x100 +38 |
-| WKZQ45DA | Volk Racing ZE40 17x9 5x100 +45 |
-| WKZTQ44DLM | Volk Racing ZE40 Time Attack III 17x9 5x100 +44 |
-| WGIQ38DA2 | Gram Lights 57DR 17x9 +38 Bronze 2 |
-| WGIQ38DGB | Gram Lights 57DR 17x9 +38 Gunblue |
-| WGIQ38DH | Gram Lights 57DR 17x9 +38 Semi-gloss black |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">SKU</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">WV2CQ41DMM</td><td align="left">Volk Racing CE28 Club Racer II 17x9 +41 Diamond Dark Gunmetal</td></tr><tr><td align="left">WV2Q44DPG</td><td align="left">Volk Racing CE28SL 17x9 +44 (Face-3) Pressed Graphite</td></tr><tr><td align="left">WVDVP30DPG</td><td align="left">Volk Racing TE37VSL 2021 Limited 17x8.5 +30 Pressed Graphite</td></tr><tr><td align="left">WVDG2Q42DA</td><td align="left">Volk Racing TE37 SAGA 17x9 +42 (Face-3 deeper)</td></tr><tr><td align="left">WVDG2Q42DDX</td><td align="left">Volk Racing TE37 Saga S-plus 17x9 +42 Diamond Dark Gunmetal (Face-3)</td></tr><tr><td align="left">WVDP45DPG</td><td align="left">Volk Racing TE37 SL 17x8.5 +45 Pressed Graphite (Face-2)</td></tr><tr><td align="left">WVDGQ44DPG</td><td align="left">Volk Racing TE37 Saga SL 17x9 +44 Pressed Graphite (Face-3)</td></tr><tr><td align="left">WVDP45DPDB</td><td align="left">Volk Racing TE37 SL 17x8.5 +45 Pressed Double Black</td></tr><tr><td align="left">WVDV1P30DA</td><td align="left">Volk Racing TE37V 10th Anniversary Edition 17x8.5 5x100 +30mm</td></tr><tr><td align="left">WKZO38DA</td><td align="left">Volk Racing ZE40 17x8 5x100 +38</td></tr><tr><td align="left">WKZQ45DA</td><td align="left">Volk Racing ZE40 17x9 5x100 +45</td></tr><tr><td align="left">WKZTQ44DLM</td><td align="left">Volk Racing ZE40 Time Attack III 17x9 5x100 +44</td></tr><tr><td align="left">WGIQ38DA2</td><td align="left">Gram Lights 57DR 17x9 +38 Bronze 2</td></tr><tr><td align="left">WGIQ38DGB</td><td align="left">Gram Lights 57DR 17x9 +38 Gunblue</td></tr><tr><td align="left">WGIQ38DH</td><td align="left">Gram Lights 57DR 17x9 +38 Semi-gloss black</td></tr></tbody></table>
 <p>This list only covers Volk Racing, and some Gram Lights, and isn't exhaustive, feel free
 to reach out and send me your SKUs and i'll add them to this list.</p>
-<p>Can you find your SKU code? Are we missing your size, offset, model or color code? Tell us on 
+<p>Can you find your SKU code? Are we missing your size, offset, model or color code? Tell us on
 email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://type-ra.org/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</link><guid isPermaLink="true">https://type-ra.org/kb/decoding-rays-wheels-volk-racing-model-number-sku-codes</guid><category><![CDATA[wheels]]></category><category><![CDATA[volk racing]]></category><category><![CDATA[rays wheels]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Thu, 04 Aug 2022 06:44:00 GMT</pubDate></item><item><title><![CDATA[Decoding Subaru Impreza WRX and STI Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their Impreza WRX as a "GC8", "GDB", or "GRB",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
-refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
+refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If
 you've heard BMW 3-series owners saying "E30" or "E92" then you've heard it.
 They're referring to the first two letters of the applied model code.</p>
 <p>The Applied Model (also called a Chassis Code) is a 7-digit code number that is
-used by Subaru to identify a car’s specification, but unlike the Chassis Number 
-or VIN, this does not uniquely identify an individual car. Almost all Subaru 
-cars have the Applied Model stamped on a metal plate that can be found riveted 
-to the top of the near-side strut tower, although some cars have the plate in 
+used by Subaru to identify a car’s specification, but unlike the Chassis Number
+or VIN, this does not uniquely identify an individual car. Almost all Subaru
+cars have the Applied Model stamped on a metal plate that can be found riveted
+to the top of the near-side strut tower, although some cars have the plate in
 one of the front door frames.</p>
 <figure>
   <img src="/kb/decoding-subaru-applied-model-chassis-codes/applied-code-location.jpg" alt="Location of the Subaru Applied Model plate">
@@ -1171,7 +2218,7 @@ one of the front door frames.</p>
   </figcaption>
 </figure>
 <p>The information encoded within the Applied Model number contains details of the
-vehicle’s model, body type, engine type, gearbox, trim-level and period of 
+vehicle’s model, body type, engine type, gearbox, trim-level and period of
 production.</p>
 <figure>
   <img src="/kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg" alt="Applied Model Decoder">
@@ -1180,69 +2227,234 @@ production.</p>
   </figcaption>
 </figure>
 <p>Each letter in the applied model designates a code:</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| <strong>series</strong> | Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester |
-| <strong>body style</strong> | body style describes coupe, sedan, wagon, hatchback |
-| <strong>engine</strong> | engine type |
-| <strong>model year</strong> | the production year and month |
-| <strong># of doors</strong> | number of doors |
-| <strong>trim</strong> | specific equipment package and accessories |
-| <strong>transmission</strong> | transmission type, e.g. manual or automatic and number of speeds |</p>
-<h2 id="seriescode">Series Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><strong>series</strong></td><td align="left">Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester</td></tr><tr><td align="left"><strong>body style</strong></td><td align="left">body style describes coupe, sedan, wagon, hatchback</td></tr><tr><td align="left"><strong>engine</strong></td><td align="left">engine type</td></tr><tr><td align="left"><strong>model year</strong></td><td align="left">the production year and month</td></tr><tr><td align="left"><strong># of doors</strong></td><td align="left">number of doors</td></tr><tr><td align="left"><strong>trim</strong></td><td align="left">specific equipment package and accessories</td></tr><tr><td align="left"><strong>transmission</strong></td><td align="left">transmission type, e.g. manual or automatic and number of speeds</td></tr></tbody></table>
+<h2>Series Code</h2>
 <p>The <strong>Series</strong> code is the first letter, it tells you which model in the Subaru lineup it belongs to:</p>
-<p>| Code | Model |
-| :--- | :---- |
-| A | Leone/Loyale
-| B | Legacy |
-| C | SVX |
-| G | Impreza, XV, Outback Sport |
-| F | Domingo |
-| K | Justy/Rex/Vivio/Sambar (Before 1998) |
-| N | Trezia |
-| R | Pleo, R1, R2, Stella |
-| S | Forester |
-| T | Sambar (After 1998) |
-| V | WRX |
-| W | Tribeca/Ascent |
-| Y | Exiga |
-| Z | BRZ |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Model</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">Leone/Loyale</td></tr><tr><td align="left">B</td><td align="left">Legacy</td></tr><tr><td align="left">C</td><td align="left">SVX</td></tr><tr><td align="left">G</td><td align="left">Impreza, XV, Outback Sport</td></tr><tr><td align="left">F</td><td align="left">Domingo</td></tr><tr><td align="left">K</td><td align="left">Justy/Rex/Vivio/Sambar (Before 1998)</td></tr><tr><td align="left">N</td><td align="left">Trezia</td></tr><tr><td align="left">R</td><td align="left">Pleo, R1, R2, Stella</td></tr><tr><td align="left">S</td><td align="left">Forester</td></tr><tr><td align="left">T</td><td align="left">Sambar (After 1998)</td></tr><tr><td align="left">V</td><td align="left">WRX</td></tr><tr><td align="left">W</td><td align="left">Tribeca/Ascent</td></tr><tr><td align="left">Y</td><td align="left">Exiga</td></tr><tr><td align="left">Z</td><td align="left">BRZ</td></tr></tbody></table>
 <p>Thus, the Impreza WRX starts with 'G'.</p>
-<h2 id="bodystylecode">Body Style code</h2>
+<h2>Body Style code</h2>
 <p>The second letter is the <strong>Body style</strong> code, it'll tell you if the vehicle is a
 sedan, coupe, wagon, etc.</p>
-<p>| Code | Body style |
-| :--- | :--------- |
-| A, C, E, V | sedan |
-| M | coupe |
-| F | 5-door wagon |
-| H, R | 5-door hatchback |</p>
-<h2 id="appliedmodelcode">Applied Model Code</h2>
-<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Body style</th></tr></thead><tbody><tr><td align="left">A, C, E, V</td><td align="left">sedan</td></tr><tr><td align="left">M</td><td align="left">coupe</td></tr><tr><td align="left">F</td><td align="left">5-door wagon</td></tr><tr><td align="left">H, R</td><td align="left">5-door hatchback</td></tr></tbody></table>
+<h2>Applied Model Code</h2>
+<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people
 commonly refer to when trying to casually designate their vehicle:</p>
-<p>| Years | Code | Model |
-| :---- | :--- | :------------ |
-| 1992 - 2000 | GC | sedan |
-| 1992 - 2000 | GM | coupe |
-| 1992 - 2000 | GF | wagon |
-| 2001 - 2007 | GD | sedan |
-| 2001 - 2007 | GG | wagon |
-| 2007 - 2014 | GH | WRX hatchback |
-| 2007 - 2014 | GR | WRX STI hatchback |
-| 2007 - 2014 | GE | WRX sedan |
-| 2007 - 2014 | GV | WRX STI sedan |
-| 2015 - 2021 | VA | WRX &amp; WRX STI sedan |</p>
-<h2 id="enginecode">Engine code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Years</th><th align="left">Code</th><th align="left">Model</th></tr></thead><tbody><tr><td align="left">1992 - 2000</td><td align="left">GC</td><td align="left">sedan</td></tr><tr><td align="left">1992 - 2000</td><td align="left">GM</td><td align="left">coupe</td></tr><tr><td align="left">1992 - 2000</td><td align="left">GF</td><td align="left">wagon</td></tr><tr><td align="left">2001 - 2007</td><td align="left">GD</td><td align="left">sedan</td></tr><tr><td align="left">2001 - 2007</td><td align="left">GG</td><td align="left">wagon</td></tr><tr><td align="left">2007 - 2014</td><td align="left">GH</td><td align="left">WRX hatchback</td></tr><tr><td align="left">2007 - 2014</td><td align="left">GR</td><td align="left">WRX STI hatchback</td></tr><tr><td align="left">2007 - 2014</td><td align="left">GE</td><td align="left">WRX sedan</td></tr><tr><td align="left">2007 - 2014</td><td align="left">GV</td><td align="left">WRX STI sedan</td></tr><tr><td align="left">2015 - 2021</td><td align="left">VA</td><td align="left">WRX &#x26; WRX STI sedan</td></tr></tbody></table>
+<h2>Engine code</h2>
 <p>The 3rd-letter in the applied model code. For the WRX STI platform, the EJ207 was
 mostly commonly used in Japan, while the US got the EJ257.</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| 8, B | EJ207 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) Turbo is a IHI VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA) |
-| A | EJ205 2.0ℓ turbo WRX in all 1999-2005 models |
-| 6, F | EJ257 - 2.5ℓ turbo in USDM WRX STi IHI VF48 |</p>
-<h2 id="modelyear">Model Year</h2>
-<p>The 4th letter in the code, the model year is the date of production, often 
-times these start the year prior to the marketed year. This is because 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">8, B</td><td align="left">EJ207 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) Turbo is a IHI VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)</td></tr><tr><td align="left">A</td><td align="left">EJ205 2.0ℓ turbo WRX in all 1999-2005 models</td></tr><tr><td align="left">6, F</td><td align="left">EJ257 - 2.5ℓ turbo in USDM WRX STi IHI VF48</td></tr></tbody></table>
+<h2>Model Year</h2>
+<p>The 4th letter in the code, the model year is the date of production, often
+times these start the year prior to the marketed year. This is because
 production of a vehicle starts early, and sales follow.</p>
 <p>A is the first year of the generation, B the second, etc. When the model changes
 generation, (e.g. Mean Eye to Bugeye), this letter is reset back to 'A'.</p>
@@ -1252,29 +2464,66 @@ generation, (e.g. Mean Eye to Bugeye), this letter is reset back to 'A'.</p>
 <li>A "Bug Eye" GDB second year has a A, thus GDB<strong>A</strong>, which is 2000.</li>
 <li>A "Bug Eye" GDB second year has a B, thus GDB<strong>B</strong>, which is 2001, etc.</li>
 </ul>
-<h2 id="numberofdoors">Number of Doors</h2>
+<h2>Number of Doors</h2>
 <p>The 5th letter is the number of doors on the vehicle. Simply put, the coupe has
-a code of 2, sedan 4, and wagon &amp; hatch 5.</p>
-<h2 id="trimcode">Trim Code</h2>
+a code of 2, sedan 4, and wagon &#x26; hatch 5.</p>
+<h2>Trim Code</h2>
 <p>The 6th-letter is the trim code, which tells you which marketing package,
 equipment and accessories are included in the vehicle. This list is incomplete,
 if you know any others, please let us know.</p>
-<p>| Code | Name |
-| :--- | :-------- |
-| 7 | type RA |
-| 8 | WRX |
-| D | STI Type R &amp; Type RA |
-| E | STI |</p>
-<h2 id="transmissioncode">Transmission Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Name</th></tr></thead><tbody><tr><td align="left">7</td><td align="left">type RA</td></tr><tr><td align="left">8</td><td align="left">WRX</td></tr><tr><td align="left">D</td><td align="left">STI Type R &#x26; Type RA</td></tr><tr><td align="left">E</td><td align="left">STI</td></tr></tbody></table>
+<h2>Transmission Code</h2>
 <p>The 7th-letter is the transmission code, tells you if its a manual or automatic.</p>
-<p>| Code | Transmission type |
-| :--- | :---------------- |
-| D | 5MT |
-| 4, P | E-4AT |
-| H | 6MT |</p>
-<h2 id="examples">Examples</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Transmission type</th></tr></thead><tbody><tr><td align="left">D</td><td align="left">5MT</td></tr><tr><td align="left">4, P</td><td align="left">E-4AT</td></tr><tr><td align="left">H</td><td align="left">6MT</td></tr></tbody></table>
+<h2>Examples</h2>
 <p>In the examples below, I didn't include the number of doors, trim, or transmission
-codes. Putting this all together, we can see a list of significant applied 
+codes. Putting this all together, we can see a list of significant applied
 models:</p>
 <table>
   <thead>
@@ -1313,7 +2562,7 @@ models:</p>
       <td>1996/04 - 1997/07</td>
       <td>WRX STi Version III sedan</td>
       <td>
-        EJ20K 2 2.0ℓ turbo in WRX STi Version III &amp; IV models V.III: IHI
+        EJ20K 2 2.0ℓ turbo in WRX STi Version III &#x26; IV models V.III: IHI
         VF23, V.IV IHI VF24
       </td>
       <td></td>
@@ -1323,7 +2572,7 @@ models:</p>
       <td>1997/04 - 1998/07</td>
       <td>WRX STi Version IV coupe/sedan</td>
       <td>
-        EJ20K 2 2.0ℓ turbo in WRX STi Version III &amp; IV models V.III: IHI
+        EJ20K 2 2.0ℓ turbo in WRX STi Version III &#x26; IV models V.III: IHI
         VF23, V.IV IHI VF24
       </td>
       <td></td>
@@ -1341,7 +2590,7 @@ models:</p>
       <td>WRX STi Version V coupe/sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         *Minor change Introduced the EJ207 engine Introduce the signature large
@@ -1354,7 +2603,7 @@ models:</p>
       <td>WRX STi Version VI coupe/sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1364,7 +2613,7 @@ models:</p>
       <td>Impreza WRX Type RA STi Version 6</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         A favorite GC8 sedan, The Type RA was a 4dr race-ready and last best
@@ -1377,7 +2626,7 @@ models:</p>
       <td>Impreza WRX STi Type R Version 6 Limited</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>A favorite GC8 coupe, the Type R STi Version 6 Limited</td>
     </tr>
@@ -1394,7 +2643,7 @@ models:</p>
       <td>JDM "New Age" "Bugeye" WRX STi sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Not available in the US</td>
     </tr>
@@ -1411,7 +2660,7 @@ models:</p>
       <td>JDM "Bugeye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Not available in the US</td>
     </tr>
@@ -1421,7 +2670,7 @@ models:</p>
       <td>JDM "Bugeye" WRX STi Type RA Spec C sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>The most raw race-ready form of the Bugeye</td>
     </tr>
@@ -1431,7 +2680,7 @@ models:</p>
       <td>JDM "Bugeye" WRX STi S202</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>The highest end of the Bugeyes, in Yellow</td>
     </tr>
@@ -1448,7 +2697,7 @@ models:</p>
       <td>JDM "Blob Eye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Not available in the US</td>
     </tr>
@@ -1472,7 +2721,7 @@ models:</p>
       <td>JDM "Blob Eye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Not available in the US</td>
     </tr>
@@ -1496,7 +2745,7 @@ models:</p>
       <td>"Blob Eye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         Not available in the US * (Switched to the 5x114.3 PCD, small rear
@@ -1509,7 +2758,7 @@ models:</p>
       <td>"Blob Eye" WRX STi Version Spec C</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         Not available in the US * This is the latest Spec C version of the blob
@@ -1522,7 +2771,7 @@ models:</p>
       <td>"Blob Eye" WRX STi Version Spec C Type RA</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         Not available in the US * This is the latest Spec C Type RA version of
@@ -1535,7 +2784,7 @@ models:</p>
       <td>"Blob Eye" WRX STi S203</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>The famed S203</td>
     </tr>
@@ -1562,7 +2811,7 @@ models:</p>
       <td>"Hawk Eye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Not available in the US</td>
     </tr>
@@ -1586,7 +2835,7 @@ models:</p>
       <td>JDM "Hawk Eye" WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1603,7 +2852,7 @@ models:</p>
       <td>JDM "Hawk Eye" WRX STi Spec C RA-R</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>
         The famed final best version of the Hawk Eye Not available in the US
@@ -1615,7 +2864,7 @@ models:</p>
       <td>(JDM "S-GT") (USDM "WRX") hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>* (Model change: introduces the "Stink Eye" Impreza)</td>
     </tr>
@@ -1625,7 +2874,7 @@ models:</p>
       <td>JDM WRX STI hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>* (Model change: introduces the "Stink Eye" WRX)</td>
     </tr>
@@ -1642,7 +2891,7 @@ models:</p>
       <td>JDM WRX STI hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1652,7 +2901,7 @@ models:</p>
       <td>(JDM "S-GT") (USDM "WRX") hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1676,7 +2925,7 @@ models:</p>
       <td>JDM WRX STI hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Minor change</td>
     </tr>
@@ -1693,7 +2942,7 @@ models:</p>
       <td>JDM WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td>Re-introduces the WRX STI sedan model</td>
     </tr>
@@ -1710,7 +2959,7 @@ models:</p>
       <td>JDM WRX STI hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1727,7 +2976,7 @@ models:</p>
       <td>JDM WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1744,7 +2993,7 @@ models:</p>
       <td>JDM WRX STI hatchback</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1761,7 +3010,7 @@ models:</p>
       <td>JDM WRX STI sedan</td>
       <td>
         EJ207 28 2.0ℓ turbo WRX STi in all late WRX STi models (GC8, GDB) IHI
-        VF28 or IHI VF29 (STi V.6 Type R &amp; Type RA)
+        VF28 or IHI VF29 (STi V.6 Type R &#x26; Type RA)
       </td>
       <td></td>
     </tr>
@@ -1779,24 +3028,24 @@ models:</p>
       <td>FA20D, EJ207, EJ257</td>
       <td>
         Model change. "Evo Eye" WRX Drops the hatchback Drops the "Impreza" name
-        WRX Moves to the FA20D engine (EJ207 &amp; EJ257 continues in STI)
+        WRX Moves to the FA20D engine (EJ207 &#x26; EJ257 continues in STI)
       </td>
     </tr>
   </tbody>
 </table>
 <p>Can you find your applied model code? Are we missing your trim code? Shoot us an
-email or find us as 
+email or find us as
 <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://type-ra.org/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</link><guid isPermaLink="true">https://type-ra.org/kb/decoding-subaru-impreza-wrx-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[impreza]]></category><category><![CDATA[impreza wrx]]></category><category><![CDATA[impreza wrx sti]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 29 Dec 2020 15:21:00 GMT</pubDate></item><item><title><![CDATA[Decoding Toyota 86 / GR86 / GT86 Subaru BRZ Applied Model Codes]]></title><description><![CDATA[<p>If you've ever heard anyone refer to their 86 as a "ZN6", "ZC6", or "ZN8",
 then you've heard it.  If you've ever heard people talk about their Nissan 240SX
 or Silvia as an S13, S14, or S15 then you've heard it. If you've ever heard them
-refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If 
+refer to their Honda Civic as an "EF" or "EG hatch", then you've heard it. If
 you've heard BMW 3-series owners saying "E30" or "E92" then you've heard it.
 They're referring to the first two letters of the applied model code.</p>
 <p>The Applied Model (also called a Chassis Code) is a 7-digit code number that is
-used by Subaru to identify a car’s specification, but unlike the Chassis Number 
-or VIN, this does not uniquely identify an individual car. Almost all Subaru 
-cars have the Applied Model stamped on a metal plate that can be found riveted 
-to the top of the near-side strut tower, although some cars have the plate in 
+used by Subaru to identify a car’s specification, but unlike the Chassis Number
+or VIN, this does not uniquely identify an individual car. Almost all Subaru
+cars have the Applied Model stamped on a metal plate that can be found riveted
+to the top of the near-side strut tower, although some cars have the plate in
 one of the front door frames.</p>
 <figure>
   <img src="/kb/decoding-subaru-applied-model-chassis-codes/applied-code-location.jpg" alt="Location of the Subaru Applied Model plate">
@@ -1805,7 +3054,7 @@ one of the front door frames.</p>
   </figcaption>
 </figure>
 <p>The information encoded within the Applied Model number contains details of the
-vehicle’s model, body type, engine type, gearbox, trim-level and period of 
+vehicle’s model, body type, engine type, gearbox, trim-level and period of
 production.</p>
 <figure>
   <img src="/kb/decoding-subaru-applied-model-chassis-codes/vin-plate.svg" alt="Applied Model Decoder">
@@ -1814,102 +3063,345 @@ production.</p>
   </figcaption>
 </figure>
 <p>Each letter in the applied model designates a code:</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| <strong>series</strong> | Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester |
-| <strong>body style</strong> | body style describes coupe, sedan, wagon, hatchback |
-| <strong>engine</strong> | engine type |
-| <strong>model year</strong> | the production year and month |
-| <strong># of doors</strong> | number of doors |
-| <strong>trim</strong> | specific equipment package and accessories |
-| <strong>transmission</strong> | transmission type, e.g. manual or automatic and number of speeds |</p>
-<h2 id="seriescode">Series Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><strong>series</strong></td><td align="left">Model in the Subaru lineup, e.g. Impreza, Legacy, Forrester</td></tr><tr><td align="left"><strong>body style</strong></td><td align="left">body style describes coupe, sedan, wagon, hatchback</td></tr><tr><td align="left"><strong>engine</strong></td><td align="left">engine type</td></tr><tr><td align="left"><strong>model year</strong></td><td align="left">the production year and month</td></tr><tr><td align="left"><strong># of doors</strong></td><td align="left">number of doors</td></tr><tr><td align="left"><strong>trim</strong></td><td align="left">specific equipment package and accessories</td></tr><tr><td align="left"><strong>transmission</strong></td><td align="left">transmission type, e.g. manual or automatic and number of speeds</td></tr></tbody></table>
+<h2>Series Code</h2>
 <p>The <strong>Series</strong> code is the first letter, it tells you which model in the Subaru lineup it belongs to:</p>
-<p>| Code | Model |
-| :--- | :---- |
-| A | Leone/Loyale
-| B | Legacy |
-| C | SVX |
-| G | Impreza, XV, Outback Sport |
-| F | Domingo |
-| K | Justy/Rex/Vivio/Sambar (Before 1998) |
-| N | Trezia |
-| R | Pleo, R1, R2, Stella |
-| S | Forester |
-| T | Sambar (After 1998) |
-| V | WRX |
-| W | Tribeca/Ascent |
-| Y | Exiga |
-| Z | BRZ |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Model</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">Leone/Loyale</td></tr><tr><td align="left">B</td><td align="left">Legacy</td></tr><tr><td align="left">C</td><td align="left">SVX</td></tr><tr><td align="left">G</td><td align="left">Impreza, XV, Outback Sport</td></tr><tr><td align="left">F</td><td align="left">Domingo</td></tr><tr><td align="left">K</td><td align="left">Justy/Rex/Vivio/Sambar (Before 1998)</td></tr><tr><td align="left">N</td><td align="left">Trezia</td></tr><tr><td align="left">R</td><td align="left">Pleo, R1, R2, Stella</td></tr><tr><td align="left">S</td><td align="left">Forester</td></tr><tr><td align="left">T</td><td align="left">Sambar (After 1998)</td></tr><tr><td align="left">V</td><td align="left">WRX</td></tr><tr><td align="left">W</td><td align="left">Tribeca/Ascent</td></tr><tr><td align="left">Y</td><td align="left">Exiga</td></tr><tr><td align="left">Z</td><td align="left">BRZ</td></tr></tbody></table>
 <p>Thus, the BRZ starts with 'Z'.</p>
-<h2 id="appliedmodelcode">Applied Model Code</h2>
-<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people 
+<h2>Applied Model Code</h2>
+<p>The <strong>Applied model</strong> is the first-two letters combined, it is what people
 commonly refer to when trying to most accurately designate their vehicle:</p>
-<p>| Code | Brand &amp; Model |
-| :--- | :------------ |
-| ZN | Scion FR-S (Before 2017) 2013-2016 |
-| ZN | Toyota 86, Toyota GT86 2013-2020 |
-| ZC | Subaru BRZ 2013-2020 |</p>
-<h2 id="enginecode">Engine code</h2>
-<p>The 3rd-letter in the applied model code. For the 86 platform, there has only 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Brand &#x26; Model</th></tr></thead><tbody><tr><td align="left">ZN</td><td align="left">Scion FR-S (Before 2017) 2013-2016</td></tr><tr><td align="left">ZN</td><td align="left">Toyota 86, Toyota GT86 2013-2020</td></tr><tr><td align="left">ZC</td><td align="left">Subaru BRZ 2013-2020</td></tr></tbody></table>
+<h2>Engine code</h2>
+<p>The 3rd-letter in the applied model code. For the 86 platform, there has only
 been one engine across all markets.</p>
-<p>| Code | Description |
-| :--- | :---------- |
-| 6 | 2.0L DOHC RWD (Naturally Aspirated) (<code>FA20D</code>) |
-| 8 | 2.4L DOHC RWD (Naturally Aspirated) (<code>FA24D</code>) |</p>
-<h2 id="modelyear">Model Year</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">6</td><td align="left">2.0L DOHC RWD (Naturally Aspirated) (<code>FA20D</code>)</td></tr><tr><td align="left">8</td><td align="left">2.4L DOHC RWD (Naturally Aspirated) (<code>FA24D</code>)</td></tr></tbody></table>
+<h2>Model Year</h2>
 <p>The model year is the date of production, often times these start the year prior
 to the marketed year. This is because production of a vehicle starts early, and
-sales follow. </p>
-<p>| Code | Year/Month | Notes |
-| :--- | :--------- | :---- |
-| A | 2012/03 - 2013/09 | Zenki (2012-2015) |
-| B | 2013/09 - 2014/06 | |
-| C | 2014/07 2015/01 | |
-| D | 2015/02 - 2016/07 | |
-| E | 2016/07 - 2017/03 | Kouki (2016-2020): new facelift for both BRZ &amp; 86, more horsepower, track modes: increased throttle response, disables traction control. Marketed as the "2017 BRZ" in the US. |
-| F | 2017/10 - 2018/09 | |
-| G | 2018/09 - 2019/03 | |
-| H | 2019/04 - 2020 2020 | is the final model year of the ZN6/ZC6 platform |</p>
-<h2 id="destinationcode">Destination Code</h2>
+sales follow.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Year/Month</th><th align="left">Notes</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">2012/03 - 2013/09</td><td align="left">Zenki (2012-2015)</td></tr><tr><td align="left">B</td><td align="left">2013/09 - 2014/06</td><td align="left"></td></tr><tr><td align="left">C</td><td align="left">2014/07 2015/01</td><td align="left"></td></tr><tr><td align="left">D</td><td align="left">2015/02 - 2016/07</td><td align="left"></td></tr><tr><td align="left">E</td><td align="left">2016/07 - 2017/03</td><td align="left">Kouki (2016-2020): new facelift for both BRZ &#x26; 86, more horsepower, track modes: increased throttle response, disables traction control. Marketed as the "2017 BRZ" in the US.</td></tr><tr><td align="left">F</td><td align="left">2017/10 - 2018/09</td><td align="left"></td></tr><tr><td align="left">G</td><td align="left">2018/09 - 2019/03</td><td align="left"></td></tr><tr><td align="left">H</td><td align="left">2019/04 - 2020 2020</td><td align="left">is the final model year of the ZN6/ZC6 platform</td></tr></tbody></table>
+<h2>Destination Code</h2>
 <p>The 5th-letter is the destination code, which denotes the sales region the
 vehicle is destined for.</p>
-<p>| Code | Destination market |
-| :--- | :----------------- |
-| Y | USA or Canada |
-| 2 | Japan |
-| K | Europe | </p>
-<h2 id="trimcode">Trim Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Destination market</th></tr></thead><tbody><tr><td align="left">Y</td><td align="left">USA or Canada</td></tr><tr><td align="left">2</td><td align="left">Japan</td></tr><tr><td align="left">K</td><td align="left">Europe</td></tr></tbody></table>
+<h2>Trim Code</h2>
 <p>The 6th-letter is the trim code, which tells you which marketing package,
 equipment and accessories are included in the vehicle. This list is incomplete,
 if you know any others, please let us know.</p>
-<p>| Code | Trim name |
-| :--- | :-------- |
-| A | RA, RA Racing (Japan BRZ), FC, "86 Racing" (Japan 86) |
-| B | Premium USA BRZ |
-| C | Standard Grade (FR-S) |
-| G | Japan 86 |
-| E | Limited (USA BRZ), Sport Tech (Canada BRZ) | 
-| P | 860 Edition |
-| R | (Japan BRZ) or |
-| S | (Japan BRZ) or GT (Japan 86) Grade |</p>
-<h2 id="transmissioncode">Transmission Code</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Trim name</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">RA, RA Racing (Japan BRZ), FC, "86 Racing" (Japan 86)</td></tr><tr><td align="left">B</td><td align="left">Premium USA BRZ</td></tr><tr><td align="left">C</td><td align="left">Standard Grade (FR-S)</td></tr><tr><td align="left">G</td><td align="left">Japan 86</td></tr><tr><td align="left">E</td><td align="left">Limited (USA BRZ), Sport Tech (Canada BRZ)</td></tr><tr><td align="left">P</td><td align="left">860 Edition</td></tr><tr><td align="left">R</td><td align="left">(Japan BRZ) or</td></tr><tr><td align="left">S</td><td align="left">(Japan BRZ) or GT (Japan 86) Grade</td></tr></tbody></table>
+<h2>Transmission Code</h2>
 <p>The 7th-letter is the transmission code, tells you if its a manual or automatic.</p>
-<p>| Code | Transmission type |
-| :--- | :---------------- |
-| 7 | Auto 6AT (<code>TX6A</code>) |
-| 8 | Manual 6MT (<code>TL70</code>) |</p>
-<h2 id="examples">Examples</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Code</th><th align="left">Transmission type</th></tr></thead><tbody><tr><td align="left">7</td><td align="left">Auto 6AT (<code>TX6A</code>)</td></tr><tr><td align="left">8</td><td align="left">Manual 6MT (<code>TL70</code>)</td></tr></tbody></table>
+<h2>Examples</h2>
 <p>Putting this all together, we can formulate our own applied models from this
 information:</p>
-<p>| Applied model | Description |
-| :------------ | :---------- |
-| ZC6 | Subaru BRZ, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen) |
-| ZN6 | Toyota 86, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen) |
-| ZC8 | Subaru BRZ, 2.4l FA24D engine, 2022 MY (generic 2nd gen) |
-| ZN8 | Toyota GR86, 2.4l FA24D engine, 2022 MY (generic 2nd gen) |
-| ZC6AYE8 | Subaru BRZ, 2.0l FA20D engine, 2012 MY for US market, Limited manual |
-| ZC6EYE8 | Subaru BRZ, 2.0l FA20D engine, 2016 MY for US market, Limited, manual |
-| ZN6E2A8 | Toyota 86, 2.0l FA20D engine, 2016 MY for Japan market, FC trim, manual |</p>
-<p>Can you find your applied model code? Are we missing your trim code? Tell us on 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Applied model</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">ZC6</td><td align="left">Subaru BRZ, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen)</td></tr><tr><td align="left">ZN6</td><td align="left">Toyota 86, 2.0l FA20D engine, 2013-2020 MY (generic 1st gen)</td></tr><tr><td align="left">ZC8</td><td align="left">Subaru BRZ, 2.4l FA24D engine, 2022 MY (generic 2nd gen)</td></tr><tr><td align="left">ZN8</td><td align="left">Toyota GR86, 2.4l FA24D engine, 2022 MY (generic 2nd gen)</td></tr><tr><td align="left">ZC6AYE8</td><td align="left">Subaru BRZ, 2.0l FA20D engine, 2012 MY for US market, Limited manual</td></tr><tr><td align="left">ZC6EYE8</td><td align="left">Subaru BRZ, 2.0l FA20D engine, 2016 MY for US market, Limited, manual</td></tr><tr><td align="left">ZN6E2A8</td><td align="left">Toyota 86, 2.0l FA20D engine, 2016 MY for Japan market, FC trim, manual</td></tr></tbody></table>
+<p>Can you find your applied model code? Are we missing your trim code? Tell us on
 email or <a href="https://instagram.com/brz_typera">@brz_typeRA on Instagram</a>.</p>]]></description><link>https://type-ra.org/kb/decoding-subaru-applied-model-chassis-codes</link><guid isPermaLink="true">https://type-ra.org/kb/decoding-subaru-applied-model-chassis-codes</guid><category><![CDATA[subaru]]></category><category><![CDATA[toyota]]></category><category><![CDATA[zn6]]></category><category><![CDATA[zc6]]></category><category><![CDATA[zn8]]></category><category><![CDATA[zc8]]></category><dc:creator><![CDATA[Ron. A (@brz_typera)]]></dc:creator><pubDate>Tue, 20 Oct 2020 07:28:00 GMT</pubDate></item></channel></rss>

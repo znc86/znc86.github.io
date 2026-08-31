@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../../../../src/components/page';
 import { PostCard } from "../../../components/PostCard";
 import { loadBlogPosts } from '../../../lib/loader';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 import styles from './[tag].module.css';
 import type { GetStaticProps, GetStaticPropsResult} from 'next'
 import type { PostData } from '../../../lib/loader';

@@ -30,3 +30,9 @@
 .motto {
   font-size: 2rem;
 }
+
+/* Render the logo at 64px wide; `height: auto` keeps the SVG's 350x387 ratio. */
+.logo {
+  width: 4rem;
+  height: auto;
+}

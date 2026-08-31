@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 import { useRouter } from "next/router";
 import styles from "./page.module.css";
 
@@ -35,7 +35,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <header className={styles.header}>
           <h1 className={styles.name}>
             <Link href="/">
-              <Image src="/logo.svg" alt="Type RA" width="64" height="64" />
+              <Image
+                className={styles.logo}
+                src="/logo.svg"
+                alt="Type RA"
+                // logo.svg's viewBox is 350.46 x 387.08, so it is not square.
+                // It was declared 64x64, and the global `img { height: auto }`
+                // then recomputed height from the fixed 64px width, changing
+                // one dimension but not the other. These match the real ratio.
+                width={350}
+                height={387}
+                priority
+              />
             </Link>{" "}
           </h1>
           <div className={styles.lang}>

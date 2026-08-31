@@ -1,5 +1,5 @@
 import { type AppType } from "next/dist/shared/lib/utils";
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation } from "next-i18next/pages";
 
 import "../styles/globals.css";
 

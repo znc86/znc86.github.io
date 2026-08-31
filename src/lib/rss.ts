@@ -1,8 +1,30 @@
 import RSS from "rss";
 import fs from "fs";
-import showdown from "showdown";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkGfm from "remark-gfm";
+import remarkRehype from "remark-rehype";
+import rehypeRaw from "rehype-raw";
+import rehypeStringify from "rehype-stringify";
 import { globals } from "../lib/globals";
 import type { PostData } from "../lib/loader";
+
+/**
+ * Markdown -> HTML for feed item descriptions.
+ *
+ * Replaces `showdown`, which had unfixable ReDoS and XSS advisories and no
+ * upstream patch. This reuses the same remark/rehype stack the site renders
+ * with (see components/Markdown.tsx), so feed output matches the pages:
+ * remark-gfm for the pipe tables and rehype-raw for the literal HTML the docs
+ * are authored with. Both `allowDangerousHtml` flags are what let that raw HTML
+ * survive the mdast -> hast -> string trip; the input is our own content.
+ */
+const markdownToHtml = unified()
+  .use(remarkParse)
+  .use(remarkGfm)
+  .use(remarkRehype, { allowDangerousHtml: true })
+  .use(rehypeRaw)
+  .use(rehypeStringify, { allowDangerousHtml: true });
 
 export const generateRSS = async (posts: PostData[]) => {
   posts.map((post) => {
@@ -29,8 +51,7 @@ export const generateRSS = async (posts: PostData[]) => {
 
   let isValid = true;
   for (const post of posts) {
-    const converter = new showdown.Converter();
-    const html = converter.makeHtml(post.content);
+    const html = String(await markdownToHtml.process(post.content));
     if (!post.datePublished) {
       isValid = false;
       console.warn(

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-namespace */
 export namespace globals {
   export const yourName = "Type RA";
   export const siteName = "Type-RA.org";

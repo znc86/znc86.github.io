@@ -5,6 +5,15 @@
   "components": {
     "page": {
       "motto": "Asociación de Movilidad de Carruajes Violentos"
+    },
+    "calendar": {
+      "previousYear": "Año anterior",
+      "nextYear": "Año siguiente",
+      "loading": "Cargando eventos…",
+      "missingApiKey": "La clave de API de Google Calendar no está configurada.",
+      "loadError": "No se pudo cargar {{name}}:",
+      "allDay": "Todo el día",
+      "noEvents": "No hay eventos programados este año."
     }
   },
   "pages": {

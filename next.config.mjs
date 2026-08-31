@@ -1,8 +1,6 @@
 import nexti18next from "./next-i18next.config.js";
-import ntm from "next-transpile-modules";
 
 const { i18n } = nexti18next;
-const withTM = ntm(["@ericz1803/react-google-calendar"]);
 
 // @ts-check
 /**
@@ -28,4 +26,4 @@ const config = {
     return config;
   },
 };
-export default withTM(config);
+export default config;

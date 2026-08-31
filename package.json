@@ -2,6 +2,21 @@
   "name": "znc86",
   "version": "0.2.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=24.0.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": ">=12.0.0",
+      "onFail": "warn"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +26,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@emotion/react": "^11.10.5",
-    "@ericz1803/react-google-calendar": "^4.2.2",
+    "@ericz1803/react-google-calendar": "4.2.2",
     "date-fns": "^2.29.3",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
@@ -31,7 +46,7 @@
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
-    "@types/node": "^18.0.0",
+    "@types/node": "^24.13.3",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@types/react-syntax-highlighter": "^15.5.5",
@@ -41,7 +56,16 @@
     "@typescript-eslint/parser": "^5.33.0",
     "eslint": "^8.26.0",
     "eslint-config-next": "13.0.2",
-    "typescript": "^4.8.4"
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "react-markdown": {
+      "react": "$react"
+    },
+    "@ericz1803/react-google-calendar": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   },
   "ct3aMetadata": {
     "initVersion": "6.11.3"

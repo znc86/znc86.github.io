@@ -13,17 +13,16 @@ const { i18n } = nexti18next;
 const config = {
   i18n,
   reactStrictMode: true,
-  swcMinify: true,
-  webpack: function(config) {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader",
-    });
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "~": process.cwd(),
-    };
-    return config;
+  // Turbopack is the default bundler in Next 16. This replaces the old custom
+  // `webpack` function, which only existed to run raw-loader over the markdown
+  // in `docs/` (its `~` alias was dead config and is gone).
+  turbopack: {
+    rules: {
+      "*.md": {
+        loaders: ["raw-loader"],
+        as: "*.js",
+      },
+    },
   },
 };
 export default config;

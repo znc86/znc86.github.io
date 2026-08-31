@@ -32,7 +32,7 @@ tags:
 ### Other Fluids
 
 | Type | Amount (L, US Quart) | Our recommended product |
-|:---|:---|
+|:---|:---|:---|
 | Manual transmission oil | `2.2L`, `2.3 Quart` | Motul Gear 300 75W90 Fully Synthetic Gearbox Oil, MG Gear Oil Special II (API GL-3, SAE 75W-90) part number `0888501513` |
 | Rear differential fluid | `1.1L` to `1.2L` (`1.1Qt` to `1.3qt`) for OEM diff housing | Red Line GL-5 Gear Oil 75W-86 50104 |
 | Rear differential fluid | `1.6L` to `1.7L` (`1.7Qt` to `1.7qt`) with Cusco Rear Differential Cover | Red Line GL-5 Gear Oil 75W-86 50104 |

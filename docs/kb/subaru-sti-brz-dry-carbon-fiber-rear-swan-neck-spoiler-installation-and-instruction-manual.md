@@ -143,7 +143,7 @@ Getting Started:
 
 #### 1. Marking and punching on trunk inner panel
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-02.png" alt="Trunk panel" />
     <figcaption>Figure 2</figcaption>
@@ -155,7 +155,7 @@ Getting Started:
   </p>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-03.png" alt="Trunk guide" />
     <figcaption>Figure 3</figcaption>
@@ -167,7 +167,7 @@ Getting Started:
   </p>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-04.png" alt="Trunk guide" />
     <figcaption>Figure 4</figcaption>
@@ -185,7 +185,7 @@ Getting Started:
 
 #### 2. Punching out the trunk outer panel
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-05.png" alt="Trunk template alignment" />
     <figcaption>Figure 5</figcaption>
@@ -200,7 +200,7 @@ Getting Started:
   </div> 
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-06.png" alt="Trunk punching" />
     <figcaption>Figure 6</figcaption>
@@ -216,7 +216,7 @@ Getting Started:
 
 #### 3. Wiring harness removal and drilling preparation
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-07.png" alt="Harness clips" />
     <figcaption>Figure 7</figcaption>
@@ -229,7 +229,7 @@ Getting Started:
   </div> 
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-08.png" alt="Harness clips" />
     <figcaption>Figure 8</figcaption>
@@ -241,7 +241,7 @@ Getting Started:
   </div> 
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-09.png" alt="Harness clips" />
     <figcaption>Figure 9</figcaption>
@@ -254,7 +254,7 @@ Getting Started:
   </div> 
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-10.png" alt="Drill prep" />
     <figcaption>Figure 10</figcaption>
@@ -267,7 +267,7 @@ Getting Started:
 
 #### 4. Drilling holes in trunk lid inner panel
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-12.png" alt="Drill prep" />
     <figcaption>Figure 12</figcaption>
@@ -292,7 +292,7 @@ Getting Started:
 
 #### 5. Drilling holes in trunk lid outer panel
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-13.png" alt="Drill prep" />
     <figcaption>Figure 13</figcaption>
@@ -306,7 +306,7 @@ Getting Started:
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-14.png" alt="Drill prep" />
     <figcaption>Figure 14</figcaption>
@@ -322,7 +322,7 @@ Getting Started:
 
 #### 6. Deburring and touch-up work
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-15.png" alt="Touch up" />
     <figcaption>Figure 15</figcaption>
@@ -342,7 +342,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   <figcaption>Figure 15-b: Reinforcement bracket</figcaption>
 </figure>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-16.png" alt="Installation" />
     <figcaption>Figure 16</figcaption>
@@ -358,7 +358,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-18.png" alt="Installation" />
     <figcaption>Figure 18</figcaption>
@@ -368,7 +368,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-19.png" alt="Installation" />
     <figcaption>Figure 19</figcaption>
@@ -379,7 +379,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-20.png" alt="Installation" />
     <figcaption>Figure 20</figcaption>
@@ -395,7 +395,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-21.png" alt="Installation" />
     <figcaption>Figure 21</figcaption>
@@ -405,7 +405,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </details>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-22.png" alt="Installation" />
     <figcaption>Figure 22</figcaption>
@@ -415,7 +415,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-23.png" alt="Installation" />
     <figcaption>Figure 23</figcaption>
@@ -428,7 +428,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-24.png" alt="Installation" />
     <figcaption>Figure 24</figcaption>
@@ -440,7 +440,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-25.png" alt="Installation" />
     <figcaption>Figure 25</figcaption>
@@ -454,7 +454,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
 
 #### 8. Adjustment
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-26.png" alt="Adjustment" />
     <figcaption>Figure 26</figcaption>
@@ -469,7 +469,7 @@ Allow the paint to dry thoroughly for at least 30 minutes.
   </div>
 </div>
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-27.png" alt="Adjustment" />
     <figcaption>Figure 27</figcaption>
@@ -486,7 +486,7 @@ This completes the installation process.
 
 ## How to Adjust Spoiler Angle
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-28.png" alt="Adjustment" />
     <figcaption>Figure 28</figcaption>
@@ -505,7 +505,7 @@ This completes the installation process.
 
 ## Precautions
 
-<div className="cols-2">
+<div class="cols-2">
   <figure>
     <img src="/kb/subaru-sti-brz-dry-carbon-fiber-rear-swan-neck-spoiler-installation-and-instruction-manual/figure-29.png" alt="Complete" />
     <figcaption>Figure 29</figcaption>

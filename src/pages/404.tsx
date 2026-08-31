@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
+import { useTranslation } from "next-i18next/pages";
 import React from "react";
 import Page from "../components/page";
 

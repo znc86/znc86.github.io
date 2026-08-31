@@ -1,6 +1,6 @@
 import React from "react";
 import glob from "glob";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/pages/serverSideTranslations";
 import Page from "../../components/page";
 import { BlogPost } from "../../components/BlogPost";
 import { loadPost } from "../../lib/loader";

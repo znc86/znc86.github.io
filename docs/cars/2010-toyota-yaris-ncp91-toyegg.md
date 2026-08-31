@@ -12,24 +12,47 @@ tags:
 
 ![2010 Toyota Yaris "Toy Egg" outside the garage, JDM zenki face and RS Watanabes](/cars/2010-toyota-yaris-ncp91-toyegg/hero.jpg)
 
-> "If you have no desire, you can't experience loss."
+A few things sit behind TOYEGG. Freedom, to not be precious about things.
+Simplicity, in not making decisions, not weighing options. And freedom from
+want—if you have no desire, you can't experience loss.
 
-That's the whole idea behind the Toy Egg. Freedom to not be precious about
-things. Simplicity, in not making decisions, not weighing options. Freedom
-from want, because a thing you don't want anything from can't disappoint you.
-I wanted a car I didn't have to care about. Get it dirty, never wash it, park
-it wherever, and it just starts and goes. No dings to wince at, no paint to
-babysit, no fancy parts I'd worry about scratching. A white-box appliance
-that happens to be fun to drive.
+But if there's one idea that ties it together, it's this: TOYEGG is built to
+embrace the worst, not chase the best. It's the opposite of a finely tuned
+track weapon, the carefully planned and executed track scalpel. The logic of
+_the best_ can be pernicious, because it's poised to monopolize—an emphasis
+on acquiring the best material goods can easily translate into a life of
+generalized consumption. _The best_ means waiting, planning, researching,
+and saving until you can afford the perfect equipment for a given task.
+Partisans of _the best_ probably never end up working on their own cars,
+delegating that to the experts who can "do it right." They miss the
+experience, the failures, the whimsy and joy in mistakes, and the discovery
+that only comes from learning by doing.
 
-It's a Toyota, it's shaped like an egg, and the plate reads TOYEGG. The whole
-concept is a quirky little egg that's fun to drive, nothing more.
+That idea isn't mine. It's [The Worst](https://moxie.org/2012/11/27/the-worst.html),
+an essay by Moxie Marlinspike: ideas and material possessions should be
+tools that serve us, rather than things we live in service to. TOYEGG is
+about finding enjoyment in basic, vanilla fun without overthinking it—
+something Perhaps P.O.S. said better than I can, in their video
+["Fuck Your Stuff"](http://www.youtube.com/watch?v=0FY6VcJR2PE), and
+something [@matt.fabb](https://www.instagram.com/matt.fabb/) is always
+reminding people of: drive your shit.
+
+A slow shopping trolley you can enjoy.
+
+It's a Toyota, shaped like an egg, and the plate reads TOYEGG. Get it dirty,
+never wash it, park it wherever, and it just starts and goes. No dings to
+wince at, no paint to babysit, no fancy parts to worry about scratching. A
+white-box appliance that happens to be fun to drive.
 
 The obvious answer here was a Honda Fit. Fits are cheap, practical, and
-famously easy to have fun in. That was exactly the problem. A Fit is a car
-that invites you to keep going—bigger brakes, a limited-slip diff, maybe a
-track day, and suddenly it's not an appliance anymore, it's a second project.
-I already have one of those. I didn't need another track car. I needed
+famously easy to have fun in—which was exactly the problem. A Fit invites
+you to keep going: bigger brakes, a limited-slip diff, maybe a track day,
+and suddenly it's not an appliance anymore, it's a second project. I already
+have one of those. I looked at the alternatives too: a Toyota Prius C
+(NCP10) and the newer NCP131 Yaris were both still priced too close to a
+Fit to make sense, and a Toyota Previa was too big, harder to source parts
+for, and would've needed more money up front just to get into decent shape.
+I didn't need another track car, and I didn't need a project. I needed
 something that couldn't tempt me.
 
 ![A stock 2010 Toyota Yaris hatchback, before the Craigslist ad and the JDM face swap](/cars/2010-toyota-yaris-ncp91-toyegg/factory-brochure.jpg)
@@ -163,10 +186,6 @@ OEM Toyota floor mats,
 new wiper blades.
 
 ![Toy Egg on a back road in New Hampshire](/cars/2010-toyota-yaris-ncp91-toyegg/new-hampshire.jpeg)
-
-<video controls playsinline preload="metadata" poster="/cars/2010-toyota-yaris-ncp91-toyegg/cinematic-poster.jpg">
-  <source src="/cars/2010-toyota-yaris-ncp91-toyegg/cinematic.mp4" type="video/mp4" />
-</video>
 
 The Toy Egg isn't much, and that's exactly the point. It doesn't have a lap
 time, it doesn't have a build sheet chasing horsepower, and it isn't going

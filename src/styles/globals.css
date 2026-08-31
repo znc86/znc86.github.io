@@ -105,8 +105,7 @@ h2 {
   font-size: calc(2vw + 16px);
 }
 
-img,
-video {
+img {
   max-width: 100%;
   height: auto;
 }

@@ -54,9 +54,17 @@ const Home: NextPage = () => {
 
             <Image
               src="/type-ra-garage.jpg"
-              alt="Type RA"
-              width="960"
-              height="838"
+              alt="Type RA garage interior"
+              width={1440}
+              height={1505}
+              // This is the page's LCP element, so it must not be lazy-loaded.
+              // `priority` sets fetchpriority="high" and loading="eager".
+              priority
+              // `.one` is flex-basis:50% of the 60rem page, so the image is
+              // only ~480px wide on desktop and full-width on narrow screens.
+              // Without this, next/image would assume 100vw and pick a
+              // needlessly large candidate from the srcset.
+              sizes="(min-width: 60rem) 480px, (min-width: 30rem) 50vw, 100vw"
             />
           </div>
           <ul className={`${styles.two} ${styles.links}`}>

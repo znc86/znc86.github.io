@@ -38,6 +38,20 @@ type YearCalendarProps = {
   calendars: CalendarSource[];
 };
 
+/**
+ * `location` is free text, but calendars commonly hold a meeting link there.
+ * Returns the http(s) URL when the field is one, otherwise null.
+ */
+function locationUrl(location: string): string | null {
+  if (!location) return null;
+  try {
+    const url = new URL(location);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 function isWeekend(year: number, month: number, day: number): boolean {
   const weekday = new Date(year, month, day).getDay();
   return weekday === 0 || weekday === 6;
@@ -307,23 +321,28 @@ function EventBar({ segment, laneIndex, source, allDayLabel }: EventBarProps) {
     backgroundColor: source?.color ?? FALLBACK_COLOR,
   };
 
-  const tooltip = [
-    event.title,
-    event.allDay ? allDayLabel : event.timeLabel,
-    event.location,
-    source?.name,
-  ]
+  const location = event.location.trim();
+  const url = locationUrl(location);
+
+  // A URL location is the link target rather than label text, so only a
+  // human-readable location gets appended to the title.
+  const title = url || !location ? event.title : `${event.title} at ${location}`;
+
+  // The location is already part of `title` unless it is a URL.
+  const tooltip = [title, event.allDay ? allDayLabel : event.timeLabel, url, source?.name]
     .filter(Boolean)
     .join("\n");
 
-  const label = <span className={styles.eventTitle}>{event.title}</span>;
+  const label = <span className={styles.eventTitle}>{title}</span>;
 
-  if (event.htmlLink) {
+  const href = url ?? event.htmlLink;
+
+  if (href) {
     return (
       <a
         className={classNames.join(" ")}
         style={style}
-        href={event.htmlLink}
+        href={href}
         target="_blank"
         rel="noreferrer"
         title={tooltip}

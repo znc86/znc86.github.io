@@ -2,7 +2,7 @@
   --label-width: 2.75rem;
   /* Floor for a day column. Below this the grid scrolls instead of squeezing,
      so an event bar always has room for a few characters. */
-  --day-min-width: 2.25rem;
+  --day-min-width: 7rem;
   --day-number-height: 1.1rem;
   --lane-height: 1.25rem;
   --grid-line: rgba(128, 128, 128, 0.35);
@@ -80,7 +80,10 @@
 
 .monthRow {
   display: grid;
-  grid-template-columns: var(--label-width) repeat(31, minmax(var(--day-min-width), 1fr));
+  grid-template-columns: var(--label-width) repeat(
+      31,
+      minmax(var(--day-min-width), 1fr)
+    );
   position: relative;
   border-top: 1px solid var(--grid-line);
 }
@@ -110,7 +113,10 @@
 /* The label is sticky and opaque, so re-apply the row tint on top of it. */
 .currentMonth .monthLabel {
   color: var(--cta-background);
-  background-image: linear-gradient(var(--current-month-tint), var(--current-month-tint));
+  background-image: linear-gradient(
+    var(--current-month-tint),
+    var(--current-month-tint)
+  );
 }
 
 /*

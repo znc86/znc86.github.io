@@ -12,48 +12,44 @@ tags:
 
 ![2010 Toyota Yaris "Toy Egg" outside the garage, JDM zenki face and RS Watanabes](/cars/2010-toyota-yaris-ncp91-toyegg/hero.jpg)
 
-A few things sit behind TOYEGG. Freedom, to not be precious about things.
-Simplicity, in not making decisions, not weighing options. And freedom from
-want—if you have no desire, you can't experience loss.
+> TOYEGG: A slow shopping trolley you can enjoy.
+
+A few concepts sit behind TOYEGG. Freedom to not be precious about things.
+Simplicity in not making decisions, not weighing options. And KISS: Keep It
+Simple Stupid.
 
 But if there's one idea that ties it together, it's this: TOYEGG is built to
 embrace the worst, not chase the best. It's the opposite of a finely tuned
 track weapon, the carefully planned and executed track scalpel. The logic of
-_the best_ can be pernicious, because it's poised to monopolize—an emphasis
-on acquiring the best material goods can easily translate into a life of
+_the best_ can be dangerous because it seizes one's attention and directs it
+toward acquiring material goods, which can easily translate into a life of
 generalized consumption. _The best_ means waiting, planning, researching,
 and saving until you can afford the perfect equipment for a given task.
-Partisans of _the best_ probably never end up working on their own cars,
+People optimizing for _the best_ never end up working on their own cars,
 delegating that to the experts who can "do it right." They miss the
 experience, the failures, the whimsy and joy in mistakes, and the discovery
-that only comes from learning by doing.
+that only comes from just doing things for the sake of doing them.
 
-That idea isn't mine. It's [The Worst](https://moxie.org/2012/11/27/the-worst.html),
-an essay by Moxie Marlinspike: ideas and material possessions should be
-tools that serve us, rather than things we live in service to. TOYEGG is
-about finding enjoyment in basic, vanilla fun without overthinking it—
-something Perhaps P.O.S. said better than I can, in their video
-["Fuck Your Stuff"](http://www.youtube.com/watch?v=0FY6VcJR2PE), and
-something [@matt.fabb](https://www.instagram.com/matt.fabb/) is always
-reminding people of: drive your shit.
-
-A slow shopping trolley you can enjoy.
+Cars should be tools that serve us, rather than things we live in service to.
+TOYEGG is about finding enjoyment in basic, vanilla fun without overthinking it.
+[@matt.fabb](https://www.instagram.com/matt.fabb/) said it better than I can:
+drive your shit.
 
 It's a Toyota, shaped like an egg, and the plate reads TOYEGG. Get it dirty,
 never wash it, park it wherever, and it just starts and goes. No dings to
-wince at, no paint to babysit, no fancy parts to worry about scratching. A
-white-box appliance that happens to be fun to drive.
+wince at, the paint is already peeling, nothing to worry about scratching. A
+white-box appliance that is fun to drive.
 
-The obvious answer here was a Honda Fit. Fits are cheap, practical, and
-famously easy to have fun in—which was exactly the problem. A Fit invites
-you to keep going: bigger brakes, a limited-slip diff, maybe a track day,
+When considering other daily drivers, the obvious answer was a Honda Fit.
+Fits are cheap, practical, and famously easy to have fun in and modify—which
+was exactly the problem. A Fit invites
+you to keep going: a track day, then bigger brakes, a limited-slip diff,
 and suddenly it's not an appliance anymore, it's a second project. I already
 have one of those. I looked at the alternatives too: a Toyota Prius C
-(NCP10) and the newer NCP131 Yaris were both still priced too close to a
-Fit to make sense, and a Toyota Previa was too big, harder to source parts
+(NCP10) and the newer NCP131 Yaris were both still priced too high
+to make sense, and a Toyota Previa was too big, harder to source parts
 for, and would've needed more money up front just to get into decent shape.
-I didn't need another track car, and I didn't need a project. I needed
-something that couldn't tempt me.
+I needed something that couldn't tempt me.
 
 ![A stock 2010 Toyota Yaris hatchback, before the Craigslist ad and the JDM face swap](/cars/2010-toyota-yaris-ncp91-toyegg/factory-brochure.jpg)
 
@@ -70,54 +66,58 @@ flight, flew down Thursday, and slept at a relative's house. Picked up the
 car Friday around noon, and pointed it north. I was home in Boston by
 Saturday night. The Yaris didn't complain once on the drive—no issues the
 whole way, other than the fact that all four speakers were blown and there
-was no audio at all. A grand total of $5,900, plus $225 dealer service and
-tax, brought it to $6,542.50 out the door, at 84,913 miles.
+was no audio for the long drive back. A grand total of $5,500 out the door, at 84,913 miles.
 
 ![Toy Egg on delivery day, fresh off the Miami-to-Boston drive](/cars/2010-toyota-yaris-ncp91-toyegg/first-day-delivery.jpg)
 
-It now lives in the same garage as the BRZ, parked out front while the BRZ
-sits up on stands inside. They couldn't be more different projects. One is a
-streetable track car chasing lap times and brake feel. The other is an
+The Yaris lives outside the garage, parked out front while the BRZ lives
+safely inside. They couldn't be more different projects. One is a
+streetable track car chasing lap times and driver feel. The other is an
 automatic-transmission grocery getter that isn't allowed to see a track,
-ever, on purpose. The Yaris's whole job is to start every morning and ask
-nothing of me in return.
+ever, on purpose. The Yaris's whole job is to start and ask nothing of me
+in return.
 
 ![Toy Egg parked next to the BRZ, the other project in the garage](/cars/2010-toyota-yaris-ncp91-toyegg/garage.jpeg)
-
-Some details on the build:
 
 ## Exterior
 
 The face swap was never optional—it was the reason to buy this specific car.
-A US-spec Yaris and a JDM zenki Vitz share a body, but the front end is
-different enough to change the whole read of the car, and that swap plus the
-side skirts came from Yahoo Auctions via Buyee, shipped unpainted so they
-could be color-matched to the factory Super White. A trimmed S14 front lip
-gets spliced onto the bumper for a little more presence up front, on a
-budget that had no room for anything custom-molded.
+A US-spec Yaris and a JDM zenki Vitz aren't two cars that happen to share a
+body—they're the same chassis, sold under a different name for a different
+market. The front end is different enough to change the whole read of the
+car, though, and that swap plus the side skirts came from Yahoo Auctions via
+Buyee, in rough condition.
 
-![JDM zenki side skirts painted to match, Super White 040](/cars/2010-toyota-yaris-ncp91-toyegg/sideskirt-painting.jpg)
+Painting them was my first real experience doing body work, and the car
+wears the results honestly: the rear spoiler got leftover BRZ K1X Crystal
+White Pearl, the side skirts went down in Polar White to roughly match the
+body, and the JDM bumper is still wearing its pristine factory Super White
+II straight from Japan. That's three different whites on one car, and the
+goal isn't patina—I'm not intentionally building a rat rod here—it's just
+what happens when you're learning to paint and aiming for "50-foot white"
+instead of a concours match. A rally-style front lip from Home Depot is
+spliced onto the bumper for additional presence up front, on a budget that
+cost less than a Chipotle burrito.
+
+![JDM zenki side skirts painted in Polar White](/cars/2010-toyota-yaris-ncp91-toyegg/sideskirt-painting.jpg)
 
 Everything else followed the same logic: replace what's tired, keep it
 factory-looking, don't get precious about any of it. Roof, front door, and
-rear door mouldings were all swapped for fresh ones. The door handles went
-in unpainted, to be color-matched along with everything else. A genuine JDM
-Vitz luggage-compartment badge came in from Japan to finish the rear, and a
-Toyota hatchback-style wing went on for a bit of shape out back. Signs.com
-cut the hatch lettering—"playful dreams hatch from toy eggs"—which is really
+rear door mouldings were all swapped for fresh ones. A genuine JDM
+Vitz badge came in from Japan to finish the rear, and a
+eBay Toyota hatchback-style wing went on for a bit of shape out back. The
+windshield banner reads "Hatch your Dreams"—which is really
 just the whole point of the car, in vinyl. The plate says TOYEGG, in case
 the lettering wasn't enough of a hint.
 
 JDM zenki Vitz RS front bumper,
-JDM zenki side skirts, painted to match,
-S14 front lip, trimmed to fit,
+JDM zenki side skirts,
+HDPE front lip,
 Toyota hatchback-style wing,
-JDM Vitz luggage compartment badge,
-unpainted door handles, color-matched,
+JDM Vitz badge,
 roof, front door, and rear door mouldings,
-"playful dreams hatch from toy eggs" hatch lettering,
-TOYEGG vanity plate,
-polished headlights.
+windshield banner,
+TOYEGG vanity plate.
 
 ## Wheels & Suspension
 
@@ -125,7 +125,7 @@ The wheels were the other half of the "buy the parts before the car"
 decision—a set of RS Watanabe 14x7+8 eight-spokes, the classic JDM wheel
 that basically defines this whole build's aesthetic. Everything underneath
 follows the same restrained approach as the exterior: enough to sit right
-and ride well, nothing aimed at an apex.
+and ride well, nothing aimed at an apex (but it could be!).
 
 ![RS Watanabe 14x7+8 eight-spokes, bought before the car itself](/cars/2010-toyota-yaris-ncp91-toyegg/rs-watanabe-8-spokes.jpg)
 
@@ -135,7 +135,7 @@ anything. A Cusco center lock pillow ball upper mount, fresh camber bolts,
 and an ARP wheel stud kit rounded out the corners, and a set of Muteki
 open-end lug nuts keeps the eight-spokes on. Wheel spacers came and went in
 a couple of sizes while dialing in the stance—nothing dramatic, just enough
-to get the fitment right.
+to get the fitment right. Falken Azenis with meaty fitment.
 
 BC Racing BR Type coilovers, 5kg/mm front, 3kg/mm rear,
 Cusco center lock pillow ball upper mount,
@@ -154,7 +154,7 @@ Reliability work has been ordinary and cheap, the way it should be for an
 appliance. A P0301 misfire on cylinder one turned out to be a pair of tired
 ignition coils, replaced along with fresh iridium spark plugs. A front brake
 line needed replacing after a flexible hose gave out. Regular oil changes
-have carried it from 84,913 miles at purchase to 98,333 and counting,
+have carried it from 84,913 miles at purchase to 101,333 and counting,
 without drama. The one small treat has been an HKS Hi-Power cat-back
 exhaust, for a bit more voice without turning this into a project car, and a
 set of Qwik-Latch hood latches for quick, fuss-free access underneath. It
@@ -173,12 +173,11 @@ routine oil changes.
 Day one, the Yaris had four blown speakers and zero audio. Rather than chase
 a proper head unit and a wiring diagram, I leaned into it: new front
 speakers went in for basic sound, but the dash got a Ghostbox and a factory
-radio blockoff plate instead of a screen to fuss over. No touchscreen, no
+radio blockoff plate instead of a screen to fuss over. Red emergency cut-off
+switch wired to control GhostBox volume. No touchscreen, no
 Bluetooth pairing menus, nothing to think about. That's the whole interior
-philosophy in one part—less to manage, less to want, less to lose. The
-horn, blinkers, and wiper blades all got the ordinary fixes they needed, and
-a set of OEM Toyota floor mats keeps the inside as unfussy as the plan
-called for.
+philosophy in one part—less to manage, less to want, less to lose. A set of OEM
+Toyota floor mats keeps the inside as unfussy as the plan called for.
 
 Ghostbox with factory radio blockoff plate,
 Yaris front speakers,
@@ -188,7 +187,9 @@ new wiper blades.
 ![Toy Egg on a back road in New Hampshire](/cars/2010-toyota-yaris-ncp91-toyegg/new-hampshire.jpeg)
 
 The Toy Egg isn't much, and that's exactly the point. It doesn't have a lap
-time, it doesn't have a build sheet chasing horsepower, and it isn't going
-anywhere near a track. It starts, it drives, it comes home dirty, and none
-of that costs me a single thought. What would you build if you let yourself
-want nothing from it?
+time, it doesn't have a build sheet chasing horsepower, and the only time it's going
+anywhere near a track is during parts delivery for my friends. It starts, it drives,
+it comes home dirty, and none of that costs me a single thought.
+
+What would you build if you let yourself want nothing from it other than
+putting a smile on your face?

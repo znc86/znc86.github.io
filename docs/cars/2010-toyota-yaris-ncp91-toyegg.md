@@ -40,6 +40,10 @@ never wash it, park it wherever, and it just starts and goes. No dings to
 wince at, the paint is already peeling, nothing to worry about scratching. A
 white-box appliance that is fun to drive.
 
+With the [BRZ project](/cars/2017-subaru-brz-your-own-happiness) still ongoing,
+I promised my wife I wouldn't mod this one. No parts, no projects, just a
+cheap, reliable appliance. And to this day, I've kept that promise.
+
 When considering other daily drivers, the obvious answer was a Honda Fit.
 Fits are cheap, practical, and famously easy to have fun in and modify—which
 was exactly the problem. A Fit invites
@@ -51,22 +55,34 @@ to make sense, and a Toyota Previa was too big, harder to source parts
 for, and would've needed more money up front just to get into decent shape.
 I needed something that couldn't tempt me.
 
-![A stock 2010 Toyota Yaris hatchback, before the Craigslist ad and the JDM face swap](/cars/2010-toyota-yaris-ncp91-toyegg/factory-brochure.jpg)
+I mentioned all this to my buddy [@rob_pantridge](https://instagram.com/rob_pantridge),
+who was trying to talk me into a JZX100 instead. Rob was certain that whatever
+I ended up with, I'd have it apart within
+a month. I told him a Yaris was exactly boring enough that I'd finally leave
+a car alone. He didn't buy it for a second, and he didn't have to wait
+long to be right: a few weeks later he replied to one of my stories with a
+screenshot of me buying JDM parts for a chassis I didn't even own yet.
+
+![Rob calling out that I was already buying parts for a chassis I didn't own yet](/cars/2010-toyota-yaris-ncp91-toyegg/evidence.jpg)
 
 So I went looking for the least precious car I could find, and before I'd
-even bought one, I'd already bought the parts that would define it: a JDM
+even bought one, I'd already gotten the parts that would define it: a JDM
 zenki Vitz RS front bumper and a set of RS Watanabe 14x7+8 eight-spokes,
-both purchased off Yahoo Auctions and Facebook Marketplace before there was
+both acquired off Yahoo Auctions and Facebook Marketplace before there was
 a car to put them on. That was the plan from day one—do a JDM zenki Vitz RS
 face, in the spirit of the goofy, budget-built Sundae Cup race cars, on a
 budget under six grand.
 
+![A stock 2010 Toyota Yaris hatchback, before the Craigslist ad and the JDM face swap](/cars/2010-toyota-yaris-ncp91-toyegg/factory-brochure.jpg)
+
 The car itself turned up on Craigslist, down in Miami. I booked a one-way
-flight, flew down Thursday, and slept at a relative's house. Picked up the
+flight, flew down Thursday, and slept at a relative's house. The airfare cost
+didn't count because I was 'visiting family', true story. I picked up the
 car Friday around noon, and pointed it north. I was home in Boston by
 Saturday night. The Yaris didn't complain once on the drive—no issues the
 whole way, other than the fact that all four speakers were blown and there
-was no audio for the long drive back. A grand total of $5,500 out the door, at 84,913 miles.
+was no audio for the long drive back. A grand total of $5,500 out the door,
+at 84,913 miles.
 
 ![Toy Egg on delivery day, fresh off the Miami-to-Boston drive](/cars/2010-toyota-yaris-ncp91-toyegg/first-day-delivery.jpg)
 
@@ -81,12 +97,14 @@ in return.
 
 ## Exterior
 
-The face swap was never optional—it was the reason to buy this specific car.
+The frontend swap was never optional—it was the reason to buy this specific car.
 A US-spec Yaris and a JDM zenki Vitz aren't two cars that happen to share a
 body—they're the same chassis, sold under a different name for a different
 market. The front end is different enough to change the whole read of the
 car, though, and that swap plus the side skirts came from Yahoo Auctions via
-Buyee, in rough condition.
+Buyee, in rough condition, for basically free. Shipping wasn't cheap but the
+Trump-Tariffs will get refunded so negligable, he promised. I'm still waiting
+for the refunds.
 
 Painting them was my first real experience doing body work, and the car
 wears the results honestly: the rear spoiler got leftover BRZ K1X Crystal
@@ -104,10 +122,11 @@ cost less than a Chipotle burrito.
 Everything else followed the same logic: replace what's tired, keep it
 factory-looking, don't get precious about any of it. Roof, front door, and
 rear door mouldings were all swapped for fresh ones. A genuine JDM
-Vitz badge came in from Japan to finish the rear, and a
-eBay Toyota hatchback-style wing went on for a bit of shape out back. The
+Vitz badge came in from Japan to finish the rear, and an eBay Toyota
+hatchback-style wing went on for a bit of shape out back. Knockoffs are
+cheap AF, so basically free. The
 windshield banner reads "Hatch your Dreams"—which is really
-just the whole point of the car, in vinyl. The plate says TOYEGG, in case
+just the whole point of the car. The plate says TOYEGG, in case
 the lettering wasn't enough of a hint.
 
 JDM zenki Vitz RS front bumper,
@@ -155,12 +174,17 @@ appliance. A P0301 misfire on cylinder one turned out to be a pair of tired
 ignition coils, replaced along with fresh iridium spark plugs. A front brake
 line needed replacing after a flexible hose gave out. Regular oil changes
 have carried it from 84,913 miles at purchase to 101,333 and counting,
-without drama. The one small treat has been an HKS Hi-Power cat-back
-exhaust, for a bit more voice without turning this into a project car, and a
-set of Qwik-Latch hood latches for quick, fuss-free access underneath. It
-has also picked up at least one moving violation while doing absolutely
+without drama. All this is 'maintenence', so price doesn't count as 'mods'.
+
+The one small treat has been an HKS Hi-Power cat-back
+exhaust, giving it more voice without turning this into a project car—a
+very affordable gift from a friend at Donut Media who, coincidentally, found a
+stash of Yaris parts that were part of a cancelled video project.
+So basically free.
+
+It has also picked up at least one moving violation while doing absolutely
 nothing else interesting, which feels appropriate for a car whose entire
-job is to blend into daily life.
+job is to blend into daily life. Fees don't count as mods.
 
 ignition coils and iridium spark plugs,
 front brake line and banjo bolt gasket,
@@ -173,8 +197,9 @@ routine oil changes.
 Day one, the Yaris had four blown speakers and zero audio. Rather than chase
 a proper head unit and a wiring diagram, I leaned into it: new front
 speakers went in for basic sound, but the dash got a Ghostbox and a factory
-radio blockoff plate instead of a screen to fuss over. Red emergency cut-off
-switch wired to control GhostBox volume. No touchscreen, no
+radio blockoff plate instead of a screen to fuss over—for a dollar, and I'm
+sticking to that story. Red emergency cut-off
+switch wired to control Ghostbox volume. No touchscreen, no
 Bluetooth pairing menus, nothing to think about. That's the whole interior
 philosophy in one part—less to manage, less to want, less to lose. A set of OEM
 Toyota floor mats keeps the inside as unfussy as the plan called for.
@@ -190,6 +215,11 @@ The Toy Egg isn't much, and that's exactly the point. It doesn't have a lap
 time, it doesn't have a build sheet chasing horsepower, and the only time it's going
 anywhere near a track is during parts delivery for my friends. It starts, it drives,
 it comes home dirty, and none of that costs me a single thought.
+
+And if there's one thing to take from all of this: don't mod your daily. I
+didn't and I'm better for it. I also don't have any plans to do a manual 2RZ-FE
+swap from a Scion xD that plugs-right-in. Don't DM me if you have leads on a donor
+because I totally wont reply.
 
 What would you build if you let yourself want nothing from it other than
 putting a smile on your face?

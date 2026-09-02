@@ -81,7 +81,7 @@ Source markers are displayed for every specification.
 - [Tool Manifest](#tool-manifest)
 - [Installation Precautions (For Installers)](#precautions)
 - [Work Procedure](#work-procedure)
-  - [Phase 0 — Donor intake and the drivetrain option](#phase-0)
+  - [Phase 0 — Donor intake](#phase-0)
   - [Phase 1 — Donor teardown and harvest](#phase-1)
   - [Phase 2 — Transaxle preparation](#phase-2)
   - [Phase 3 — Engine preparation](#phase-3)
@@ -130,20 +130,6 @@ the US from the 2009 model year.
 | Transaxle         | `C50` 5-speed manual                                                       |
 | Production period | 06.2007 – 07.2014 `[C]`                                                    |
 | Platform          | Shared with the 2nd-generation Toyota ist (`NCP110` / `NCP115` / `ZSP110`) |
-
-☝️ Advice: **`ZSP110L-AHMRKA` is the string to search parts catalogues with.** It
-decomposes as:
-
-| Segment      | Meaning                                                                                                                                                                                    |
-| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`ZSP110`** | The applied model. The xD is the US version of the second-generation Toyota ist, and that family splits by engine — `NCP110` and `NCP115` carry the 1NZ-FE, **`ZSP110` is the 2ZR-FE car** |
-| **`L`**      | Left-hand drive                                                                                                                                                                            |
-| **`AHMRKA`** | The grade and build suffix — here the **5-door, manual transmission, USA** variant, catalogued as `MTM` / `5F`                                                                             |
-
-☝️ Advice: **The transmission lives in the suffix, not in the applied model.** An
-automatic xD is also a `ZSP110L`; only the suffix separates them. Searching on
-`ZSP110` alone returns both, so a manual-specific part — the engine harness above
-all — has to be matched on the full string.
 
 <details>
   <summary>⚠️ Warning — `AZE151` is a different car, and it is an easy mistake</summary>
@@ -282,7 +268,7 @@ not by part number. Verify against your donor's year before ordering.
 | No. | Product name                              | Qty | Notes                                                             |
 | --: | :---------------------------------------- | :-- | :---------------------------------------------------------------- |
 |   ① | 2ZR-FE engine assembly                    | 1   | With all accessories                                              |
-|   ② | C50 5-speed manual transaxle              | 1   | See the drivetrain option, [Phase 0](#phase-0)                    |
+|   ② | C50 5-speed manual transaxle              | 1   | Comes with the donor. See [Phase 0](#phase-0)                     |
 |   ③ | Engine ECM                                | 1   | `89661-52F81` M/T `[C]`. Must match engine **and** transaxle type |
 |   ④ | Engine wiring harness                     | 1   | `82121-52E90` M/T, all years `[C]`. **Scarcest item**             |
 |   ⑤ | Engine and transaxle mounts, all brackets | 6   | Six pieces, not three — see Phase 7                               |
@@ -544,7 +530,7 @@ available before it locks out.
 
 <a id="phase-0"></a>
 
-### Phase 0 — Donor Intake and the Drivetrain Option
+### Phase 0 — Donor Intake
 
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
@@ -574,38 +560,54 @@ people needlessly. Specification is **25 kPa (3.7 psi) minimum at idle** and
 
 (0.6) Photograph and label every connector, ground, and bracket.
 
-#### (0.7) The drivetrain option
+#### (0.7) The transaxle and axles
 
-This is the decision that cascades furthest through the build, and it must be
-made before money is spent. There are two drivetrain options, **Path A** and
-**Path B**. Both use a C50, both bolt to the 2ZR-FE identically, and they differ
-in their output stub splines.
+The donor supplies the transaxle and both CV axles, and **they stay together as a
+set.** There is no decision to make here, only a constraint to respect.
 
-⚠️ Advice: **The axle splines are not interchangeable.** The Yaris uses
-**23-tooth, 24/48 DP** stubs. The xD, Celica, Matrix and Corolla use **20-tooth,
-20/40 DP** stubs. Differential input bore is 27 mm on the Yaris and 28 mm on the
-xD. The ring gears are not interchangeable either. Commit to **Path A** or
-**Path B**, then stay in it — mixing them is the most expensive mistake
-available here. `[C]`
+| Component                        | Source                                                   |
+| :------------------------------- | :------------------------------------------------------- |
+| Transaxle                        | **xD `C50`** 5-speed manual, from the donor              |
+| CV axles                         | **xD shafts, both sides** — from the same donor          |
+| Knuckles, hubs, bearings, brakes | **Yaris, unchanged** — 4×100                             |
 
-| Item              | **Path A** — Yaris-spec C50              | **☝️ Path B** — xD C50 (recommended)                      |
-| :---------------- | :--------------------------------------- | :-------------------------------------------------------- |
-| Transaxle source  | 2007–2008 manual Yaris                   | The donor xD                                              |
-| Axles             | Reuse Yaris 23-tooth                     | **xD CV shafts required** (larger trans outputs)          |
-| Hubs and PCD      | Stock Yaris, 4×100                       | Yaris 4-lug hubs press into xD knuckles — **still 4×100** |
-| Shift cables      | Yaris cables, **only with Yaris mounts** | **xD cables mandatory**                                   |
-| Gearing           | Stock                                    | Taller 5th and a different final drive                    |
-| Speed sensor      | Already fitted                           | **Blank cap in the sensor location** — see 2.6            |
-| Transaxle end cap | `33102-12021` `[C]`                      | `33102-52020` `[C]`                                       |
-| Differential      | Adequate to approximately 150 hp         | Stronger; more final-drive options available              |
+⚠️ Warning: **The axles must come from the donor along with the transaxle.** The
+xD differential has **20-tooth, 20/40 DP** side gears in a 28 mm output bore; the
+Yaris uses **23-tooth, 24/48 DP** in 27 mm. A Yaris axle will not engage an xD
+differential, and the ring gears are not interchangeable either. Take both axles
+when you take the transaxle. `[C]`
 
-☝️ Advice: **Path B is recommended, and 4×100 survives either way.** An earlier
-generation of forum advice held that the xD driveline forces a 5×100 hub and
-brake swap. It does not — one builder deliberately retained 4-lug for a stock
-appearance by pressing Yaris 4-lug hubs into xD knuckles and running xD front
-calipers on Yaris SE rotors. Path B is preferred because the mounts, shift
-cables and gearing all agree with one another, and because the 2ZR-FE with
-bolt-ons makes roughly the power the Yaris differential is rated for anyway.
+☝️ Advice: **Nothing outboard of the axle changes.** The xD CV shaft's *outer* end
+matches the Yaris hub — one builder states it plainly: *"the xD transmission does
+require you to use xD CV shafts (bigger outputs on the trans) but the hub side is
+the same as the Yaris."* `[C]` So the knuckles, hubs, bearings, brakes and the
+4×100 bolt pattern all stay exactly as they are. See
+[Phase 7, step (7.3)](#phase-7) for the installation.
+
+<details>
+  <summary>☝️ Advice — if you can only find a Yaris C50</summary>
+
+A `C50` from a 2007–2008 manual Yaris also bolts to the 2ZR-FE, and it is worth
+knowing about only in one situation: you have ended up with a 2ZR-FE and the
+manual xD electrics, but no xD transaxle. It is a fallback, not an alternative
+worth choosing — the donor arrives with a C50 already in it, and sourcing a
+second car for a part you own makes no sense otherwise.
+
+If you are forced down this route, three consequences follow:
+
+- **Keep your Yaris axles**, because the Yaris C50 has the 23-tooth differential.
+- ⚠️ **Expect the driver-side axle to bind.** The mandatory xD right-hand mount
+  sits the engine lower and closer to the firewall, which shortens the span the
+  axle must cover, and the Yaris axle is then too long. It presents as a clunk or
+  thud on hard right turns, with the axle fully compressed and oscillating about
+  a quarter inch. The reported fix is a **1998 Toyota Tercel non-ABS driver-side
+  axle** — same 23-tooth spline count, roughly 0.5 to 1 inch shorter, about $84
+  remanufactured. `[C]`
+- **You lose the gearing and differential options.** The taller 5th gear, the
+  alternative final drives and the helical LSD are all 20-spline parts and will
+  not fit. See [Appendix B](#appendix-b).
+
+</details>
 
 ☝️ Advice: Both transaxles share middle case `33111-12260` and bell housing
 `31105-52060`. Only the end cap differs, because the xD transaxle mount also
@@ -779,7 +781,7 @@ there is no rod-and-bushing arrangement to stiffen.
 | Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        | 4 bolts                          | `[RM-Y]` |
 | Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |                                  | `[RM-Y]` |
 
-#### (2.5) Speedometer sensor — required for Path B and non-ABS cars
+#### (2.5) Speedometer sensor — required on non-ABS cars
 
 ⚠️ Attention: The factory manual branches this on **ABS, not on chassis**. A car
 **without** ABS receives a bolt-on `SPEEDOMETER SENSOR`; a car **with** ABS
@@ -1064,7 +1066,7 @@ to work.
 | Fuel lines                                | Keep                                                |
 | **Brake master cylinder, lines, booster** | **Keep** — booster reused, master cylinder replaced |
 | Engine wiring harness                     | **Dispose**                                         |
-| CV axles                                  | **Dispose** — unless Path A                         |
+| CV axles                                  | **Dispose**                                         |
 | Engine mounts                             | **Dispose**                                         |
 | ECM                                       | **Dispose**                                         |
 | 1NZ-FE engine and U340E transaxle         | **Dispose**                                         |
@@ -1280,14 +1282,21 @@ and an isolator on the body or subframe. Three positions, six pieces. Counting
 them as three is the origin of most of the mount confusion in the community
 record. `[C]`
 
+☝️ Advice on naming: the third mount — the link that resists engine rotation
+under torque — is called the **engine moving control rod** in the Toyota repair
+manual, and that is the term used throughout this document and the one to search
+parts catalogues with. Forum threads almost always call it the **"dogbone"**,
+after its shape, and some suppliers list it as a torque strut or torque rod. All
+four names describe the same part.
+
 #### Mount part numbers
 
 | Position                   | Part number `[C]` |
 | :------------------------- | :---------------- |
 | RH engine-side bracket     | `12315-37040`     |
 | RH engine stay             | `12317-37010`     |
-| Dogbone bracket            | `12313-37010`     |
-| Dogbone isolator           | `12363-37010`     |
+| Control rod bracket        | `12313-37010`     |
+| Control rod isolator       | `12363-37010`     |
 | Gearbox-side bracket       | `12325-37100`     |
 | Gearbox-side isolator      | `12372-37141`     |
 | Gearbox-side damper        | `12351-37100`     |
@@ -1309,14 +1318,14 @@ movement, and replaced it with the OEM part at $181. Buy the OEM mount. `[C]`
 (7.1) Install the ECM before the engine goes in. Route the engine harness and
 seat the firewall pass-through grommet.
 
-(7.2) Lower the powertrain in. Fit the RH engine mount and the dogbone, then fit
+(7.2) Lower the powertrain in. Fit the RH engine mount and the control rod, then fit
 the **gearbox-side mount last**.
 
 ☝️ Advice: Remove the gearbox-side mount and bracket before installation. The
 larger engine leaves insufficient room to line these up while they are already
 attached to the transaxle. `[C]`
 
-☝️ Advice: The dogbone should be **test fitted first**, before committing to the
+☝️ Advice: The control rod should be **test fitted first**, before committing to the
 rest of the arrangement. `[C]`
 
 #### Mount torque specifications
@@ -1327,9 +1336,9 @@ rest of the arrangement. `[C]`
 | Transverse engine mounting **insulator** × body                  |  52 |    530 | 38     | 5 bolts                                                  | `[RM-Y]` |
 | Mounting bracket LH × isolator LH, bolt and nut                  |  52 |    530 | 38     |                                                          | `[RM-Y]` |
 | Transverse engine mounting **control bracket** × transaxle case  |  39 |    398 | 29     |                                                          | `[RM-Y]` |
-| **Engine mounting × engine moving control rod (dogbone)**        | 120 |  1,224 | **89** |                                                          | `[RM-Y]` |
-| Dogbone, transaxle side (xD)                                     | 100 |  1,020 | 74     | ☝️ _Temporarily tighten the transaxle side, then torque_ | `[RM-C]` |
-| Dogbone, second bolt at crossmember (xD)                         | 120 |  1,224 | 89     | ⚠️ **Two different specs on the same part**              | `[RM-C]` |
+| **Engine mounting × engine moving control rod**                  | 120 |  1,224 | **89** |                                                          | `[RM-Y]` |
+| Control rod, transaxle side (xD)                                 | 100 |  1,020 | 74     | ☝️ _Temporarily tighten the transaxle side, then torque_ | `[RM-C]` |
+| Control rod, second bolt at crossmember (xD)                     | 120 |  1,224 | 89     | ⚠️ **Two different specs on the same part**              | `[RM-C]` |
 | RH mounting bracket (xD)                                         |  51 |    520 | 38     |                                                          | `[RM-C]` |
 | Engine mounting stay (xD)                                        |  26 |    265 | 19     |                                                          | `[RM-C]` |
 | Battery carrier × body                                           |  17 |    175 | 13     | 5 bolts                                                  | `[RM-Y]` |
@@ -1350,15 +1359,87 @@ will not work with the 2ZR-FE. `[C]`
 ⚠️ Attention: **The battery tray no longer sits correctly on top of the gearbox
 mount. The mounting holes must be slotted.** `[C]`
 
-(7.3) Fit the CV axles. Torque the hub nuts to **216 N·m (159 ft·lbf)** with
-**new** nuts, and **stake them** `[RM-Y]`.
+#### (7.3) Fitting the CV axles
 
-⚠️ Attention: **Watch for front axle bind.** One builder found the front left
-axle fully compressed and oscillating about a quarter inch on hard right turns.
-The axle was too long for the new engine position. The fix reported is a **1998
-Toyota Tercel non-ABS driver-side axle** — same spline count, roughly 0.5 to
-1 inch shorter. This problem surfaced seven years into the main build thread, so
-check for it deliberately rather than waiting to hear a clunk. `[C]`
+The axles installed here are the **xD shafts that came with the donor
+transaxle** — see [(0.7)](#phase-0). Everything outboard of them is the Yaris's
+own hardware, untouched.
+
+| Component         | Source                                                   |
+| :---------------- | :------------------------------------------------------- |
+| CV axles          | **xD shafts** — 20-tooth, 20/40 DP inner stubs           |
+| Knuckles          | Yaris, unchanged                                         |
+| Hubs and bearings | Yaris, unchanged — **no press work**                     |
+| Brakes            | Yaris, unchanged                                         |
+| Bolt pattern      | **4×100, unchanged**                                     |
+
+☝️ Advice: **The front suspension and brakes are never disturbed** beyond
+unbolting and rebolting them to get the axles in and out. No hub pressing, no
+machine shop, no wheel fitment change.
+
+##### The axle is used as a complete assembly — nothing is taken apart
+
+⚠️ Attention: To be unambiguous about this, because the community record is not:
+**the CV axle is installed as a complete, undisturbed assembly** — inner joint,
+intermediate shaft, outer joint and both boots, exactly as it comes off the donor
+or out of the box. You do **not**:
+
+- split the axle to mix an xD inner joint onto a Yaris shaft, or vice versa;
+- press an outer joint off one shaft and onto another;
+- swap stub shafts, cages or tripods between axles;
+- shorten, lengthen or re-spline anything.
+
+The spline patterns quoted in [(0.7)](#phase-0) describe the **inner stub splines
+of a whole axle**. They are how you identify the correct complete axle, not an
+invitation to rebuild one.
+
+☝️ Advice: The clearest confirmation is that builders buy complete replacement
+units off the shelf when a used one is tired. One build used a junkyard xD axle
+on one side and a new **GSP `69541`** complete assembly on the other. `[C]` A
+complete aftermarket axle would be useless if the job required internal mixing.
+
+☝️ Advice: Rebuilding a CV joint is a legitimate repair in its own right — for a
+torn boot or a clicking joint — and if a donor axle is worn, replace or rebuild
+it **as a separate bench job before this step.**
+
+<details>
+  <summary>☝️ Advice — assembling the axles, step by step</summary>
+
+1. **Pack the joints.** Grease capacity is **125–135 g (4.4–4.8 oz) per joint**,
+   inboard and outboard `[RM-Y]`. Inspect both boots; replace any that are split
+   or weeping before installation, because doing it later means pulling the axle
+   again.
+2. **Seat the inner joint into the differential.** Push the shaft in squarely
+   until the retaining circlip snaps into the side gear groove — you will feel it
+   engage. Then pull firmly outward by hand to confirm it is captured. An
+   unseated inner joint will walk out under load.
+3. ⚠️ **Do not pinch the boot** between the subframe and the transaxle case. One
+   builder destroyed a boot exactly this way during installation. `[C]`
+4. **Pass the outer end through the hub** and start the nut by hand.
+5. **Reconnect the suspension** — lower ball joint to knuckle at 98 N·m with a
+   **new castle nut and new clip**, tie rod end at 49 N·m with a **new castle nut
+   and new cotter pin** (both may be tightened up to a further 60° to align the
+   holes), stabiliser link at 74 N·m, strut to knuckle at 164 N·m `[RM-Y]`. Full
+   values in [Phase 5](#phase-5), step (5.4).
+6. **Refit the ABS speed sensor** at 8.5 N·m (75 in·lbf). ⚠️ Keep the tip clean
+   and **do not rotate it from its original angle** `[RM-Y]`.
+7. **Torque the hub nut with the vehicle's weight on the wheel**, or with the hub
+   otherwise locked — never through the CV joint. **216 N·m (2,203 kgf·cm,
+   159 ft·lbf)**, using a **new** nut, then **stake it** with a chisel and hammer
+   `[RM-Y]`. The nut is one-time-use; `90177-22001` `[C]`.
+8. **Check for bind at full lock, both directions, before driving.** With the
+   matched xD transaxle and axles no builder has reported bind, but confirm it on
+   stands rather than assuming — it presents as a vague intermittent clunk rather
+   than an obvious fault, and it took seven years to surface in the main build
+   thread.
+
+</details>
+
+☝️ Advice: **ABS tone rings are a non-issue**, and that is a direct benefit of
+leaving the hubs alone. The tone ring is part of the hub assembly and nothing here
+changes it, so tooth count, sensor air gap and the ABS module's calibration all
+stay factory. No source consulted addresses tone rings — and on this procedure,
+none needs to.
 
 (7.4) Fit the exhaust.
 
@@ -1382,6 +1463,11 @@ against the Yaris's 40 mm. `[C]`
 rail bolts, and silicone lubricant to hose metal fittings. `[C]`
 
 (7.5) Fit the shift cables and adjust. Torques in (6.6).
+
+⚠️ Warning: **Use the donor's xD shift cables.** The xD mounts sit the transaxle
+roughly two inches further forward, and a builder who stretched Yaris cables to
+reach tore the mounting studs out of the body, requiring two holes to be welded
+up. `[C]`
 
 ---
 
@@ -1938,7 +2024,7 @@ Publishing these as gaps is more useful than filling them with a guess.
 | xD RH insulator — which of 45/88/52 N·m goes where | **Genuinely unpublished.** Three torques, two illustration labels                                             |
 | Oil pump relief valve plug                         | Sources give 49 and 37 N·m irreconcilably. **Treat as not found**                                             |
 | Radiator and block drain cocks                     | No torque printed — hand-tight                                                                                |
-| ABS tone rings                                     | Never addressed in any source consulted                                                                       |
+| ABS tone rings                                     | Never addressed by any source — **and not needed**, because nothing in this procedure changes the hubs. See (7.3) |
 | Fastener part numbers generally                    | The repair manual names joints, not part numbers                                                              |
 
 ☝️ Advice: Row labels such as "No.1 / No.2 front and rear mounting bracket" do
@@ -1983,7 +2069,7 @@ A/C engaged. `[C]`
 | :------------------------- | :------------------------------------------------------- |
 | QRP 5th gear set, 0.725:1  | From 0.815:1. Drops 70 mph from 3,228 to 2,871 rpm       |
 | 4.31 final drive, 04–06 xB | Drop-in. In-gear top speeds 29 / 54 / 80 / 101 / 121 mph |
-| Helical LSD                | ⚠️ **20-spline axles only** — an argument for Path B     |
+| Helical LSD                | 20-spline axles — fits the xD differential               |
 | EC60 / EC67 6-speed        | See below                                                |
 
 ⚠️ Attention: On the 6-speed — the EC-series cases are shorter than the C-series

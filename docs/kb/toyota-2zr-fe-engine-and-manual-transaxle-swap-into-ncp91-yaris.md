@@ -1,6 +1,6 @@
 ---
-title: "Toyota 2ZR-FE Engine and C50 Manual Transaxle Swap into the NCP91 Yaris — Installation and Instruction Manual"
-subtitle: Conversion procedure for a 2ZR-FE and 5-speed manual transaxle into an automatic NCP91/XP90 Yaris, from a Scion xD donor
+title: "Toyota 2ZR-FE Engine and C50 Manual Transaxle Swap into the NCP91 Yaris"
+subtitle: Installation and Instruction Conversion procedure for a 2ZR-FE and 5-speed manual transaxle into an automatic NCP91/XP90 Yaris, from a Scion xD donor
 datePublished: "2026-09-01T02:44:00"
 published: true
 author: Ron. A (@brz_typera)
@@ -16,6 +16,8 @@ tags:
 
 № 2ZR-NCP91-0001
 
+<a id="introduction"></a>
+
 ## Introduction
 
 Thank you very much for undertaking this conversion. This document describes
@@ -25,9 +27,9 @@ automatic transaxle of the NCP91 Yaris with the `2ZR-FE` engine and `C50`
 carry out correct installation and handling.
 
 Toyota did not sanction this conversion and does not publish a procedure for it.
-This document is assembled from two factory workshop manuals, one builder's
-complete parts-and-task record, and roughly seventy pages of forum threads that
-contradict one another and self-correct several times. Where the manuals speak,
+This document is assembled from one builder's complete parts-and-task record, and
+roughly seventy pages of forum threads that contradict one another and self-correct
+several times, and two factory workshop manuals. Where the manuals speak,
 they are quoted. Where only the community speaks, that is marked. Where nobody
 knows, that is marked too.
 
@@ -35,20 +37,20 @@ The following symbols are displayed for important points, which must be observed
 
 | Note         |                                                                                                    |
 | :----------- | :------------------------------------------------------------------------------------------------- |
-| ⚠️ Warning   | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
+| ☠️ Warning   | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
 | ⚠️ Attention | For your safety and that of your vehicle (mishandling may result in injury or accident)            |
 | ☝️ Advice    | Describes information that is useful for performing the work efficiently                           |
 
 Source markers are displayed for every specification.
 
-| Marker    | Meaning                                                                                     |
-| :-------- | :------------------------------------------------------------------------------------------ |
-| `[RM-Y]`  | Toyota Yaris/Vitz XP90 workshop manual (1NZ-FE chassis), cited by chapter and page          |
-| `[RM-C]`  | Toyota Corolla / Scion xD repair manual, for 2ZR-FE engine values                           |
-| `[C]`     | Community-reported. **Verify by trial fit or measurement before relying on it**             |
+| Marker   | Meaning                                                                            |
+| :------- | :--------------------------------------------------------------------------------- |
+| `[RM-Y]` | Toyota Yaris/Vitz XP90 workshop manual (1NZ-FE chassis), cited by chapter and page |
+| `[RM-C]` | Toyota Scion xD / Corolla repair manual, for 2ZR-FE engine values                  |
+| `[C]`    | Community-reported. **Verify by trial fit or measurement before relying on it**    |
 
 <details>
-  <summary>⚠️ Warning</summary>
+  <summary>⚠️ Advice — General</summary>
 
 - This conversion is not emissions-certified. The resulting vehicle is not
   covered by any Toyota warranty, and the original vehicle's emissions
@@ -69,19 +71,49 @@ Source markers are displayed for every specification.
 
 ---
 
-(Page 2)
+<a id="contents"></a>
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Compatible Vehicle Models](#compatible-vehicles)
+- [Parts Manifest](#parts-manifest)
+- [Tool Manifest](#tool-manifest)
+- [Installation Precautions (For Installers)](#precautions)
+- [Work Procedure](#work-procedure)
+  - [Phase 0 — Donor intake and the drivetrain option](#phase-0)
+  - [Phase 1 — Donor teardown and harvest](#phase-1)
+  - [Phase 2 — Transaxle preparation](#phase-2)
+  - [Phase 3 — Engine preparation](#phase-3)
+  - [Phase 4 — Joining engine and transaxle](#phase-4)
+  - [Phase 5 — Yaris teardown](#phase-5)
+  - [Phase 6 — Manual conversion, interior](#phase-6)
+  - [Phase 7 — Powertrain installation](#phase-7)
+  - [Phase 8 — Cooling, fuel, and electrical](#phase-8)
+  - [Phase 9 — Immobilizer](#phase-9)
+  - [Phase 10 — Instrumentation and signals](#phase-10)
+  - [Phase 11 — First start and commissioning](#phase-11)
+- [Post-installation Checks and Precautions](#post-install)
+- [Budget](#budget)
+- [Appendix A — Wrong-Engine Quarantine](#appendix-a)
+- [Appendix B — Bolt-on Reference](#appendix-b)
+- [References](#references)
+
+---
+
+<a id="compatible-vehicles"></a>
 
 ## Compatible Vehicle Models
 
 ### Recipient Vehicle
 
-| Item         | Specification                                              |
-| :----------- | :--------------------------------------------------------- |
-| Chassis      | `NCP91`, XP90 (2nd generation Vitz/Yaris), 5-door hatchback |
-| Model year   | 2010–2011 (US market)                                      |
-| Engine       | `1NZ-FE` 1.5 ℓ VVT-i                                       |
-| Transaxle    | `U340E` 4-speed automatic                                  |
-| Platform     | Toyota B platform                                          |
+| Item              | Specification                                                                                                 |
+| :---------------- | :------------------------------------------------------------------------------------------------------------ |
+| **Applied model** | **`NCP91L`** — XP90, 2nd generation Vitz/Yaris, 5-door hatchback. `L` = left-hand drive. The sedan is `NCP93` |
+| Model year        | 2010–2011 (US market)                                                                                         |
+| Engine            | `1NZ-FE` 1.5 ℓ VVT-i                                                                                          |
+| Transaxle         | `U340E` 4-speed automatic                                                                                     |
+| Platform          | Toyota B platform                                                                                             |
 
 ☝️ Advice: The B platform was later shared between the Vitz/Yaris and the
 Aqua/Prius C. The 3-door XP90 is the "Yaris Liftback"; the 5-door was sold in
@@ -89,14 +121,56 @@ the US from the 2009 model year.
 
 ### Donor Vehicle — Recommended
 
-| Item       | Specification                                          |
-| :--------- | :----------------------------------------------------- |
-| Vehicle    | **Scion xD, 2008–2014, US market, manual transmission** |
-| Engine     | `2ZR-FE` 1.8 ℓ Dual VVT-i, DOHC 16-valve, timing chain  |
-| Output     | 136 hp / 129 lb·ft at the crank (stock)                 |
-| Transaxle  | `C50` 5-speed manual                                    |
+| Item              | Specification                                                              |
+| :---------------- | :------------------------------------------------------------------------- |
+| Vehicle           | **Scion xD, 2008–2014, US market, manual transmission**                    |
+| **Applied model** | **`ZSP110L-AHMRKA`** — the US-market 5-door manual `[C]`                   |
+| Engine            | `2ZR-FE` 1.8 ℓ Dual VVT-i, DOHC 16-valve, timing chain                     |
+| Output            | 136 hp / 129 lb·ft at the crank (stock)                                    |
+| Transaxle         | `C50` 5-speed manual                                                       |
+| Production period | 06.2007 – 07.2014 `[C]`                                                    |
+| Platform          | Shared with the 2nd-generation Toyota ist (`NCP110` / `NCP115` / `ZSP110`) |
+
+☝️ Advice: **`ZSP110L-AHMRKA` is the string to search parts catalogues with.** It
+decomposes as:
+
+| Segment      | Meaning                                                                                                                                                                                    |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`ZSP110`** | The applied model. The xD is the US version of the second-generation Toyota ist, and that family splits by engine — `NCP110` and `NCP115` carry the 1NZ-FE, **`ZSP110` is the 2ZR-FE car** |
+| **`L`**      | Left-hand drive                                                                                                                                                                            |
+| **`AHMRKA`** | The grade and build suffix — here the **5-door, manual transmission, USA** variant, catalogued as `MTM` / `5F`                                                                             |
+
+☝️ Advice: **The transmission lives in the suffix, not in the applied model.** An
+automatic xD is also a `ZSP110L`; only the suffix separates them. Searching on
+`ZSP110` alone returns both, so a manual-specific part — the engine harness above
+all — has to be matched on the full string.
 
 <details>
+  <summary>⚠️ Warning — `AZE151` is a different car, and it is an easy mistake</summary>
+
+A code that circulates in this context is **`AZE151L`**, sometimes with suffixes
+like `-FHMNKA`, listed against build periods 03.2007–03.2010 and 03.2010–12.2015.
+**That is not the Scion xD.**
+
+`AZE151` is the **Scion xB**, 2008–2015, and its engine is the **`2AZ-FE`
+2.4 ℓ** — a completely different engine from a different family. Any parts
+catalogue listing that code will show `2AZFE` in its engine column, which is the
+tell.
+
+The reason the mistake is easy: Toyota's leading letters encode the **engine
+family**, not the transmission or the drivetrain. `AZ` means an AZ-series engine
+(1AZ/2AZ), `NCP` means an NZ-series engine, and `ZSP` means the ZR-series engine
+in the ist/xD family. So `AZE151` announces a 2AZ-FE before it says anything
+about the body at all. Nothing in the base code indicates manual versus
+automatic — that lives in the suffix.
+
+Ordering 2ZR-FE swap parts against an `AZE151` lookup returns 2.4 ℓ xB
+components: different mounts, different accessories, different everything. See
+[Appendix A](#appendix-a) for the other wrong-vehicle traps in this conversion.
+
+</details>
+
+<details open>
   <summary>⚠️ Attention — donor selection determines how hard this job is</summary>
 
 - **Acquire a complete, running donor vehicle.** Every source that has completed
@@ -107,10 +181,10 @@ the US from the 2009 model year.
 - **Verify the engine is `2ZR-FE`, not `2ZR-FAE`.** The FAE is the Valvematic
   variant and is not the subject of this document. The Corolla XRS also uses a
   different engine.
-- **A US-market xD has no immobilizer.** The immobilizer ECU was fitted only to
-  **Canadian** xDs from 08/2010 to 06/2014, and never to US xDs. The same ECM
-  part number appears both ways. A US donor removes the single most
-  car-stranding problem in this conversion — see Phase 9.
+- ⚠️ **Buy a US-market car.** The immobilizer ECU was fitted only to **Canadian**
+  xDs from 08/2010 to 06/2014, and never to US xDs. The same ECM part number
+  appears both ways, so the market matters more than the number. **This document
+  assumes a US donor throughout** — see [Phase 9](#phase-9).
 - **Obtain the donor's master key.** Without it, the dealer path for adding or
   registering keys closes entirely.
 - **Record the donor VIN before purchase** and pull its history report.
@@ -121,28 +195,81 @@ the US from the 2009 model year.
 
 </details>
 
+#### Which xD model years make this easier
+
+The xD was sold in the US for model years **2008 through 2014**, and the
+2ZR-FE/C50 combination is unchanged across all of them. There is no wrong year.
+But three things do shift with the calendar.
+
+| Consideration             | Earlier (2008–2009)                                                                                                         | Later (2010–2014)                                                              |
+| :------------------------ | :-------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| **Community coverage**    | ☝️ **Best.** Almost every documented build used an 08–09 donor, so part numbers and pinouts are verified against these cars | Thinner. The wiring is identical, but fewer builders have walked it            |
+| **ECM part number**       | Simplest — `89661-52F71` covers 06/2007–03/2009 `[C]`                                                                       | Splits four ways by build date: `52F72`, `52M20`, `52U00`, `52Y60` `[C]`       |
+| **RH mount isolator**     | `12305-37040` for 06/2007–11/2007 `[C]`                                                                                     | `12305-37190` from 01/2008 onward `[C]` — the majority case                    |
+| **Condition and mileage** | Older, higher miles, more seized fasteners                                                                                  | ☝️ **Better.** Lower miles, and the bell housing bolts are less likely to snap |
+| **Salvage availability**  | Thinning out                                                                                                                | ☝️ **Better**, and improving as these cars age into yards                      |
+
+☝️ Advice: **The practical sweet spot is a 2011–2014 car.** Condition and
+availability outweigh community familiarity — the wiring work is identical either
+way, and a donor whose fasteners are not seized saves more time than a matching
+forum post does. The one real advantage of an 08–09 car is that its single ECM
+part number removes a sourcing decision if the ECM ever needs replacing on its
+own.
+
+⚠️ Attention: **The transmission is the constraint, not the year.** Manual xDs
+are far rarer in salvage than automatics, and the M/T engine harness
+`82121-52E90` is reported to be the same across all years `[C]`. Let the
+availability of a _manual_ car drive the year decision, not the reverse.
+
+⚠️ Attention: The right-hand mount isolator number is **disputed across
+sources** — `12305-37091` also appears alongside the two dated numbers above.
+Verify against the donor's own build date plate before ordering. `[C]`
+
 ### Donor Vehicle — Alternative
 
-The Toyota Corolla (2009–2020) uses the same engine and is more plentiful.
+The Toyota Corolla (2009–2020) uses the same engine and is far more plentiful in
+salvage yards. It is a viable source for the **engine itself**, but not for the
+electrical and mounting hardware.
 
-⚠️ Warning: **Do not use a Corolla engine harness.** The Corolla ECM lives on the
-driver's side; the Yaris and xD ECMs live on the passenger side. The Corolla
-harness has three fusebox connectors and none of them match the Yaris — every
-wire must be relocated individually, and the battery cables to the starter and
-alternator must be cut and spliced to the 1NZ harness cables for length. The one
-builder who did this describes it as a monumental task and advises against
-attempting it without extensive wiring experience.
+<details>
+  <summary>⚠️ Advice — do not use a Corolla engine harness</summary>
 
-⚠️ Warning: **The 2010+ Corolla ECM is not compatible** unless you intend to
-program new keys.
+- The Corolla ECM lives on the **driver's side**; the Yaris and xD ECMs live on
+  the **passenger side**. Nothing about the routing carries over.
+- The Corolla harness has **three fusebox connectors and none of them match the
+  Yaris**. Every wire must be relocated individually into the Yaris `CA1` and
+  `CA2` plugs.
+- The battery cables to the starter and alternator must be **cut and spliced** to
+  the 1NZ-FE harness cables for length and correct terminals.
+- The one builder who completed this route describes it as a monumental task and
+  advises against attempting it without extensive wiring experience. His workaround
+  for the reach problem was to flip the ECM plug harness over the valve cover and
+  mount the xD ECM to the cowl. `[C]`
+- **The 2010+ Corolla ECM is not compatible** unless you intend to program new
+  keys.
 
-### Not Compatible
+☝️ If a Corolla is your only donor, buy the engine from it and source the ECM,
+engine harness and mounts separately from an xD.
 
-The Echo/xA frame will not accept this conversion. That is a different job.
+</details>
+
+<details>
+  <summary>⚠️ Advice — vehicles this conversion does not fit</summary>
+
+- **The Echo / Scion xA frame will not accept this conversion.** That is a
+  different job with different mounts and no shared procedure.
+- **The third-generation Yaris (NCP131 and later) is out of scope.** It uses a
+  different ECM and chassis harness, requires a `ZRE18X` ECU rather than
+  `ZRE152`, and its ABS unit will not communicate with a `ZRE152` ECU.
+  Approximately ten pins require repinning. See Phase 10. `[C]`
+- **The 2AZ-FE is not an alternative engine.** It mates to the E351 transaxle and
+  requires cutting and welding. `[C]`
+
+</details>
 
 ---
 
-(Page 3)
+<a id="parts-manifest"></a>
 
 ## Parts Manifest
 
@@ -152,126 +279,183 @@ not by part number. Verify against your donor's year before ordering.
 
 ### ① Harvested from the donor vehicle
 
-| No. | Product name                              | Qty | Notes                                                     |
-| --: | :---------------------------------------- | :-- | :-------------------------------------------------------- |
-|   ① | 2ZR-FE engine assembly                    | 1   | With all accessories                                      |
-|   ② | C50 5-speed manual transaxle              | 1   | See the driveline fork, Phase 0                           |
+| No. | Product name                              | Qty | Notes                                                             |
+| --: | :---------------------------------------- | :-- | :---------------------------------------------------------------- |
+|   ① | 2ZR-FE engine assembly                    | 1   | With all accessories                                              |
+|   ② | C50 5-speed manual transaxle              | 1   | See the drivetrain option, [Phase 0](#phase-0)                    |
 |   ③ | Engine ECM                                | 1   | `89661-52F81` M/T `[C]`. Must match engine **and** transaxle type |
-|   ④ | Engine wiring harness                     | 1   | `82121-52E90` M/T, all years `[C]`. **Scarcest item**     |
-|   ⑤ | Engine and transaxle mounts, all brackets | 6   | Six pieces, not three — see Phase 7                       |
-|   ⑥ | Exhaust manifold and midpipe              | 1   | ⚠️ **Remove before the shell is scrapped**                |
-|   ⑦ | Clutch master and slave cylinders         | 1   | No factory part number published for these                |
-|   ⑧ | Shift cables and floor shifter            | 1   | xD cables mandatory with xD mounts                        |
-|   ⑨ | CV axles                                  | 2   | Must match the transaxle spline count                     |
-|   ⑩ | Intake airbox, tube, and MAF sensor       | 1   | MAF `22204-31020` `[C]`. Airbox lid carries the MAF mount |
-|   ⑪ | Alternator, 140 A                         | 1   | `27060-37040` `[C]`                                       |
-|   ⑫ | A/C compressor and hoses                  | 1   | `88310-1A660` `[C]`; lines `88712-52341`, `88711-52311`   |
-|   ⑬ | Coolant filler neck and hoses             | 1   | See Phase 8                                               |
+|   ④ | Engine wiring harness                     | 1   | `82121-52E90` M/T, all years `[C]`. **Scarcest item**             |
+|   ⑤ | Engine and transaxle mounts, all brackets | 6   | Six pieces, not three — see Phase 7                               |
+|   ⑥ | Exhaust manifold and midpipe              | 1   | ⚠️ **Remove before the shell is scrapped**                        |
+|   ⑦ | Clutch master and slave cylinders         | 1   | No factory part number published for these                        |
+|   ⑧ | Shift cables and floor shifter            | 1   | xD cables mandatory with xD mounts                                |
+|   ⑨ | CV axles                                  | 2   | Must match the transaxle spline count                             |
+|   ⑩ | Intake airbox, tube, and MAF sensor       | 1   | MAF `22204-31020` `[C]`. Airbox lid carries the MAF mount         |
+|   ⑪ | Alternator, 140 A                         | 1   | `27060-37040` `[C]`                                               |
+|   ⑫ | A/C compressor and hoses                  | 1   | `88310-1A660` `[C]`; lines `88712-52341`, `88711-52311`           |
+|   ⑬ | Coolant filler neck and hoses             | 1   | See Phase 8                                                       |
 
 ### ② Harvested from the recipient Yaris — retained
 
-| No. | Product name                          | Notes                                                          |
-| --: | :------------------------------------ | :------------------------------------------------------------- |
-|   ⑭ | Radiator and cooling fans             | ☝️ **Reused.** Adequate even for track use                     |
-|   ⑮ | Starter                               | ☝️ **Reused.** Both engines use a 9-bolt, 2-o'clock starter    |
-|   ⑯ | Brake booster, master cylinder, lines | Booster reused; master cylinder replaced — see ⑳               |
-|   ⑰ | A/C hard lines                        | Reused                                                         |
+| No. | Product name                          | Notes                                                       |
+| --: | :------------------------------------ | :---------------------------------------------------------- |
+|   ⑭ | Radiator and cooling fans             | ☝️ **Reused.** Adequate even for track use                  |
+|   ⑮ | Starter                               | ☝️ **Reused.** Both engines use a 9-bolt, 2-o'clock starter |
+|   ⑯ | Brake booster, master cylinder, lines | Booster reused; master cylinder replaced — see ⑳            |
+|   ⑰ | A/C hard lines                        | Reused                                                      |
 
 ### ③ Sourced from a manual Yaris
 
-| No. | Product name          | Notes                                                                    |
-| --: | :-------------------- | :----------------------------------------------------------------------- |
-|   ⑱ | Clutch pedal assembly | ⚠️ **From a Yaris, NOT the xD** — the Yaris pedal has no return spring    |
-|   ⑲ | Clutch master-to-hose tube | `31481-52110` `[C]` — **no longer manufactured, salvage only**       |
+☝️ Advice: A manual Yaris in a salvage yard is worth a trip even after you
+already have the donor xD, because ⑱ and ⑲ cannot come from the xD and ⑲ cannot
+be bought new at all. While you are under the dash, take the rest of the list —
+the trip is already paid for, and every item on it is either cheaper or more
+certain than the mail-order equivalent.
+
+| No. | Product name                         | Notes                                                                                                                |
+| --: | :----------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+|   ⑱ | **Clutch pedal assembly**            | ⚠️ **From a Yaris, NOT the xD** — see below                                                                          |
+|   ⑲ | **Clutch master-to-hose tube**       | `31481-52110` `[C]` — ⚠️ **no longer manufactured**, salvage only                                                    |
+|   ⑳ | Clutch master cylinder               | A Yaris unit is the direct fit; the donor xD's also works                                                            |
+|  ㉑ | **Brake master cylinder, M/T**       | The salvage alternative to buying new — ⚠️ must be the **manual** unit, whose reservoir carries the clutch feed port |
+|  ㉒ | Clutch hydraulic hardware, remaining | Flexible hose, brackets, clamps and clips — cheaper to take the lot than to order them singly                        |
+
+**⑱ Why the pedal must come from a Yaris, not the xD.** The xD clutch pedal
+carries a **return spring** and the Yaris pedal does not. The Yaris pedal box and
+firewall are designed around the no-spring arrangement, so the xD pedal does not
+drop into a Yaris correctly even though almost everything else on the donor does.
+This is the one place where the otherwise-reliable rule of "use every part from
+the xD" gives the wrong answer, and getting it wrong means pulling the pedal box
+back out. `[C]`
+
+**⑲ Why `31481-52110` matters so much.** This is the short rigid hardline that
+carries fluid from the clutch master cylinder to the flexible hose. It is a
+**Yaris-specific part** — the routing between the master cylinder and the hose is
+particular to this chassis, so the xD tube does not fit — and it is
+**discontinued, with no new stock available anywhere.** The only supply is a
+manual Yaris in a salvage yard.
+
+That combination makes it the quiet critical-path item of the whole conversion.
+Every other hard-to-find part in this document has a substitute, a fabrication
+route, or at least an expensive new option. This one has none: without it there
+is no way to get fluid from the master cylinder to the slave, and the car does
+not move. **Pull it, and pull a spare if there is a second manual car in the
+yard.**
+
+**⑳–㉒ Why take the hydraulics as a set.** The clutch master, the brake master,
+the flexible hose and the small brackets, clamps and clips that locate the lines
+are all cheap or free at a yard and individually tedious to order — several are
+low-value parts whose shipping exceeds their cost, and one clamp catalogues under
+Daihatsu rather than Toyota. Taking the whole hydraulic path off one car also
+guarantees the pieces fit each other. The **brake master cylinder** is the one to
+be careful about: it must come from a _manual_ car, because its reservoir carries
+the clutch feed port that the automatic unit lacks entirely. Buying the two
+master cylinders new is still the more reliable route and is listed in ④ — the
+salvage option is here because it works and costs nothing.
 
 ### ④ Purchased new
 
-| No. | Product name                     | Part number / spec                          | Notes                                        |
-| --: | :------------------------------- | :------------------------------------------ | :------------------------------------------- |
-|   ⑳ | **Brake master cylinder, M/T**   | Advics `BMT345` `[C]`                       | ⚠️ **Reservoir has the clutch bypass port.** Non-ABS M/T application. Circuit spacing differs from the automatic unit |
-|   ㉑ | Clutch kit                       | Aisin `CKT062` `[C]`                        | Disc, cover, release bearing                 |
-|   ㉒ | Clutch slave cylinder            | Aisin `CRT-115` `[C]`                       | ⚠️ **Buy new. Do not rebuild** — see Phase 6 |
-|   ㉓ | Clutch hose to release cylinder  | `90947-02E09` `[C]`                         |                                              |
-|   ㉔ | Clutch hose bracket, clamp, clip | `31484-52090`, `90949-01D17`, `90468-08035` `[C]` | The clamp resolves under Daihatsu      |
-|   ㉕ | Cylinder head bolt set           | 10 pcs                                      | ⚠️ **Torque-to-yield. One-time use**         |
-|   ㉖ | Front axle hub nuts              | `90177-22001` ×2 `[C]`                      | ⚠️ **One-time use, staked**                  |
-|   ㉗ | Transaxle output shaft nut       | `90179-18005` `[C]`                         | ⚠️ **One-time use, staked**                  |
-|   ㉘ | Transaxle drain/filler gaskets   | `90430-18008` `[C]`                         | New each time                                |
-|   ㉙ | Catalytic converter, CARB-legal  | AP Eastern `771790` `[C]`                   | Must match the engine, not the chassis       |
-|   ㉚ | Downstream O2 sensor             | Denso `234-4623` `[C]`                      |                                              |
-|   ㉛ | Accessory drive belt             | Dayco `5060485` with A/C `[C]`              | Gates `K060365` without A/C                  |
-|   ㉜ | Water pump                       | Aisin `WPT140` `[C]`                        |                                              |
-|   ㉝ | Spark plugs                      | Denso `SC16HR11` `[C]`                      | Iridium                                      |
-|   ㉞ | Ignition coils                   | `90919-02252` `[C]`                         |                                              |
-|   ㉟ | Fuel injectors                   | `23250-0T020` `[C]`                         | ⚠️ Remanufactured and matched. **Do not fit untested no-name injectors** |
-|   ㊱ | FIPG — Seal Packing 1281         | `08826-00090` `[RM-Y]`                      | Transaxle case mating surfaces               |
-|   ㊲ | Adhesive 1344                    | `08833-00080` `[RM-Y]`                      | Output shaft nut, shift fork lock bolts      |
+| No. | Product name                     | Part number / spec                                | Notes                                                                                                                 |
+| --: | :------------------------------- | :------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
+|  ㉓ | **Brake master cylinder, M/T**   | Advics `BMT345` `[C]`                             | ⚠️ **Reservoir has the clutch bypass port.** Non-ABS M/T application. Circuit spacing differs from the automatic unit |
+|  ㉔ | Clutch kit                       | Aisin `CKT062` `[C]`                              | Disc, cover, release bearing                                                                                          |
+|  ㉕ | Clutch slave cylinder            | Aisin `CRT-115` `[C]`                             | ⚠️ **Buy new. Do not rebuild** — see Phase 6                                                                          |
+|  ㉖ | Clutch hose to release cylinder  | `90947-02E09` `[C]`                               |                                                                                                                       |
+|  ㉗ | Clutch hose bracket, clamp, clip | `31484-52090`, `90949-01D17`, `90468-08035` `[C]` | The clamp resolves under Daihatsu                                                                                     |
+|  ㉘ | Front axle hub nuts              | `90177-22001` ×2 `[C]`                            | ⚠️ **One-time use, staked**                                                                                           |
+|  ㉙ | Transaxle output shaft nut       | `90179-18005` `[C]`                               | ⚠️ **One-time use, staked**                                                                                           |
+|  ㉚ | Transaxle drain/filler gaskets   | `90430-18008` `[C]`                               | New each time                                                                                                         |
+|  ㉛ | Catalytic converter, CARB-legal  | AP Eastern `771790` `[C]`                         | ⚠️ **Must match the engine, not the chassis.** See below                                                              |
+|  ㉜ | Downstream O2 sensor             | Denso `234-4623` `[C]`                            |                                                                                                                       |
+|  ㉝ | Accessory drive belt             | Dayco `5060485` with A/C `[C]`                    | Gates `K060365` without A/C                                                                                           |
+|  ㉞ | Water pump                       | Aisin `WPT140` `[C]`                              |                                                                                                                       |
+|  ㉟ | Spark plugs                      | Denso `SC16HR11` `[C]`                            | Iridium                                                                                                               |
+|  ㊱ | Ignition coils                   | `90919-02252` `[C]`                               |                                                                                                                       |
+|  ㊲ | Fuel injectors                   | `23250-0T020` `[C]`                               | ⚠️ Remanufactured and matched. **Do not fit untested no-name injectors**                                              |
+|  ㊳ | FIPG — Seal Packing 1281         | `08826-00090` `[RM-Y]`                            | Transaxle case mating surfaces                                                                                        |
+|  ㊴ | Adhesive 1344                    | `08833-00080` `[RM-Y]`                            | Output shaft nut, shift fork lock bolts                                                                               |
 
-☝️ Advice: If the donor is high-mileage, add the engine and transaxle rebuild
-sets. Those are listed in Phases 2 and 3, which are optional.
+#### Why the catalytic converter must be bought new
+
+⚠️ Advice: **The original Yaris catalytic converter is not valid for a 2ZR-FE,
+and neither is the one on the donor xD in most cases.** This is the single
+largest new-parts expense in the conversion — roughly $780 — and it is not
+optional if the vehicle must pass an emissions inspection.
+
+Three separate reasons converge on buying a new, correctly-specified unit:
+
+1. **The converter is certified against the engine, not the chassis.** An
+   inspector or referee checks that the converter's part number and serial
+   correspond to the engine now installed. The Yaris converter was certified for
+   a 1.5 ℓ 1NZ-FE; its serial will not validate against a 1.8 ℓ 2ZR-FE no matter
+   what condition it is in. `[C]`
+2. **It will not physically fit anyway.** The 2ZR-FE manifold flange is larger
+   with wider bolt spacing, and the pipe inner diameter is 46 mm against the
+   Yaris's 40 mm — see Phase 7. Retaining the Yaris converter means restricting
+   a larger engine through a smaller pipe.
+3. **The donor's own converter is usually not a safe bet.** It has the mileage of
+   a scrapped car on it, and a converter that is merely tired rather than dead
+   will still set a P0420 efficiency code once the readiness monitors run —
+   which fails the inspection just as surely as having the wrong part.
+
+☝️ Advice: `AP Eastern 771790` is the specific unit used on one completed and
+California-BAR-certified build of this conversion, paired with a **Denso
+`234-4623`** downstream oxygen sensor. That pairing is the closest thing to a
+known-good answer that exists for this swap. Buy the O2 sensor new at the same
+time — a used downstream sensor on a new converter makes the one measurement the
+inspection depends on untrustworthy.
+
+⚠️ Attention: One builder deliberately leaves the second oxygen sensor
+disconnected and runs rich as a result. That will not pass an inspection, and it
+is noted here only so it is not mistaken for an acceptable shortcut. `[C]`
 
 Confirmation: Upon collecting these parts, immediately check that nothing is
 damaged and that the harness has not been cut.
 
 ---
 
-(Page 4)
+<a id="tool-manifest"></a>
 
 ## Tool Manifest
 
-### Required for the conversion
+### Hand and shop tools
 
-| Tool                                        | Tool                                              |
-| :------------------------------------------ | :------------------------------------------------ |
-| Metric socket set, 1/2" and 3/8" drive       | Torque wrench, 5–25 N·m range                     |
-| **6-point and 12-point sockets, 10–21 mm**   | Torque wrench, 20–110 N·m range                   |
-| Metric combination wrench set                | Torque wrench, 100–250 N·m range                  |
-| **10 mm bi-hexagon (12-point) bit**          | Angle gauge, or a marker for paint-mark method    |
-| **30 mm 12-spline axle socket**              | Breaker bar                                       |
-| **Flare nut (line) wrench set**              | Ball joint separator                              |
-| Oil filter cap wrench, `09228-06501` or equiv. | Engine hoist and **load leveller**              |
-| Engine stand                                 | Transmission jack                                 |
-| Cobalt drill bits and knockout punch set     | Coil spring compressor                            |
-| Vacuum pump and A/C manifold gauge set       | Brake bleeder kit                                 |
-| Coolant refill funnel                        | Connector pin release pick                        |
-| Soldering iron, heat-shrink                  | Feeler gauge                                      |
-| Pry bars                                     | Catch pans, drain pans                            |
-| Safety glasses, work gloves                  | Engine paint marker                               |
+| Tool                                           | Tool                                       |
+| :--------------------------------------------- | :----------------------------------------- |
+| Metric socket set, 1/2" and 3/8" drive         | Torque wrench, 5–25 N·m range              |
+| **6-point and 12-point sockets, 10–21 mm**     | Torque wrench, 20–110 N·m range            |
+| Metric combination wrench set                  | Torque wrench, 100–250 N·m range           |
+| **30 mm 12-spline axle socket**                | Breaker bar                                |
+| **Flare nut (line) wrench set**                | Ball joint separator                       |
+| Oil filter cap wrench, `09228-06501` or equiv. | Engine hoist and **load leveller**         |
+| Engine stand                                   | Transmission jack                          |
+| **Drill bits and knockout punch set**          | Taps and dies, for chasing threads         |
+| Vacuum pump and A/C manifold gauge set         | Brake bleeder kit                          |
+| Coolant refill funnel                          | Connector pin release pick                 |
+| Soldering iron, heat-shrink                    | Taps and dies, for chasing damaged threads |
+| Pry bars                                       | Catch pans, drain pans                     |
+| Safety glasses, work gloves                    | Engine paint marker                        |
 
-### Required only if rebuilding the donor engine or transaxle
-
-| Tool                                    | Purpose                        |
-| :-------------------------------------- | :----------------------------- |
-| Shop press, 20 ton                      | Transaxle bearings             |
-| Bearing splitter and bearing puller     | Transaxle bearings             |
-| **Torque wrench reading to 0.3 N·m**    | Differential bearing preload   |
-| Precision straight edge                 | Head and block flatness        |
-| Dial bore gauge, micrometer set         | Engine measurement             |
-| Piston ring compressor, ring grinder    | Engine assembly                |
-| Snap ring expander, pin punches         | Transaxle internals            |
-
-☝️ Advice: A reader performing a straight swap onto a known-good, low-mileage
-donor engine does not need a shop press. Phases 2 and 3 are optional.
+☝️ Advice: The bits and knockout punch are for drilling the firewall in
+Phase 6, which is the only fabrication this conversion strictly requires. The
+taps and dies are worth having on hand for the corroded bell housing bolts noted
+in Phase 1.
 
 ### Toyota Special Service Tools
 
-| SST                       | Name                                | Used for                              | Source   |
-| :------------------------ | :---------------------------------- | :------------------------------------ | :------- |
-| `09564-32011`             | Differential Preload Adaptor        | Differential bearing preload          | `[RM-Y]` |
-| `09930-00010`             | Drive Shaft Nut Chisel              | **Un-staking the axle hub nut**       | `[RM-Y]` |
-| `09011-12301`             | Socket Wrench 30 mm                 | Axle hub nut                          | `[RM-Y]` |
-| `09520-01010`             | Drive Shaft Remover Attachment      | Axle removal                          | `[RM-Y]` |
-| `09628-00011`/`09628-62011` | Ball Joint Puller                 | Ball joint and tie rod separation     | `[RM-Y]` |
-| `09301-00110`             | Clutch Guide Tool                   | Clutch disc centring                  | `[RM-Y]` |
-| `09023-00100`             | Union Nut Wrench 10 mm              | Brake and clutch line fittings        | `[RM-Y]` |
-| `09817-16011`             | Back-up Light Switch Tool           | Back-up light switch                  | `[RM-Y]` |
-| `09670-00010`             | Front Crossmember Guide Tool        | Subframe realignment on reinstall     | `[RM-Y]` |
-| `09727-30021`             | Coil Spring Compressor              | Strut disassembly                     | `[RM-Y]` |
-| **`09843-18040`**         | **Diagnosis Check Wire No.2**       | **The TC–CG jumper.** See Phase 9     | `[RM-Y]` |
-| `09213-58013` + `09330-00021` | Crankshaft Pulley Holding Tool  | 2ZR-FE crank pulley, 190 N·m          | `[RM-C]` |
-| `09205-16010`             | Cylinder Head Bolt Wrench           | Connecting rod caps                   | `[RM-C]` |
-| `09224-00010`             | Oxygen Sensor Wrench                | A/F and O2 sensors                    | `[RM-C]` |
-| `09228-06501`             | Oil Filter Wrench                   | Cartridge oil filter cap              | `[RM-C]` |
+| SST                         | Name                           | Used for                          | Source   |
+| :-------------------------- | :----------------------------- | :-------------------------------- | :------- |
+| `09930-00010`               | Drive Shaft Nut Chisel         | **Un-staking the axle hub nut**   | `[RM-Y]` |
+| `09011-12301`               | Socket Wrench 30 mm            | Axle hub nut                      | `[RM-Y]` |
+| `09520-01010`               | Drive Shaft Remover Attachment | Axle removal                      | `[RM-Y]` |
+| `09628-00011`/`09628-62011` | Ball Joint Puller              | Ball joint and tie rod separation | `[RM-Y]` |
+| `09301-00110`               | Clutch Guide Tool              | Clutch disc centring              | `[RM-Y]` |
+| `09023-00100`               | Union Nut Wrench 10 mm         | Brake and clutch line fittings    | `[RM-Y]` |
+| `09817-16011`               | Back-up Light Switch Tool      | Back-up light switch              | `[RM-Y]` |
+| `09670-00010`               | Front Crossmember Guide Tool   | Subframe realignment on reinstall | `[RM-Y]` |
+| **`09843-18040`**           | **Diagnosis Check Wire No.2**  | **The TC–CG jumper.** See Phase 9 | `[RM-Y]` |
+| `09224-00010`               | Oxygen Sensor Wrench           | A/F and O2 sensors                | `[RM-C]` |
+| `09228-06501`               | Oil Filter Wrench              | Cartridge oil filter cap          | `[RM-C]` |
 
 ### Scan tool
 
@@ -283,17 +467,18 @@ SST `09843-18040`, whereupon the skid control ECU blinks two-digit codes. Sensor
 check mode uses **TS and CG**. A generic OBD-II reader is still needed to confirm
 no engine codes and that readiness monitors have set.
 
-⚠️ Attention: If you are fitting a matched immobilizer set from a Canadian donor,
-read Phase 9 in full before connecting the battery.
+⚠️ Attention: Read [Phase 9](#phase-9) in full **before connecting the battery** —
+the recipient Yaris has an immobilizer with a limited number of ignition cycles
+available before it locks out.
 
 ---
 
-(Page 5)
+<a id="precautions"></a>
 
 ## Installation Precautions (For Installers)
 
-<details>
-  <summary>⚠️ Warning</summary>
+<details open>
+  <summary>☠️ Warning</summary>
 
 - **Discharge the air conditioning system by a licensed technician before
   disconnecting any refrigerant line.** Venting refrigerant is illegal in most
@@ -313,7 +498,7 @@ read Phase 9 in full before connecting the battery.
 
 </details>
 
-<details>
+<details open>
   <summary>⚠️ Attention</summary>
 
 - **Set every torque wrench from the N·m column of this document.** The XP90
@@ -322,10 +507,12 @@ read Phase 9 in full before connecting the battery.
   "90 N·m" where 9.0 is meant, and the 1NZ-FE flywheel as "38 ft·lbf" where
   49 N·m equals 36. Every imperial figure in this document has been recomputed
   from the N·m value rather than transcribed.
-- **The two engines have different head bolt procedures.** The 1NZ-FE coming out
-  is 29 N·m + 90° + 90°, on an **8 mm** bi-hexagon. The 2ZR-FE going in is
-  49 N·m + 90° + 45°, on a **10 mm** bi-hexagon. Do not carry one across to the
-  other.
+- **Do not carry a specification from one engine to the other.** The 1NZ-FE
+  coming out and the 2ZR-FE going in differ in ways that are easy to miss —
+  their cylinder head bolt procedures, bit sizes, valve adjustment and fluid
+  capacities are all different. This conversion does not require opening either
+  engine, so those figures are deliberately not listed here; if you do open one,
+  read [Appendix A](#appendix-a) first.
 - Photograph every connector, ground strap, and bracket before disconnecting it.
   The single most valuable artefact this community has lost is its photographs —
   one builder's phone died with roughly thirty build photos on it, and the
@@ -335,7 +522,7 @@ read Phase 9 in full before connecting the battery.
 
 </details>
 
-<details>
+<details open>
   <summary>☝️ Advice</summary>
 
 - Work in the order given. This document deliberately tears down the donor and
@@ -343,49 +530,21 @@ read Phase 9 in full before connecting the battery.
   the vehicle remains driveable through the longest part of the job.
 - Retain the donor's fuse box. It is the source of spare `CA2` connector
   terminals, which Phase 8 requires.
-- Budget approximately **$5,400 in parts and $900 in tools** for a full
-  conversion including both rebuilds, based on one completed and
-  emissions-certified build. See the Budget section.
+- Budget approximately **$3,400 in parts** for the conversion as described here,
+  based on one completed and emissions-certified build with its optional engine
+  and transaxle rebuild costs removed. See [Budget](#budget).
 
 </details>
 
 ---
 
-(Page 6)
-
-## Table of Contents
-
-- Cover, symbol tables, legality warning … 1
-- Compatible vehicle models, donor selection … 2
-- Parts manifest … 3
-- Tool manifest, special service tools, scan tool … 4
-- Installation precautions (for installers) … 5
-- Table of contents … 6
-- Phase 0 — Donor intake and the driveline fork … 7
-- Phase 1 — Donor teardown and harvest … 8
-- Phase 2 — Transaxle service (optional) … 9
-- Phase 3 — Engine service (optional) … 10
-- Phase 4 — Joining engine and transaxle … 11
-- Phase 5 — Yaris teardown … 12
-- Phase 6 — Manual conversion, interior … 13
-- Phase 7 — Powertrain installation … 14
-- Phase 8 — Cooling, fuel, and electrical … 15
-- Phase 9 — Immobilizer … 16
-- Phase 10 — Instrumentation and signals … 17
-- Phase 11 — First start and commissioning … 18
-- Post-installation checks and precautions … 19
-- Budget … 19
-- Appendix A — Wrong-engine quarantine … 20
-- Appendix B — Bolt-on reference … 20
-- References … 21
-
----
-
-(Page 7)
+<a id="work-procedure"></a>
 
 ## Work Procedure
 
-### Phase 0 — Donor Intake and the Driveline Fork
+<a id="phase-0"></a>
+
+### Phase 0 — Donor Intake and the Drivetrain Option
 
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
@@ -415,28 +574,30 @@ people needlessly. Specification is **25 kPa (3.7 psi) minimum at idle** and
 
 (0.6) Photograph and label every connector, ground, and bracket.
 
-#### (0.7) The driveline fork
+#### (0.7) The drivetrain option
 
 This is the decision that cascades furthest through the build, and it must be
-made before money is spent. The two transaxles are both C50, both bolt to the
-2ZR-FE identically, and differ in their output stub splines.
+made before money is spent. There are two drivetrain options, **Path A** and
+**Path B**. Both use a C50, both bolt to the 2ZR-FE identically, and they differ
+in their output stub splines.
 
-⚠️ Warning: **The axle splines are not interchangeable.** The Yaris uses
+⚠️ Advice: **The axle splines are not interchangeable.** The Yaris uses
 **23-tooth, 24/48 DP** stubs. The xD, Celica, Matrix and Corolla use **20-tooth,
 20/40 DP** stubs. Differential input bore is 27 mm on the Yaris and 28 mm on the
-xD. The ring gears are not interchangeable either. Choose one lane and stay in
-it. `[C]`
+xD. The ring gears are not interchangeable either. Commit to **Path A** or
+**Path B**, then stay in it — mixing them is the most expensive mistake
+available here. `[C]`
 
-| Item                | Path A — Yaris-spec C50            | Path B — xD C50 (recommended)                     |
-| :------------------ | :--------------------------------- | :------------------------------------------------ |
-| Transaxle source    | 2007–2008 manual Yaris             | The donor xD                                      |
-| Axles               | Reuse Yaris 23-tooth               | **xD CV shafts required** (larger trans outputs)  |
-| Hubs and PCD        | Stock Yaris, 4×100                 | Yaris 4-lug hubs press into xD knuckles — **still 4×100** |
-| Shift cables        | Yaris cables, **only with Yaris mounts** | **xD cables mandatory**                     |
-| Gearing             | Stock                              | Taller 5th and a different final drive            |
-| Speed sensor        | Already fitted                     | **Blank cap in the sensor location** — see 2.6    |
-| Transaxle end cap   | `33102-12021` `[C]`                | `33102-52020` `[C]`                               |
-| Differential        | Adequate to approximately 150 hp   | Stronger; more final-drive options available      |
+| Item              | **Path A** — Yaris-spec C50              | **☝️ Path B** — xD C50 (recommended)                      |
+| :---------------- | :--------------------------------------- | :-------------------------------------------------------- |
+| Transaxle source  | 2007–2008 manual Yaris                   | The donor xD                                              |
+| Axles             | Reuse Yaris 23-tooth                     | **xD CV shafts required** (larger trans outputs)          |
+| Hubs and PCD      | Stock Yaris, 4×100                       | Yaris 4-lug hubs press into xD knuckles — **still 4×100** |
+| Shift cables      | Yaris cables, **only with Yaris mounts** | **xD cables mandatory**                                   |
+| Gearing           | Stock                                    | Taller 5th and a different final drive                    |
+| Speed sensor      | Already fitted                           | **Blank cap in the sensor location** — see 2.6            |
+| Transaxle end cap | `33102-12021` `[C]`                      | `33102-52020` `[C]`                                       |
+| Differential      | Adequate to approximately 150 hp         | Stronger; more final-drive options available              |
 
 ☝️ Advice: **Path B is recommended, and 4×100 survives either way.** An earlier
 generation of forum advice held that the xD driveline forces a 5×100 hub and
@@ -452,11 +613,11 @@ bolts to the side of the case. `[C]`
 
 ---
 
-(Page 8)
+<a id="phase-1"></a>
 
 ### Phase 1 — Donor Teardown and Harvest
 
-⚠️ Warning: Have the A/C system discharged by a licensed technician before
+☠️ Warning: Have the A/C system discharged by a licensed technician before
 beginning. Tape all open line ends immediately.
 
 (1.1) Remove the battery. Drain the engine oil, transaxle oil, coolant, and
@@ -468,26 +629,26 @@ brake fluid.
 marked **Keep** are required for the conversion; **Caution** items are
 consumable or condition-dependent; **Dispose** items are not needed.
 
-| Item                                   | Disposition |
-| :------------------------------------- | :---------- |
-| Heater hoses                           | Keep        |
-| Fuel lines, rail to body               | Keep        |
-| Engine wiring harness                  | **Keep**    |
-| Engine and transaxle mounts, 6 pieces   | **Keep**    |
-| Engine and transaxle assembly           | **Keep**    |
-| ECM                                    | **Keep**    |
-| Clutch master cylinder                 | Keep        |
-| Brake reservoir and master cylinder    | Keep        |
-| Floor shifter and shift cables         | Keep        |
-| Exhaust manifold                       | **Keep**    |
-| Exhaust midpipe                        | **Keep**    |
-| Intake airbox, tube, MAF               | Keep        |
-| Alternator                             | Keep        |
-| A/C compressor and hoses               | Keep        |
-| Coolant filler neck and radiator hoses | Keep        |
+| Item                                   | Disposition                          |
+| :------------------------------------- | :----------------------------------- |
+| Heater hoses                           | Keep                                 |
+| Fuel lines, rail to body               | Keep                                 |
+| Engine wiring harness                  | **Keep**                             |
+| Engine and transaxle mounts, 6 pieces  | **Keep**                             |
+| Engine and transaxle assembly          | **Keep**                             |
+| ECM                                    | **Keep**                             |
+| Clutch master cylinder                 | Keep                                 |
+| Brake reservoir and master cylinder    | Keep                                 |
+| Floor shifter and shift cables         | Keep                                 |
+| Exhaust manifold                       | **Keep**                             |
+| Exhaust midpipe                        | **Keep**                             |
+| Intake airbox, tube, MAF               | Keep                                 |
+| Alternator                             | Keep                                 |
+| A/C compressor and hoses               | Keep                                 |
+| Coolant filler neck and radiator hoses | Keep                                 |
 | **Fuse box**                           | **Keep** — source of `CA2` terminals |
 
-⚠️ Warning: **Do not scrap the donor shell before the exhaust midpipe is
+⚠️ Advice: **Do not scrap the donor shell before the exhaust midpipe is
 removed.** OEM xD midpipes are effectively unobtainable. One builder searched
 more than twenty vendors and found a single unit at $450 plus shipping. `[C]`
 
@@ -498,9 +659,9 @@ which is useful to know if you later want the Yaris exhaust back. `[C]`
 cut it. Free the harness brackets from the strut tower and gearbox — these must
 be transferred or improvised on the recipient car. `[C]`
 
-(1.4) If the donor is a Canadian 08/2010–06/2014 xD, additionally harvest the
-transponder key ECU, the ignition lock cylinder with its antenna coil, and both
-keys, as a matched set. See Phase 9.
+(1.4) The donor's transponder key ECU, ignition lock cylinder and keys are **not
+needed** — a US-market xD has no immobilizer, and the recipient Yaris keeps its
+own. Leave them in the donor. See [Phase 9](#phase-9).
 
 (1.5) Remove the EGR valve and the harness brackets from the top of the engine.
 The 2ZR-FE will not clear the Yaris engine bay with these fitted. `[C]`
@@ -524,101 +685,101 @@ transaxle, and will prevent reassembly if overlooked.
 
 ---
 
-(Page 9)
+<a id="phase-2"></a>
 
-### Phase 2 — Transaxle Service (Optional)
+### Phase 2 — Transaxle Preparation
 
-☝️ Advice: This phase is **optional**. It is mandatory on a high-mileage donor
-and skippable on a known-good one. One builder found every synchro ring out of
-specification on a 350,000-mile donor. Path B builders must complete at least
-step (2.6).
+☝️ Advice: This document assumes the donor transaxle is used **as received**. It
+is not opened, and no internal work is described. On a high-mileage donor a full
+rebuild is worth considering, but that is a separate job with its own tooling
+requirements — a shop press, bearing pullers and a torque wrench reading to
+0.3 N·m — and it is out of scope here.
 
 <figure>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" alt="C50 transaxle case split on the bench" />
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" alt="C50 transaxle on the bench, ready to mate to the engine" />
   <figcaption>
-    Figure 2: C50 case halves separated. Note the differential plate washer
-    behind the tapered bearing race — this is the preload adjuster, and it is
-    marked with a letter, not a part number.
+    Figure 2: The C50 as received. Check the dowel pins, the input shaft
+    splines, and the speed sensor location before mating it to the engine.
   </figcaption>
 </figure>
 
-#### Rebuild parts
+(2.1) Drain the transaxle and refill with fresh gear oil. Use **new gaskets** on
+both plugs.
 
-| Item                       | Part number `[C]`                                            |
-| :------------------------- | :----------------------------------------------------------- |
-| Synchro rings 1st–5th      | `33037-12040`, `33038-12020`, `33368-20090`, `33368-12210`, `33369-20040` |
-| Output seals RH / LH       | `90311-35065` / `90311-35064`                                |
-| Input shaft seal, bearing  | `90311-25028`, `90365-25021` (NSK VP25-4, 25 × 43.5 × 15 mm)  |
-| Tapered bearings           | `90366-40094`, `90366-40097` — **one-time use**              |
-| Snap rings                 | `90520-64002`, `90520-57002`                                 |
-| Control shaft cover seal   | `90311-18013`                                                |
-| Control shift gasket       | `33584-12060`                                                |
-| Output shaft nut           | `90179-18005` — **staked, one-time use**                     |
+| Joint           | N·m | kgf·cm | ft·lbf | Notes          | Source   |
+| :-------------- | --: | -----: | :----- | :------------- | :------- |
+| **Drain plug**  |  39 |    400 | 29     | **New gasket** | `[RM-Y]` |
+| **Filler plug** |  39 |    400 | 29     | **New gasket** | `[RM-Y]` |
 
-☝️ Advice: The output seal is listed in one catalogue as `90311-34065`, but its
-own link resolves to `90311-35065`, and the LH seal is `90311-35064`. Trust
-`90311-35065`.
+Gear oil specification: **API GL-4, SAE 75W**, capacity **1.9 ℓ (2.0 US qt)**
+`[RM-Y]`. Drain and filler plug gaskets are `90430-18008` `[C]`.
 
-#### Torque specifications — C50
+(2.2) Inspect the input shaft splines and the release fork and bearing. Replace
+the release bearing while access is free — it is included in the clutch kit and
+replacing it later means pulling the transaxle again.
 
-| Joint                                     | N·m | kgf·cm | ft·lbf / in·lbf | Notes                                | Source   |
-| :---------------------------------------- | --: | -----: | :-------------- | :----------------------------------- | :------- |
-| Case half × case                          |  29 |    300 | 22 ft·lbf       | See bolt-count note below            | `[RM-Y]` |
-| Transmission case cover × case            |  18 |    185 | 13 ft·lbf       | ×9, FIPG `08826-00090`               | `[RM-Y]` |
-| Bearing retainer rear × case              |  27 |    280 | 20 ft·lbf       | ×5, sealant-coated bolts             | `[RM-Y]` |
-| **Output shaft rear set nut**             | 118 |  1,200 | 87 ft·lbf       | **NEW nut.** Adhesive 1344. Lock by engaging two gears, then **stake with a chisel** | `[RM-Y]` |
-| **Differential ring gear × diff case**    |  77 |    790 | 57 ft·lbf       | **8 bolts. Heat ring gear to 90–110 °C (194–230 °F)**, align matchmarks, install quickly | `[RM-Y]` |
-| Bearing lock plate × transaxle case       |  11 |    115 | 8 ft·lbf        |                                      | `[RM-Y]` |
-| Control shaft cover × case                |  20 |    200 | 15 ft·lbf       | ×4                                   | `[RM-Y]` |
-| Gear shift fork No.1/2/3 × shaft          |  16 |    160 | 12 ft·lbf       | Lock bolt, Adhesive 1344             | `[RM-Y]` |
-| Reverse idler gear shaft bolt             |  29 |    300 | 22 ft·lbf       |                                      | `[RM-Y]` |
-| Lock ball assembly No.1/No.2              |  29 |    300 | 22 ft·lbf       |                                      | `[RM-Y]` |
-| Shift detent ball plug                    |  22 |    224 | 16 ft·lbf       |                                      | `[RM-Y]` |
-| Reverse restrict pin plug                 |  13 |    130 | 10 ft·lbf       | Slotted pin drive-in depth 15.5–16.5 mm | `[RM-Y]` |
-| Reverse shift arm bracket                 |  17 |    175 | 13 ft·lbf       |                                      | `[RM-Y]` |
-| Oil receiver pipe No.1/No.2               |  17 |    175 | 13 ft·lbf       |                                      | `[RM-Y]` |
-| Back-up light switch                      |  40 |    410 | 30 ft·lbf       | **New gasket.** SST `09817-16011`    | `[RM-Y]` |
-| **Drain plug**                            |  39 |    400 | 29 ft·lbf       | **New gasket**                       | `[RM-Y]` |
-| **Filler plug**                           |  39 |    400 | 29 ft·lbf       | **New gasket**                       | `[RM-Y]` |
+(2.3) **Check the dowel pins.** They may have remained in the donor engine when
+the transaxle was separated, or in the transaxle. Both must be present and seated
+in the transaxle before mating, or the assembly will not pull up square. Grease
+them lightly.
 
-⚠️ Attention: The manual contradicts itself on one bolt count. The differential
-preload procedure says to install the transmission case with **16 bolts**, while
-the components illustration annotates the same 29 N·m joint as **×13**. The
-torque is 29 N·m either way — count your own fasteners.
+☝️ Advice: The fasteners that join the transaxle to the engine, and the clutch
+that goes between them, are covered in Phase 4.
 
-#### (2.5) Differential bearing preload
+#### (2.4) Shift linkage bushings — worth doing now, not later
 
-| Item                                       | Value                                                                 | Source   |
-| :----------------------------------------- | :-------------------------------------------------------------------- | :------- |
-| Preload at starting, **new** bearing       | **0.78–1.57 N·m** (7.95–16.0 kgf·cm, **6.9–13.89 in·lbf**)            | `[RM-Y]` |
-| Preload at starting, **used** bearing      | **0.49–0.98 N·m** (5.0–10.0 kgf·cm, 4.34–8.67 in·lbf)                 | `[RM-Y]` |
-| Measurement tool                           | SST `09564-32011` Differential Preload Adaptor                        | `[RM-Y]` |
-| Sensitivity                                | Preload changes approximately **0.3–0.4 N·m per 0.05 mm** of washer   | `[RM-Y]` |
+☝️ Advice: The shifter and both cables are out of the car at this point, and the
+transaxle is on the bench. This is by far the cheapest moment to address shift
+feel; doing it afterwards means pulling the console and disconnecting the cables
+again for no other reason.
 
-Procedure: coat the differential case with gear oil, install it into the front
-transaxle case, install the transmission case with its bolts at 29 N·m, turn the
-differential assembly left and right two or three times to settle the bearings,
-then measure.
+Shifter vagueness on this linkage is almost always the **plastic sockets at the
+cable ends** and the **shift lever retainer** the cables clip into, not the
+transaxle internals. Both wear into an oval and the play they introduce shows up
+at the knob multiplied by the lever ratio.
 
-⚠️ Attention: **The adjuster is a lettered plate washer, not a part-numbered
-shim.** Community sources circulate a part-number range for this; that range
-does not appear in the factory manual. Nineteen steps are available:
+⚠️ Attention: **Toyota does not sell these bushings separately.** They are
+supplied only as part of larger assemblies, which is the single most useful thing
+to know before shopping:
 
-| Mark | mm     | Mark | mm     | Mark | mm     | Mark | mm     |
-| :--- | :----- | :--- | :----- | :--- | :----- | :--- | :----- |
-| AA   | 2.10   | GG   | 2.40   | MM   | 2.65   | RR   | 2.85   |
-| BB   | 2.15   | HH   | 2.45   | NN   | 2.70   | SS   | 2.90   |
-| CC   | 2.20   | JJ   | 2.50   | PP   | 2.75   | TT   | 2.95   |
-| DD   | 2.25   | KK   | 2.55   | QQ   | 2.80   | UU   | 3.00   |
-| EE   | 2.30   | LL   | 2.60   |      |        |      |        |
-| FF   | 2.35   |      |        |      |        |      |        |
+| Wear item                          | How Toyota supplies it                                                                                      |
+| :--------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Cable end sockets, both ends       | Inside the **transmission control cable assembly** — manual Yaris/Vios 2006–2016 is **`33820-52440`** `[C]` |
+| Shift lever retainer and its pivot | Inside the **floor shift lever assembly**, which the factory manual treats as a single serviceable unit     |
 
-☝️ Advice: One builder reported moving from `DD` to `EE` — a single 0.05 mm step
-— to bring a rebuilt differential into specification. That is exactly this scale,
-which is a useful confirmation that the letter marks are what you will find
-stamped on the washer.
+⚠️ Warning: **Be careful what you buy.** Several parts sold under searches for
+"Yaris shifter bushing" belong to the **automatic** transmission — `33560-52220`,
+which appears prominently, is the **shift lock control unit**, an automatic-only
+component with a solenoid and a brake interlock. It has nothing to do with a
+manual linkage. Confirm any part is listed for a **manual** transmission before
+ordering.
 
-#### (2.6) Speedometer sensor — Path B and non-ABS cars
+☝️ Advice on polyurethane and solid replacements: press-in polymer bushing kits
+that replace the worn cable-end sockets do exist, and generic sets are listed as
+fitting Yaris / Matrix / xA / xB / xD. **I could not confirm from any
+authoritative source that these fit the Yaris or xD C50 manual linkage
+specifically** — most listings that name the Yaris are automatic-cable kits, and
+the C5x family shares enough part numbers to make cross-family listings
+plausible-looking but unreliable. Treat these as `[C]` at best: measure the
+socket and the pin before buying, and expect to verify fitment yourself.
+
+☝️ Advice: The honest recommendation, given the above, is **new OEM cables and a
+new lever assembly if the used ones feel loose**, and to regard poly bushings as
+an experiment rather than a known solution. A firm, accurate shifter on this
+chassis comes mostly from fresh factory parts — the linkage is cable-operated and
+there is no rod-and-bushing arrangement to stiffen.
+
+| Joint                                | N·m | kgf·cm | ft·lbf / in·lbf | Notes                            | Source   |
+| :----------------------------------- | --: | -----: | :-------------- | :------------------------------- | :------- |
+| Shift cable bracket × transaxle case |  25 |    255 | 18 ft·lbf       | ×2                               | `[RM-Y]` |
+| Selecting bell crank × case, bolt    |  25 |    250 | 18 ft·lbf       | ×2                               | `[RM-Y]` |
+| Selecting bell crank × case, nut     |  12 |    120 | 9 ft·lbf        |                                  | `[RM-Y]` |
+| Control shaft cover × case           |  20 |    200 | 15 ft·lbf       | ×4, new seal `90311-18013` `[C]` | `[RM-Y]` |
+| Shift lever damper × shaft           |  12 |    120 | 9 ft·lbf        |                                  | `[RM-Y]` |
+| Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        | 4 bolts                          | `[RM-Y]` |
+| Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |                                  | `[RM-Y]` |
+
+#### (2.5) Speedometer sensor — required for Path B and non-ABS cars
 
 ⚠️ Attention: The factory manual branches this on **ABS, not on chassis**. A car
 **without** ABS receives a bolt-on `SPEEDOMETER SENSOR`; a car **with** ABS
@@ -632,150 +793,103 @@ you need depends on which signal path your recipient car uses, not on the badge
 on the donor.
 
 ☝️ Advice: There is a **cap at the sensor location**. On a non-ABS recipient, pop
-the cap and fit the sensor into that location on the differential. This is far
-simpler than the case-splitting procedure that circulates in forum threads, which
-is only necessary if the driven gear is also absent.
+the cap and fit the sensor into that location on the differential. This is the
+whole job, and it is far simpler than the case-splitting procedure that
+circulates in forum threads — that is only necessary if the driven gear is also
+absent, which on a C50 from a running car it will not be.
 
-| Item                        | Part number `[C]`                             |
-| :-------------------------- | :-------------------------------------------- |
-| Speedometer sensor          | `83181-12020`                                 |
-| Sensor connector            | `90980-11143`                                 |
+| Item                        | Part number `[C]`                                |
+| :-------------------------- | :----------------------------------------------- |
+| Speedometer sensor          | `83181-12020`                                    |
+| Sensor connector            | `90980-11143`                                    |
 | **Speedometer driven gear** | **`33403-19455` (30 t) or `33403-19465` (31 t)** |
-| Shaft sleeve clip           | `90468-12005`                                 |
+| Shaft sleeve clip           | `90468-12005`                                    |
 
 ☝️ Advice: **The 30-tooth versus 31-tooth driven gear is a speedometer
 calibration lever.** This is not documented anywhere in the community record, and
 it is very likely the answer to the roughly 2 mph optimistic error one builder
 reported and never resolved. Choose deliberately, and see Phase 10.
 
-#### (2.7) Optional gearing
-
-☝️ Advice: If the transaxle is open anyway, this is the cheapest moment to change
-5th gear or fit a limited-slip differential. See Appendix B. Note that a helical
-LSD for this case is compatible with **20-spline** axles only, which is a further
-argument for Path B.
-
 ---
 
-(Page 10)
+<a id="phase-3"></a>
 
-### Phase 3 — Engine Service (Optional)
+### Phase 3 — Engine Preparation
 
-☝️ Advice: This phase is **optional**. Skip it on a low-mileage donor with good
-compression and clean oil pressure.
+☝️ Advice: This document assumes the donor engine is used **as received**. The
+block is not opened and no internal work is described — a 2ZR-FE from a running
+donor with good compression and healthy oil pressure needs nothing internal to
+complete this conversion.
 
-#### Rebuild parts
+⚠️ Attention: If you do intend to open the engine, its specifications are **not
+in this document** and must not be inferred from the Yaris manual, which covers
+the 1NZ-FE. In particular the 2ZR-FE cylinder head bolt procedure differs from
+every figure commonly quoted for it — see Appendix A before touching a head bolt.
 
-| Item                     | Part number `[C]`                    |
-| :----------------------- | :----------------------------------- |
-| Piston rings             | Enginetech `S80514-STD`              |
-| Main bearings            | Enginetech `BC1048`                  |
-| Rod bearings             | Enginetech `BB1059`                  |
-| Thrust bearings          | Enginetech `TW185`                   |
-| Full gasket set          | DNJ `FGS9028`                        |
-| Timing chain kit         | DNJ `TK928` — chain, guides, tensioner |
-| Valves, intake and exhaust | DNJ `VK16928`                      |
-| Hydraulic lash adjusters | DNJ `LFK16312`, set of 16            |
-| **Cylinder head bolts**  | DNJ `HBK928` — **one-time use**      |
-| Oil filter housing       | `15620-37010`                        |
+This phase covers refitting the external components that were removed to get the
+engine out, and the fluid specifications for filling it.
 
-#### ⚠️ The cylinder head bolt procedure
+(3.1) Fit the intake and exhaust manifolds, throttle body, ignition coils, spark
+plugs and sensors, to the torques below.
 
-⚠️ Warning: **2ZR-FE cylinder head bolts are 49 N·m (500 kgf·cm, 36 ft·lbf),
-then +90°, then +45°.** The paint mark finishes at **135°**. Use a **10 mm
-bi-hexagon** wrench. Oil the threads and the underside of each head.
+(3.2) Fit the water pump, thermostat housing, alternator, A/C compressor and
+accessory belt.
 
-⚠️ Warning: **The widely-circulated "36 ft·lbf plus 90° plus 90°" is wrong for
-this engine.** That is 1ZZ-FE and 2AZ-FE carryover. Three independent repair
-manual trees — Corolla, Scion xD, and the sibling 2ZR-FAE — all state +90° then
-+45°, and the manual's own self-check note confirms it arithmetically: the paint
-mark ends at 135°, and 90 + 45 = 135. Following the incorrect figure stretches
-ten torque-to-yield bolts 45° beyond specification on a fresh head gasket.
-
-⚠️ Attention: The 1NZ-FE being removed genuinely **is** 29 N·m + 90° + 90°, ending
-at 180°, on an **8 mm** bi-hexagon. Different angle, different bit.
-
-☝️ Advice: The repair manual gives the tightening **sequence** as an illustration
-only, not as text, and warns that head warpage or cracking can result from
-removing the bolts in the wrong order. Obtain the illustration; do not improvise
-the order.
-
-☝️ Advice: The cylinder head bolts are the **only** bi-hexagon fastener on the
-2ZR-FE. No other fastener on this engine is 12-point.
-
-#### Torque specifications — 2ZR-FE long block
-
-| Fastener                              |  N·m | ft·lbf / in·lbf | Stages and notes                                          | Source   |
-| :------------------------------------ | ---: | :-------------- | :-------------------------------------------------------- | :------- |
-| **Cylinder head bolts (10)**          |   49 | 36 ft·lbf       | **+90° → +45°**, mark at 135°. 10 mm bi-hex. **Replace**  | `[RM-C]` |
-| **Crankshaft pulley bolt**            |  190 | **140 ft·lbf**  | SST `09213-58013` + `09330-00021` to hold                 | `[RM-C]` |
-| Main bearing cap bolts (10)           |   40 | 30 ft·lbf       | **+90°**, numerical sequence, mark at 90°                 | `[RM-C]` |
-| Connecting rod cap bolts              |   20 | 15 ft·lbf       | **+90°**, SST `09205-16010`, alternately in steps         | `[RM-C]` |
-| Camshaft timing gear, **intake** VVT-i |   54 | 40 ft·lbf       | ⚠️ **Never turn the gear in the retard direction.** Gear-to-flange clearance 0.1–0.4 mm before final torque | `[RM-C]` |
-| Camshaft timing gear, **exhaust**     |   54 | 40 ft·lbf       | Align key groove and straight pin                         | `[RM-C]` |
-| Camshaft bearing cap × housing (10)   |   16 | 12 ft·lbf       | Illustrated order                                         | `[RM-C]` |
-| Camshaft housing × cylinder head      |   27 | 20 ft·lbf       |                                                           | `[RM-C]` |
-| Timing chain cover, bolts A and E     |   26 | 19 ft·lbf       | 26 bolts total                                            | `[RM-C]` |
-| Timing chain cover, bolts B and C     |   51 | 38 ft·lbf       |                                                           | `[RM-C]` |
-| Timing chain cover, bolt D            |   10 | 89 in·lbf       |                                                           | `[RM-C]` |
-| No.1 chain tensioner, 2 nuts          |   10 | 89 in·lbf       | **New gasket and new bracket**                            | `[RM-C]` |
-| No.1 chain vibration damper, 2 bolts  |   21 | 15 ft·lbf       | Install before the chain                                  | `[RM-C]` |
-| Oil pan No.2, lower steel             |   10 | 89 in·lbf       | 10 bolts + 2 nuts                                         | `[RM-C]` |
-| Stiffening crankcase, upper alloy     |   21 | 15 ft·lbf       |                                                           | `[RM-C]` |
-| **Oil pan drain plug**                |   37 | 27 ft·lbf       | **New crush washer**                                      | `[RM-C]` |
-| **Oil filter cartridge cap**          |   25 | 18 ft·lbf       | ±5 N·m. SST `09228-06501`. New O-ring, oiled. Loosen 4 turns to drain | `[RM-C]` |
-| Oil pump × block                      |   21 | 15 ft·lbf       |                                                           | `[RM-C]` |
-| Oil pump cover                        |  8.8 | 78 in·lbf       |                                                           | `[RM-C]` |
-| Oil pump drive shaft gear             |   28 | 21 ft·lbf       | The 2ZR-FE drives its oil pump from a separate No.2 chain | `[RM-C]` |
-
-⚠️ Attention: **Toyota publishes no torque for the cylinder head cover.** The
-repair manual says only to install it with 13 bolts. This is an absence, not an
-omission in this document. If a figure is wanted, an aftermarket manual gives
-84 in·lbf `[C]`.
-
-☝️ Advice: **Valve clearance is not applicable.** The 2ZR-FE uses hydraulic lash
-adjusters — the same units as the 2GR-FE V6. There is no specification and no
-adjustment. The 1NZ-FE being removed does require adjustment, at 0.15–0.25 mm
-intake and 0.25–0.35 mm exhaust, cold `[RM-Y]`.
+☝️ Advice: Apply anti-seize to the exhaust manifold, intake manifold and fuel
+rail bolts, and silicone lubricant to hose metal fittings. `[C]`
 
 #### Torque specifications — intake, exhaust, ignition, sensors
 
-| Fastener                            |  N·m | ft·lbf / in·lbf | Notes                                | Source   |
-| :---------------------------------- | ---: | :-------------- | :----------------------------------- | :------- |
-| Intake manifold and stay            |   28 | 21 ft·lbf       | 4 bolts, 2 nuts, **new gasket**      | `[RM-C]` |
-| Intake manifold stud bolts (2)      |  5.0 | 44 in·lbf       | **Torx E6**                          | `[RM-C]` |
-| Throttle body                       |   10 | 89 in·lbf       | 2 bolts, 2 nuts, new gasket          | `[RM-C]` |
-| **Exhaust manifold × head**         |   21 | 16 ft·lbf       | **5 nuts**                           | `[RM-C]` |
-| Manifold stay, exhaust, 3 bolts     |   43 | 32 ft·lbf       |                                      | `[RM-C]` |
-| Heat insulator No.1 (4) / No.2 (3)  |   12 | 9 ft·lbf        |                                      | `[RM-C]` |
-| Spark plugs                         |   20 | 15 ft·lbf       | 14 mm long-reach                     | `[RM-C]` |
-| Ignition coils (4)                  |   10 | 89 in·lbf       |                                      | `[RM-C]` |
-| Camshaft timing OCV, intake and exhaust | 10 | 89 in·lbf     | One bolt each                        | `[RM-C]` |
-| Oil pressure switch                 |   15 | 11 ft·lbf       | 24 mm deep socket. Adhesive 1344 on the last 2–3 threads. ⚠️ **Do not start the engine for one hour** | `[RM-C]` |
-| Crankshaft position sensor          |   10 | 89 in·lbf       | Oil the O-ring                       | `[RM-C]` |
-| Camshaft position sensor (**×2**)   |   10 | 89 in·lbf       | Both located in the cam cover        | `[RM-C]` |
-| **A/F sensor, upstream**            |   44 | 32 ft·lbf       | **40 N·m** if using SST `09224-00010` on a 300 mm fulcrum wrench, SST parallel to the wrench | `[RM-C]` |
-| Heated O2 sensor, downstream        |   44 | 32 ft·lbf       | Same SST alternative, 40 N·m         | `[RM-C]` |
-| Knock sensor                        |   20 | 15 ft·lbf       | Orientation per illustration         | `[RM-C]` |
+| Fastener                                | N·m | ft·lbf / in·lbf | Notes                                                                                                 | Source   |
+| :-------------------------------------- | --: | :-------------- | :---------------------------------------------------------------------------------------------------- | :------- |
+| Intake manifold and stay                |  28 | 21 ft·lbf       | 4 bolts, 2 nuts, **new gasket**                                                                       | `[RM-C]` |
+| Intake manifold stud bolts (2)          | 5.0 | 44 in·lbf       | **Torx E6**                                                                                           | `[RM-C]` |
+| Throttle body                           |  10 | 89 in·lbf       | 2 bolts, 2 nuts, new gasket                                                                           | `[RM-C]` |
+| **Exhaust manifold × head**             |  21 | 16 ft·lbf       | **5 nuts**                                                                                            | `[RM-C]` |
+| Manifold stay, exhaust, 3 bolts         |  43 | 32 ft·lbf       |                                                                                                       | `[RM-C]` |
+| Heat insulator No.1 (4) / No.2 (3)      |  12 | 9 ft·lbf        |                                                                                                       | `[RM-C]` |
+| Spark plugs                             |  20 | 15 ft·lbf       | 14 mm long-reach                                                                                      | `[RM-C]` |
+| Ignition coils (4)                      |  10 | 89 in·lbf       |                                                                                                       | `[RM-C]` |
+| Camshaft timing OCV, intake and exhaust |  10 | 89 in·lbf       | One bolt each                                                                                         | `[RM-C]` |
+| Oil pressure switch                     |  15 | 11 ft·lbf       | 24 mm deep socket. Adhesive 1344 on the last 2–3 threads. ⚠️ **Do not start the engine for one hour** | `[RM-C]` |
+| Crankshaft position sensor              |  10 | 89 in·lbf       | Oil the O-ring                                                                                        | `[RM-C]` |
+| Camshaft position sensor (**×2**)       |  10 | 89 in·lbf       | Both located in the cam cover                                                                         | `[RM-C]` |
+| **A/F sensor, upstream**                |  44 | 32 ft·lbf       | **40 N·m** if using SST `09224-00010` on a 300 mm fulcrum wrench, SST parallel to the wrench          | `[RM-C]` |
+| Heated O2 sensor, downstream            |  44 | 32 ft·lbf       | Same SST alternative, 40 N·m                                                                          | `[RM-C]` |
+| Knock sensor                            |  20 | 15 ft·lbf       | Orientation per illustration                                                                          | `[RM-C]` |
 
 #### Torque specifications — cooling and accessories
 
-| Fastener                                |  N·m | ft·lbf / in·lbf | Notes                       | Source   |
-| :-------------------------------------- | ---: | :-------------- | :-------------------------- | :------- |
-| Water pump × **timing chain cover**, bolt A | 26 | 19 ft·lbf     | 5 bolts total               | `[RM-C]` |
-| Water pump, bolt B                      |   24 | 18 ft·lbf       |                             | `[RM-C]` |
-| Water inlet / thermostat housing, 2 nuts |  10 | 89 in·lbf       | ⚠️ **Jiggle valve up, ±10°** | `[RM-C]` |
-| Alternator bolt A, adjusting-lock       |   19 | 14 ft·lbf       | 12 mm head                  | `[RM-C]` |
-| Alternator bolt B, pivot                |   43 | 32 ft·lbf       | 14 mm head                  | `[RM-C]` |
-| Belt bolt D, check torque               |   19 | 14 ft·lbf       | Separate verification step  | `[RM-C]` |
-| Alternator harness bracket              |  8.4 | 74 in·lbf       |                             | `[RM-C]` |
-| **Starter × block**                     |   37 | 27 ft·lbf       | Confirmed in the xD, Corolla **and** Yaris manuals | `[RM-C]` `[RM-Y]` |
-| Engine hanger × cylinder head           |   43 | 32 ft·lbf       |                             | `[RM-C]` |
+| Fastener                                    | N·m | ft·lbf / in·lbf | Notes                                              | Source            |
+| :------------------------------------------ | --: | :-------------- | :------------------------------------------------- | :---------------- |
+| Water pump × **timing chain cover**, bolt A |  26 | 19 ft·lbf       | 5 bolts total                                      | `[RM-C]`          |
+| Water pump, bolt B                          |  24 | 18 ft·lbf       |                                                    | `[RM-C]`          |
+| Water inlet / thermostat housing, 2 nuts    |  10 | 89 in·lbf       | ⚠️ **Jiggle valve up, ±10°**                       | `[RM-C]`          |
+| Alternator bolt A, adjusting-lock           |  19 | 14 ft·lbf       | 12 mm head                                         | `[RM-C]`          |
+| Alternator bolt B, pivot                    |  43 | 32 ft·lbf       | 14 mm head                                         | `[RM-C]`          |
+| Belt bolt D, check torque                   |  19 | 14 ft·lbf       | Separate verification step                         | `[RM-C]`          |
+| Alternator harness bracket                  | 8.4 | 74 in·lbf       |                                                    | `[RM-C]`          |
+| **Starter × block**                         |  37 | 27 ft·lbf       | Confirmed in the xD, Corolla **and** Yaris manuals | `[RM-C]` `[RM-Y]` |
+| Engine hanger × cylinder head               |  43 | 32 ft·lbf       |                                                    | `[RM-C]`          |
 
-☝️ Advice: **The 2ZR-FE uses a 5-rib accessory belt; the 1NZ-FE uses 3-rib.** Use
-the 2ZR-FE's own accessories. The idea of swapping pulleys to retain the 1NZ
-alternator and compressor has been floated repeatedly in the community and never
-confirmed to work.
+☝️ Advice: **The 2ZR-FE and 1NZ-FE accessory belts are different, and so are the
+pulleys behind them.** Use the 2ZR-FE's own accessories and its own belt. The
+idea of swapping pulleys to retain the 1NZ alternator and compressor has been
+floated repeatedly in the community and never confirmed to work.
+
+| Belt                             | Part number       | Specification                                                                                                                                                                  |
+| :------------------------------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2ZR-FE, Scion xD 2008–2014**   | **`90916-02664`** | Toyota "Belt, V-Ribbed". **6 ribs.** 49.25 in (1250.95 mm) outside circumference, 0.84 in (21.3 mm) top width. Drives alternator, water pump and A/C. Supersedes `99366-K1230` |
+| 2ZR-FE, Corolla 2009–2011        | `90916-A2018`     | 6 ribs, 48.75 in outside circumference — the Corolla routing differs from the xD                                                                                               |
+| 1NZ-FE, Yaris 2007–2012 with A/C | `90916-02500`     | The belt being removed. Listed for contrast only                                                                                                                               |
+
+Aftermarket equivalents for the xD belt: **Dayco `5060485`** or **Gates
+`K060365`** for the no-A/C length `[C]`.
+
+⚠️ Attention: **The community describes this as a "5-rib" belt. It is 6-rib.**
+The 0.84 in (21.3 mm) top width is exactly six ribs at the 3.56 mm K-section
+pitch, and both aftermarket cross-references decode as six as well — Dayco
+`5060485` and Gates `K060365` both carry a `06` rib-count field. Order a 6PK belt.
 
 ☝️ Advice: The Yaris has **electric power steering**. There is no power steering
 pump, no hoses, and nothing to do.
@@ -789,14 +903,14 @@ used OEM and aftermarket units. No fix has been published. `[C]`
 
 #### Fluids
 
-| Fluid                | Specification                              | Capacity                              | Source   |
-| :------------------- | :----------------------------------------- | :------------------------------------ | :------- |
-| Engine oil           | 0W-20 preferred; 5W-20 acceptable 2009–2010 | **4.2 ℓ (4.4 US qt)** with filter; 3.9 ℓ (4.1 US qt) without | `[RM-C]` |
-| Coolant              | Toyota Super Long Life Coolant, pre-mixed  | **4.8 ℓ (5.1 US qt)** M/T             | `[RM-Y]` |
-| Transaxle gear oil   | **API GL-4, SAE 75W**                      | **1.9 ℓ (2.0 US qt)**                 | `[RM-Y]` |
-| Brake and clutch fluid | SAE J1703 or FMVSS No. 116 **DOT 3**     | —                                     | `[RM-Y]` |
-| A/C refrigerant      | R134a                                      | One 12 oz can `[C]`                   | `[C]`    |
-| Drive shaft joint grease | —                                      | 125–135 g (4.4–4.8 oz) each joint     | `[RM-Y]` |
+| Fluid                    | Specification                               | Capacity                                                     | Source   |
+| :----------------------- | :------------------------------------------ | :----------------------------------------------------------- | :------- |
+| Engine oil               | 0W-20 preferred; 5W-20 acceptable 2009–2010 | **4.2 ℓ (4.4 US qt)** with filter; 3.9 ℓ (4.1 US qt) without | `[RM-C]` |
+| Coolant                  | Toyota Super Long Life Coolant, pre-mixed   | **4.8 ℓ (5.1 US qt)** M/T                                    | `[RM-Y]` |
+| Transaxle gear oil       | **API GL-4, SAE 75W**                       | **1.9 ℓ (2.0 US qt)**                                        | `[RM-Y]` |
+| Brake and clutch fluid   | SAE J1703 or FMVSS No. 116 **DOT 3**        | —                                                            | `[RM-Y]` |
+| A/C refrigerant          | R134a                                       | One 12 oz can `[C]`                                          | `[C]`    |
+| Drive shaft joint grease | —                                           | 125–135 g (4.4–4.8 oz) each joint                            | `[RM-Y]` |
 
 ⚠️ Attention: Community sources widely quote 75W-90 gear oil at 3 quarts, and
 coolant at 5.5 litres. **Both are wrong.** The factory figures are above. Some
@@ -814,7 +928,7 @@ is not a real conflict. 4.2 litres **is** 4.4 US quarts.
 
 ---
 
-(Page 11)
+<a id="phase-4"></a>
 
 ### Phase 4 — Joining Engine and Transaxle
 
@@ -844,12 +958,12 @@ Corolla or xD manual if you can.
 
 (4.2) Fit the clutch disc, cover and release bearing.
 
-| Joint                          |  N·m | kgf·cm | ft·lbf | Notes                                          | Source   |
-| :----------------------------- | ---: | -----: | :----- | :--------------------------------------------- | :------- |
-| **Clutch cover × flywheel**    |   19 |    195 | 14     | **6 bolts.** Begin at the bolt nearest the knock pin and tighten evenly | `[RM-Y]` |
-| Release fork support × transaxle |  37 |    375 | 27     |                                                | `[RM-Y]` |
+| Joint                            | N·m | kgf·cm | ft·lbf | Notes                                                                   | Source   |
+| :------------------------------- | --: | -----: | :----- | :---------------------------------------------------------------------- | :------- |
+| **Clutch cover × flywheel**      |  19 |    195 | 14     | **6 bolts.** Begin at the bolt nearest the knock pin and tighten evenly | `[RM-Y]` |
+| Release fork support × transaxle |  37 |    375 | 27     |                                                                         | `[RM-Y]` |
 
-⚠️ Warning: **Check the clutch disc orientation.** One builder installed his
+⚠️ Advice: **Check the clutch disc orientation.** One builder installed his
 backwards and had to remove the transaxle again — the metal centre of the disc
 contacted the flywheel bolts before the friction material reached the flywheel.
 The parts were reusable, the afternoon was not. `[C]`
@@ -861,11 +975,11 @@ used successfully as a substitute. `[C]`
 (4.3) Mate the transaxle to the engine. Align the input shaft to the clutch disc
 first, then engage the dowels.
 
-| Joint                            |  N·m | kgf·cm | ft·lbf | Notes      | Source   |
-| :------------------------------- | ---: | -----: | :----- | :--------- | :------- |
-| **Transaxle assembly × engine**  |   33 |    336 | **24** | **7 bolts** | `[RM-Y]` |
+| Joint                           | N·m | kgf·cm | ft·lbf | Notes       | Source   |
+| :------------------------------ | --: | -----: | :----- | :---------- | :------- |
+| **Transaxle assembly × engine** |  33 |    336 | **24** | **7 bolts** | `[RM-Y]` |
 
-⚠️ Warning: **Community sources give this joint as 22 ft·lbf. That is wrong — it
+⚠️ Advice: **Community sources give this joint as 22 ft·lbf. That is wrong — it
 conflates two different fasteners.** The transaxle-to-engine bell housing bolt is
 **33 N·m / 24 ft·lbf across 7 bolts**. The 29 N·m / 22 ft·lbf figure belongs to
 the **internal case-half** bolt. Using the forum number under-torques the single
@@ -885,7 +999,7 @@ standard Yaris 0.8 kW unit. The connectors are identical. Both the 0.8 kW and
 
 ---
 
-(Page 12)
+<a id="phase-5"></a>
 
 ### Phase 5 — Yaris Teardown
 
@@ -899,7 +1013,7 @@ standard Yaris 0.8 kW unit. The connectors are identical. Both the 0.8 kW and
   </figcaption>
 </figure>
 
-⚠️ Warning: Have the A/C system discharged by a licensed technician first.
+☠️ Warning: Have the A/C system discharged by a licensed technician first.
 
 (5.1) Disconnect and remove the battery. Drain the engine oil, automatic
 transaxle fluid and coolant.
@@ -907,58 +1021,81 @@ transaxle fluid and coolant.
 (5.2) Remove the front clip and partially lower the subframe. The engine and
 transaxle come out the front as a unit.
 
-☝️ Advice: Remove the front brackets and bracing **before** attempting to pull
-the 1NZ-FE. This is the strongest single recommendation from a builder who did
-it the other way first. `[C]`
+☝️ Advice: Strip the front structure **completely, before** attempting to lift
+the 1NZ-FE — not partially, and not while working around it. This is the
+strongest single recommendation from a builder who tried it the other way first.
+`[C]` Concretely, that means removing all of the following:
+
+| Item                                 | Why it has to go                                                                                                                                                     |
+| :----------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Front bumper cover                   | Access to everything behind it                                                                                                                                       |
+| **Bumper reinforcement / crash bar** | The steel beam behind the cover. Blocks the hoist's approach angle                                                                                                   |
+| Headlight assemblies                 | Vulnerable, and their brackets tie into the support panel                                                                                                            |
+| **Upper radiator support / tie bar** | The removable cross panel above the radiator. This is the part most often meant by "the bracing" — it is what prevents the powertrain coming straight up and forward |
+| Radiator, condenser and fan shroud   | See the disposition table above — radiator and lines are kept                                                                                                        |
+| **Radiator support side brackets**   | The vertical brackets each side of the radiator opening                                                                                                              |
+| Hood latch and its support           | Mounted to the upper support; comes off with it                                                                                                                      |
+
+⚠️ Attention: **Partially lower the front subframe as well.** Dropping it 25–50 mm
+buys the clearance that makes the difference between an awkward extraction and a
+straightforward one, and it is also what lets the axles come out cleanly. Use SST
+`09670-00010` to realign it on reinstallation, and see the crossmember torques in
+(5.5). `[C]`
+
+☝️ Advice: The alternative some builders attempt — pulling the powertrain out
+through the top with the front clip intact — is what produces the cracked
+windshields and pinched CV boots reported in the community record. The engine and
+transaxle come out **forward**, and the front of the car has to be open for that
+to work.
 
 (5.3) Harvest and dispose as follows.
 
-| Item                                       | Disposition |
-| :----------------------------------------- | :---------- |
-| Wheels, wipers, cowl                       | Keep        |
-| Intake, air cleaner and bracket            | Keep        |
-| Battery carrier                            | Keep        |
-| Bumper, headlights, front crash bar        | Keep        |
-| **Radiator**                               | **Keep**    |
-| A/C condenser and lines                    | Keep        |
-| Radiator support bracket                   | Keep        |
-| Radiator hoses, heater hoses               | Caution     |
-| Accessory belt                             | Caution     |
-| Fuel lines                                 | Keep        |
-| **Brake master cylinder, lines, booster**  | **Keep** — booster reused, master cylinder replaced |
-| Engine wiring harness                      | **Dispose** |
-| CV axles                                   | **Dispose** — unless Path A |
-| Engine mounts                              | **Dispose** |
-| ECM                                        | **Dispose** |
-| 1NZ-FE engine and U340E transaxle           | **Dispose** |
+| Item                                      | Disposition                                         |
+| :---------------------------------------- | :-------------------------------------------------- |
+| Wheels, wipers, cowl                      | Keep                                                |
+| Intake, air cleaner and bracket           | Keep                                                |
+| Battery carrier                           | Keep                                                |
+| Bumper, headlights, front crash bar       | Keep                                                |
+| **Radiator**                              | **Keep**                                            |
+| A/C condenser and lines                   | Keep                                                |
+| Radiator support bracket                  | Keep                                                |
+| Radiator hoses, heater hoses              | Caution                                             |
+| Accessory belt                            | Caution                                             |
+| Fuel lines                                | Keep                                                |
+| **Brake master cylinder, lines, booster** | **Keep** — booster reused, master cylinder replaced |
+| Engine wiring harness                     | **Dispose**                                         |
+| CV axles                                  | **Dispose** — unless Path A                         |
+| Engine mounts                             | **Dispose**                                         |
+| ECM                                       | **Dispose**                                         |
+| 1NZ-FE engine and U340E transaxle         | **Dispose**                                         |
 
 (5.4) Remove the axles. Torque values for reinstallation are in Phase 7.
 
-| Joint                                    |  N·m | kgf·cm | ft·lbf / in·lbf | Notes                                       | Source   |
-| :--------------------------------------- | ---: | -----: | :-------------- | :------------------------------------------ | :------- |
-| **Front axle hub nut**                   |  216 |  2,203 | **159 ft·lbf**  | ⚠️ **NEW nut. Stake with chisel and hammer.** 30 mm socket. Un-stake on removal with SST `09930-00010`, **completely**, before turning | `[RM-Y]` |
-| **Lower ball joint × knuckle**           |   98 |  1,000 | 72 ft·lbf       | **New castle nut and new clip.** Up to a further 60° to align the holes | `[RM-Y]` |
-| Tie rod end × knuckle                    |   49 |    500 | 36 ft·lbf       | **New castle nut and new cotter pin.** Up to +60° | `[RM-Y]` |
-| Tie rod end **lock nut**                 |   75 |    760 | 55 ft·lbf       | Distinct from the joint above               | `[RM-Y]` |
-| Stabiliser link × strut                  |   74 |    755 | 55 ft·lbf       | Hold the stud with a 6 mm hex if it spins   | `[RM-Y]` |
-| Strut × knuckle                          |  164 |  1,672 | 121 ft·lbf      |                                             | `[RM-Y]` |
-| Strut top mount × body                   |   55 |    561 | 41 ft·lbf       |                                             | `[RM-Y]` |
-| ABS speed sensor × knuckle                |  8.5 |     87 | 75 in·lbf       | Keep the tip clean. **Do not rotate from its original angle** | `[RM-Y]` |
-| Front caliper × knuckle                  |  107 |  1,089 | 79 ft·lbf       |                                             | `[RM-Y]` |
-| Wheel lug nuts                           |  103 |  1,050 | 76 ft·lbf       | Front and rear identical                    | `[RM-Y]` |
+| Joint                          | N·m | kgf·cm | ft·lbf / in·lbf | Notes                                                                                                                                  | Source   |
+| :----------------------------- | --: | -----: | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :------- |
+| **Front axle hub nut**         | 216 |  2,203 | **159 ft·lbf**  | ⚠️ **NEW nut. Stake with chisel and hammer.** 30 mm socket. Un-stake on removal with SST `09930-00010`, **completely**, before turning | `[RM-Y]` |
+| **Lower ball joint × knuckle** |  98 |  1,000 | 72 ft·lbf       | **New castle nut and new clip.** Up to a further 60° to align the holes                                                                | `[RM-Y]` |
+| Tie rod end × knuckle          |  49 |    500 | 36 ft·lbf       | **New castle nut and new cotter pin.** Up to +60°                                                                                      | `[RM-Y]` |
+| Tie rod end **lock nut**       |  75 |    760 | 55 ft·lbf       | Distinct from the joint above                                                                                                          | `[RM-Y]` |
+| Stabiliser link × strut        |  74 |    755 | 55 ft·lbf       | Hold the stud with a 6 mm hex if it spins                                                                                              | `[RM-Y]` |
+| Strut × knuckle                | 164 |  1,672 | 121 ft·lbf      |                                                                                                                                        | `[RM-Y]` |
+| Strut top mount × body         |  55 |    561 | 41 ft·lbf       |                                                                                                                                        | `[RM-Y]` |
+| ABS speed sensor × knuckle     | 8.5 |     87 | 75 in·lbf       | Keep the tip clean. **Do not rotate from its original angle**                                                                          | `[RM-Y]` |
+| Front caliper × knuckle        | 107 |  1,089 | 79 ft·lbf       |                                                                                                                                        | `[RM-Y]` |
+| Wheel lug nuts                 | 103 |  1,050 | 76 ft·lbf       | Front and rear identical                                                                                                               | `[RM-Y]` |
 
 (5.5) Subframe fasteners, for reinstallation.
 
-| Joint                              |  N·m | kgf·cm | ft·lbf | Source   |
-| :--------------------------------- | ---: | -----: | :----- | :------- |
-| **Crossmember × body, bolt A**     |   70 |    714 | 52     | `[RM-Y]` |
-| **Crossmember × body, bolt B**     |  160 |  1,631 | 118    | `[RM-Y]` |
-| **Crossmember × body, bolt C**     |   95 |    969 | 70     | `[RM-Y]` |
-| Power steering gear × crossmember  |   96 |    979 | 71     | `[RM-Y]` |
-| Lower arm × crossmember             |  137 |  1,397 | 101    | `[RM-Y]` |
-| Lower arm × body                    |  160 |  1,631 | 118    | `[RM-Y]` |
-| Stabiliser bracket × crossmember    |   47 |    479 | 35     | **Sequence: snug bolt A, torque B, then A** `[RM-Y]` |
-| Steering sliding yoke, both joints  |   28 |    290 | 21     | `[RM-Y]` |
+| Joint                              | N·m | kgf·cm | ft·lbf | Source                                               |
+| :--------------------------------- | --: | -----: | :----- | :--------------------------------------------------- |
+| **Crossmember × body, bolt A**     |  70 |    714 | 52     | `[RM-Y]`                                             |
+| **Crossmember × body, bolt B**     | 160 |  1,631 | 118    | `[RM-Y]`                                             |
+| **Crossmember × body, bolt C**     |  95 |    969 | 70     | `[RM-Y]`                                             |
+| Power steering gear × crossmember  |  96 |    979 | 71     | `[RM-Y]`                                             |
+| Lower arm × crossmember            | 137 |  1,397 | 101    | `[RM-Y]`                                             |
+| Lower arm × body                   | 160 |  1,631 | 118    | `[RM-Y]`                                             |
+| Stabiliser bracket × crossmember   |  47 |    479 | 35     | **Sequence: snug bolt A, torque B, then A** `[RM-Y]` |
+| Steering sliding yoke, both joints |  28 |    290 | 21     | `[RM-Y]`                                             |
 
 ☝️ Advice: **These crossmember torques are identical on the Yaris, the 1NZ-FE
 Yaris table, and the Scion xD** — 70, 160 and 95 N·m, confirmed by three
@@ -973,7 +1110,7 @@ neutral safety switch, and the transaxle cooler lines.
 
 ---
 
-(Page 13)
+<a id="phase-6"></a>
 
 ### Phase 6 — Manual Conversion, Interior
 
@@ -998,21 +1135,21 @@ blockers that are easy to discover too late.
 
 #### ⚠️ Blocker 1 — the firewall has no holes
 
-⚠️ Warning: **Automatic cars have no firewall holes for the clutch master
+⚠️ Advice: **Automatic cars have no firewall holes for the clutch master
 cylinder.** Use the manual pedal assembly's own bracket as a template, align it
-with the top bolt hole, trace the holes, and drill. Cobalt drill bits and a
+with the top bolt hole, trace the holes, and drill. Drill bits and a
 knockout punch set are the tools reported to work. `[C]`
 
 #### ⚠️ Blocker 2 — the brake booster must come out
 
-⚠️ Warning: **Most brake line connections must be disconnected and the brake
+⚠️ Advice: **Most brake line connections must be disconnected and the brake
 booster removed** to gain enough room to install the clutch master cylinder and
 its hardline. The booster itself is **not** replaced — it comes out and goes
 back in. `[C]`
 
 #### ⚠️ Blocker 3 — the brake master cylinder is different
 
-⚠️ Warning: **A manual-specification brake master cylinder is required.** On the
+⚠️ Advice: **A manual-specification brake master cylinder is required.** On the
 manual car the **brake fluid reservoir also feeds the clutch line**, and the
 spacing between the two circuits differs from the automatic unit. The correct
 part depends on **both** the ABS fitment and the transmission type.
@@ -1046,36 +1183,36 @@ and the drilling step.
 
 #### Torque specifications — pedal box and brake hydraulics
 
-| Joint                                        |  N·m | kgf·cm | ft·lbf / in·lbf | Notes                          | Source   |
-| :------------------------------------------- | ---: | -----: | :-------------- | :----------------------------- | :------- |
-| **Clutch pedal support × body**              |   24 |    241 | 18 ft·lbf       |                                | `[RM-Y]` |
-| **Clutch master cylinder × clutch pedal support** |  9.0 |     92 | 80 in·lbf   |                                | `[RM-Y]` |
-| Clutch pedal sub-assembly × support          |   37 |    375 | 27 ft·lbf       |                                | `[RM-Y]` |
-| **Clutch start switch × support**            |   16 |    160 | 12 ft·lbf       |                                | `[RM-Y]` |
-| Clutch pedal stopper bolt lock nut           |   16 |    160 | 12 ft·lbf       |                                | `[RM-Y]` |
-| Clutch master push rod clevis lock nut       |   12 |    120 | 9 ft·lbf        |                                | `[RM-Y]` |
-| Clutch master → flexible hose tube           |   15 |    153 | 11 ft·lbf       |                                | `[RM-Y]` |
-| **Brake booster, 4 nuts**                    |  9.0 |     92 | 80 in·lbf       | **New gasket**                 | `[RM-Y]` |
-| **Brake master cylinder × booster**          |   13 |    127 | 10 ft·lbf       | 2 nuts                         | `[RM-Y]` |
-| **Brake tube × master cylinder**, all unions |   14 |    143 | 10 ft·lbf       | ⚠️ **14 N·m WITH SST `09023-00100`; 15 N·m WITHOUT.** Use a 300 mm fulcrum wrench with the SST parallel to it | `[RM-Y]` |
-| Push rod lock nut × booster push rod         |   26 |    265 | 19 ft·lbf       | Set when adjusting pedal height | `[RM-Y]` |
-| Brake pedal × pedal support                  |   37 |    375 | 27 ft·lbf       |                                | `[RM-Y]` |
-| Pedal support × instrument panel reinforcement |  24 |    241 | 18 ft·lbf     |                                | `[RM-Y]` |
-| Piston stopper bolt × master cylinder body   |   10 |    102 | 7 ft·lbf        |                                | `[RM-Y]` |
-| Front flexible hose × caliper, banjo         |   30 |    310 | 22 ft·lbf       |                                | `[RM-Y]` |
-| Front disc brake bleeder plug                |  8.3 |     85 | 73 in·lbf       |                                | `[RM-Y]` |
-| Proportioning valve × bracket / bracket × body | 5.4 / 19 | 55 / 194 | 48 in·lbf / 14 ft·lbf | Non-ABS cars           | `[RM-Y]` |
+| Joint                                             |      N·m |   kgf·cm | ft·lbf / in·lbf       | Notes                                                                                                         | Source   |
+| :------------------------------------------------ | -------: | -------: | :-------------------- | :------------------------------------------------------------------------------------------------------------ | :------- |
+| **Clutch pedal support × body**                   |       24 |      241 | 18 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| **Clutch master cylinder × clutch pedal support** |      9.0 |       92 | 80 in·lbf             |                                                                                                               | `[RM-Y]` |
+| Clutch pedal sub-assembly × support               |       37 |      375 | 27 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| **Clutch start switch × support**                 |       16 |      160 | 12 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| Clutch pedal stopper bolt lock nut                |       16 |      160 | 12 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| Clutch master push rod clevis lock nut            |       12 |      120 | 9 ft·lbf              |                                                                                                               | `[RM-Y]` |
+| Clutch master → flexible hose tube                |       15 |      153 | 11 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| **Brake booster, 4 nuts**                         |      9.0 |       92 | 80 in·lbf             | **New gasket**                                                                                                | `[RM-Y]` |
+| **Brake master cylinder × booster**               |       13 |      127 | 10 ft·lbf             | 2 nuts                                                                                                        | `[RM-Y]` |
+| **Brake tube × master cylinder**, all unions      |       14 |      143 | 10 ft·lbf             | ⚠️ **14 N·m WITH SST `09023-00100`; 15 N·m WITHOUT.** Use a 300 mm fulcrum wrench with the SST parallel to it | `[RM-Y]` |
+| Push rod lock nut × booster push rod              |       26 |      265 | 19 ft·lbf             | Set when adjusting pedal height                                                                               | `[RM-Y]` |
+| Brake pedal × pedal support                       |       37 |      375 | 27 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| Pedal support × instrument panel reinforcement    |       24 |      241 | 18 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| Piston stopper bolt × master cylinder body        |       10 |      102 | 7 ft·lbf              |                                                                                                               | `[RM-Y]` |
+| Front flexible hose × caliper, banjo              |       30 |      310 | 22 ft·lbf             |                                                                                                               | `[RM-Y]` |
+| Front disc brake bleeder plug                     |      8.3 |       85 | 73 in·lbf             |                                                                                                               | `[RM-Y]` |
+| Proportioning valve × bracket / bracket × body    | 5.4 / 19 | 55 / 194 | 48 in·lbf / 14 ft·lbf | Non-ABS cars                                                                                                  | `[RM-Y]` |
 
 #### (6.5) Clutch hydraulic line and slave cylinder
 
-| Joint                                     |  N·m | kgf·cm | ft·lbf / in·lbf | Notes                | Source   |
-| :---------------------------------------- | ---: | -----: | :-------------- | :------------------- | :------- |
-| **Clutch release cylinder × transaxle case** | 12 | 120 / 122 | 9 ft·lbf      | 4 bolts. ⚠️ **Bolt A is 120 kgf·cm, bolt B is 122** | `[RM-Y]` |
-| Clutch pipe × transmission case           |   12 |    122 | 9 ft·lbf        |                      | `[RM-Y]` |
-| Release cylinder bleeder plug             |  8.3 |     85 | 73 in·lbf       |                      | `[RM-Y]` |
-| Release cylinder ↔ flexible hose tube     |   15 |    153 | 11 ft·lbf       |                      | `[RM-Y]` |
+| Joint                                        | N·m |    kgf·cm | ft·lbf / in·lbf | Notes                                               | Source   |
+| :------------------------------------------- | --: | --------: | :-------------- | :-------------------------------------------------- | :------- |
+| **Clutch release cylinder × transaxle case** |  12 | 120 / 122 | 9 ft·lbf        | 4 bolts. ⚠️ **Bolt A is 120 kgf·cm, bolt B is 122** | `[RM-Y]` |
+| Clutch pipe × transmission case              |  12 |       122 | 9 ft·lbf        |                                                     | `[RM-Y]` |
+| Release cylinder bleeder plug                | 8.3 |        85 | 73 in·lbf       |                                                     | `[RM-Y]` |
+| Release cylinder ↔ flexible hose tube       |  15 |       153 | 11 ft·lbf       |                                                     | `[RM-Y]` |
 
-⚠️ Warning: **Buy the slave cylinder new. Do not rebuild it.** One builder's
+⚠️ Advice: **Buy the slave cylinder new. Do not rebuild it.** One builder's
 rebuilt unit failed at approximately 150 miles — the piston seal let go and he
 lost the clutch suddenly in a parking lot. New units are inexpensive. `[C]`
 
@@ -1085,14 +1222,14 @@ Remove the exhaust heat shield, then the three 10 mm nuts on the cable
 pass-through seal. Pull the automatic cable out from below, feed the two manual
 cables in, and reseal. The floor shifter is four 12 mm bolts either way. `[C]`
 
-| Joint                                  |  N·m | kgf·cm | ft·lbf / in·lbf | Notes | Source   |
-| :------------------------------------- | ---: | -----: | :-------------- | :---- | :------- |
-| Shift cable bracket × transaxle case   |   25 |    255 | 18 ft·lbf       | ×2    | `[RM-Y]` |
-| Transmission control cable × body      |  5.0 |     51 | 44 in·lbf       |       | `[RM-Y]` |
-| Floor shift lever assembly × body      |   12 |    122 | 9 ft·lbf        |       | `[RM-Y]` |
-| Selecting bell crank × case, bolt      |   25 |    250 | 18 ft·lbf       | ×2    | `[RM-Y]` |
-| Selecting bell crank × case, nut       |   12 |    120 | 9 ft·lbf        |       | `[RM-Y]` |
-| Shift lever damper × shaft             |   12 |    120 | 9 ft·lbf        |       | `[RM-Y]` |
+| Joint                                | N·m | kgf·cm | ft·lbf / in·lbf | Notes | Source   |
+| :----------------------------------- | --: | -----: | :-------------- | :---- | :------- |
+| Shift cable bracket × transaxle case |  25 |    255 | 18 ft·lbf       | ×2    | `[RM-Y]` |
+| Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |       | `[RM-Y]` |
+| Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        |       | `[RM-Y]` |
+| Selecting bell crank × case, bolt    |  25 |    250 | 18 ft·lbf       | ×2    | `[RM-Y]` |
+| Selecting bell crank × case, nut     |  12 |    120 | 9 ft·lbf        |       | `[RM-Y]` |
+| Shift lever damper × shaft           |  12 |    120 | 9 ft·lbf        |       | `[RM-Y]` |
 
 ⚠️ Attention: **With xD mounts you must use xD shift cables.** The new mounts push
 the transaxle forward by approximately two inches. One builder stretched Yaris
@@ -1109,12 +1246,12 @@ conversion that is easier than it looks. `[C]`
 
 #### (6.8) Clutch pedal adjustment
 
-| Item                                | Specification            | Source   |
-| :---------------------------------- | :----------------------- | :------- |
-| Pedal height from dash panel        | **133.0–143.0 mm**       | `[RM-Y]` |
-| Pedal free play                     | **5.0–15.0 mm**          | `[RM-Y]` |
-| Push rod play at pedal top          | **1.0–5.0 mm**           | `[RM-Y]` |
-| Release point                       | **≥25 mm** from the end of full stroke | `[RM-Y]` |
+| Item                         | Specification                          | Source   |
+| :--------------------------- | :------------------------------------- | :------- |
+| Pedal height from dash panel | **133.0–143.0 mm**                     | `[RM-Y]` |
+| Pedal free play              | **5.0–15.0 mm**                        | `[RM-Y]` |
+| Push rod play at pedal top   | **1.0–5.0 mm**                         | `[RM-Y]` |
+| Release point                | **≥25 mm** from the end of full stroke | `[RM-Y]` |
 
 (6.9) Fill and bleed the brake system, then the clutch system.
 
@@ -1126,7 +1263,7 @@ bleed mode anywhere in the brake chapters. `[RM-Y]`
 
 ---
 
-(Page 14)
+<a id="phase-7"></a>
 
 ### Phase 7 — Powertrain Installation
 
@@ -1145,18 +1282,18 @@ record. `[C]`
 
 #### Mount part numbers
 
-| Position                      | Part number `[C]` |
-| :---------------------------- | :---------------- |
-| RH engine-side bracket        | `12315-37040`     |
-| RH engine stay                | `12317-37010`     |
-| Dogbone bracket               | `12313-37010`     |
-| Dogbone isolator              | `12363-37010`     |
-| Gearbox-side bracket          | `12325-37100`     |
-| Gearbox-side isolator         | `12372-37141`     |
-| Gearbox-side damper           | `12351-37100`     |
-| Mount bolts, stud and nuts    | `91552-L1240`     |
+| Position                   | Part number `[C]` |
+| :------------------------- | :---------------- |
+| RH engine-side bracket     | `12315-37040`     |
+| RH engine stay             | `12317-37010`     |
+| Dogbone bracket            | `12313-37010`     |
+| Dogbone isolator           | `12363-37010`     |
+| Gearbox-side bracket       | `12325-37100`     |
+| Gearbox-side isolator      | `12372-37141`     |
+| Gearbox-side damper        | `12351-37100`     |
+| Mount bolts, stud and nuts | `91552-L1240`     |
 
-⚠️ Warning: **Do not use Corolla/Matrix/Vibe bracket `12315-37030`.** The engine
+⚠️ Advice: **Do not use Corolla/Matrix/Vibe bracket `12315-37030`.** The engine
 block bolt holes align differently. `[C]`
 
 ⚠️ Attention: The RH isolator part number is **disputed across sources** —
@@ -1184,20 +1321,20 @@ rest of the arrangement. `[C]`
 
 #### Mount torque specifications
 
-| Joint                                            |  N·m | kgf·cm | ft·lbf | Notes                            | Source   |
-| :----------------------------------------------- | ---: | -----: | :----- | :------------------------------- | :------- |
-| Transverse engine mounting **bracket** × transmission case cover |  64 |    653 | 47     | 4 bolts                          | `[RM-Y]` |
-| Transverse engine mounting **insulator** × body  |   52 |    530 | 38     | 5 bolts                          | `[RM-Y]` |
-| Mounting bracket LH × isolator LH, bolt and nut  |   52 |    530 | 38     |                                  | `[RM-Y]` |
-| Transverse engine mounting **control bracket** × transaxle case | 39 | 398 | 29 |                              | `[RM-Y]` |
-| **Engine mounting × engine moving control rod (dogbone)** | 120 | 1,224 | **89** |                            | `[RM-Y]` |
-| Dogbone, transaxle side (xD)                     |  100 |  1,020 | 74     | ☝️ *Temporarily tighten the transaxle side, then torque* | `[RM-C]` |
-| Dogbone, second bolt at crossmember (xD)         |  120 |  1,224 | 89     | ⚠️ **Two different specs on the same part** | `[RM-C]` |
-| RH mounting bracket (xD)                         |   51 |    520 | 38     |                                  | `[RM-C]` |
-| Engine mounting stay (xD)                        |   26 |    265 | 19     |                                  | `[RM-C]` |
-| Battery carrier × body                           |   17 |    175 | 13     | 5 bolts                          | `[RM-Y]` |
-| Air cleaner bracket × body                       |   19 |    194 | 14     | 2 bolts                          | `[RM-Y]` |
-| Wire harness × transmission case                 |   26 |    260 | 19     |                                  | `[RM-Y]` |
+| Joint                                                            | N·m | kgf·cm | ft·lbf | Notes                                                    | Source   |
+| :--------------------------------------------------------------- | --: | -----: | :----- | :------------------------------------------------------- | :------- |
+| Transverse engine mounting **bracket** × transmission case cover |  64 |    653 | 47     | 4 bolts                                                  | `[RM-Y]` |
+| Transverse engine mounting **insulator** × body                  |  52 |    530 | 38     | 5 bolts                                                  | `[RM-Y]` |
+| Mounting bracket LH × isolator LH, bolt and nut                  |  52 |    530 | 38     |                                                          | `[RM-Y]` |
+| Transverse engine mounting **control bracket** × transaxle case  |  39 |    398 | 29     |                                                          | `[RM-Y]` |
+| **Engine mounting × engine moving control rod (dogbone)**        | 120 |  1,224 | **89** |                                                          | `[RM-Y]` |
+| Dogbone, transaxle side (xD)                                     | 100 |  1,020 | 74     | ☝️ _Temporarily tighten the transaxle side, then torque_ | `[RM-C]` |
+| Dogbone, second bolt at crossmember (xD)                         | 120 |  1,224 | 89     | ⚠️ **Two different specs on the same part**              | `[RM-C]` |
+| RH mounting bracket (xD)                                         |  51 |    520 | 38     |                                                          | `[RM-C]` |
+| Engine mounting stay (xD)                                        |  26 |    265 | 19     |                                                          | `[RM-C]` |
+| Battery carrier × body                                           |  17 |    175 | 13     | 5 bolts                                                  | `[RM-Y]` |
+| Air cleaner bracket × body                                       |  19 |    194 | 14     | 2 bolts                                                  | `[RM-Y]` |
+| Wire harness × transmission case                                 |  26 |    260 | 19     |                                                          | `[RM-Y]` |
 
 ⚠️ Attention: **The xD RH insulator has three published torques — 45, 88 and
 52 N·m — and only two illustration labels, A and B.** Which torque belongs to
@@ -1225,21 +1362,21 @@ check for it deliberately rather than waiting to hear a clunk. `[C]`
 
 (7.4) Fit the exhaust.
 
-⚠️ Warning: **The 2ZR-FE manifold flange will not mate to the Yaris downpipe.**
+⚠️ Advice: **The 2ZR-FE manifold flange will not mate to the Yaris downpipe.**
 The flange is larger and the bolt spacing is wider. Pipe inner diameter is 46 mm
 against the Yaris's 40 mm. `[C]`
 
-| Option                                  | Assessment                                              |
-| :-------------------------------------- | :------------------------------------------------------ |
-| **Donor xD midpipe** (recommended)      | Comes free with the donor car. ⚠️ Remove it before the shell is scrapped — replacements are effectively unobtainable |
-| Weld a larger flange to the Yaris pipe  | Cheap and repeatable. One shop welded a 2.25" flange with a single cat section for $208 `[C]` |
-| Full custom fabrication                 | Most flexible, most expensive                           |
-| Long-tube header                        | See Appendix B. Requires O2 sensor extension, a firewall indent for A/F sensor clearance, and a flex joint |
+| Option                                 | Assessment                                                                                                           |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| **Donor xD midpipe** (recommended)     | Comes free with the donor car. ⚠️ Remove it before the shell is scrapped — replacements are effectively unobtainable |
+| Weld a larger flange to the Yaris pipe | Cheap and repeatable. One shop welded a 2.25" flange with a single cat section for $208 `[C]`                        |
+| Full custom fabrication                | Most flexible, most expensive                                                                                        |
+| Long-tube header                       | See Appendix B. Requires O2 sensor extension, a firewall indent for A/F sensor clearance, and a flex joint           |
 
-| Joint                              |  N·m | ft·lbf | Notes                                        | Source   |
-| :--------------------------------- | ---: | :----- | :------------------------------------------- | :------- |
-| Front exhaust pipe × manifold      |   43 | 32     | 2 bolts and **2 compression springs**, ball joint | `[RM-C]` |
-| Tail pipe × front pipe             |   43 | 32     | The US system is 2-piece; there is no separate mid pipe | `[RM-C]` |
+| Joint                         | N·m | ft·lbf | Notes                                                   | Source   |
+| :---------------------------- | --: | :----- | :------------------------------------------------------ | :------- |
+| Front exhaust pipe × manifold |  43 | 32     | 2 bolts and **2 compression springs**, ball joint       | `[RM-C]` |
+| Tail pipe × front pipe        |  43 | 32     | The US system is 2-piece; there is no separate mid pipe | `[RM-C]` |
 
 ☝️ Advice: Apply anti-seize to the exhaust manifold, intake manifold and fuel
 rail bolts, and silicone lubricant to hose metal fittings. `[C]`
@@ -1248,7 +1385,7 @@ rail bolts, and silicone lubricant to hose metal fittings. `[C]`
 
 ---
 
-(Page 15)
+<a id="phase-8"></a>
 
 ### Phase 8 — Cooling, Fuel, and Electrical
 
@@ -1261,15 +1398,15 @@ required.** `[C]`
 
 What changes is the plumbing.
 
-| Item                                        | Part number `[C]` | Notes                                       |
-| :------------------------------------------ | :---------------- | :------------------------------------------ |
-| **Coolant filler neck**                     | `16502-37010`     | ⚠️ **Bolts to the radiator**, not to the throttle body as on the Yaris |
-| Upper long hose, block to filler            | `16571-37090`     | The Yaris upper hose is **too short and kinks** |
-| Lower hose, radiator to block               | `16572-37080`     |                                             |
-| Upper short hose, radiator to filler        | `16573-37030`     |                                             |
-| Radiator hose clamps                        | `90467-33006` ×6  | Plus `90467-34004`, `90467-37005` at the outlets |
-| Heater hoses, short and long                | `87245-52151`, `87245-52141` | Yaris heater hoses kink               |
-| Heater hose clamps                          | `96136-42501`     |                                             |
+| Item                                 | Part number `[C]`            | Notes                                                                  |
+| :----------------------------------- | :--------------------------- | :--------------------------------------------------------------------- |
+| **Coolant filler neck**              | `16502-37010`                | ⚠️ **Bolts to the radiator**, not to the throttle body as on the Yaris |
+| Upper long hose, block to filler     | `16571-37090`                | The Yaris upper hose is **too short and kinks**                        |
+| Lower hose, radiator to block        | `16572-37080`                |                                                                        |
+| Upper short hose, radiator to filler | `16573-37030`                |                                                                        |
+| Radiator hose clamps                 | `90467-33006` ×6             | Plus `90467-34004`, `90467-37005` at the outlets                       |
+| Heater hoses, short and long         | `87245-52151`, `87245-52141` | Yaris heater hoses kink                                                |
+| Heater hose clamps                   | `96136-42501`                |                                                                        |
 
 ⚠️ Attention: The Yaris fan shroud has two existing holes for the xD filler neck,
 but they must be **tapped M6 × 1.00** and secured with 10 mm bolts. `[C]`
@@ -1297,8 +1434,8 @@ on the EVAP purge solenoid, and fixed it with a trimmed OEM 2ZR-FE hose. `[C]`
 The Yaris **hard lines are reused**. The compressor and hoses differ between the
 1NZ-FE and 2ZR-FE and come from the donor. `[C]`
 
-⚠️ Warning: Triple-check every fitting and bolt length before recharging. See the
-warning on Page 5.
+☠️ Warning: Triple-check every fitting and bolt length before recharging. See
+the A/C warning in [Installation Precautions](#precautions).
 
 #### (8.4) Electrical — the four pins that differ
 
@@ -1313,10 +1450,10 @@ With a matched xD ECM and harness, every pin matches the `A21` connector on the
 Yaris body harness and the two fusebox connectors `CA1` and `CA2`. Fusebox
 orientation is **`CA2` top left, `CA1` top right**. Exactly four pins deviate:
 
-| Pin           | Signal          | Resolution                                                    |
-| :------------ | :-------------- | :------------------------------------------------------------ |
-| **`CA2` pin 9** | MAF sensor power | ⚠️ **No supporting pin exists in the Yaris fusebox.** See below |
-| **`CA2` pins 11, 12, 13** | Speedometer | Move the speed sensor wires to the same positions in the xD `CA2` plug |
+| Pin                       | Signal           | Resolution                                                             |
+| :------------------------ | :--------------- | :--------------------------------------------------------------------- |
+| **`CA2` pin 9**           | MAF sensor power | ⚠️ **No supporting pin exists in the Yaris fusebox.** See below        |
+| **`CA2` pins 11, 12, 13** | Speedometer      | Move the speed sensor wires to the same positions in the xD `CA2` plug |
 
 Speed sensor wire colours: **pin 1 black, pin 2 white with black stripe, pin 3
 pink**. `[C]`
@@ -1349,7 +1486,7 @@ two circuits to look for. `[C]`
 
 Three options, in order of preference:
 
-1. **Fit the speed sensor to the transaxle** — see (2.6). Simplest.
+1. **Fit the speed sensor to the transaxle** — see (2.5). Simplest.
 2. **Take the signal from ABS.** Insert part `82998-12720` into **location 4 on
    the ABS connector** — the smaller white wire in the top row, four from the
    left counting the two larger wires — and connect the pink speed sensor wire to
@@ -1396,50 +1533,89 @@ harness this does not arise. `[C]`
 
 ---
 
-(Page 16)
+<a id="phase-9"></a>
 
 ### Phase 9 — Immobilizer
 
 This is the phase with the worst reputation in the community record, and most of
-that reputation is misplaced. Read it in full before connecting the battery.
+that reputation is misplaced — on a US-market donor it comes down to isolating
+three wires. Read it in full **before connecting the battery.**
 
-<details>
-  <summary>⚠️ Warning — read before connecting the battery</summary>
+<details open>
+  <summary>⚠️ Advice — read before connecting the battery</summary>
 
-**Do not turn the ignition switch from ON to OFF 20 times or more before the
-ECU–ECM communication ID is set.** If that many cycles are likely, **disconnect
-the negative battery terminal cable** to avoid engine start disablement. Failure
-to observe this will result in the engine not starting unless the transponder key
-ECU is **replaced with a new one**. `[RM-Y]`
+The factory manual states, of the ECU–ECM communication ID:
 
-**Do not disconnect the battery while the ECU–ECM communication ID is being
-set.** `[RM-Y]`
+> Do not turn the ignition switch from ON to OFF **20 times or more** before
+> setting the ECU–ECM communication ID. If this operation is likely to be
+> performed 20 times or more, **disconnect the negative battery terminal cable**
+> in order to avoid engine start disablement. Failure to do so will result in the
+> engine not starting unless the **transponder key ECU is replaced with a new
+> one.** `[RM-Y]`
 
-☝️ Note the tension between those two. Disconnect the battery if you are about to
-cycle the ignition many times *before* setting the ID; do not disconnect it
-*during* the setting procedure.
+**Why this matters on a US-donor swap, where no ID is ever set.** The incoming
+non-immobilizer ECM cannot hold the handshake at all, so the Yaris transponder key
+ECU sees an unanswered request on every ignition cycle and never reaches a
+satisfied state. The counter above is therefore running the whole time the car is
+sitting on stands with the new engine in it — and every accessory-position turn
+of the key while you chase a wiring fault spends one of the twenty.
+
+⚠️ **Keep the negative terminal disconnected until the isolation in (9.3) is
+done.** Reconnect it to test, not to poke around. If the count is exhausted, the
+transponder key ECU has to be replaced — there is no reset.
 
 </details>
 
 ⚠️ Attention: The community warning on this point is that "you have 10 tries to
 start the car before you are completely locked out." The mechanism is real and
-the consequence is real, but the factory figure is **20 ignition ON-to-OFF
-cycles**, the counter runs on **ignition cycles rather than start attempts**, and
-the factory supplies a mitigation — disconnecting the negative terminal — that
-the community record does not mention. That turns an unrecoverable mistake into
-a routine precaution.
+the consequence is real, but three details are wrong or missing. The factory
+figure is **20**, not 10. The counter runs on **ignition ON-to-OFF cycles, not
+start attempts** — so it is spent faster than the folklore suggests, because
+turning the key to test a circuit counts. And the factory supplies a
+mitigation, **disconnecting the negative terminal**, that the community record
+never mentions. That last point turns an unrecoverable mistake into a routine
+precaution.
 
 #### (9.1) Does this phase apply to you?
 
-| Donor                                        | Immobilizer fitted? | What to do                              |
-| :------------------------------------------- | :------------------ | :-------------------------------------- |
-| **US-market xD, any year 2008–2014**         | **No**              | Isolate the Yaris transponder ECU — (9.3) |
-| Canadian xD, 08/2010–06/2014                 | **Yes**             | Harvest the matched set — (9.4)          |
-| Canadian xD, before 08/2010                  | No                  | As US                                    |
-| 2010+ Corolla                                | Yes                 | ⚠️ **Not compatible** unless programming new keys |
+This document assumes a **US-market xD donor**, which has no immobilizer of its
+own. The recipient Yaris does have one, so the work here is entirely on the
+Yaris side: the car's own transponder key ECU has to stop expecting a
+conversation that the incoming ECM cannot hold.
 
-☝️ Advice: **US-market xDs never had an immobilizer**, and the 2009+ Yaris does.
-For a US donor this entire phase reduces to isolating three wires.
+| Donor                                | Immobilizer fitted? | Consequence                                                            |
+| :----------------------------------- | :------------------ | :--------------------------------------------------------------------- |
+| **US-market xD, any year 2008–2014** | **No**              | ☝️ Isolate the Yaris transponder ECU — (9.3). This is the assumed case |
+| Canadian xD, 08/2010–06/2014         | **Yes**             | ⚠️ Out of scope — see the note below                                   |
+| Canadian xD, before 08/2010          | No                  | As US                                                                  |
+| 2010+ Corolla                        | Yes                 | ⚠️ **Not compatible** unless programming new keys                      |
+
+<details>
+  <summary>☝️ Advice — why Canadian cars differ, and why they are excluded here</summary>
+
+Canada mandated engine immobilizers on new passenger vehicles from the 2007 model
+year, several years ahead of any equivalent US requirement. Toyota met that rule
+by fitting a transponder key ECU and immobilizer-capable engine ECM to Canadian
+cars while continuing to ship non-immobilizer hardware to the US. For the xD this
+produces the split above: **Canadian cars built 08/2010 to 06/2014 have the
+immobilizer, US cars never do**, and — the part that catches people out — **the
+ECM part number is frequently the same on both.** The market the car was sold in
+is the reliable indicator, not the number on the box. `[C]`
+
+There is a further generational trap within the Canadian cars: key systems are
+not cross-compatible between generations. First-generation keys carry a dot mark
+and later ones a "G" mark, and a Yaris on one generation will not accept keys or
+an immobilizer ECU from the other. `[C]`
+
+**A Canadian donor is workable** — at least one builder has done it by
+transplanting a matched engine ECU, immobilizer ECU and key set — but it requires
+a factory key-code and communication-ID registration sequence, carries a hard
+lockout risk if performed incorrectly, and the procedure differs by system
+generation. **None of that is documented here.** If a Canadian car is your only
+option, work from the Engine Immobiliser chapter of the factory manual for your
+specific year rather than from this document.
+
+</details>
 
 #### (9.2) What the system actually is
 
@@ -1453,11 +1629,11 @@ immobilizer conversation, and that the fix is to disconnect "the brown K-line at
 pin 9." The factory wiring diagram shows something different. The ECM and the
 transponder key ECU communicate over a **dedicated three-wire link**:
 
-| Transponder key ECU `D23` | ECM `A21`      | Direction   | Standard resistance |
-| :------------------------ | :------------- | :---------- | :------------------ |
-| **`D23-13` `EFIO`**       | **`A21-11` `IMI`** | ECU → ECM | Below 1 Ω          |
-| **`D23-12` `EFII`**       | **`A21-10` `IMO`** | ECM → ECU | Below 1 Ω          |
-| **`D23-11` `EGND`**       | **`A21-9` `EOM`**  | Ground    | Below 1 Ω          |
+| Transponder key ECU `D23` | ECM `A21`          | Direction | Standard resistance |
+| :------------------------ | :----------------- | :-------- | :------------------ |
+| **`D23-13` `EFIO`**       | **`A21-11` `IMI`** | ECU → ECM | Below 1 Ω           |
+| **`D23-12` `EFII`**       | **`A21-10` `IMO`** | ECM → ECU | Below 1 Ω           |
+| **`D23-11` `EGND`**       | **`A21-9` `EOM`**  | Ground    | Below 1 Ω           |
 
 `SIL` is a separate diagnostic bus line to the DLC3 for the scan tool, not the
 immobilizer path. `[RM-Y]`
@@ -1473,7 +1649,7 @@ framing that is wrong, or at best describes a different circuit.
 observation that every pin of the xD ECM matches the `A21` connector on the Yaris
 body harness.
 
-#### (9.3) US donor — non-immobilizer ECM
+#### (9.3) Isolating the Yaris transponder key ECU
 
 The failure mode to avoid: a **non-immobilizer ECM begins behaving as though
 immobilizer-enabled** when the chassis transponder key ECU is still present and
@@ -1495,49 +1671,9 @@ continuously — the indicator is doing exactly what it is designed to do. `[RM-
 ⚠️ Attention: The community has a working method for running a non-immobilizer
 ECM against a live transponder key ECU, and has **deliberately chosen not to
 publish it**, on the stated grounds that it presents a security problem. That
-decision is respected here. Contact the builders directly if you need it. It is a
-separate question from the factory registration procedure below, which is fully
-documented.
+decision is respected here. Contact the builders directly if you need it.
 
-#### (9.4) Canadian donor — matched immobilizer set
-
-If you harvested a matched set, the factory registration matrix applies. `[RM-Y]`
-
-| What was replaced           | What must be registered              | Procedure     |
-| :-------------------------- | :----------------------------------- | :------------ |
-| Adding keys                 | Key codes into the transponder key ECU | **"A"**      |
-| **Transponder key ECU**     | Key codes, then ECU–ECM communication ID | **"B"** then **"C"(a)** |
-| **ECM — this is the engine swap** | ECU–ECM communication ID       | **"C"(b)**    |
-| Both                        | Both                                 | **"B"** then **"C"(c)** |
-| Lost key                    | Erase key codes                      | **"D"**       |
-
-##### Procedure "C"(b) — after replacing the ECM
-
-> 1. Insert a previously registered key into the ignition key cylinder.
-> 2. Start the engine.
-> 3. Check that the engine starts and stays on for **more than 3 seconds**. The
->    registration is complete.
-
-Security indicator condition: **OFF**. `[RM-Y]`
-
-☝️ Advice: **That is the whole procedure.** For an ECM replacement — which is what
-an engine swap is — **registration is automatic on first start.** There is no
-jumper and no waiting period.
-
-⚠️ **Correction to the community record.** The widely-circulated "jumper TC and
-CG at the DLC3, ignition ON, wait 30 minutes" procedure is **Procedure "C"(a) —
-after replacing the transponder key ECU.** It is a genuine Toyota procedure, but
-it applies to a different part. Applying it to an ECM swap adds half an hour of
-ceremony the manual does not ask for.
-
-For completeness, Procedure "C"(a), which you need only if you also replaced the
-transponder key ECU: register the key codes per Procedure "B"; using SST
-`09843-18040`, connect **TC and CG** at the DLC3 **before** inserting the key;
-insert a previously registered key, turn the ignition **ON without starting**,
-and leave it for **30 minutes**; turn the ignition OFF and disconnect TC and CG;
-start the engine and confirm it runs for more than 3 seconds. `[RM-Y]`
-
-#### (9.5) Diagnosis
+#### (9.4) Diagnosis
 
 The code to expect is **`B2799` Engine Immobiliser System**, listed in the **ECM**
 trouble code chart with trouble areas "1. Wire harness, 2. ECM". `[RM-Y]`
@@ -1553,37 +1689,32 @@ That third condition is this conversion's signature failure.
 no transponder key ECU codes are present. If any are, resolve those first.
 `[RM-Y]`
 
-| Code    | Detection item                       |
-| :------ | :----------------------------------- |
-| `B2784` | Antenna coil open or short           |
-| `B2793` | Transponder chip malfunction         |
-| `B2794` | Unmatched encryption code            |
-| `B2795` | Unmatched key code                   |
+| Code    | Detection item                         |
+| :------ | :------------------------------------- |
+| `B2784` | Antenna coil open or short             |
+| `B2793` | Transponder chip malfunction           |
+| `B2794` | Unmatched encryption code              |
+| `B2795` | Unmatched key code                     |
 | `B2796` | No communication in immobilizer system |
-| `B2798` | Communication malfunction No. 2      |
-| `B2799` | Engine immobilizer system            |
+| `B2798` | Communication malfunction No. 2        |
+| `B2799` | Engine immobilizer system              |
 
 Diagnostic check: with `D23` and `A21` disconnected, measure resistance across
 the three pairs in (9.2). Each should read **below 1 Ω**. `[RM-Y]`
-
-☝️ Advice: A matched immobilizer combination reported working is a 2011–2012 xD
-engine ECU with a 2011–2014 xD or Yaris sedan immobilizer ECU and third-generation
-"G"-marked keys, `89785-08040`. Canadian first-generation dot-marked keys are not
-compatible with the second and third generation systems. `[C]`
 
 ⚠️ Attention: Third-party immobilizer bypass modules and EEPROM modification exist.
 They are not recommended for a daily-driven vehicle and are not covered here.
 
 ---
 
-(Page 17)
+<a id="phase-10"></a>
 
 ### Phase 10 — Instrumentation and Signals
 
 #### (10.1) Speedometer
 
 The signal source depends on the path chosen in Phase 0 and on whether the
-recipient car has ABS. See (2.6) — the factory manual branches this on **ABS, not
+recipient car has ABS. See (2.5) — the factory manual branches this on **ABS, not
 chassis**.
 
 ⚠️ Attention: One builder running an xD transaxle with a Yaris speed sensor
@@ -1637,7 +1768,7 @@ modification. That is a different job. `[C]`
 
 ---
 
-(Page 18)
+<a id="phase-11"></a>
 
 ### Phase 11 — First Start and Commissioning
 
@@ -1670,25 +1801,25 @@ leak-check, then a further hour to remove moisture, then charge. `[C]`
 
 #### Break-in
 
-| Interval             | Action                                  |
-| :------------------- | :-------------------------------------- |
-| **15 minutes**       | Change the engine oil                   |
-| **50 miles**         | Change the engine oil again             |
-| **Until 500 miles**  | **No wide-open throttle** — ring seating |
+| Interval            | Action                                   |
+| :------------------ | :--------------------------------------- |
+| **15 minutes**      | Change the engine oil                    |
+| **50 miles**        | Change the engine oil again              |
+| **Until 500 miles** | **No wide-open throttle** — ring seating |
 
 `[C]`
 
 #### Retorque schedule
 
-| When                          | What                                                        |
-| :---------------------------- | :---------------------------------------------------------- |
-| After the first heat cycle    | Exhaust manifold and downpipe fasteners                     |
+| When                               | What                                                               |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| After the first heat cycle         | Exhaust manifold and downpipe fasteners                            |
 | After approximately 100 km / 60 mi | All mount fasteners, axle hub nuts, subframe bolts, wheel lug nuts |
-| After 100 km / 60 mi          | Re-check all fluid levels                                   |
+| After 100 km / 60 mi               | Re-check all fluid levels                                          |
 
 ---
 
-(Page 19)
+<a id="post-install"></a>
 
 ## Post-installation Checks and Precautions
 
@@ -1721,37 +1852,41 @@ before and after the conversion. `[C]`
 ⚠️ Attention: The most-reported subjective complaint is **rev hang, worse than the
 1NZ-FE**. A lightweight flywheel does not fix it. `[C]`
 
+<a id="budget"></a>
+
 ## Budget
 
 Figures below are from one completed and emissions-certified build, and are
 indicative only. Prices move; this is `[C]` and dated.
 
-| Section                          | Cost      | Notes                                     |
-| :------------------------------- | --------: | :---------------------------------------- |
-| Engine, transaxle, ECM, harness  | $1,288    | One salvage purchase, complete            |
-| Engine rebuild parts             | $609      | **Optional — Phase 3**                    |
-| Intake and exhaust               | $944      | Includes a $780 CARB-legal converter      |
-| Fuel, electrical, starting       | $359      |                                           |
-| Cooling                          | $124      |                                           |
-| Transaxle rebuild and gearing    | $1,329    | **Optional — Phase 2**, includes an LSD   |
-| Driveline                        | $79       |                                           |
-| Clutch and hydraulics            | $276      |                                           |
-| A/C                              | $363      |                                           |
-| **Parts total**                  | **$5,371** |                                          |
-| Tools                            | $916      | Approximately half is rebuild-only        |
-| **All-in**                       | **$6,305** |                                          |
+| Section                         |        Cost | Notes                                |
+| :------------------------------ | ----------: | :----------------------------------- |
+| Engine, transaxle, ECM, harness |      $1,288 | One salvage purchase, complete       |
+| Intake and exhaust              |        $944 | Includes a $780 CARB-legal converter |
+| Fuel, electrical, starting      |        $359 |                                      |
+| Cooling                         |        $124 |                                      |
+| Driveline                       |         $79 |                                      |
+| Clutch and hydraulics           |        $276 |                                      |
+| A/C                             |        $363 |                                      |
+| **Parts total**                 |  **$3,433** |                                      |
+| Tools                           |       ~$500 | Excludes rebuild-only tooling        |
+| **All-in**                      | **~$3,933** |                                      |
 
-☝️ Advice: The original community guide advises budgeting approximately $3,000.
-That figure appears achievable only by skipping both rebuild phases and sourcing
-patiently. Another builder itemised $1,795 for a straight swap onto a
-low-mileage donor engine, and a third assembled most of a swap for under $850
-through a long-standing salvage yard relationship. Removing the two optional
-rebuild phases from the table above brings the parts total to approximately
-$3,433.
+☝️ Advice: The figures above are the same builder's totals with his **optional
+engine rebuild ($609) and transaxle rebuild and gearing ($1,329) removed**, since
+this document does not open either unit. His full all-in figure including both
+rebuilds and all tooling was **$6,305**.
+
+☝️ Advice: The original community guide advises budgeting approximately $3,000,
+which the table above suggests is close to right for a straight swap. Another
+builder itemised $1,795 for a swap onto a low-mileage donor engine, and a third
+assembled most of a swap for under $850 through a long-standing salvage yard
+relationship. The single largest line item that is genuinely not compressible is
+the **$780 catalytic converter** — see [Parts Manifest](#parts-manifest).
 
 ---
 
-(Page 20)
+<a id="appendix-a"></a>
 
 ## Appendix A — Wrong-Engine Quarantine
 
@@ -1760,27 +1895,28 @@ a different engine. The values below circulate in connection with this
 conversion and are **wrong for the 2ZR-FE**. They are listed specifically so
 they can be recognised and rejected.
 
-| Value in circulation                          | Actually belongs to                    | Correct 2ZR-FE value          |
-| :-------------------------------------------- | :------------------------------------- | :---------------------------- |
-| Head bolts **"36 ft·lbf + 90° + 90°"**        | **1ZZ-FE / 2AZ-FE**                    | **49 N·m + 90° + 45°**, mark at 135° |
-| Head bolts, 8 mm bi-hexagon                   | **1NZ-FE** (the engine coming out)     | **10 mm** bi-hexagon          |
-| Flywheel "38 ft·lbf + 90°"                    | **1NZ-FE**, via a misprinted imperial column | 49 N·m + 90° = **36 ft·lbf** |
-| Bell housing **"22 ft·lbf"**                  | The **internal case-half** bolt        | **33 N·m / 24 ft·lbf**, 7 bolts |
-| Rod cap "18 ft·lbf"                           | **2AZ-FE**                             | **20 N·m / 15 ft·lbf** + 90°  |
-| Engine moving control rod **"64 N·m"**        | **2AZ-FE, 2004 Camry**                 | 100 N·m transaxle side, 120 N·m at crossmember |
-| Insulator "80 N·m" + hangers "25 N·m"         | **1AD/2AD-FTV diesel**                 | See Phase 7                   |
-| Chain tensioner slipper "19 N·m"              | **2AZ-FE**                             | ⚠️ **Not published** — see below |
-| Chain tensioner slipper "18.5 N·m"            | **1ZZ-FE**                             | ⚠️ Not published              |
-| Chain tensioner slipper "20.5 N·m"            | **2ZZ-GE**                             | ⚠️ Not published              |
-| Chain tensioner slipper "9.0 N·m"             | **1NZ-FE**                             | ⚠️ Not published              |
-| Transaxle oil "75W-90, 3 qt"                  | Community practice, not a spec         | **GL-4, SAE 75W, 1.9 ℓ**      |
-| Coolant "5.5 ℓ"                               | Community estimate                     | **4.8 ℓ** M/T                 |
-| Differential shim part numbers `90564-41014`–`41032` | Not in any factory manual       | Lettered plate washers **AA–UU** |
+| Value in circulation                                 | Actually belongs to                          | Correct 2ZR-FE value                           |
+| :--------------------------------------------------- | :------------------------------------------- | :--------------------------------------------- |
+| Head bolts **"36 ft·lbf + 90° + 90°"**               | **1ZZ-FE / 2AZ-FE**                          | **49 N·m + 90° + 45°**, mark at 135°           |
+| Head bolts, 8 mm bi-hexagon                          | **1NZ-FE** (the engine coming out)           | **10 mm** bi-hexagon                           |
+| Flywheel "38 ft·lbf + 90°"                           | **1NZ-FE**, via a misprinted imperial column | 49 N·m + 90° = **36 ft·lbf**                   |
+| Bell housing **"22 ft·lbf"**                         | The **internal case-half** bolt              | **33 N·m / 24 ft·lbf**, 7 bolts                |
+| Rod cap "18 ft·lbf"                                  | **2AZ-FE**                                   | **20 N·m / 15 ft·lbf** + 90°                   |
+| Engine moving control rod **"64 N·m"**               | **2AZ-FE, 2004 Camry**                       | 100 N·m transaxle side, 120 N·m at crossmember |
+| Insulator "80 N·m" + hangers "25 N·m"                | **1AD/2AD-FTV diesel**                       | See Phase 7                                    |
+| Chain tensioner slipper "19 N·m"                     | **2AZ-FE**                                   | ⚠️ **Not published** — see below               |
+| Chain tensioner slipper "18.5 N·m"                   | **1ZZ-FE**                                   | ⚠️ Not published                               |
+| Chain tensioner slipper "20.5 N·m"                   | **2ZZ-GE**                                   | ⚠️ Not published                               |
+| Chain tensioner slipper "9.0 N·m"                    | **1NZ-FE**                                   | ⚠️ Not published                               |
+| Transaxle oil "75W-90, 3 qt"                         | Community practice, not a spec               | **GL-4, SAE 75W, 1.9 ℓ**                       |
+| Coolant "5.5 ℓ"                                      | Community estimate                           | **4.8 ℓ** M/T                                  |
+| Differential shim part numbers `90564-41014`–`41032` | Not in any factory manual                    | Lettered plate washers **AA–UU**               |
+| Applied model **`AZE151L`**                          | **Scion xB**, `2AZ-FE` 2.4 ℓ                 | The xD is **`ZSP110L-AHMRKA`**                 |
 
-⚠️ Warning: **Toyota manual RM3027** is a complete 2ZR-FE "Engine Assembly" mount
+⚠️ Advice: **Toyota manual RM3027** is a complete 2ZR-FE "Engine Assembly" mount
 table and is easy to find. It is **JDM Auris/ist — not US-market xD or
 Corolla.** Its crossmember figure is 99 N·m against the xD's 70/160/95 and the
-Corolla's 113/157/52. It *partially* agrees with the US Corolla on the insulator
+Corolla's 113/157/52. It _partially_ agrees with the US Corolla on the insulator
 rows, which makes it **more** dangerous, not less. Do not use it for a US
 vehicle.
 
@@ -1788,26 +1924,28 @@ vehicle.
 
 Publishing these as gaps is more useful than filling them with a guess.
 
-| Item                                                | Status                                              |
-| :-------------------------------------------------- | :-------------------------------------------------- |
-| Cylinder head cover torque                          | **Toyota publishes none.** An absence, not a gap    |
-| 2ZR-FE valve clearance                              | **Not applicable** — hydraulic lash adjusters       |
-| Chain tensioner slipper bolt                        | Not located for the 2ZR-FE                          |
-| Head bolt tightening **sequence** (1–10)            | Illustration only in the manual, not text           |
-| Timing chain cover sequence, 26 bolts               | Illustration only                                   |
-| A/C compressor mounting bolts                       | Not located                                         |
-| Drive belt idler pulley, as a distinct row          | Not located                                         |
-| Engine coolant temperature sensor torque            | Not located                                         |
-| LH transaxle mounting **bracket** to case bolts     | Not located — the manuals route this to an "Engine Assembly / Installation" document absent from both mirrors |
-| xD RH insulator — which of 45/88/52 N·m goes where  | **Genuinely unpublished.** Three torques, two illustration labels |
-| Oil pump relief valve plug                          | Sources give 49 and 37 N·m irreconcilably. **Treat as not found** |
-| Radiator and block drain cocks                      | No torque printed — hand-tight                      |
-| ABS tone rings                                      | Never addressed in any source consulted             |
-| Fastener part numbers generally                     | The repair manual names joints, not part numbers    |
+| Item                                               | Status                                                                                                        |
+| :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Cylinder head cover torque                         | **Toyota publishes none.** An absence, not a gap                                                              |
+| 2ZR-FE valve clearance                             | **Not applicable** — hydraulic lash adjusters                                                                 |
+| Chain tensioner slipper bolt                       | Not located for the 2ZR-FE                                                                                    |
+| Head bolt tightening **sequence** (1–10)           | Illustration only in the manual, not text                                                                     |
+| Timing chain cover sequence, 26 bolts              | Illustration only                                                                                             |
+| A/C compressor mounting bolts                      | Not located                                                                                                   |
+| Drive belt idler pulley, as a distinct row         | Not located                                                                                                   |
+| Engine coolant temperature sensor torque           | Not located                                                                                                   |
+| LH transaxle mounting **bracket** to case bolts    | Not located — the manuals route this to an "Engine Assembly / Installation" document absent from both mirrors |
+| xD RH insulator — which of 45/88/52 N·m goes where | **Genuinely unpublished.** Three torques, two illustration labels                                             |
+| Oil pump relief valve plug                         | Sources give 49 and 37 N·m irreconcilably. **Treat as not found**                                             |
+| Radiator and block drain cocks                     | No torque printed — hand-tight                                                                                |
+| ABS tone rings                                     | Never addressed in any source consulted                                                                       |
+| Fastener part numbers generally                    | The repair manual names joints, not part numbers                                                              |
 
 ☝️ Advice: Row labels such as "No.1 / No.2 front and rear mounting bracket" do
 **not exist** in the 2ZR-FE repair manual. That naming comes from other engine
 families — do not go looking for them.
+
+<a id="appendix-b"></a>
 
 ## Appendix B — Bolt-on Reference
 
@@ -1816,11 +1954,11 @@ so that the main procedure stays a stock-replacement document.
 
 ### Measured output
 
-| Configuration                                 | Wheel hp | Torque    |
-| :-------------------------------------------- | -------: | :-------- |
-| Stock, plus intake                            | 123      | 121 lb·ft |
-| Plus long-tube header and 2.25–2.5" mid pipe  | 134      | 134 lb·ft |
-| Plus prototype intake manifold                | 148      | 137 lb·ft |
+| Configuration                                | Wheel hp | Torque    |
+| :------------------------------------------- | -------: | :-------- |
+| Stock, plus intake                           |      123 | 121 lb·ft |
+| Plus long-tube header and 2.25–2.5" mid pipe |      134 | 134 lb·ft |
+| Plus prototype intake manifold               |      148 | 137 lb·ft |
 
 The header and mid pipe alone added approximately 15 lb·ft at 3000 rpm.
 Realistic naturally-aspirated ceiling is around 150 wheel hp. `[C]`
@@ -1841,12 +1979,12 @@ A/C engaged. `[C]`
 
 ### Gearing
 
-| Option                          | Effect                                                      |
-| :------------------------------ | :---------------------------------------------------------- |
-| QRP 5th gear set, 0.725:1       | From 0.815:1. Drops 70 mph from 3,228 to 2,871 rpm          |
-| 4.31 final drive, 04–06 xB      | Drop-in. In-gear top speeds 29 / 54 / 80 / 101 / 121 mph    |
-| Helical LSD                     | ⚠️ **20-spline axles only** — an argument for Path B         |
-| EC60 / EC67 6-speed             | See below                                                   |
+| Option                     | Effect                                                   |
+| :------------------------- | :------------------------------------------------------- |
+| QRP 5th gear set, 0.725:1  | From 0.815:1. Drops 70 mph from 3,228 to 2,871 rpm       |
+| 4.31 final drive, 04–06 xB | Drop-in. In-gear top speeds 29 / 54 / 80 / 101 / 121 mph |
+| Helical LSD                | ⚠️ **20-spline axles only** — an argument for Path B     |
+| EC60 / EC67 6-speed        | See below                                                |
 
 ⚠️ Attention: On the 6-speed — the EC-series cases are shorter than the C-series
 because Toyota moved to a two-piece case design, so no hammer work is needed to
@@ -1857,11 +1995,11 @@ really worth it" on an otherwise stock car. `[C]`
 
 ### Driveline strength
 
-| Output              | Recommendation                          |
-| :------------------ | :-------------------------------------- |
-| Up to ~150 hp       | Yaris differential and shafts adequate  |
-| 150–250 bhp         | xD driveline                            |
-| Above 250 bhp       | Custom shafts                           |
+| Output        | Recommendation                         |
+| :------------ | :------------------------------------- |
+| Up to ~150 hp | Yaris differential and shafts adequate |
+| 150–250 bhp   | xD driveline                           |
+| Above 250 bhp | Custom shafts                          |
 
 ☝️ Advice: Automatic transaxles begin slipping above approximately 275 hp; keep
 boosted builds on a U340E to 220–230 hp. Not relevant to this conversion, but it
@@ -1869,7 +2007,7 @@ comes up constantly. `[C]`
 
 ---
 
-(Page 21)
+<a id="references"></a>
 
 ## References
 
@@ -1919,6 +2057,15 @@ the N·m value. Set your wrench from the N·m column.
   — the Canadian-versus-US immobilizer fitment finding.
 - [3rd gen 2zr swap with 6 speed](https://www.yarisworld.com/forums/archive/index.php/t-61491.html)
   — cooling part numbers.
+
+### Applied model and chassis codes
+
+- [Toyota-Club.net — Scion xD (2007–2014)](https://toyota-club.net/files/techdata/ttx/scion_xd.htm)
+  — confirms `ZSP110` and `2ZR-FE`, and gives the manual transaxle fill as
+  **1.9 ℓ of 75W GL-4**, independently corroborating the factory Yaris figure
+  used in [Phase 3](#phase-3).
+- [Real Street Performance — 2AZ-FE xB, `AZE151`](https://www.realstreetperformance.com/shop-by-vehicle/toyota-lexus/2az-fe-xb.html)
+  — confirms `AZE151` is the 2008–2015 Scion xB with the 2.4 ℓ 2AZ-FE, not the xD.
 
 ### Parts cross-reference
 

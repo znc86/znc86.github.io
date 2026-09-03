@@ -195,8 +195,13 @@ components: different mounts, different accessories, different everything. See
   xDs from 08/2010 to 06/2014, and never to US xDs. The same ECM part number
   appears both ways, so the market matters more than the number. **This document
   assumes a US donor throughout** — see [Phase 9](#phase-9).
-- **Obtain the donor's master key.** Without it, the dealer path for adding or
-  registering keys closes entirely.
+- **Insist on a working key and a running demonstration.** You cannot compression
+  test, check oil pressure or scan for stored codes on a car you cannot start,
+  and those are the checks that justify the purchase. ☝️ The key has no role
+  beyond that: a US-market xD has no immobilizer, and the recipient Yaris keeps
+  its own ignition lock, antenna coil, transponder key ECU and keys. Nothing from
+  the donor's key system is transplanted or registered — see
+  [Phase 9](#phase-9).
 - **Record the donor VIN before purchase** and pull its history report.
 - **Verify the engine harness has not been cut anywhere.** The manual-transmission
   xD engine harness is the scarcest single item in this conversion — reported
@@ -235,48 +240,6 @@ availability of a _manual_ car drive the year decision, not the reverse.
 sources** — `12305-37091` also appears alongside the two dated numbers above.
 Verify against the donor's own build date plate before ordering. `[C]`
 
-### Donor Vehicle — Alternative
-
-The Toyota Corolla (2009–2020) uses the same engine and is far more plentiful in
-salvage yards. It is a viable source for the **engine itself**, but not for the
-electrical and mounting hardware.
-
-<details>
-  <summary>⚠️ Advice — do not use a Corolla engine harness</summary>
-
-- The Corolla ECM lives on the **driver's side**; the Yaris and xD ECMs live on
-  the **passenger side**. Nothing about the routing carries over.
-- The Corolla harness has **three fusebox connectors and none of them match the
-  Yaris**. Every wire must be relocated individually into the Yaris `CA1` and
-  `CA2` plugs.
-- The battery cables to the starter and alternator must be **cut and spliced** to
-  the 1NZ-FE harness cables for length and correct terminals.
-- The one builder who completed this route describes it as a monumental task and
-  advises against attempting it without extensive wiring experience. His workaround
-  for the reach problem was to flip the ECM plug harness over the valve cover and
-  mount the xD ECM to the cowl. `[C]`
-- **The 2010+ Corolla ECM is not compatible** unless you intend to program new
-  keys.
-
-☝️ If a Corolla is your only donor, buy the engine from it and source the ECM,
-engine harness and mounts separately from an xD.
-
-</details>
-
-<details>
-  <summary>⚠️ Advice — vehicles this conversion does not fit</summary>
-
-- **The Echo / Scion xA frame will not accept this conversion.** That is a
-  different job with different mounts and no shared procedure.
-- **The third-generation Yaris (NCP131 and later) is out of scope.** It uses a
-  different ECM and chassis harness, requires a `ZRE18X` ECU rather than
-  `ZRE152`, and its ABS unit will not communicate with a `ZRE152` ECU.
-  Approximately ten pins require repinning. See Phase 10. `[C]`
-- **The 2AZ-FE is not an alternative engine.** It mates to the E351 transaxle and
-  requires cutting and welding. `[C]`
-
-</details>
-
 ---
 
 <a id="parts-manifest"></a>
@@ -309,7 +272,7 @@ not by part number. Verify against your donor's year before ordering.
 
 | No. | Product name                          | Notes                                                       |
 | --: | :------------------------------------ | :---------------------------------------------------------- |
-|   ⑭ | Radiator and cooling fans             | ☝️ **Reused.** Adequate even for track use                  |
+|   ⑭ | Radiator, fans and fan shroud         | ☝️ **Reused** — adequate even for track use, and keeping the fans avoids all fan rewiring. Needs two `M6 × 1.00` threads cut for the xD filler neck, and the automatic oil cooler fittings capped — see [(8.1)](#phase-8) |
 |   ⑮ | Starter                               | ☝️ **Reused.** Both engines use a 9-bolt, 2-o'clock starter |
 |   ⑯ | Brake booster, master cylinder, lines | Booster reused; master cylinder replaced — see ⑳            |
 |   ⑰ | A/C hard lines                        | Reused                                                      |
@@ -330,13 +293,25 @@ certain than the mail-order equivalent.
 |  ㉑ | **Brake master cylinder, M/T**       | The salvage alternative to buying new — ⚠️ must be the **manual** unit, whose reservoir carries the clutch feed port |
 |  ㉒ | Clutch hydraulic hardware, remaining | Flexible hose, brackets, clamps and clips — cheaper to take the lot than to order them singly                        |
 
-**⑱ Why the pedal must come from a Yaris, not the xD.** The xD clutch pedal
-carries a **return spring** and the Yaris pedal does not. The Yaris pedal box and
-firewall are designed around the no-spring arrangement, so the xD pedal does not
-drop into a Yaris correctly even though almost everything else on the donor does.
-This is the one place where the otherwise-reliable rule of "use every part from
-the xD" gives the wrong answer, and getting it wrong means pulling the pedal box
-back out. `[C]`
+**⑱ Why the pedal must come from a Yaris, not the xD.** This is the one place
+where the otherwise-reliable rule of "use every part from the xD" gives the wrong
+answer, and getting it wrong means pulling the pedal box back out.
+
+The reason is fit, not springs. The clutch pedal hangs from the **clutch pedal
+support sub-assembly**, which bolts to the Yaris body and instrument panel
+reinforcement at documented torques, and it carries the **clutch start switch**
+that the Yaris body harness already has a connector for. A Yaris pedal assembly
+is the part those mounting points and that switch were designed around. See
+[Phase 6](#phase-6) for the assembly and its component diagram.
+
+⚠️ **Correction to a widely repeated claim.** Community sources state that "the
+Yaris has no return spring, the xD does," and give that as the reason to use the
+Yaris pedal `[C]`. **The factory manual contradicts this.** The Yaris clutch
+pedal components diagram explicitly includes a **`CLUTCH PEDAL SPRING`**, drawn
+and labelled alongside the pedal sub-assembly, bushes, collar and cushion
+`[RM-Y]`. Whatever difference a builder observed between the two pedals, an
+absent spring on the Yaris is not it. Source the Yaris pedal — the conclusion is
+sound — but do not use the spring as your reason for identifying parts.
 
 **⑲ Why `31481-52110` matters so much.** This is the short rigid hardline that
 carries fluid from the clutch master cylinder to the flexible hose. It is a
@@ -375,8 +350,8 @@ salvage option is here because it works and costs nothing.
 |  ㉘ | Front axle hub nuts              | `90177-22001` ×2 `[C]`                            | ⚠️ **One-time use, staked**                                                                                           |
 |  ㉙ | Transaxle output shaft nut       | `90179-18005` `[C]`                               | ⚠️ **One-time use, staked**                                                                                           |
 |  ㉚ | Transaxle drain/filler gaskets   | `90430-18008` `[C]`                               | New each time                                                                                                         |
-|  ㉛ | Catalytic converter, CARB-legal  | AP Eastern `771790` `[C]`                         | ⚠️ **Must match the engine, not the chassis.** See below                                                              |
-|  ㉜ | Downstream O2 sensor             | Denso `234-4623` `[C]`                            |                                                                                                                       |
+|  ㉛ | Catalytic converter              | AP Eastern `771790` `[C]`                         | ☝️ **Only if the donor's is unserviceable, or if you are in a CARB state.** Reuse the donor's converter by default — see below |
+|  ㉜ | Downstream O2 sensor             | Denso `234-4623` `[C]`                            | ☝️ Reuse the donor's if it was low-mileage; new is cheap insurance                                                    |
 |  ㉝ | Accessory drive belt             | Dayco `5060485` with A/C `[C]`                    | Gates `K060365` without A/C                                                                                           |
 |  ㉞ | Water pump                       | Aisin `WPT140` `[C]`                              |                                                                                                                       |
 |  ㉟ | Spark plugs                      | Denso `SC16HR11` `[C]`                            | Iridium                                                                                                               |
@@ -385,39 +360,74 @@ salvage option is here because it works and costs nothing.
 |  ㊳ | FIPG — Seal Packing 1281         | `08826-00090` `[RM-Y]`                            | Transaxle case mating surfaces                                                                                        |
 |  ㊴ | Adhesive 1344                    | `08833-00080` `[RM-Y]`                            | Output shaft nut, shift fork lock bolts                                                                               |
 
-#### Why the catalytic converter must be bought new
+#### The catalytic converter — reuse the donor's
 
-⚠️ Advice: **The original Yaris catalytic converter is not valid for a 2ZR-FE,
-and neither is the one on the donor xD in most cases.** This is the single
-largest new-parts expense in the conversion — roughly $780 — and it is not
-optional if the vehicle must pass an emissions inspection.
+☝️ Advice: **Take the donor xD's converter and midpipe, and reuse them.** The
+donor's converter is the *correct* converter for this engine: it was certified
+against the 2ZR-FE, it bolts to the 2ZR-FE manifold flange, and it is the right
+pipe diameter. Reusing it also keeps the exhaust consistent with
+[Phase 7](#phase-7), where the donor midpipe is already the recommended path.
 
-Three separate reasons converge on buying a new, correctly-specified unit:
+⚠️ Warning: **Remove the exhaust before the donor shell is scrapped.** OEM xD
+midpipes are effectively unobtainable — one builder searched more than twenty
+vendors and found a single unit at $450 plus shipping `[C]`. This is the same
+warning as in [Phase 1](#phase-1), repeated because losing it is expensive and
+irreversible.
 
-1. **The converter is certified against the engine, not the chassis.** An
-   inspector or referee checks that the converter's part number and serial
-   correspond to the engine now installed. The Yaris converter was certified for
-   a 1.5 ℓ 1NZ-FE; its serial will not validate against a 1.8 ℓ 2ZR-FE no matter
-   what condition it is in. `[C]`
-2. **It will not physically fit anyway.** The 2ZR-FE manifold flange is larger
-   with wider bolt spacing, and the pipe inner diameter is 46 mm against the
-   Yaris's 40 mm — see Phase 7. Retaining the Yaris converter means restricting
-   a larger engine through a smaller pipe.
-3. **The donor's own converter is usually not a safe bet.** It has the mileage of
-   a scrapped car on it, and a converter that is merely tired rather than dead
-   will still set a P0420 efficiency code once the readiness monitors run —
-   which fails the inspection just as surely as having the wrong part.
+##### Judging whether the donor's converter is serviceable
 
-☝️ Advice: `AP Eastern 771790` is the specific unit used on one completed and
-California-BAR-certified build of this conversion, paired with a **Denso
-`234-4623`** downstream oxygen sensor. That pairing is the closest thing to a
-known-good answer that exists for this swap. Buy the O2 sensor new at the same
-time — a used downstream sensor on a new converter makes the one measurement the
-inspection depends on untrustworthy.
+A converter from a running car with reasonable mileage is normally fine. Check:
 
-⚠️ Attention: One builder deliberately leaves the second oxygen sensor
-disconnected and runs rich as a result. That will not pass an inspection, and it
-is noted here only so it is not mistaken for an acceptable shortcut. `[C]`
+| Check | What you are looking for |
+| :--- | :--- |
+| **Mileage** | A donor in the recommended 2011–2014 window is the good case. High-mileage or unknown-history units are the doubtful ones |
+| **Rattle** | Tap the shell with a rubber mallet. A rattle means the substrate has broken up — replace it |
+| **Visual** | Bluing or a distorted shell means it has been overheated, usually by a misfire. Suspect the substrate |
+| **History** | The donor's DTC scan from [(0.4)](#phase-0) is the useful evidence. A stored `P0420` on the donor means its converter was already failing |
+| **After the swap** | `P0420` once the readiness monitors run means the converter is tired even if it looked fine |
+
+☝️ Advice: The downstream oxygen sensor is the cheaper half of this decision and
+the one worth being fussy about, because it is the sensor that reports converter
+efficiency. Reuse the donor's if the donor was low-mileage; otherwise fit a new
+**Denso `234-4623`** `[C]`. A doubtful sensor on a good converter produces a
+`P0420` that sends you chasing the wrong part.
+
+⚠️ Attention: **Do not reuse the Yaris converter**, for two independent reasons.
+It will not physically fit — the 2ZR-FE manifold flange is larger with wider bolt
+spacing, and the pipe inner diameter is 46 mm against the Yaris's 40 mm, so you
+would be restricting a larger engine through a smaller pipe `[C]`. And it was
+certified against a 1.5 ℓ 1NZ-FE, which matters anywhere its identity is checked.
+
+<details>
+  <summary>⚠️ Attention — if you are in California or another CARB state</summary>
+
+This document assumes the conversion is **not** being done in a CARB state. If it
+is, the converter stops being a reuse decision and becomes a purchase.
+
+Four states adhere to CARB rules — **California, Colorado, Maine and New York**
+`[C]`. In California the process is a Bureau of Automotive Repair **referee
+inspection** ending in an engine-change sticker, and it imposes requirements the
+donor's used converter cannot satisfy:
+
+- ⚠️ **The converter must be a CARB-legal unit matched to the installed engine**,
+  identifiable by part number and serial. A used OEM converter off a salvage car
+  will not carry the documentation the referee wants, and the original Yaris
+  converter's serial is invalid for a 2ZR-FE regardless of condition `[C]`.
+- **No stored codes, and all readiness monitors set.** A tired converter that
+  merely limps will still set `P0420` and fail.
+- **`CAL ID` and `CAL CVN` must be readable** from the ECM to demonstrate it has
+  not been tampered with.
+
+☝️ The known-good answer for this specific conversion is **`AP Eastern 771790`**
+paired with a **Denso `234-4623`** downstream sensor — the combination used on
+one completed and BAR-certified build of this exact swap `[C]`. Budget
+approximately **$780** for the converter, which becomes the single largest
+new-parts expense in the conversion.
+
+☝️ The referee process is described further in
+[Phase 10, step (10.3)](#phase-10).
+
+</details>
 
 Confirmation: Upon collecting these parts, immediately check that nothing is
 damaged and that the harness has not been cut.
@@ -439,17 +449,19 @@ damaged and that the harness has not been cut.
 | **Flare nut (line) wrench set**                | Ball joint separator                       |
 | Oil filter cap wrench, `09228-06501` or equiv. | Engine hoist and **load leveller**         |
 | Engine stand                                   | Transmission jack                          |
-| **Drill bits and knockout punch set**          | Taps and dies, for chasing threads         |
+| **Drill bits and knockout punch set**          | **`M6 × 1.00` tap and tap wrench**         |
 | Vacuum pump and A/C manifold gauge set         | Brake bleeder kit                          |
 | Coolant refill funnel                          | Connector pin release pick                 |
 | Soldering iron, heat-shrink                    | Taps and dies, for chasing damaged threads |
+| Thread-locking compound                        | Anti-seize compound                        |
 | Pry bars                                       | Catch pans, drain pans                     |
 | Safety glasses, work gloves                    | Engine paint marker                        |
 
-☝️ Advice: The bits and knockout punch are for drilling the firewall in
-Phase 6, which is the only fabrication this conversion strictly requires. The
-taps and dies are worth having on hand for the corroded bell housing bolts noted
-in Phase 1.
+☝️ Advice: Three of these earn a specific mention. The **drill bits and knockout
+punch** are for drilling the firewall in [Phase 6](#phase-6) — the only hole this
+conversion strictly requires you to make. The **`M6 × 1.00` tap** is for the
+coolant filler neck in [(8.1)](#phase-8). The **taps and dies** are worth having
+for the corroded bell housing bolts noted in [Phase 1](#phase-1).
 
 ### Toyota Special Service Tools
 
@@ -554,7 +566,7 @@ available before it locks out.
 
 <a id="phase-0"></a>
 
-### Phase 0 — Donor Intake
+### Phase 0 — Donor Inspection
 
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
@@ -572,17 +584,16 @@ Photograph the ECM part number label.
 (0.3) Confirm the donor is US-market if you wish to avoid the immobilizer
 entirely. See Phase 9.
 
-(0.4) Verify the donor runs. Perform a compression test and, if possible, a
-leakdown test. Scan for stored trouble codes and photograph the results. This is
-the last moment at which the engine can be assessed cheaply.
+(0.4) **Verify the donor runs, using the seller's key.** Perform a compression
+test and, if possible, a leakdown test. Check oil pressure. Scan for stored
+trouble codes and photograph the results. This is the last moment at which the
+engine can be assessed cheaply, and all of it requires a car that starts.
 
 ☝️ Advice: 2ZR-FE oil pressure is much lower than the 1NZ-FE and this alarms
 people needlessly. Specification is **25 kPa (3.7 psi) minimum at idle** and
 **150–400 kPa (21.8–58.0 psi) at 3000 rpm** `[RM-C]`.
 
-(0.5) Secure the donor's **master key**.
-
-(0.6) Photograph and label every connector, ground, and bracket.
+(0.5) Photograph and label every connector, ground, and bracket.
 
 #### (0.7) The transaxle and axles
 
@@ -672,7 +683,7 @@ consumable or condition-dependent; **Dispose** items are not needed.
 | Alternator                             | Keep                                 |
 | A/C compressor and hoses               | Keep                                 |
 | Coolant filler neck and radiator hoses | **Keep**                             |
-| **Radiator assembly**                  | **Keep** — see (8.1)                 |
+| Radiator assembly                      | Caution — needed only for the alternative in (8.1) |
 | **Fuse box**                           | **Keep** — source of `CA2` terminals |
 
 ⚠️ Advice: **Do not scrap the donor shell before the exhaust midpipe is
@@ -751,7 +762,7 @@ them lightly.
 ☝️ Advice: The fasteners that join the transaxle to the engine, and the clutch
 that goes between them, are covered in Phase 4.
 
-#### (2.4) Shift cables — replace them now, not later
+#### (2.4) Shift cables — replace them now, not later (optional)
 
 ☝️ Advice: The shifter and both cables are out of the car at this point, and the
 transaxle is on the bench. This is by far the cheapest moment to address shift
@@ -763,7 +774,10 @@ cable ends** and the **shift lever retainer** the cables clip into, not the
 transaxle internals. Both wear into an oval and the play they introduce shows up
 at the knob multiplied by the lever ratio.
 
-☝️ Advice: **Fit new OEM cables if the used ones feel loose.** A firm, accurate
+<details>
+  <summary>☝️ Advice — Fit new OEM cables if the used ones feel loose.</summary>
+
+A firm, accurate
 shifter on this chassis comes almost entirely from fresh factory parts — the
 linkage is cable-operated, and there is no rod-and-bushing arrangement to
 stiffen. Toyota does not sell the worn sockets separately; they are supplied only
@@ -802,6 +816,8 @@ or only one before ordering, because the procedure requires both.
 | Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        | 4 bolts                          | `[RM-Y]` |
 | Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |                                  | `[RM-Y]` |
 
+</detail>
+
 <a id="sec-2-5"></a>
 
 #### (2.5) Speedometer sensor — required on non-ABS cars
@@ -816,15 +832,26 @@ is taken from the wheel speed sensors instead. Both use a **new O-ring** and bot
 torque to **11 N·m (115 kgf·cm, 8 ft·lbf)** `[RM-Y]`.
 
 This resolves a long-running confusion. The xD C50 is not missing a speed sensor
-because it is an xD — it is missing one because it came from a car with ABS. What
+because it is an xD — it is missing one because it came from an xD with ABS. What
 you need depends on which signal path your recipient car uses, not on the badge
 on the donor.
 
-☝️ Advice: There is a **cap at the sensor location**. On a non-ABS recipient, pop
+☝️ Advice: There is a **cap at the sensor location** on the xD C50 transaxle.
+On a non-ABS recipient, pop
 the cap and fit the sensor into that location on the differential. This is the
 whole job, and it is far simpler than the case-splitting procedure that
 circulates in forum threads — that is only necessary if the driven gear is also
 absent, which on a C50 from a running car it will not be.
+
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-c50-speedometer-sensor-components.jpg" alt="Toyota factory C50 manual transaxle components diagram showing the speedometer sensor and the speedometer driven hole cover sub-assembly with their O-rings and specified torque" />
+  <figcaption>
+    Figure 3: C50 transaxle components showing the
+    <code>SPEEDOMETER SENSOR</code> and the alternative
+    <code>SPEEDOMETER DRIVEN HOLE COVER</code>. Toyota Yaris/Vitz XP90 workshop
+    manual, <code>17. C50 Manual Transaxle.pdf</code>, page MX–35.
+  </figcaption>
+</figure>
 
 | Item                        | Part number `[C]`                                |
 | :-------------------------- | :----------------------------------------------- |
@@ -960,19 +987,16 @@ is not a real conflict. 4.2 litres **is** 4.4 US quarts.
 
 ### Phase 4 — Joining Engine and Transaxle
 
-<div class="cols-2">
-  <figure>
-    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-03.png" alt="2ZR-FE flywheel and clutch on the bench" />
-    <figcaption>Figure 3</figcaption>
-  </figure>
-  <p>
-    (4.1) Fit the flywheel to the crankshaft.<br />
-    ☝️ The 2ZR-FE and 1NZ-FE flywheels are the same diameter, but the 2ZR-FE has
-    <strong>8 bolts where the 1NZ-FE has 6</strong>. <code>[C]</code><br />
-    ⚠️ Yaris and xD flywheel bolt patterns differ. A 2009 Corolla flywheel and
-    clutch is a known-working combination. <code>[C]</code>
-  </p>
-</div>
+<figure>
+<img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-03.png" alt="2ZR-FE flywheel and clutch on the bench" />
+<figcaption>Figure 4</figcaption>
+</figure>
+
+(4.1) Fit the flywheel to the crankshaft.
+
+☝️ The 2ZR-FE and 1NZ-FE flywheels are the same diameter, but the 2ZR-FE has 8 bolts where the 1NZ-FE has 6. `[C]`
+
+⚠️ Yaris and xD flywheel bolt patterns differ. A 2009 Corolla flywheel and clutch is a known-working combination. `[C]`
 
 Flywheel bolt torque: **49 N·m (36 ft·lbf) then +90°**, criss-cross pattern,
 torque-to-yield, one-time use. `[C]`
@@ -1036,7 +1060,7 @@ standard Yaris 0.8 kW unit. The connectors are identical. Both the 0.8 kW and
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-04.png" alt="NCP91 with front clip removed" />
   <figcaption>
-    Figure 4: Front clip removed and subframe partially lowered. Every source
+    Figure 5: Front clip removed and subframe partially lowered. Every source
     that has completed this conversion recommends this approach.
   </figcaption>
 </figure>
@@ -1140,20 +1164,31 @@ This phase converts the pedal box and brake hydraulics. It is the part of the
 conversion that the community record covers worst, and it contains two hard
 blockers that are easy to discover too late.
 
-<div class="cols-2">
-  <figure>
-    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-05.png" alt="Automatic one-piece pedal assembly beside the manual two-piece assembly" />
-    <figcaption>Figure 5</figcaption>
-  </figure>
-  <p>
-    ⚠️ <strong>The automatic pedal assembly is one piece with a single
-    connector. The manual assembly is two pieces</strong> — a separate clutch
-    pedal and brake pedal. They are not interchangeable as units.<br />
-    ☝️ Source the clutch pedal assembly from a <strong>manual Yaris, not the
-    xD</strong>. The Yaris pedal has no return spring; the xD pedal does.
-    <code>[C]</code>
-  </p>
-</div>
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-05.png" alt="Automatic one-piece pedal assembly beside the manual two-piece assembly" />
+  <figcaption>Figure 6</figcaption>
+</figure>
+
+⚠️ The automatic pedal assembly is one piece with a single
+connector. **The manual assembly is two pieces** — a separate clutch
+pedal and brake pedal. They are not interchangeable as units.
+
+☝️ Source the clutch pedal assembly from a <strong>manual Yaris, not the
+xD</strong> the xD unit does not mount properly.
+
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-clutch-pedal-components.jpg" alt="Toyota factory clutch pedal components diagram for the NCP91, showing the clutch pedal support sub-assembly, clutch start switch, pedal stopper bolt, clutch pedal spring, pedal sub-assembly, bushes, collar, cushion and pad, with specified torques" />
+  <figcaption>
+    Figure 7: Clutch pedal components, with torques. Note the
+    <code>CLUTCH PEDAL SPRING</code> — the Yaris pedal does have one. Toyota
+    Yaris/Vitz XP90 workshop manual, <code>16. Clutch.pdf</code>, page CL–2.
+  </figcaption>
+</figure>
+
+☝️ Advice: That diagram is the shopping list and the assembly order in one
+picture. Everything hanging off the **clutch pedal support sub-assembly** —
+switch, stopper bolt, spring, bushes, collar, cushion, pad — comes with a manual
+Yaris pedal box and does not exist on your automatic car.
 
 #### ⚠️ Blocker 1 — the firewall has no holes
 
@@ -1225,6 +1260,20 @@ and the drilling step.
 | Front disc brake bleeder plug                     |      8.3 |       85 | 73 in·lbf             |                                                                                                               | `[RM-Y]` |
 | Proportioning valve × bracket / bracket × body    | 5.4 / 19 | 55 / 194 | 48 in·lbf / 14 ft·lbf | Non-ABS cars                                                                                                  | `[RM-Y]` |
 
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-clutch-master-cylinder-components.jpg" alt="Toyota factory clutch master cylinder components diagram for the NCP91, showing the clutch master cylinder assembly, push rod clevis, reservoir tube and the tube to the flexible hose, with specified torques" />
+  <figcaption>
+    Figure 8: Clutch master cylinder components — the assembly, push rod
+    clevis, reservoir tube and hardline, with torques. Toyota Yaris/Vitz XP90
+    workshop manual, <code>16. Clutch.pdf</code>, page CL–8.
+  </figcaption>
+</figure>
+
+☝️ Advice: The **clutch reservoir tube** in that diagram is the line that makes a
+manual-specification brake master cylinder necessary — it is what connects to the
+bypass port on the manual reservoir. The hardline beside it is `31481-52110`, the
+discontinued part from ⑲.
+
 #### (6.5) Clutch hydraulic line and slave cylinder
 
 | Joint                                        | N·m |    kgf·cm | ft·lbf / in·lbf | Notes                                               | Source   |
@@ -1292,7 +1341,7 @@ bleed mode anywhere in the brake chapters. `[RM-Y]`
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-06.png" alt="Six mount pieces laid out — three brackets and three isolators" />
   <figcaption>
-    Figure 6: The mount set is six pieces, not three. Each mount position is a
+    Figure 9: The mount set is six pieces, not three. Each mount position is a
     bracket on the engine or transaxle plus an isolator on the body or subframe.
   </figcaption>
 </figure>
@@ -1394,6 +1443,14 @@ own hardware, untouched.
 unbolting and rebolting them to get the axles in and out. No hub pressing, no
 machine shop, no wheel fitment change.
 
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-front-drive-shaft-components.jpg" alt="Toyota factory front drive shaft components diagram for the NCP91, showing the complete drive shaft assembly with inboard and outboard joints, boots, clamps and the staked front axle hub nut, with specified torques" />
+  <figcaption>
+    Figure 10: Front drive shaft components, with torques. Toyota Yaris/Vitz
+    XP90 workshop manual, <code>18. Drive Shaft.pdf</code>, page DS–1.
+  </figcaption>
+</figure>
+
 ##### The axle is used as a complete assembly — nothing is taken apart
 
 ⚠️ Attention: To be unambiguous about this, because the community record is not:
@@ -1480,60 +1537,109 @@ up. `[C]`
 
 ##### Which radiator to use
 
+☝️ Advice: **Retain the Yaris radiator, fans and fan shroud.** They are adequate,
+including for track use, and this is what every documented NCP91 build has done
+`[C]`. The Corolla, xD and Yaris are reported to use the same size radiator,
+differing only in hose routing and fans `[C]`.
+
+Two consequences follow, both minor:
+
+- ⚠️ **The xD filler neck must be mounted to it.** On the Yaris the filler neck
+  sits on the throttle body; the 2ZR-FE has no such provision, so the xD neck
+  goes on the radiator instead. This is a **thread-cutting job, not a push fit
+  and not fabrication** — see below.
+- ⚠️ **The automatic's transmission oil cooler is left in place, unused.** Cap its
+  two fittings and leave it — see below.
+
+☝️ Advice: **The fans matter more than the core.** With the Yaris fans retained,
+**no fan rewiring is required at all** `[C]`. That is the single largest
+simplification in this phase, and it is worth more than any marginal gain from
+changing radiators.
+
+##### Mounting the coolant filler neck
+
+To be unambiguous about what "tapping" means here: there are two existing
+unthreaded holes in roughly the right position, and you **cut `M6 × 1.00` threads
+into them with a hand tap**, then bolt the filler neck on with 10 mm-head bolts
+`[C]`. It is a hand-tool operation of a few minutes per hole.
+
+| It is | It is not |
+| :--- | :--- |
+| Cutting threads into two existing holes with an **`M6 × 1.00` tap** | ⚠️ A push fit — nothing here is tapped *into place* with a mallet |
+| Bolting the neck on with two **10 mm-head bolts** | ⚠️ Custom fabrication — no welding, no brackets to make, no material to cut |
+| Reversible — the holes were unused before | ⚠️ Structural — the neck carries a hose, not load |
+
+☝️ Advice: Work with the radiator and shroud **out of the car** so the swarf falls
+clear, and clean the cut threads before assembly. Cutting chips into a cooling
+system is a self-inflicted wound.
+
+⚠️ Attention: **Sources disagree on which part gets tapped.** One builder
+describes the **fan shroud** as having threaded bosses for the xD filler neck, and
+another says plainly that he "tapped the radiator `M6 × 1.00`, secured with 10 mm
+bolts" `[C]`. That is a difference of a few centimetres and it matters when you
+have the tap in your hand. **Offer the filler neck up to your own assembly first
+and mark from the part**, rather than assuming either account describes what is in
+front of you.
+
+##### The automatic radiator's built-in oil cooler
+
+On the **automatic** NCP91 the transmission fluid cooler is built into the
+radiator assembly. The factory manual makes this explicit by printing two
+different radiator component diagrams:
+
+<div class="cols-2">
+  <figure>
+    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-radiator-components-automatic.jpg" alt="Toyota factory radiator components diagram for the automatic transaxle NCP91, listing an oil cooler inlet hose and oil cooler outlet hose alongside the radiator assembly, fan shroud and drain cock" />
+    <figcaption>
+      Figure 11: Radiator, <strong>for Automatic Transaxle</strong> — note the
+      <code>OIL COOLER INLET HOSE</code> and <code>OIL COOLER OUTLET HOSE</code>.
+      <code>10. Cooling.pdf</code>, page CO–28.
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-radiator-components-manual.jpg" alt="Toyota factory radiator components diagram for the manual transaxle NCP91, listing only the radiator assembly, fan shroud, radiator hose number 2, drain cock and reserve tank hose grommet, with no oil cooler" />
+    <figcaption>
+      Figure 12: Radiator, <strong>for Manual Transaxle</strong> — the same
+      assembly with <strong>no oil cooler at all</strong>.
+      <code>10. Cooling.pdf</code>, page CO–29.
+    </figcaption>
+  </figure>
+</div>
+
+The capacities corroborate it: **4.8 ℓ on the manual against 4.7 ℓ on the
+automatic** `[RM-Y]`. The automatic holds *less* coolant because the cooler
+occupies volume.
+
+☝️ Advice: **Keep the difference in proportion.** It is 100 ml, roughly two per
+cent of system volume, and the *core* — where heat is actually rejected to air —
+is the same size either way. Once the automatic is gone the cooler simply sits
+there doing nothing. Cap the two fittings and move on; it is not a reason to
+change radiators.
+
 <details>
-  <summary>☝️ Advice: Use the donor xD's radiator</summary>
+  <summary>☝️ Advice — the alternative: fitting the donor xD radiator</summary>
 
-Donor xD radiator was free with the car, and every other
-cooling part in this phase is designed around it.
+The donor's own radiator is a reasonable option with two genuine advantages: the
+**filler neck bolts to its own boss**, so no tapping is needed, and a manual xD
+radiator has **no oil cooler** to cap. The plumbing listed below is the xD/ist
+parts, and the builder they were catalogued from paired them with an **ist/Scion
+xD radiator** `[C]`, so the hoses are native to it.
 
-The reasoning, in order of weight:
+It is not the primary recommendation here because two things are unverified and
+one is a real risk:
 
-- **The plumbing is native to it.** The filler neck, hoses and clamps listed
-  below are the xD/ist parts, and the builder they were catalogued from paired
-  them with an **ist/Scion xD radiator** `[C]`. Fitting the xD radiator means the
-  filler neck bolts to its own boss and the hoses reach without adaptation.
-- **It has no transmission oil cooler.** The **automatic** NCP91's radiator has an
-  automatic transaxle fluid cooler built into the assembly — the factory manual
-  prints two different radiator component diagrams, and the _"for Automatic
-  Transaxle"_ one lists an **oil cooler inlet hose** and **oil cooler outlet
-  hose** where the _"for Manual Transaxle"_ one lists neither `[RM-Y]`. The
-  capacities corroborate it: **4.8 ℓ on the manual against 4.7 ℓ on the
-  automatic** `[RM-Y]` — the automatic holds _less_ coolant because the cooler
-  occupies volume. After this conversion that cooler does nothing but occupy
-  space and present two fittings to cap.
-- **It is the correct size.** The Corolla, xD and Yaris are reported to use the
-  same size radiator, differing only in hose routing and fans `[C]`.
+- ⚠️ **Mounting into an NCP91 is undocumented.** No source consulted fits an xD
+  radiator to this chassis — the builder who used one was working on a
+  third-generation Yaris. Trial-fit to the radiator support before committing and
+  check the lower cushions and upper bracket. Support fasteners are **7.5 N·m
+  (76 kgf·cm, 66 in·lbf)** and **5.5 N·m (56 kgf·cm, 49 in·lbf)** `[RM-Y]`.
+- ⚠️ **The fan shroud may follow it**, and with it the fan wiring. If the Yaris
+  shroud and fans will not mount to the xD core, you inherit a fan-control wiring
+  problem that retaining the Yaris radiator avoids entirely.
 
-</details>
-
-⚠️ Attention: **Retain the Yaris fans and fan shroud if they will mount to the xD
-core.** This is the one thing worth protecting: with the Yaris fans in place **no
-fan rewiring is required at all** `[C]`. Taking the xD fan assembly instead
-introduces a fan-control wiring question that the Yaris fans simply do not have.
-
-⚠️ Attention: **Mounting is the item to verify.** No source consulted documents
-fitting an xD radiator into an **NCP91** specifically — the builder who used one
-was working on a third-generation Yaris. Trial-fit it to the radiator support
-before committing, and check the lower cushions and upper support bracket line up.
-Radiator support fasteners are **7.5 N·m (76 kgf·cm, 66 in·lbf)** and **5.5 N·m
-(56 kgf·cm, 49 in·lbf)** `[RM-Y]`.
-
-<details>
-  <summary>☝️ Advice — fallback: retaining the Yaris radiator</summary>
-
-Every documented NCP91 build retained the Yaris radiator, so this is the
-better-trodden route even though it is more work. Two consequences:
-
-- ⚠️ The xD filler neck must be added to it. The Yaris fan shroud has two
-  existing holes in roughly the right place, but they must be **tapped M6 × 1.00**
-  and secured with 10 mm bolts `[C]`.
-- On an automatic donor car the ATF cooler remains in the assembly, unused. Cap
-  its two fittings and leave it; it does no harm beyond the volume it occupies.
-
-A radiator from a **third manual Yaris** was previously suggested here as a way
-to avoid the ATF cooler. It is not worth the trip: it still needs the filler neck
-tapped on, it requires sourcing yet another car, and the donor xD radiator solves
-the same problem for free.
+☝️ If you go this route, **keep the Yaris fans and shroud** if they will mount.
+Trading two tapped holes for an unverified mount and possible fan rewiring is a
+poor exchange, which is why this is the alternative rather than the default.
 
 </details>
 
@@ -1661,16 +1767,15 @@ Retain and reconnect all engine ground straps.
 
 ### Phase 9 — Immobilizer
 
-This is the phase with the worst reputation in the community record, and most of
-that reputation is misplaced — on a US-market donor it comes down to isolating
-three wires. Read it in full **before connecting the battery.**
+On the US-market donor it comes down to isolating
+three wires. **Read it in full before connecting the battery.**
 
 <details open>
   <summary>⚠️⚠️⚠️ Advice — Read before connecting the battery ⚠️⚠️⚠️</summary>
 
 The factory manual states, of the ECU–ECM communication ID:
 
-> Do not turn the ignition switch from ON to OFF **20 times or more** before
+> Do not turn the ignition switch key from ON to OFF **20 times or more** before
 > setting the ECU–ECM communication ID. If this operation is likely to be
 > performed 20 times or more, **disconnect the negative battery terminal cable**
 > in order to avoid engine start disablement. Failure to do so will result in the
@@ -1681,7 +1786,7 @@ The factory manual states, of the ECU–ECM communication ID:
 non-immobilizer ECM cannot hold the handshake at all, so the Yaris transponder key
 ECU sees an unanswered request on every ignition cycle and never reaches a
 satisfied state. The counter above is therefore running the whole time the car is
-sitting on stands with the new engine in it — and every accessory-position turn
+sitting on stands with the new engine in it, and every accessory-position turn
 of the key while you chase a wiring fault spends one of the twenty.
 
 ⚠️ **Keep the negative terminal disconnected until the isolation in (9.3) is
@@ -1694,18 +1799,17 @@ transponder key ECU has to be replaced — there is no reset.
 start the car before you are completely locked out." The mechanism is real and
 the consequence is real, but three details are wrong or missing. The factory
 figure is **20**, not 10. The counter runs on **ignition ON-to-OFF cycles, not
-start attempts** — so it is spent faster than the folklore suggests, because
+engine start attempts** so it is spent faster than the folklore suggests, because
 turning the key to test a circuit counts. And the factory supplies a
-mitigation, **disconnecting the negative terminal**, that the community record
-never mentions. That last point turns an unrecoverable mistake into a routine
-precaution.
+mitigation, **disconnecting the negative terminal**. That last point turns
+an unrecoverable mistake into a routine precaution.
 
 #### (9.1) Does this phase apply to you?
 
 This document assumes a **US-market xD donor**, which has no immobilizer of its
 own. The recipient Yaris does have one, so the work here is entirely on the
-Yaris side: the car's own transponder key ECU has to stop expecting a
-conversation that the incoming ECM cannot hold.
+Yaris side: the car's own key transponder ECU has to stop expecting a
+conversation that the incoming Scion xD ECM cannot hold.
 
 | Donor                                | Immobilizer fitted? | Consequence                                                            |
 | :----------------------------------- | :------------------ | :--------------------------------------------------------------------- |
@@ -1747,6 +1851,21 @@ The key carries two codes — the key code, or immobilizer code, and the wireles
 recognition code. The transponder key ECU reads the key and passes key data to
 the ECM. Without matching data the ECM will not allow the engine to run. `[RM-Y]`
 
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-system-diagram.jpg" alt="Toyota factory system diagram of the NCP91 engine immobiliser, showing the transponder chip in the key, the coil and transponder key amplifier, the transponder key ECU assembly, and its bidirectional link to the ECM which drives the injectors" />
+  <figcaption>
+    Figure 13: Engine immobiliser system diagram. Toyota Yaris/Vitz XP90 workshop
+    manual, <code>31. Engine Immobilizer.pdf</code>, page EI–6.
+  </figcaption>
+</figure>
+
+☝️ Advice: Two things in that diagram are worth reading carefully. The arrows
+between the **transponder key ECU assembly** and the **ECM** run **both ways** —
+this is a conversation, not a one-way permission signal, which is why a
+non-immobilizer ECM cannot simply ignore it. And the ECM's outputs go to the
+**injectors**: the immobiliser's enforcement point is fuel delivery. A car
+immobilised this way cranks normally and does not fire.
+
 ⚠️ **Correction to the community record.** The most-repeated technical claim about
 this system is that `SIL` — the ISO-9141 K-line at DLC3 pin 7 — carries the
 immobilizer conversation, and that the fix is to disconnect "the brown K-line at
@@ -1779,23 +1898,164 @@ The failure mode to avoid: a **non-immobilizer ECM begins behaving as though
 immobilizer-enabled** when the chassis transponder key ECU is still present and
 connected. `[C]`
 
-The published remedy is to **disconnect the communication link at the transponder
-key ECU** — the `IMI`/`IMO` pair described above. The same key works, the antenna
-coil can stay around the ignition tumbler, and the transponder key ECU itself can
-remain in the car. `[C]`
+The remedy in principle is to **break the communication link between the
+transponder key ECU and the ECM**, so the Yaris stops expecting a handshake the
+incoming ECM cannot hold. The same key still works, the antenna coil stays around
+the ignition tumbler, and the transponder key ECU itself stays in the car. `[C]`
 
-⚠️ Attention: This is not symmetrical. Installing an immobilizer-equipped ECM into
-a non-immobilizer car does **not** remove the immobilizer function. `[C]`
+<details>
+  <summary>☠️ Warning — read this before starting: what is verified and what is not</summary>
+
+The **connectors, pin numbers and test values** below are from the Toyota
+workshop manual and are reliable `[RM-Y]`. **Whether breaking this link alone is
+sufficient to run a non-immobilizer ECM is not confirmed by any source available
+to this document.**
+
+That specific question is the part the community has deliberately withheld — see
+the note at the end of this section. Several builders state that disconnecting
+the transponder key ECU's communication is what they did, and one describes it as
+pulling "the immobilizer pins from the connector that goes into the ECU" `[C]`,
+but none publishes a pin-by-pin sequence or confirms it is the whole answer.
+
+Treat what follows as **the correct place and the correct terminals, with an
+unverified outcome.** Do not begin until you have read the ignition-cycle
+warning at the head of this phase — you have a limited budget of attempts.
+
+</details>
+
+##### The three wires
+
+The link is three wires between the transponder key ECU connector `D23` and the
+ECM connector `A21`. Only the first two carry the conversation; the third is its
+ground reference.
+
+| Transponder key ECU `D23` | ECM `A21`      | Signal | Direction | Intact reading |
+| :------------------------ | :------------- | :----- | :-------- | :------------- |
+| **`D23-13` `EFIO`**       | `A21-11` `IMI` | Data   | ECU → ECM | **Below 1 Ω**  |
+| **`D23-12` `EFII`**       | `A21-10` `IMO` | Data   | ECM → ECU | **Below 1 Ω**  |
+| `D23-11` `EGND`           | `A21-9` `EOM`  | Ground | —         | Below 1 Ω      |
+
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-b2799-wiring-diagram.jpg" alt="Toyota factory wiring diagram for DTC B2799, showing the three wires between ECM connector A21 terminals IMI 11, IMO 10 and EOM 9, and transponder key ECU connector D23 terminals EFIO 13, EFII 12 and EGND 11" />
+  <figcaption>
+    Figure 14: The `B2799` wiring diagram — the entire link between the ECM and
+    the transponder key ECU is these three wires. Toyota Yaris/Vitz XP90
+    workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–42.
+  </figcaption>
+</figure>
+
+⚠️ Attention: **The pin names differ at each end of the same wire.** At the ECM
+they are `IMI` and `IMO`; at the transponder key ECU they are `EFIO` and `EFII`.
+Community write-ups usually quote the ECM names, which is why the terminals seem
+to be missing when you are looking at the under-dash connector.
+
+##### Locating the connector
+
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-parts-location.jpg" alt="Toyota factory parts location diagram for the NCP91 hatchback engine immobiliser, showing the ECM and engine room relay block in the engine bay, and the transponder key ECU assembly, transponder key amplifier, security indicator light, main body ECU and DLC3 in the cabin" />
+  <figcaption>
+    Figure 15: Engine immobiliser parts location, hatchback. Toyota Yaris/Vitz
+    XP90 workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–3.
+  </figcaption>
+</figure>
+
+The factory Parts Location diagram above places every component involved `[RM-Y]`:
+
+| Component                        | Where                                                      |
+| :------------------------------- | :--------------------------------------------------------- |
+| **Transponder key ECU assembly** | **On the steering column**, under the column covers        |
+| Transponder key amplifier        | At the ignition lock cylinder — the coil around the tumbler |
+| Security indicator light         | Top of the instrument panel, driver's side                 |
+| Main body ECU (instrument panel J/B) | Lower driver's-side dash                               |
+| `DLC3`                           | Lower driver's-side dash, below the main body ECU          |
+| ECM                              | Engine bay, passenger side of the bulkhead                 |
+
+So reaching `D23` means dropping the **steering column covers**, not the kick
+panel. This also explains the community's low-tech workaround of taping a key's
+transponder chip "permanently behind the column covers" `[C]` — that is the part
+of the car they were working in.
+
+☝️ Advice: Identify the connector positively before pulling anything. `D23` is a
+**16-pin** connector, and the manual's own test confirms it: with the connector
+unplugged and the key out, `D23-1` reads **11 to 14 V** to body ground, and
+`D23-2` goes from **0 V to 11–14 V** when a key is inserted `[RM-Y]`. Those two
+readings identify the right connector without guesswork.
+
+<figure>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-d23-connector-front-view.jpg" alt="Toyota factory front-view terminal diagrams of transponder key ECU connector D23 and ECM connector A21, with EGND, EFII and EFIO labelled on adjacent terminals 11, 12 and 13 of the D23 bottom row, alongside the standard resistance table" />
+  <figcaption>
+    Figure 16: `D23` and `A21` connector front views with `EGND`, `EFII` and
+    `EFIO` called out, plus the standard resistance table. Toyota Yaris/Vitz
+    XP90 workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–43.
+  </figcaption>
+</figure>
+
+☝️ Advice: **The three terminals are adjacent.** On the `D23` front view the
+bottom row runs 6 through 16, and `EGND` (11), `EFII` (12) and `EFIO` (13) sit
+side by side in the middle of it. Counting along that row from a known end is the
+quickest way to find them, and it means the two terminals you are depinning are
+neighbours — with the ground you are leaving alone immediately to their left.
+
+⚠️ Attention: **Note the terminal-numbering layout.** The top row is not a simple
+1-to-5 sequence across the connector: it reads `1 2 3` at the left and `4 5` at
+the right, with a gap between. Count from the front view in Figure 16 rather than
+assuming a regular grid.
+
+##### Procedure
+
+⚠️ Attention: **Do not unplug `D23` entirely.** That connector also carries `+B`
+(D23-1), `IG` (D23-2), `KSW` (D23-3), `CODE` (D23-15) and the ECU's own grounds.
+Pulling all of it removes the transponder key ECU from the car rather than
+isolating one link, and takes the security indicator and key-detection circuits
+with it.
+
+1. **Disconnect the negative battery terminal** and leave it off for the whole
+   job. See the ignition-cycle warning at the head of this phase.
+2. Gain access to `D23` under the driver's-side dash and confirm its identity
+   using the two voltage checks above, then disconnect the battery again.
+3. **Depin `D23-13` (`EFIO`) and `D23-12` (`EFII`)** from the connector body.
+   Use the pin-release procedure in [Phase 8, step (8.4)](#phase-8) — pop the
+   lock tab out about 1 mm, insert a fine pick in the release hole, then pull and
+   wiggle the terminal free. Insulate both terminals and dress them back into the
+   loom; do not cut them.
+4. ☝️ **Leave `D23-11` (`EGND`) connected.** It is a ground reference, not a
+   signalling line, and nothing is gained by removing it.
+5. **Verify the break.** With `D23` and `A21` both disconnected, measure between
+   `D23-13` and `A21-11`, and between `D23-12` and `A21-10`. Both should now read
+   **open circuit**, where the manual's intact specification is below 1 Ω
+   `[RM-Y]`.
+6. **Verify the terminals are not shorted to ground.** The manual specifies
+   `D23-13` (`EFIO`) or `A21-11` (`IMI`) to body ground at **10 kΩ or higher**,
+   and the same for `D23-12` (`EFII`) or `A21-10` (`IMO`) `[RM-Y]`. Confirm both
+   after insulating the depinned terminals — this catches an insulation sleeve
+   that has slipped or a terminal touching the column structure.
+7. Reconnect `D23` and `A21`, then reconnect the battery.
+
+☝️ Advice: **Depinning rather than cutting is deliberate.** It is fully
+reversible, it leaves the loom intact if you later fit an immobilizer-capable
+ECM, and it avoids a splice in a circuit whose whole purpose is to carry a
+low-current data signal.
+
+##### What to expect afterwards
+
+⚠️ Attention: This is not symmetrical. Installing an immobilizer-equipped ECM
+into a non-immobilizer car does **not** remove the immobilizer function. `[C]`
 
 ☝️ Advice: Expect the **red security indicator on the dash to keep flashing.**
 That is cosmetic. The factory explanation is that when the immobilizer is
 operating normally and the key is removed, the security indicator blinks
 continuously — the indicator is doing exactly what it is designed to do. `[RM-Y]`
 
+⚠️ Attention: If the engine still will not run, read [(9.4) Diagnosis](#phase-9)
+before changing anything else. `B2799` is the expected code, and the manual's
+triage order is to clear any transponder key ECU codes first.
+
 ⚠️ Attention: The community has a working method for running a non-immobilizer
 ECM against a live transponder key ECU, and has **deliberately chosen not to
 publish it**, on the stated grounds that it presents a security problem. That
-decision is respected here. Contact the builders directly if you need it.
+decision is respected here. If the above does not get you running, contact the
+builders directly rather than experimenting — the ignition-cycle budget is
+finite and exhausting it means replacing the transponder key ECU.
 
 #### (9.4) Diagnosis
 
@@ -1813,15 +2073,34 @@ That third condition is this conversion's signature failure.
 no transponder key ECU codes are present. If any are, resolve those first.
 `[RM-Y]`
 
-| Code    | Detection item                         |
-| :------ | :------------------------------------- |
-| `B2784` | Antenna coil open or short             |
-| `B2793` | Transponder chip malfunction           |
-| `B2794` | Unmatched encryption code              |
-| `B2795` | Unmatched key code                     |
-| `B2796` | No communication in immobilizer system |
-| `B2798` | Communication malfunction No. 2        |
-| `B2799` | Engine immobilizer system              |
+⚠️ Attention: **Only `B2799` is expected from this conversion.** Every other code
+in the immobiliser chapter is a fault on the **key side** of the system — the key,
+its transponder chip, the antenna coil or the amplifier — and none is caused by
+swapping an engine or by the isolation in (9.3). If one appears it is a genuine
+pre-existing fault in the recipient car, not a consequence of your work.
+
+| Code        | Detection item                         | Side     | Expected here?                                                      |
+| :---------- | :------------------------------------- | :------- | :------------------------------------------------------------------ |
+| **`B2799`** | **Engine immobiliser system**          | **ECM**  | ☝️ **Yes — the signature code of this swap.** Trouble areas: wire harness, ECM |
+| `B2784`     | Antenna coil open or short             | Key side | No — antenna coil fault                                             |
+| `B2793`     | Transponder chip malfunction           | Key side | No — faulty key                                                     |
+| `B2794`     | Unmatched encryption code              | Key side | No — key with an incomplete key code                                |
+| `B2795`     | Unmatched key code                     | Key side | No — unregistered key                                               |
+| `B2796`     | No communication in immobiliser system | Key side | No — key has no chip, or key-to-ECU communication failed            |
+| `B2797`     | Communication malfunction No. 1        | Key side | No — key or wire harness                                            |
+| `B2798`     | Communication malfunction No. 2        | Key side | No — same cause as `B2796`                                          |
+
+☝️ Advice: **`B2796` and `B2798` matter because their names sound like the problem
+you have and are not.** The manual defines both as being output *"when a key that
+does not have a transponder chip is inserted into the ignition key cylinder or if
+communication between the key and transponder key ECU is not possible"* `[RM-Y]`
+— that is the **coil-to-key** conversation, not the ECU-to-ECM one. Isolating
+`EFIO` and `EFII` in (9.3) does not touch it and will not set these codes.
+
+⚠️ Attention: This is why the manual's triage order is what it is. **Clear any
+key-side code first.** A bad key or a failing coil produces symptoms that look
+like an immobiliser lockout while having nothing to do with the ECM, and chasing
+`B2799` underneath one of those wastes the ignition-cycle budget.
 
 Diagnostic check: with `D23` and `A21` disconnected, measure resistance across
 the three pairs in (9.2). Each should read **below 1 Ω**. `[RM-Y]`
@@ -1868,10 +2147,6 @@ in (5.6) were its inputs.
 
 The target state is no stored codes and all readiness monitors set. This is also
 the emissions requirement in most jurisdictions.
-
-⚠️ Attention: One builder deliberately did not connect the second oxygen sensor
-and runs rich as a result. This will not pass an inspection and is noted only so
-that it is not mistaken for an acceptable shortcut. `[C]`
 
 ☝️ Advice: If pursuing California BAR certification, the referee process
 reportedly requires photographs of the catalytic converters in position, the
@@ -1986,7 +2261,7 @@ indicative only. Prices move; this is `[C]` and dated.
 | Section                         |        Cost | Notes                                |
 | :------------------------------ | ----------: | :----------------------------------- |
 | Engine, transaxle, ECM, harness |      $1,288 | One salvage purchase, complete       |
-| Intake and exhaust              |        $944 | Includes a $780 CARB-legal converter |
+| Intake and exhaust              |        $944 | ☝️ Includes a $780 CARB-legal converter — **drops to about $164 if you reuse the donor's**, which is the default outside CARB states |
 | Fuel, electrical, starting      |        $359 |                                      |
 | Cooling                         |        $124 |                                      |
 | Driveline                       |         $79 |                                      |

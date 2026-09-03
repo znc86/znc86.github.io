@@ -69,6 +69,30 @@ Source markers are displayed for every specification.
 
 </details>
 
+### Summary of the Conversion
+
+**Why.** The NCP91's `1NZ-FE` produces **106 hp / 103lb·ft** at
+the crank. The `2ZR-FE` produces **136 hp / 129 lb·ft** — roughly a
+**28% power and 25% torque** increase `[C]`. It arrives
+with a broader torque curve from Dual VVT-i, and it does so at **no weight
+penalty**.
+
+The work divides into six stages.
+
+- **Source the parts.**
+- **Harvest the donor.** Strip the xD down to the parts this conversion needs
+- **Strip the recipient.**
+- **Prepare the donor parts.**
+- **Install into the Yaris.** Fit the powertrain on the xD mounts, then the
+  axles, exhaust, shift cables, cooling plumbing, fuel line and harness. Four
+  wiring pins deviate; everything else is a plug-in match.
+- **Commission it.** Fill and bleed the fluids, prime the oil system before the
+  first crank, start, check for leaks.
+
+☝️ Advice: The order above is deliberate and worth preserving. **The donor is
+stripped and the complete powertrain assembled before the Yaris comes off the
+road**, so the car stays driveable through the longest part of the job.
+
 ---
 
 <a id="contents"></a>
@@ -132,7 +156,7 @@ the US from the 2009 model year.
 | Platform          | Shared with the 2nd-generation Toyota ist (`NCP110` / `NCP115` / `ZSP110`) |
 
 <details>
-  <summary>⚠️ Warning — `AZE151` is a different car, and it is an easy mistake</summary>
+  <summary>⚠️ Attention — `AZE151` is a different car, and it is an easy mistake</summary>
 
 A code that circulates in this context is **`AZE151L`**, sometimes with suffixes
 like `-FHMNKA`, listed against build periods 03.2007–03.2010 and 03.2010–12.2015.
@@ -565,22 +589,22 @@ people needlessly. Specification is **25 kPa (3.7 psi) minimum at idle** and
 The donor supplies the transaxle and both CV axles, and **they stay together as a
 set.** There is no decision to make here, only a constraint to respect.
 
-| Component                        | Source                                                   |
-| :------------------------------- | :------------------------------------------------------- |
-| Transaxle                        | **xD `C50`** 5-speed manual, from the donor              |
-| CV axles                         | **xD shafts, both sides** — from the same donor          |
-| Knuckles, hubs, bearings, brakes | **Yaris, unchanged** — 4×100                             |
+| Component                        | Source                                          |
+| :------------------------------- | :---------------------------------------------- |
+| Transaxle                        | **xD `C50`** 5-speed manual, from the donor     |
+| CV axles                         | **xD shafts, both sides** — from the same donor |
+| Knuckles, hubs, bearings, brakes | **Yaris, unchanged** — 4×100                    |
 
-⚠️ Warning: **The axles must come from the donor along with the transaxle.** The
+⚠️ Attention: **The axles must come from the donor along with the transaxle.** The
 xD differential has **20-tooth, 20/40 DP** side gears in a 28 mm output bore; the
 Yaris uses **23-tooth, 24/48 DP** in 27 mm. A Yaris axle will not engage an xD
 differential, and the ring gears are not interchangeable either. Take both axles
 when you take the transaxle. `[C]`
 
-☝️ Advice: **Nothing outboard of the axle changes.** The xD CV shaft's *outer* end
-matches the Yaris hub — one builder states it plainly: *"the xD transmission does
+☝️ Advice: **Nothing outboard of the axle changes.** The xD CV shaft's _outer_ end
+matches the Yaris hub — one builder states it plainly: _"the xD transmission does
 require you to use xD CV shafts (bigger outputs on the trans) but the hub side is
-the same as the Yaris."* `[C]` So the knuckles, hubs, bearings, brakes and the
+the same as the Yaris."_ `[C]` So the knuckles, hubs, bearings, brakes and the
 4×100 bolt pattern all stay exactly as they are. See
 [Phase 7, step (7.3)](#phase-7) for the installation.
 
@@ -647,7 +671,8 @@ consumable or condition-dependent; **Dispose** items are not needed.
 | Intake airbox, tube, MAF               | Keep                                 |
 | Alternator                             | Keep                                 |
 | A/C compressor and hoses               | Keep                                 |
-| Coolant filler neck and radiator hoses | Keep                                 |
+| Coolant filler neck and radiator hoses | **Keep**                             |
+| **Radiator assembly**                  | **Keep** — see (8.1)                 |
 | **Fuse box**                           | **Keep** — source of `CA2` terminals |
 
 ⚠️ Advice: **Do not scrap the donor shell before the exhaust midpipe is
@@ -693,9 +718,7 @@ transaxle, and will prevent reassembly if overlooked.
 
 ☝️ Advice: This document assumes the donor transaxle is used **as received**. It
 is not opened, and no internal work is described. On a high-mileage donor a full
-rebuild is worth considering, but that is a separate job with its own tooling
-requirements — a shop press, bearing pullers and a torque wrench reading to
-0.3 N·m — and it is out of scope here.
+rebuild is worth considering and it is out of scope here.
 
 <figure>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" alt="C50 transaxle on the bench, ready to mate to the engine" />
@@ -728,7 +751,7 @@ them lightly.
 ☝️ Advice: The fasteners that join the transaxle to the engine, and the clutch
 that goes between them, are covered in Phase 4.
 
-#### (2.4) Shift linkage bushings — worth doing now, not later
+#### (2.4) Shift cables — replace them now, not later
 
 ☝️ Advice: The shifter and both cables are out of the car at this point, and the
 transaxle is on the bench. This is by far the cheapest moment to address shift
@@ -740,36 +763,34 @@ cable ends** and the **shift lever retainer** the cables clip into, not the
 transaxle internals. Both wear into an oval and the play they introduce shows up
 at the knob multiplied by the lever ratio.
 
-⚠️ Attention: **Toyota does not sell these bushings separately.** They are
-supplied only as part of larger assemblies, which is the single most useful thing
-to know before shopping:
+☝️ Advice: **Fit new OEM cables if the used ones feel loose.** A firm, accurate
+shifter on this chassis comes almost entirely from fresh factory parts — the
+linkage is cable-operated, and there is no rod-and-bushing arrangement to
+stiffen. Toyota does not sell the worn sockets separately; they are supplied only
+as part of the cable assembly, which is why replacement is the repair.
 
-| Wear item                          | How Toyota supplies it                                                                                      |
-| :--------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| Cable end sockets, both ends       | Inside the **transmission control cable assembly** — manual Yaris/Vios 2006–2016 is **`33820-52440`** `[C]` |
-| Shift lever retainer and its pivot | Inside the **floor shift lever assembly**, which the factory manual treats as a single serviceable unit     |
+⚠️ Attention: **The cables must be the Scion xD parts, not the Yaris ones.** The
+xD mounts sit the transaxle roughly two inches further forward, and a builder who
+stretched Yaris cables to reach tore the mounting studs out of the body,
+requiring two holes to be welded up `[C]`. This is the same constraint stated in
+[Phase 7, step (7.5)](#phase-7).
 
-⚠️ Warning: **Be careful what you buy.** Several parts sold under searches for
-"Yaris shifter bushing" belong to the **automatic** transmission — `33560-52220`,
-which appears prominently, is the **shift lock control unit**, an automatic-only
-component with a solenoid and a brake interlock. It has nothing to do with a
-manual linkage. Confirm any part is listed for a **manual** transmission before
-ordering.
+| Part                                                    | Part number             | Notes                                                                                                              |
+| :------------------------------------------------------ | :---------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **Cable assy, transmission control** — xD, `C50` manual | **`33820-52550`** `[C]` | 2008–2014 Scion xD, catalogued against the **`C50` / MTM** application                                             |
+| _For contrast — do not order_ — xD automatic            | `33820-52580`           | The automatic floor-shift cable. Roughly half the price of the manual part, which is how the wrong one gets bought |
 
-☝️ Advice on polyurethane and solid replacements: press-in polymer bushing kits
-that replace the worn cable-end sockets do exist, and generic sets are listed as
-fitting Yaris / Matrix / xA / xB / xD. **I could not confirm from any
-authoritative source that these fit the Yaris or xD C50 manual linkage
-specifically** — most listings that name the Yaris are automatic-cable kits, and
-the C5x family shares enough part numbers to make cross-family listings
-plausible-looking but unreliable. Treat these as `[C]` at best: measure the
-socket and the pin before buying, and expect to verify fitment yourself.
+⚠️ Attention: **Verify this against your donor's VIN before ordering.** The
+manual cable carries an MSRP of roughly $600 against about $280 for the
+automatic, so it is an expensive mistake, and at least one catalogue lists both
+numbers without a clear transmission qualifier. Two independent listings give
+`33820-52550` as the `C50` manual part; a third is ambiguous. `[C]`
 
-☝️ Advice: The honest recommendation, given the above, is **new OEM cables and a
-new lever assembly if the used ones feel loose**, and to regard poly bushings as
-an experiment rather than a known solution. A firm, accurate shifter on this
-chassis comes mostly from fresh factory parts — the linkage is cable-operated and
-there is no rod-and-bushing arrangement to stiffen.
+☝️ Advice: The factory manual describes the linkage as **two** cables — it names a
+**control shift cable** and a **control select cable** separately throughout the
+removal and installation procedure `[RM-Y]`. The catalogue offers one assembly
+part number. Confirm with the seller whether `33820-52550` supplies both cables
+or only one before ordering, because the procedure requires both.
 
 | Joint                                | N·m | kgf·cm | ft·lbf / in·lbf | Notes                            | Source   |
 | :----------------------------------- | --: | -----: | :-------------- | :------------------------------- | :------- |
@@ -781,7 +802,12 @@ there is no rod-and-bushing arrangement to stiffen.
 | Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        | 4 bolts                          | `[RM-Y]` |
 | Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |                                  | `[RM-Y]` |
 
+<a id="sec-2-5"></a>
+
 #### (2.5) Speedometer sensor — required on non-ABS cars
+
+↩ Referenced from [(8.4) speed signal options](#ref1) and
+[(10.1) speedometer](#ref2).
 
 ⚠️ Attention: The factory manual branches this on **ABS, not on chassis**. A car
 **without** ABS receives a bolt-on `SPEEDOMETER SENSOR`; a car **with** ABS
@@ -1044,12 +1070,6 @@ straightforward one, and it is also what lets the axles come out cleanly. Use SS
 `09670-00010` to realign it on reinstallation, and see the crossmember torques in
 (5.5). `[C]`
 
-☝️ Advice: The alternative some builders attempt — pulling the powertrain out
-through the top with the front clip intact — is what produces the cracked
-windshields and pinched CV boots reported in the community record. The engine and
-transaxle come out **forward**, and the front of the car has to be open for that
-to work.
-
 (5.3) Harvest and dispose as follows.
 
 | Item                                      | Disposition                                         |
@@ -1310,9 +1330,6 @@ block bolt holes align differently. `[C]`
 (01/2008–06/2014) all appear. This is most likely a year-range split. Verify
 against your donor's build date before ordering. `[C]`
 
-☝️ Advice: One builder bought a $31 aftermarket engine mount, found excessive
-movement, and replaced it with the OEM part at $181. Buy the OEM mount. `[C]`
-
 #### Procedure
 
 (7.1) Install the ECM before the engine goes in. Route the engine harness and
@@ -1365,13 +1382,13 @@ The axles installed here are the **xD shafts that came with the donor
 transaxle** — see [(0.7)](#phase-0). Everything outboard of them is the Yaris's
 own hardware, untouched.
 
-| Component         | Source                                                   |
-| :---------------- | :------------------------------------------------------- |
-| CV axles          | **xD shafts** — 20-tooth, 20/40 DP inner stubs           |
-| Knuckles          | Yaris, unchanged                                         |
-| Hubs and bearings | Yaris, unchanged — **no press work**                     |
-| Brakes            | Yaris, unchanged                                         |
-| Bolt pattern      | **4×100, unchanged**                                     |
+| Component         | Source                                         |
+| :---------------- | :--------------------------------------------- |
+| CV axles          | **xD shafts** — 20-tooth, 20/40 DP inner stubs |
+| Knuckles          | Yaris, unchanged                               |
+| Hubs and bearings | Yaris, unchanged                               |
+| Brakes            | Yaris, unchanged                               |
+| Bolt pattern      | **4×100, unchanged**                           |
 
 ☝️ Advice: **The front suspension and brakes are never disturbed** beyond
 unbolting and rebolting them to get the axles in and out. No hub pressing, no
@@ -1382,21 +1399,11 @@ machine shop, no wheel fitment change.
 ⚠️ Attention: To be unambiguous about this, because the community record is not:
 **the CV axle is installed as a complete, undisturbed assembly** — inner joint,
 intermediate shaft, outer joint and both boots, exactly as it comes off the donor
-or out of the box. You do **not**:
-
-- split the axle to mix an xD inner joint onto a Yaris shaft, or vice versa;
-- press an outer joint off one shaft and onto another;
-- swap stub shafts, cages or tripods between axles;
-- shorten, lengthen or re-spline anything.
+or out of the box.
 
 The spline patterns quoted in [(0.7)](#phase-0) describe the **inner stub splines
 of a whole axle**. They are how you identify the correct complete axle, not an
 invitation to rebuild one.
-
-☝️ Advice: The clearest confirmation is that builders buy complete replacement
-units off the shelf when a used one is tired. One build used a junkyard xD axle
-on one side and a new **GSP `69541`** complete assembly on the other. `[C]` A
-complete aftermarket axle would be useless if the job required internal mixing.
 
 ☝️ Advice: Rebuilding a CV joint is a legitimate repair in its own right — for a
 torn boot or a clicking joint — and if a donor axle is worn, replace or rebuild
@@ -1435,12 +1442,6 @@ it **as a separate bench job before this step.**
 
 </details>
 
-☝️ Advice: **ABS tone rings are a non-issue**, and that is a direct benefit of
-leaving the hubs alone. The tone ring is part of the hub assembly and nothing here
-changes it, so tooth count, sensor air gap and the ABS module's calibration all
-stay factory. No source consulted addresses tone rings — and on this procedure,
-none needs to.
-
 (7.4) Fit the exhaust.
 
 ⚠️ Advice: **The 2ZR-FE manifold flange will not mate to the Yaris downpipe.**
@@ -1464,7 +1465,7 @@ rail bolts, and silicone lubricant to hose metal fittings. `[C]`
 
 (7.5) Fit the shift cables and adjust. Torques in (6.6).
 
-⚠️ Warning: **Use the donor's xD shift cables.** The xD mounts sit the transaxle
+⚠️ Attention: **Use the donor's xD shift cables.** The xD mounts sit the transaxle
 roughly two inches further forward, and a builder who stretched Yaris cables to
 reach tore the mounting studs out of the body, requiring two holes to be welded
 up. `[C]`
@@ -1477,12 +1478,66 @@ up. `[C]`
 
 #### (8.1) Cooling
 
-☝️ Advice: **The Yaris radiator and fans are retained.** They are adequate,
-including for track use. The Corolla, xD and Yaris all use the same size
-radiator — only the hose routing and fans differ. **No fan rewiring is
-required.** `[C]`
+##### Which radiator to use
 
-What changes is the plumbing.
+<details>
+  <summary>☝️ Advice: Use the donor xD's radiator</summary>
+
+Donor xD radiator was free with the car, and every other
+cooling part in this phase is designed around it.
+
+The reasoning, in order of weight:
+
+- **The plumbing is native to it.** The filler neck, hoses and clamps listed
+  below are the xD/ist parts, and the builder they were catalogued from paired
+  them with an **ist/Scion xD radiator** `[C]`. Fitting the xD radiator means the
+  filler neck bolts to its own boss and the hoses reach without adaptation.
+- **It has no transmission oil cooler.** The **automatic** NCP91's radiator has an
+  automatic transaxle fluid cooler built into the assembly — the factory manual
+  prints two different radiator component diagrams, and the _"for Automatic
+  Transaxle"_ one lists an **oil cooler inlet hose** and **oil cooler outlet
+  hose** where the _"for Manual Transaxle"_ one lists neither `[RM-Y]`. The
+  capacities corroborate it: **4.8 ℓ on the manual against 4.7 ℓ on the
+  automatic** `[RM-Y]` — the automatic holds _less_ coolant because the cooler
+  occupies volume. After this conversion that cooler does nothing but occupy
+  space and present two fittings to cap.
+- **It is the correct size.** The Corolla, xD and Yaris are reported to use the
+  same size radiator, differing only in hose routing and fans `[C]`.
+
+</details>
+
+⚠️ Attention: **Retain the Yaris fans and fan shroud if they will mount to the xD
+core.** This is the one thing worth protecting: with the Yaris fans in place **no
+fan rewiring is required at all** `[C]`. Taking the xD fan assembly instead
+introduces a fan-control wiring question that the Yaris fans simply do not have.
+
+⚠️ Attention: **Mounting is the item to verify.** No source consulted documents
+fitting an xD radiator into an **NCP91** specifically — the builder who used one
+was working on a third-generation Yaris. Trial-fit it to the radiator support
+before committing, and check the lower cushions and upper support bracket line up.
+Radiator support fasteners are **7.5 N·m (76 kgf·cm, 66 in·lbf)** and **5.5 N·m
+(56 kgf·cm, 49 in·lbf)** `[RM-Y]`.
+
+<details>
+  <summary>☝️ Advice — fallback: retaining the Yaris radiator</summary>
+
+Every documented NCP91 build retained the Yaris radiator, so this is the
+better-trodden route even though it is more work. Two consequences:
+
+- ⚠️ The xD filler neck must be added to it. The Yaris fan shroud has two
+  existing holes in roughly the right place, but they must be **tapped M6 × 1.00**
+  and secured with 10 mm bolts `[C]`.
+- On an automatic donor car the ATF cooler remains in the assembly, unused. Cap
+  its two fittings and leave it; it does no harm beyond the volume it occupies.
+
+A radiator from a **third manual Yaris** was previously suggested here as a way
+to avoid the ATF cooler. It is not worth the trip: it still needs the filler neck
+tapped on, it requires sourcing yet another car, and the donor xD radiator solves
+the same problem for free.
+
+</details>
+
+##### Plumbing
 
 | Item                                 | Part number `[C]`            | Notes                                                                  |
 | :----------------------------------- | :--------------------------- | :--------------------------------------------------------------------- |
@@ -1493,9 +1548,6 @@ What changes is the plumbing.
 | Radiator hose clamps                 | `90467-33006` ×6             | Plus `90467-34004`, `90467-37005` at the outlets                       |
 | Heater hoses, short and long         | `87245-52151`, `87245-52141` | Yaris heater hoses kink                                                |
 | Heater hose clamps                   | `96136-42501`                |                                                                        |
-
-⚠️ Attention: The Yaris fan shroud has two existing holes for the xD filler neck,
-but they must be **tapped M6 × 1.00** and secured with 10 mm bolts. `[C]`
 
 ☝️ Advice: If retaining the Yaris heater hoses, **trim 2 inches off the engine
 side**. `[C]`
@@ -1511,9 +1563,6 @@ or an xD fuel line purchased. `[C]`
 
 The fuel pump is adequate at these power levels. The brake booster, remaining
 radiator hoses, and EVAP solenoid hose install as originally fitted. `[C]`
-
-⚠️ Attention: One builder chased a `P0456` EVAP small-leak code to a non-OEM hose
-on the EVAP purge solenoid, and fixed it with a trimmed OEM 2ZR-FE hose. `[C]`
 
 #### (8.3) A/C
 
@@ -1572,7 +1621,8 @@ two circuits to look for. `[C]`
 
 Three options, in order of preference:
 
-1. **Fit the speed sensor to the transaxle** — see (2.5). Simplest.
+1. <a id="ref1"></a>**Fit the speed sensor to the transaxle** — see
+   [(2.5) Speedometer sensor](#sec-2-5). Simplest.
 2. **Take the signal from ABS.** Insert part `82998-12720` into **location 4 on
    the ABS connector** — the smaller white wire in the top row, four from the
    left counting the two larger wires — and connect the pink speed sensor wire to
@@ -1598,24 +1648,12 @@ to the ABS module plug. `[C]`
 soldering — there is less chance of a loose connection or high internal
 resistance. `[C]`
 
-##### Automatic-transaxle wiring — not applicable here
-
-☝️ Advice: If you were retaining the automatic, two further changes would be
-needed: a ground added at trans connector **pin 9** — **do not cut the blue wire
-to make it**, take a pin from the old Yaris trans connector instead and add an
-eyelet to the trans body — and, with a Corolla harness only, the SL solenoid
-moved from `C20` pin 57 to pin 58 to clear a `P2770` torque converter code. Both
-are irrelevant to a manual conversion and are noted only because they dominate
-the forum threads. `[C]`
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wb2VOGU7qc8?si=2vZ7h33YXP8h_NM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### (8.5) Charging and starting
 
 The alternator is the xD **140 A** unit. The starter is the reused Yaris item.
 Retain and reconnect all engine ground straps.
-
-⚠️ Attention: One builder using a Corolla harness found **the starter wire would
-not reach the Yaris battery terminal** and had to reroute it. With a matched xD
-harness this does not arise. `[C]`
 
 ---
 
@@ -1628,7 +1666,7 @@ that reputation is misplaced — on a US-market donor it comes down to isolating
 three wires. Read it in full **before connecting the battery.**
 
 <details open>
-  <summary>⚠️ Advice — read before connecting the battery</summary>
+  <summary>⚠️⚠️⚠️ Advice — Read before connecting the battery ⚠️⚠️⚠️</summary>
 
 The factory manual states, of the ECU–ECM communication ID:
 
@@ -1799,9 +1837,9 @@ They are not recommended for a daily-driven vehicle and are not covered here.
 
 #### (10.1) Speedometer
 
-The signal source depends on the path chosen in Phase 0 and on whether the
-recipient car has ABS. See (2.5) — the factory manual branches this on **ABS, not
-chassis**.
+<a id="ref2"></a>The signal source depends on whether the recipient car has ABS.
+See [(2.5) Speedometer sensor](#sec-2-5) — the factory manual branches this on
+**ABS, not chassis**.
 
 ⚠️ Attention: One builder running an xD transaxle with a Yaris speed sensor
 fitted reported the **speedometer reading approximately 2 mph optimistic** — 20
@@ -2010,22 +2048,22 @@ vehicle.
 
 Publishing these as gaps is more useful than filling them with a guess.
 
-| Item                                               | Status                                                                                                        |
-| :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| Cylinder head cover torque                         | **Toyota publishes none.** An absence, not a gap                                                              |
-| 2ZR-FE valve clearance                             | **Not applicable** — hydraulic lash adjusters                                                                 |
-| Chain tensioner slipper bolt                       | Not located for the 2ZR-FE                                                                                    |
-| Head bolt tightening **sequence** (1–10)           | Illustration only in the manual, not text                                                                     |
-| Timing chain cover sequence, 26 bolts              | Illustration only                                                                                             |
-| A/C compressor mounting bolts                      | Not located                                                                                                   |
-| Drive belt idler pulley, as a distinct row         | Not located                                                                                                   |
-| Engine coolant temperature sensor torque           | Not located                                                                                                   |
-| LH transaxle mounting **bracket** to case bolts    | Not located — the manuals route this to an "Engine Assembly / Installation" document absent from both mirrors |
-| xD RH insulator — which of 45/88/52 N·m goes where | **Genuinely unpublished.** Three torques, two illustration labels                                             |
-| Oil pump relief valve plug                         | Sources give 49 and 37 N·m irreconcilably. **Treat as not found**                                             |
-| Radiator and block drain cocks                     | No torque printed — hand-tight                                                                                |
+| Item                                               | Status                                                                                                            |
+| :------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| Cylinder head cover torque                         | **Toyota publishes none.** An absence, not a gap                                                                  |
+| 2ZR-FE valve clearance                             | **Not applicable** — hydraulic lash adjusters                                                                     |
+| Chain tensioner slipper bolt                       | Not located for the 2ZR-FE                                                                                        |
+| Head bolt tightening **sequence** (1–10)           | Illustration only in the manual, not text                                                                         |
+| Timing chain cover sequence, 26 bolts              | Illustration only                                                                                                 |
+| A/C compressor mounting bolts                      | Not located                                                                                                       |
+| Drive belt idler pulley, as a distinct row         | Not located                                                                                                       |
+| Engine coolant temperature sensor torque           | Not located                                                                                                       |
+| LH transaxle mounting **bracket** to case bolts    | Not located — the manuals route this to an "Engine Assembly / Installation" document absent from both mirrors     |
+| xD RH insulator — which of 45/88/52 N·m goes where | **Genuinely unpublished.** Three torques, two illustration labels                                                 |
+| Oil pump relief valve plug                         | Sources give 49 and 37 N·m irreconcilably. **Treat as not found**                                                 |
+| Radiator and block drain cocks                     | No torque printed — hand-tight                                                                                    |
 | ABS tone rings                                     | Never addressed by any source — **and not needed**, because nothing in this procedure changes the hubs. See (7.3) |
-| Fastener part numbers generally                    | The repair manual names joints, not part numbers                                                              |
+| Fastener part numbers generally                    | The repair manual names joints, not part numbers                                                                  |
 
 ☝️ Advice: Row labels such as "No.1 / No.2 front and rear mounting bracket" do
 **not exist** in the 2ZR-FE repair manual. That naming comes from other engine

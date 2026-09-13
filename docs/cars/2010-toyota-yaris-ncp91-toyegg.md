@@ -217,9 +217,10 @@ anywhere near a track is during parts delivery for my friends. It starts, it dri
 it comes home dirty, and none of that costs me a single thought.
 
 And if there's one thing to take from all of this: don't mod your daily. I
-didn't and I'm better for it. I also don't have any plans to do a manual 2RZ-FE
-swap from a Scion xD that plugs-right-in. Don't DM me if you have leads on a donor
-because I totally wont reply.
+didn't and I'm better for it. I also don't have any plans to do a manual 2ZR-FE
+swap from a Scion xD that plugs-right-in, and I certainly haven't
+[written the workbook for it](/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris).
+Don't DM me if you have leads on a donor because I totally wont reply.
 
 What would you build if you let yourself want nothing from it other than
 putting a smile on your face?

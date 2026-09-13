@@ -143,6 +143,58 @@ road**, so the car stays driveable through the longest part of the job.
 Aqua/Prius C. The 3-door XP90 is the "Yaris Liftback"; the 5-door was sold in
 the US from the 2009 model year.
 
+<a id="abs-check"></a>
+
+#### Determining whether your Yaris has ABS
+
+This matters more than it looks. **Two decisions later in this document branch on
+it** — the brake master cylinder in [Phase 6](#phase-6), whose correct part
+depends on both ABS fitment and transmission type, and the speedometer sensor in
+[(2.5)](#sec-2-5), which is fitted on non-ABS cars and blanked off on ABS cars.
+
+⚠️ Attention: **You cannot tell from the VIN.** The manual's Identification
+Information section covers the VIN, the engine serial number stamped on the
+cylinder block, and the transaxle serial number stamped on the housing — and
+nothing else `[RM-Y]`. ABS is not encoded in any of them. Trim level is a hint at
+best, because ABS was option- and package-dependent on this generation.
+
+☝️ Advice: **Look at the car.** The factory manual prints two entirely separate
+brake system diagrams, and the difference is a single component you can find in
+about thirty seconds.
+
+<div class="cols-2">
+  <figure>
+  <a id="fig-brake-system-with-abs"></a>
+    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-brake-system-with-abs.jpg" alt="Toyota factory brake system diagram for the NCP91 with ABS, showing the brake master cylinder feeding a brake actuator which distributes to all four wheels" />
+    <figcaption>
+      Figure 1: Brake system, <strong>w/ ABS</strong> — the master cylinder
+      feeds a <code>BRAKE ACTUATOR</code>.
+      <code>23. Brake.pdf</code>, page BR–2.
+    </figcaption>
+  </figure>
+  <figure>
+  <a id="fig-brake-system-without-abs"></a>
+    <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-brake-system-without-abs.jpg" alt="Toyota factory brake system diagram for the NCP91 without ABS, showing the brake master cylinder feeding a brake tube way and a mechanical proportioning valve instead of an actuator" />
+    <figcaption>
+      Figure 2: Brake system, <strong>w/o ABS</strong> — a mechanical
+      <code>PROPORTIONING VALVE</code> and a <code>BRAKE TUBE WAY</code> instead.
+      <code>23. Brake.pdf</code>, page BR–3.
+    </figcaption>
+  </figure>
+</div>
+
+| Check | With ABS | Without ABS |
+| :--- | :--- | :--- |
+| **Under the bonnet** — the decisive one | A **brake actuator**: a substantial block carrying a motor and solenoids, with a thick multi-pin connector | A small mechanical **proportioning valve** and a **brake tube way**, no electrics |
+| **At the front knuckles** | A **speed sensor** bolted to each knuckle, 8.5 N·m, with a lead running up to the body | No sensor and no lead |
+| **On the transaxle** | A **speedometer driven hole cover** blanking plate — speed comes from the wheel sensors | A bolt-on **speedometer sensor** |
+| **In the cluster** | An **ABS warning light** illuminates at ignition-on and extinguishes | No ABS light |
+| **At the `DLC3`** | Jumpering **`TC` and `CG`** makes the skid control ECU blink 2-digit codes | Nothing blinks — there is no skid control ECU |
+
+☝️ Advice: The brake actuator versus proportioning valve check is the one to
+trust. The others corroborate it, but a missing warning-light bulb or a
+previously-removed sensor can mislead; the plumbing cannot.
+
 ### Donor Vehicle — Recommended
 
 | Item              | Specification                                                              |
@@ -292,6 +344,7 @@ certain than the mail-order equivalent.
 |   ⑳ | Clutch master cylinder               | A Yaris unit is the direct fit; the donor xD's also works                                                            |
 |  ㉑ | **Brake master cylinder, M/T**       | The salvage alternative to buying new — ⚠️ must be the **manual** unit, whose reservoir carries the clutch feed port |
 |  ㉒ | Clutch hydraulic hardware, remaining | Flexible hose, brackets, clamps and clips — cheaper to take the lot than to order them singly                        |
+|  ㉓ | **Brake pedal and pedal pad, M/T**   | ⚠️ **The manual pedal is narrower than the automatic's.** The pedal *support* is common and stays — see [Phase 6](#phase-6) |
 
 **⑱ Why the pedal must come from a Yaris, not the xD.** This is the one place
 where the otherwise-reliable rule of "use every part from the xD" gives the wrong
@@ -306,7 +359,9 @@ is the part those mounting points and that switch were designed around. See
 
 ⚠️ **Correction to a widely repeated claim.** Community sources state that "the
 Yaris has no return spring, the xD does," and give that as the reason to use the
-Yaris pedal `[C]`. **The factory manual contradicts this.** The Yaris clutch
+Yaris pedal `[C]`. **The factory manual contradicts this**
+(see [Figure 9](#fig-clutch-pedal-components)).
+The Yaris clutch
 pedal components diagram explicitly includes a **`CLUTCH PEDAL SPRING`**, drawn
 and labelled alongside the pedal sub-assembly, bushes, collar and cushion
 `[RM-Y]`. Whatever difference a builder observed between the two pedals, an
@@ -342,23 +397,23 @@ salvage option is here because it works and costs nothing.
 
 | No. | Product name                     | Part number / spec                                | Notes                                                                                                                 |
 | --: | :------------------------------- | :------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
-|  ㉓ | **Brake master cylinder, M/T**   | Advics `BMT345` `[C]`                             | ⚠️ **Reservoir has the clutch bypass port.** Non-ABS M/T application. Circuit spacing differs from the automatic unit |
-|  ㉔ | Clutch kit                       | Aisin `CKT062` `[C]`                              | Disc, cover, release bearing                                                                                          |
-|  ㉕ | Clutch slave cylinder            | Aisin `CRT-115` `[C]`                             | ⚠️ **Buy new. Do not rebuild** — see Phase 6                                                                          |
-|  ㉖ | Clutch hose to release cylinder  | `90947-02E09` `[C]`                               |                                                                                                                       |
-|  ㉗ | Clutch hose bracket, clamp, clip | `31484-52090`, `90949-01D17`, `90468-08035` `[C]` | The clamp resolves under Daihatsu                                                                                     |
-|  ㉘ | Front axle hub nuts              | `90177-22001` ×2 `[C]`                            | ⚠️ **One-time use, staked**                                                                                           |
-|  ㉙ | Transaxle output shaft nut       | `90179-18005` `[C]`                               | ⚠️ **One-time use, staked**                                                                                           |
-|  ㉚ | Transaxle drain/filler gaskets   | `90430-18008` `[C]`                               | New each time                                                                                                         |
-|  ㉛ | Catalytic converter              | AP Eastern `771790` `[C]`                         | ☝️ **Only if the donor's is unserviceable, or if you are in a CARB state.** Reuse the donor's converter by default — see below |
-|  ㉜ | Downstream O2 sensor             | Denso `234-4623` `[C]`                            | ☝️ Reuse the donor's if it was low-mileage; new is cheap insurance                                                    |
-|  ㉝ | Accessory drive belt             | Dayco `5060485` with A/C `[C]`                    | Gates `K060365` without A/C                                                                                           |
-|  ㉞ | Water pump                       | Aisin `WPT140` `[C]`                              |                                                                                                                       |
-|  ㉟ | Spark plugs                      | Denso `SC16HR11` `[C]`                            | Iridium                                                                                                               |
-|  ㊱ | Ignition coils                   | `90919-02252` `[C]`                               |                                                                                                                       |
-|  ㊲ | Fuel injectors                   | `23250-0T020` `[C]`                               | ⚠️ Remanufactured and matched. **Do not fit untested no-name injectors**                                              |
-|  ㊳ | FIPG — Seal Packing 1281         | `08826-00090` `[RM-Y]`                            | Transaxle case mating surfaces                                                                                        |
-|  ㊴ | Adhesive 1344                    | `08833-00080` `[RM-Y]`                            | Output shaft nut, shift fork lock bolts                                                                               |
+|  ㉔ | **Brake master cylinder, M/T**   | Advics `BMT345` `[C]`                             | ⚠️ **Reservoir has the clutch bypass port.** Non-ABS M/T application. Circuit spacing differs from the automatic unit |
+|  ㉕ | Clutch kit                       | Aisin `CKT062` `[C]`                              | Disc, cover, release bearing                                                                                          |
+|  ㉖ | Clutch slave cylinder            | Aisin `CRT-115` `[C]`                             | ⚠️ **Buy new. Do not rebuild** — see Phase 6                                                                          |
+|  ㉗ | Clutch hose to release cylinder  | `90947-02E09` `[C]`                               |                                                                                                                       |
+|  ㉘ | Clutch hose bracket, clamp, clip | `31484-52090`, `90949-01D17`, `90468-08035` `[C]` | The clamp resolves under Daihatsu                                                                                     |
+|  ㉙ | Front axle hub nuts              | `90177-22001` ×2 `[C]`                            | ⚠️ **One-time use, staked**                                                                                           |
+|  ㉚ | Transaxle output shaft nut       | `90179-18005` `[C]`                               | ⚠️ **One-time use, staked**                                                                                           |
+|  ㉛ | Transaxle drain/filler gaskets   | `90430-18008` `[C]`                               | New each time                                                                                                         |
+|  ㉜ | Catalytic converter              | AP Eastern `771790` `[C]`                         | ☝️ **Only if the donor's is unserviceable, or if you are in a CARB state.** Reuse the donor's converter by default — see below |
+|  ㉝ | Downstream O2 sensor             | Denso `234-4623` `[C]`                            | ☝️ Reuse the donor's if it was low-mileage; new is cheap insurance                                                    |
+|  ㉞ | Accessory drive belt             | Dayco `5060485` with A/C `[C]`                    | Gates `K060365` without A/C                                                                                           |
+|  ㉟ | Water pump                       | Aisin `WPT140` `[C]`                              |                                                                                                                       |
+|  ㊱ | Spark plugs                      | Denso `SC16HR11` `[C]`                            | Iridium                                                                                                               |
+|  ㊲ | Ignition coils                   | `90919-02252` `[C]`                               |                                                                                                                       |
+|  ㊳ | Fuel injectors                   | `23250-0T020` `[C]`                               | ⚠️ Remanufactured and matched. **Do not fit untested no-name injectors**                                              |
+|  ㊴ | FIPG — Seal Packing 1281         | `08826-00090` `[RM-Y]`                            | Transaxle case mating surfaces                                                                                        |
+|  ㊵ | Adhesive 1344                    | `08833-00080` `[RM-Y]`                            | Output shaft nut, shift fork lock bolts                                                                               |
 
 #### The catalytic converter — reuse the donor's
 
@@ -569,9 +624,10 @@ available before it locks out.
 ### Phase 0 — Donor Inspection
 
 <figure>
+  <a id="fig-figure-01"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
   <figcaption>
-    Figure 1: The donor 2008–2014 Scion xD as received. Photograph the complete
+    Figure 3: The donor 2008–2014 Scion xD as received. Photograph the complete
     engine bay from four angles before anything is disconnected.
   </figcaption>
 </figure>
@@ -732,9 +788,10 @@ is not opened, and no internal work is described. On a high-mileage donor a full
 rebuild is worth considering and it is out of scope here.
 
 <figure>
+  <a id="fig-figure-02"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" alt="C50 transaxle on the bench, ready to mate to the engine" />
   <figcaption>
-    Figure 2: The C50 as received. Check the dowel pins, the input shaft
+    Figure 4: The C50 as received. Check the dowel pins, the input shaft
     splines, and the speed sensor location before mating it to the engine.
   </figcaption>
 </figure>
@@ -816,7 +873,7 @@ or only one before ordering, because the procedure requires both.
 | Floor shift lever assembly × body    |  12 |    122 | 9 ft·lbf        | 4 bolts                          | `[RM-Y]` |
 | Transmission control cable × body    | 5.0 |     51 | 44 in·lbf       |                                  | `[RM-Y]` |
 
-</detail>
+</details>
 
 <a id="sec-2-5"></a>
 
@@ -844,9 +901,10 @@ circulates in forum threads — that is only necessary if the driven gear is als
 absent, which on a C50 from a running car it will not be.
 
 <figure>
+  <a id="fig-c50-speedometer-sensor-components"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-c50-speedometer-sensor-components.jpg" alt="Toyota factory C50 manual transaxle components diagram showing the speedometer sensor and the speedometer driven hole cover sub-assembly with their O-rings and specified torque" />
   <figcaption>
-    Figure 3: C50 transaxle components showing the
+    Figure 5: C50 transaxle components showing the
     <code>SPEEDOMETER SENSOR</code> and the alternative
     <code>SPEEDOMETER DRIVEN HOLE COVER</code>. Toyota Yaris/Vitz XP90 workshop
     manual, <code>17. C50 Manual Transaxle.pdf</code>, page MX–35.
@@ -988,8 +1046,9 @@ is not a real conflict. 4.2 litres **is** 4.4 US quarts.
 ### Phase 4 — Joining Engine and Transaxle
 
 <figure>
+  <a id="fig-figure-03"></a>
 <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-03.png" alt="2ZR-FE flywheel and clutch on the bench" />
-<figcaption>Figure 4</figcaption>
+<figcaption>Figure 6</figcaption>
 </figure>
 
 (4.1) Fit the flywheel to the crankshaft.
@@ -1058,9 +1117,10 @@ standard Yaris 0.8 kW unit. The connectors are identical. Both the 0.8 kW and
 ☝️ Advice: Only now does the recipient vehicle come off the road.
 
 <figure>
+  <a id="fig-figure-04"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-04.png" alt="NCP91 with front clip removed" />
   <figcaption>
-    Figure 5: Front clip removed and subframe partially lowered. Every source
+    Figure 7: Front clip removed and subframe partially lowered. Every source
     that has completed this conversion recommends this approach.
   </figcaption>
 </figure>
@@ -1165,8 +1225,9 @@ conversion that the community record covers worst, and it contains two hard
 blockers that are easy to discover too late.
 
 <figure>
+  <a id="fig-figure-05"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-05.png" alt="Automatic one-piece pedal assembly beside the manual two-piece assembly" />
-  <figcaption>Figure 6</figcaption>
+  <figcaption>Figure 8</figcaption>
 </figure>
 
 ⚠️ The automatic pedal assembly is one piece with a single
@@ -1177,9 +1238,10 @@ pedal and brake pedal. They are not interchangeable as units.
 xD</strong> the xD unit does not mount properly.
 
 <figure>
+  <a id="fig-clutch-pedal-components"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-clutch-pedal-components.jpg" alt="Toyota factory clutch pedal components diagram for the NCP91, showing the clutch pedal support sub-assembly, clutch start switch, pedal stopper bolt, clutch pedal spring, pedal sub-assembly, bushes, collar, cushion and pad, with specified torques" />
   <figcaption>
-    Figure 7: Clutch pedal components, with torques. Note the
+    Figure 9: Clutch pedal components, with torques. Note the
     <code>CLUTCH PEDAL SPRING</code> — the Yaris pedal does have one. Toyota
     Yaris/Vitz XP90 workshop manual, <code>16. Clutch.pdf</code>, page CL–2.
   </figcaption>
@@ -1217,12 +1279,42 @@ for the clutch master cylinder. That is the concrete answer to a question the
 forums never resolved — no reservoir modification, no improvised tee, just the
 correct part. `[C]`
 
+#### What changes and what stays
+
+Before the procedure, the short answer to the obvious question — **only the brake
+pedal itself changes. The accelerator is untouched, and so is the brake pedal
+support.**
+
+| Item                       | Source                        | Why                                                                 |
+| :------------------------- | :---------------------------- | :------------------------------------------------------------------ |
+| **Clutch pedal assembly**  | **Manual Yaris** — new fitment | Does not exist on your car. See ⑱                                  |
+| **Brake pedal and pad**    | **Manual Yaris** — replaced   | ⚠️ The manual pedal is **narrower**. The automatic's wide pedal fouls the clutch pedal |
+| Brake pedal support        | ☝️ **Yaris, reused**          | Common to both transaxles — it is not branched in the factory diagram |
+| Brake pedal shaft, bushes, return spring, push rod clevis and pin, stop light switch | ☝️ Yaris, reused | All common. ⚠️ The stop light switch **mounting adjuster** is flagged non-reusable `[RM-Y]` |
+| **Accelerator pedal**      | ☝️ **Yaris, untouched**       | The NCP91 is drive-by-wire — the pedal is an **accelerator pedal position sensor** feeding `VPA`/`VPA2` to the ECM under ETCS. It has nothing to do with transmission type `[RM-Y]` |
+
+<figure>
+  <a id="fig-brake-pedal-support-components"></a>
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-brake-pedal-support-components.jpg" alt="Toyota factory brake pedal support components diagram for the NCP91, showing the brake pedal support, stop light switch and its non-reusable mounting adjuster, pedal shaft, bushes, push rod clevis and pin, return spring, and an inset labelled for Manual Transaxle showing a narrower brake pedal and pad" />
+  <figcaption>
+    Figure 10: Brake pedal support components. The main drawing is the
+    automatic's wide pedal; the inset box labelled <strong>"for Manual
+    Transaxle"</strong> is the narrower pedal and pad you need. Toyota
+    Yaris/Vitz XP90 workshop manual, <code>23. Brake.pdf</code>, page BR–18.
+  </figcaption>
+</figure>
+
+☝️ Advice: That inset is the whole answer in one picture. Everything else on the
+page — support, shaft, bushes, spring, clevis, pin, switch — is shared, so you
+are swapping a pedal arm and a rubber pad, not a pedal box.
+
 #### Procedure
 
-(6.1) Remove the automatic pedal assembly. Disconnect the brake light switch and
-the return spring, free the booster pin, remove the upper dash pad per the
+(6.1) **Remove the automatic pedal assembly.** Disconnect the brake light switch
+and the return spring, free the booster pin, remove the upper dash pad per the
 vehicle repair manual, then the top 12 mm bolt and the four 12 mm nuts on the
-main bracket. `[C]`
+main bracket. `[C]` **Retain the brake pedal support, shaft, bushes, return
+spring, clevis, push rod pin and stop light switch** — all of those go back in.
 
 (6.2) **Install the clutch master cylinder first.** Then slide the clutch pedal
 assembly over the clutch master studs, fit the nuts loosely, install the top
@@ -1234,9 +1326,21 @@ not directly to the firewall.** There is no "clutch master to firewall" joint in
 the factory manual, and describing it that way misleads on both the parts list
 and the drilling step.
 
-(6.3) Fit the brake pedal assembly the same way.
+(6.3) **Reinstall the brake pedal support, fitted with the manual brake pedal.**
+Transfer the shaft, both bushes, the return spring, the push rod clevis and the
+push rod pin from the automatic pedal onto the manual one. Apply **lithium soap
+base glycol grease** to the bushes and the push rod pin `[RM-Y]`. Fit the stop
+light switch with a **new mounting adjuster** — the factory diagram marks the
+adjuster non-reusable `[RM-Y]`.
 
-(6.4) Fit the manual brake master cylinder and reconnect the brake lines.
+⚠️ Attention: **Check clearance between the brake and clutch pedals** before
+refitting the under-cover. If the brake pedal still has the automatic's wide pad,
+this is where you find out — and it is the reason the manual pedal exists.
+
+(6.4) **Leave the accelerator pedal alone.** It is a sensor, not a linkage, and it
+is common to both transaxles.
+
+(6.5) Fit the manual brake master cylinder and reconnect the brake lines.
 
 #### Torque specifications — pedal box and brake hydraulics
 
@@ -1261,9 +1365,10 @@ and the drilling step.
 | Proportioning valve × bracket / bracket × body    | 5.4 / 19 | 55 / 194 | 48 in·lbf / 14 ft·lbf | Non-ABS cars                                                                                                  | `[RM-Y]` |
 
 <figure>
+  <a id="fig-clutch-master-cylinder-components"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-clutch-master-cylinder-components.jpg" alt="Toyota factory clutch master cylinder components diagram for the NCP91, showing the clutch master cylinder assembly, push rod clevis, reservoir tube and the tube to the flexible hose, with specified torques" />
   <figcaption>
-    Figure 8: Clutch master cylinder components — the assembly, push rod
+    Figure 11: Clutch master cylinder components — the assembly, push rod
     clevis, reservoir tube and hardline, with torques. Toyota Yaris/Vitz XP90
     workshop manual, <code>16. Clutch.pdf</code>, page CL–8.
   </figcaption>
@@ -1274,7 +1379,7 @@ manual-specification brake master cylinder necessary — it is what connects to 
 bypass port on the manual reservoir. The hardline beside it is `31481-52110`, the
 discontinued part from ⑲.
 
-#### (6.5) Clutch hydraulic line and slave cylinder
+#### (6.6) Clutch hydraulic line and slave cylinder
 
 | Joint                                        | N·m |    kgf·cm | ft·lbf / in·lbf | Notes                                               | Source   |
 | :------------------------------------------- | --: | --------: | :-------------- | :-------------------------------------------------- | :------- |
@@ -1287,7 +1392,7 @@ discontinued part from ⑲.
 rebuilt unit failed at approximately 150 miles — the piston seal let go and he
 lost the clutch suddenly in a parking lot. New units are inexpensive. `[C]`
 
-#### (6.6) Shift cables and floor shifter
+#### (6.7) Shift cables and floor shifter
 
 Remove the exhaust heat shield, then the three 10 mm nuts on the cable
 pass-through seal. Pull the automatic cable out from below, feed the two manual
@@ -1307,7 +1412,7 @@ the transaxle forward by approximately two inches. One builder stretched Yaris
 cables to reach and **tore the mounting studs out of the body**, requiring two
 holes to be welded up and the studs reinstalled. `[C]`
 
-#### (6.7) Starter interlock and reverse lights — no fabrication required
+#### (6.8) Starter interlock and reverse lights — no fabrication required
 
 ☝️ Advice: **The clutch start switch connector already exists in the Yaris body
 harness footwell.** It is plug-and-play. The manual back-up light switch
@@ -1315,7 +1420,7 @@ connector comes on the manual engine harness. Neither the starter interlock nor
 the reverse lights require any fabrication — this is the one part of the manual
 conversion that is easier than it looks. `[C]`
 
-#### (6.8) Clutch pedal adjustment
+#### (6.9) Clutch pedal adjustment
 
 | Item                         | Specification                          | Source   |
 | :--------------------------- | :------------------------------------- | :------- |
@@ -1324,7 +1429,7 @@ conversion that is easier than it looks. `[C]`
 | Push rod play at pedal top   | **1.0–5.0 mm**                         | `[RM-Y]` |
 | Release point                | **≥25 mm** from the end of full stroke | `[RM-Y]` |
 
-(6.9) Fill and bleed the brake system, then the clutch system.
+(6.10) Fill and bleed the brake system, then the clutch system.
 
 ☝️ Advice: **No scan tool is required to bleed the brakes on this chassis.** The
 factory procedure is the conventional two-person pedal bleed — bleed the master
@@ -1339,9 +1444,10 @@ bleed mode anywhere in the brake chapters. `[RM-Y]`
 ### Phase 7 — Powertrain Installation
 
 <figure>
+  <a id="fig-figure-06"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-06.png" alt="Six mount pieces laid out — three brackets and three isolators" />
   <figcaption>
-    Figure 9: The mount set is six pieces, not three. Each mount position is a
+    Figure 12: The mount set is six pieces, not three. Each mount position is a
     bracket on the engine or transaxle plus an isolator on the body or subframe.
   </figcaption>
 </figure>
@@ -1444,9 +1550,10 @@ unbolting and rebolting them to get the axles in and out. No hub pressing, no
 machine shop, no wheel fitment change.
 
 <figure>
+  <a id="fig-front-drive-shaft-components"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-front-drive-shaft-components.jpg" alt="Toyota factory front drive shaft components diagram for the NCP91, showing the complete drive shaft assembly with inboard and outboard joints, boots, clamps and the staked front axle hub nut, with specified torques" />
   <figcaption>
-    Figure 10: Front drive shaft components, with torques. Toyota Yaris/Vitz
+    Figure 13: Front drive shaft components, with torques. Toyota Yaris/Vitz
     XP90 workshop manual, <code>18. Drive Shaft.pdf</code>, page DS–1.
   </figcaption>
 </figure>
@@ -1520,7 +1627,7 @@ against the Yaris's 40 mm. `[C]`
 ☝️ Advice: Apply anti-seize to the exhaust manifold, intake manifold and fuel
 rail bolts, and silicone lubricant to hose metal fittings. `[C]`
 
-(7.5) Fit the shift cables and adjust. Torques in (6.6).
+(7.5) Fit the shift cables and adjust. Torques in (6.7).
 
 ⚠️ Attention: **Use the donor's xD shift cables.** The xD mounts sit the transaxle
 roughly two inches further forward, and a builder who stretched Yaris cables to
@@ -1589,17 +1696,19 @@ different radiator component diagrams:
 
 <div class="cols-2">
   <figure>
+  <a id="fig-radiator-components-automatic"></a>
     <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-radiator-components-automatic.jpg" alt="Toyota factory radiator components diagram for the automatic transaxle NCP91, listing an oil cooler inlet hose and oil cooler outlet hose alongside the radiator assembly, fan shroud and drain cock" />
     <figcaption>
-      Figure 11: Radiator, <strong>for Automatic Transaxle</strong> — note the
+      Figure 14: Radiator, <strong>for Automatic Transaxle</strong> — note the
       <code>OIL COOLER INLET HOSE</code> and <code>OIL COOLER OUTLET HOSE</code>.
       <code>10. Cooling.pdf</code>, page CO–28.
     </figcaption>
   </figure>
   <figure>
+  <a id="fig-radiator-components-manual"></a>
     <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-radiator-components-manual.jpg" alt="Toyota factory radiator components diagram for the manual transaxle NCP91, listing only the radiator assembly, fan shroud, radiator hose number 2, drain cock and reserve tank hose grommet, with no oil cooler" />
     <figcaption>
-      Figure 12: Radiator, <strong>for Manual Transaxle</strong> — the same
+      Figure 15: Radiator, <strong>for Manual Transaxle</strong> — the same
       assembly with <strong>no oil cooler at all</strong>.
       <code>10. Cooling.pdf</code>, page CO–29.
     </figcaption>
@@ -1852,9 +1961,10 @@ recognition code. The transponder key ECU reads the key and passes key data to
 the ECM. Without matching data the ECM will not allow the engine to run. `[RM-Y]`
 
 <figure>
+  <a id="fig-engine-immobilizer-system-diagram"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-system-diagram.jpg" alt="Toyota factory system diagram of the NCP91 engine immobiliser, showing the transponder chip in the key, the coil and transponder key amplifier, the transponder key ECU assembly, and its bidirectional link to the ECM which drives the injectors" />
   <figcaption>
-    Figure 13: Engine immobiliser system diagram. Toyota Yaris/Vitz XP90 workshop
+    Figure 16: Engine immobiliser system diagram. Toyota Yaris/Vitz XP90 workshop
     manual, <code>31. Engine Immobilizer.pdf</code>, page EI–6.
   </figcaption>
 </figure>
@@ -1872,11 +1982,11 @@ immobilizer conversation, and that the fix is to disconnect "the brown K-line at
 pin 9." The factory wiring diagram shows something different. The ECM and the
 transponder key ECU communicate over a **dedicated three-wire link**:
 
-| Transponder key ECU `D23` | ECM `A21`          | Direction | Standard resistance |
-| :------------------------ | :----------------- | :-------- | :------------------ |
-| **`D23-13` `EFIO`**       | **`A21-11` `IMI`** | ECU → ECM | Below 1 Ω           |
-| **`D23-12` `EFII`**       | **`A21-10` `IMO`** | ECM → ECU | Below 1 Ω           |
-| **`D23-11` `EGND`**       | **`A21-9` `EOM`**  | Ground    | Below 1 Ω           |
+| ECM `A21`          | Transponder key ECU `D23` | Direction | Standard resistance |
+| :----------------- | :------------------------ | :-------- | :------------------ |
+| **`A21-11` `IMI`** | **`D23-13` `EFIO`**       | ECU → ECM | Below 1 Ω           |
+| **`A21-10` `IMO`** | **`D23-12` `EFII`**       | ECM → ECU | Below 1 Ω           |
+| **`A21-9` `EOM`**  | **`D23-11` `EGND`**       | Ground    | Below 1 Ω           |
 
 `SIL` is a separate diagnostic bus line to the DLC3 for the scan tool, not the
 immobilizer path. `[RM-Y]`
@@ -1929,16 +2039,17 @@ The link is three wires between the transponder key ECU connector `D23` and the
 ECM connector `A21`. Only the first two carry the conversation; the third is its
 ground reference.
 
-| Transponder key ECU `D23` | ECM `A21`      | Signal | Direction | Intact reading |
-| :------------------------ | :------------- | :----- | :-------- | :------------- |
-| **`D23-13` `EFIO`**       | `A21-11` `IMI` | Data   | ECU → ECM | **Below 1 Ω**  |
-| **`D23-12` `EFII`**       | `A21-10` `IMO` | Data   | ECM → ECU | **Below 1 Ω**  |
-| `D23-11` `EGND`           | `A21-9` `EOM`  | Ground | —         | Below 1 Ω      |
+| ECM `A21`      | Transponder key ECU `D23` | Signal | Direction | Intact reading |
+| :------------- | :------------------------ | :----- | :-------- | :------------- |
+| `A21-11` `IMI` | **`D23-13` `EFIO`**       | Data   | ECU → ECM | **Below 1 Ω**  |
+| `A21-10` `IMO` | **`D23-12` `EFII`**       | Data   | ECM → ECU | **Below 1 Ω**  |
+| `A21-9` `EOM`  | `D23-11` `EGND`           | Ground | —         | Below 1 Ω      |
 
 <figure>
+  <a id="fig-engine-immobilizer-b2799-wiring-diagram"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-b2799-wiring-diagram.jpg" alt="Toyota factory wiring diagram for DTC B2799, showing the three wires between ECM connector A21 terminals IMI 11, IMO 10 and EOM 9, and transponder key ECU connector D23 terminals EFIO 13, EFII 12 and EGND 11" />
   <figcaption>
-    Figure 14: The `B2799` wiring diagram — the entire link between the ECM and
+    Figure 17: The <code>B2799</code> wiring diagram — the entire link between the ECM and
     the transponder key ECU is these three wires. Toyota Yaris/Vitz XP90
     workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–42.
   </figcaption>
@@ -1952,9 +2063,10 @@ to be missing when you are looking at the under-dash connector.
 ##### Locating the connector
 
 <figure>
+  <a id="fig-engine-immobilizer-parts-location"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-parts-location.jpg" alt="Toyota factory parts location diagram for the NCP91 hatchback engine immobiliser, showing the ECM and engine room relay block in the engine bay, and the transponder key ECU assembly, transponder key amplifier, security indicator light, main body ECU and DLC3 in the cabin" />
   <figcaption>
-    Figure 15: Engine immobiliser parts location, hatchback. Toyota Yaris/Vitz
+    Figure 18: Engine immobiliser parts location, hatchback. Toyota Yaris/Vitz
     XP90 workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–3.
   </figcaption>
 </figure>
@@ -1982,10 +2094,13 @@ unplugged and the key out, `D23-1` reads **11 to 14 V** to body ground, and
 readings identify the right connector without guesswork.
 
 <figure>
+  <a id="fig-engine-immobilizer-d23-connector-front-view"></a>
   <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/ncp91-engine-immobilizer-d23-connector-front-view.jpg" alt="Toyota factory front-view terminal diagrams of transponder key ECU connector D23 and ECM connector A21, with EGND, EFII and EFIO labelled on adjacent terminals 11, 12 and 13 of the D23 bottom row, alongside the standard resistance table" />
   <figcaption>
-    Figure 16: `D23` and `A21` connector front views with `EGND`, `EFII` and
-    `EFIO` called out, plus the standard resistance table. Toyota Yaris/Vitz
+    Figure 19: <code>D23</code> and <code>A21</code> connector front views with
+    <code>EGND</code>,
+    <code>EFII</code> and
+    <code>EFIO</code> called out, plus the standard resistance table. Toyota Yaris/Vitz
     XP90 workshop manual, <code>31. Engine Immobilizer.pdf</code>, page EI–43.
   </figcaption>
 </figure>
@@ -1998,7 +2113,7 @@ neighbours — with the ground you are leaving alone immediately to their left.
 
 ⚠️ Attention: **Note the terminal-numbering layout.** The top row is not a simple
 1-to-5 sequence across the connector: it reads `1 2 3` at the left and `4 5` at
-the right, with a gap between. Count from the front view in Figure 16 rather than
+the right, with a gap between. Count from the front view in [Figure 19](#fig-engine-immobilizer-d23-connector-front-view) rather than
 assuming a regular grid.
 
 ##### Procedure
@@ -2231,7 +2346,7 @@ leak-check, then a further hour to remove moisture, then charge. `[C]`
    transaxle. One builder pinched one during installation. `[C]`
 4. Confirm the battery tray is secure on its slotted holes.
 5. Confirm no exhaust component contacts the firewall, floor or fuel lines.
-6. Confirm the clutch and brake pedals meet the specifications in (6.8), and that
+6. Confirm the clutch and brake pedals meet the specifications in (6.9), and that
    the clutch start switch prevents cranking with the pedal released.
 7. Confirm reverse lights operate.
 8. Confirm the speedometer reads correctly against a GPS reference, and record

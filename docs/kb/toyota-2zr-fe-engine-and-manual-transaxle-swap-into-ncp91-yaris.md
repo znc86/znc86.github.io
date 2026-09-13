@@ -627,9 +627,9 @@ available before it locks out.
 
 <figure>
   <a id="fig-figure-01"></a>
-  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" src="/kb/no-image-available.svg" alt="Donor Scion xD on arrival, before teardown" />
+  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
   <figcaption>
-    Figure 3: The donor 2008–2014 Scion xD as received. Photograph the complete
+    Figure 3: The donor 2008–2014 Scion xD. Photograph the complete
     engine bay from four angles before anything is disconnected.
   </figcaption>
 </figure>

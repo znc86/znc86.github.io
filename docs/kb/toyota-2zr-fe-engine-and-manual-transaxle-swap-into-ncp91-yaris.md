@@ -223,8 +223,13 @@ about the body at all. Nothing in the base code indicates manual versus
 automatic — that lives in the suffix.
 
 Ordering 2ZR-FE swap parts against an `AZE151` lookup returns 2.4 ℓ xB
-components: different mounts, different accessories, different everything. See
-[Appendix A](#appendix-a) for the other wrong-vehicle traps in this conversion.
+components: different mounts, different accessories, different everything.
+
+☝️ The same trap exists in reverse for torque figures. **Toyota manual `RM3027`**
+is a complete 2ZR-FE "Engine Assembly" mount table and is easy to find, but it is
+**JDM Auris/ist, not US-market xD or Corolla** — its crossmember figure is 99 N·m
+against the xD's 70/160/95. It *partially* agrees with the US Corolla, which
+makes it more dangerous rather than less. `[C]`
 
 </details>
 
@@ -584,8 +589,9 @@ available before it locks out.
   coming out and the 2ZR-FE going in differ in ways that are easy to miss —
   their cylinder head bolt procedures, bit sizes, valve adjustment and fluid
   capacities are all different. This conversion does not require opening either
-  engine, so those figures are deliberately not listed here; if you do open one,
-  read [Appendix A](#appendix-a) first.
+  engine, so those figures are deliberately not listed here. If you do open one,
+  work from a manual for **that specific engine** — not from this document and
+  not from the other engine's chapter.
 - Photograph every connector, ground strap, and bracket before disconnecting it.
   The single most valuable artefact this community has lost is its photographs —
   one builder's phone died with roughly thirty build photos on it, and the
@@ -621,7 +627,7 @@ available before it locks out.
 
 <figure>
   <a id="fig-figure-01"></a>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" alt="Donor Scion xD on arrival, before teardown" />
+  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-01.png" src="/kb/no-image-available.svg" alt="Donor Scion xD on arrival, before teardown" />
   <figcaption>
     Figure 3: The donor 2008–2014 Scion xD as received. Photograph the complete
     engine bay from four angles before anything is disconnected.
@@ -692,7 +698,7 @@ If you are forced down this route, three consequences follow:
   remanufactured. `[C]`
 - **You lose the gearing and differential options.** The taller 5th gear, the
   alternative final drives and the helical LSD are all 20-spline parts and will
-  not fit. See [Appendix B](#appendix-b).
+  not fit a 23-spline Yaris differential.
 
 </details>
 
@@ -785,7 +791,7 @@ rebuild is worth considering and it is out of scope here.
 
 <figure>
   <a id="fig-figure-02"></a>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" alt="C50 transaxle on the bench, ready to mate to the engine" />
+  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-02.png" src="/kb/no-image-available.svg" alt="C50 transaxle on the bench, ready to mate to the engine" />
   <figcaption>
     Figure 4: The C50 as received. Check the dowel pins, the input shaft
     splines, and the speed sensor location before mating it to the engine.
@@ -932,8 +938,18 @@ complete this conversion.
 
 ⚠️ Attention: If you do intend to open the engine, its specifications are **not
 in this document** and must not be inferred from the Yaris manual, which covers
-the 1NZ-FE. In particular the 2ZR-FE cylinder head bolt procedure differs from
-every figure commonly quoted for it — see Appendix A before touching a head bolt.
+the 1NZ-FE. Work from a Corolla or Scion xD manual for the 2ZR-FE.
+
+⚠️ Warning: **One figure is worth stating even though the procedure is out of
+scope, because the wrong version is what you will find first.** The 2ZR-FE
+cylinder head bolt sequence is **49 N·m (36 ft·lbf), then +90°, then +45°** —
+paint mark finishing at **135°**, on a **10 mm bi-hexagon** `[RM-C]`. The widely
+repeated *"36 ft·lbf + 90° + 90°"* is **1ZZ-FE/2AZ-FE carryover and wrong for this
+engine**; three independent repair-manual trees give +90° then +45°, and the
+manual's own self-check note confirms it arithmetically. Following the wrong
+version stretches ten torque-to-yield bolts 45° past specification on a fresh
+head gasket. ☝️ For contrast, the **1NZ-FE** coming out genuinely *is*
+29 N·m + 90° + 90°, ending at 180°, on an **8 mm** bi-hexagon `[RM-Y]`.
 
 This phase covers refitting the external components that were removed to get the
 engine out, and the fluid specifications for filling it.
@@ -1043,7 +1059,7 @@ is not a real conflict. 4.2 litres **is** 4.4 US quarts.
 
 <figure>
   <a id="fig-figure-03"></a>
-<img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-03.png" alt="2ZR-FE flywheel and clutch on the bench" />
+<img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-03.png" src="/kb/no-image-available.svg" alt="2ZR-FE flywheel and clutch on the bench" />
 <figcaption>Figure 6</figcaption>
 </figure>
 
@@ -1114,7 +1130,7 @@ standard Yaris 0.8 kW unit. The connectors are identical. Both the 0.8 kW and
 
 <figure>
   <a id="fig-figure-04"></a>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-04.png" alt="NCP91 with front clip removed" />
+  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-04.png" src="/kb/no-image-available.svg" alt="NCP91 with front clip removed" />
   <figcaption>
     Figure 7: Front clip removed and subframe partially lowered. Every source
     that has completed this conversion recommends this approach.
@@ -1222,7 +1238,7 @@ blockers that are easy to discover too late.
 
 <figure>
   <a id="fig-figure-05"></a>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-05.png" alt="Automatic one-piece pedal assembly beside the manual two-piece assembly" />
+  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-05.png" src="/kb/no-image-available.svg" alt="Automatic one-piece pedal assembly beside the manual two-piece assembly" />
   <figcaption>Figure 8</figcaption>
 </figure>
 
@@ -1441,7 +1457,7 @@ bleed mode anywhere in the brake chapters. `[RM-Y]`
 
 <figure>
   <a id="fig-figure-06"></a>
-  <img src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-06.png" alt="Six mount pieces laid out — three brackets and three isolators" />
+  <img data-pending-src="/kb/toyota-2zr-fe-engine-and-manual-transaxle-swap-into-ncp91-yaris/figure-06.png" src="/kb/no-image-available.svg" alt="Six mount pieces laid out — three brackets and three isolators" />
   <figcaption>
     Figure 12: The mount set is six pieces, not three. Each mount position is a
     bracket on the engine or transaxle plus an isolator on the body or subframe.
@@ -1613,7 +1629,7 @@ against the Yaris's 40 mm. `[C]`
 | **Donor xD midpipe** (recommended)     | Comes free with the donor car. ⚠️ Remove it before the shell is scrapped — replacements are effectively unobtainable |
 | Weld a larger flange to the Yaris pipe | Cheap and repeatable. One shop welded a 2.25" flange with a single cat section for $208 `[C]`                        |
 | Full custom fabrication                | Most flexible, most expensive                                                                                        |
-| Long-tube header                       | See Appendix B. Requires O2 sensor extension, a firewall indent for A/F sensor clearance, and a flex joint           |
+| Long-tube header                       | Aftermarket, and out of scope here. Requires an O2 sensor extension, a firewall indent for A/F sensor clearance, and a flex joint or the engine vibrates at idle with the A/C engaged `[C]` |
 
 | Joint                         | N·m | ft·lbf | Notes                                                   | Source   |
 | :---------------------------- | --: | :----- | :------------------------------------------------------ | :------- |

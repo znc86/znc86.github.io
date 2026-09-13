@@ -14,21 +14,19 @@ tags:
   - 2zr-fe
 ---
 
-№ 2ZR-NCP91-0001
-
 <a id="introduction"></a>
 
 ## Introduction
 
-Thank you very much for undertaking this conversion. This document describes
+This article describes
 procedures and precautions for replacing the `1NZ-FE` engine and `U340E`
 automatic transaxle of the NCP91 Yaris with the `2ZR-FE` engine and `C50`
 5-speed manual transaxle. Please be sure to read it before beginning work and
 carry out correct installation and handling.
 
 Toyota did not sanction this conversion and does not publish a procedure for it.
-This document is assembled from one builder's complete parts-and-task record, and
-roughly seventy pages of forum threads that contradict one another and self-correct
+This document is assembled from roughly seventy pages of forum threads that
+contradict one another and self-correct
 several times, and two factory workshop manuals. Where the manuals speak,
 they are quoted. Where only the community speaks, that is marked. Where nobody
 knows, that is marked too.
@@ -119,8 +117,6 @@ road**, so the car stays driveable through the longest part of the job.
   - [Phase 11 — First start and commissioning](#phase-11)
 - [Post-installation Checks and Precautions](#post-install)
 - [Budget](#budget)
-- [Appendix A — Wrong-Engine Quarantine](#appendix-a)
-- [Appendix B — Bolt-on Reference](#appendix-b)
 - [References](#references)
 
 ---
@@ -2161,9 +2157,16 @@ That is cosmetic. The factory explanation is that when the immobilizer is
 operating normally and the key is removed, the security indicator blinks
 continuously — the indicator is doing exactly what it is designed to do. `[RM-Y]`
 
+☝️ Advice: **If the isolation worked, there should be no immobiliser codes at
+all.** That, and an engine that starts and keeps running, is the whole success
+criterion here.
+
 ⚠️ Attention: If the engine still will not run, read [(9.4) Diagnosis](#phase-9)
-before changing anything else. `B2799` is the expected code, and the manual's
-triage order is to clear any transponder key ECU codes first.
+before changing anything else — and in particular **do not treat the absence of
+`B2799` as proof the immobiliser is not the problem.** A non-immobilizer ECM may
+never set that code. Confirm the isolation with the **continuity measurements**
+in (9.4) rather than with a code reader, and clear any key-side codes first, per
+the manual's triage order `[RM-Y]`.
 
 ⚠️ Attention: The community has a working method for running a non-immobilizer
 ECM against a live transponder key ECU, and has **deliberately chosen not to
@@ -2174,36 +2177,72 @@ finite and exhausting it means replacing the transponder key ECU.
 
 #### (9.4) Diagnosis
 
-The code to expect is **`B2799` Engine Immobiliser System**, listed in the **ECM**
-trouble code chart with trouble areas "1. Wire harness, 2. ECM". `[RM-Y]`
+⚠️ Attention: **`B2799` is a failure code, not a normal artefact of a completed
+conversion.** A successful conversion produces **no immobiliser codes at all** —
+the target state is the one stated in [(10.3)](#phase-10): no stored codes and
+all readiness monitors set. If `B2799` is present, the immobiliser side of the
+job is not finished.
+
+`B2799 Engine Immobiliser System` is listed in the **ECM** trouble code chart
+with trouble areas "1. Wire harness, 2. ECM" `[RM-Y]`:
 
 > This DTC is output when: 1) the ECM detects errors in its own communication
 > with the transponder key ECU; 2) the ECM detects errors in the communication
 > lines; and 3) **the ECU–ECM communication IDs between the transponder key ECU
 > and the ECM are different and an engine start is attempted.**
 
-That third condition is this conversion's signature failure.
+##### ⚠️ Do not wait for `B2799` to confirm your diagnosis
 
-☝️ Advice: **Triage order matters.** Before troubleshooting `B2799`, confirm that
-no transponder key ECU codes are present. If any are, resolve those first.
-`[RM-Y]`
+There is a subtlety here that matters, and it is not resolved by any source
+available to this document.
 
-⚠️ Attention: **Only `B2799` is expected from this conversion.** Every other code
-in the immobiliser chapter is a fault on the **key side** of the system — the key,
-its transponder chip, the antenna coil or the amplifier — and none is caused by
-swapping an engine or by the isolation in (9.3). If one appears it is a genuine
-pre-existing fault in the recipient car, not a consequence of your work.
+`B2799` is set by **the ECM**, when the ECM detects a problem talking to the
+transponder key ECU. On the assumed path — a **US-market, non-immobilizer** xD
+ECM — that ECM has no immobiliser function, so in principle it has no such
+diagnostic to run and **may never set `B2799` at all.** A failed isolation on this
+path can therefore present as **crank, no start, with no immobiliser code
+anywhere** `[C]`.
 
-| Code        | Detection item                         | Side     | Expected here?                                                      |
-| :---------- | :------------------------------------- | :------- | :------------------------------------------------------------------ |
-| **`B2799`** | **Engine immobiliser system**          | **ECM**  | ☝️ **Yes — the signature code of this swap.** Trouble areas: wire harness, ECM |
-| `B2784`     | Antenna coil open or short             | Key side | No — antenna coil fault                                             |
-| `B2793`     | Transponder chip malfunction           | Key side | No — faulty key                                                     |
-| `B2794`     | Unmatched encryption code              | Key side | No — key with an incomplete key code                                |
-| `B2795`     | Unmatched key code                     | Key side | No — unregistered key                                               |
-| `B2796`     | No communication in immobiliser system | Key side | No — key has no chip, or key-to-ECU communication failed            |
-| `B2797`     | Communication malfunction No. 1        | Key side | No — key or wire harness                                            |
-| `B2798`     | Communication malfunction No. 2        | Key side | No — same cause as `B2796`                                          |
+| Scenario | What you should see |
+| :--- | :--- |
+| Conversion complete, isolation correct | ☝️ **No immobiliser codes.** Engine starts and runs |
+| Non-immobilizer ECM, isolation incomplete | ⚠️ Crank-no-start. `B2799` **may or may not** appear — do not treat its absence as proof the immobiliser is not the problem `[C]` |
+| Immobilizer-capable ECM fitted without a registered communication ID | ⚠️ `B2799`, condition 3 above. This is the out-of-scope Canadian path — see (9.1) |
+
+☝️ Advice: So use the **continuity measurements**, not the code reader, to confirm
+the isolation. They are unambiguous and they do not depend on which ECM you
+fitted. See the checks below.
+
+##### Reading the resistance checks correctly
+
+The same three pairs are measured for two opposite purposes, and it is easy to
+read the wrong expectation off the manual:
+
+| Purpose | `D23-13`↔`A21-11` and `D23-12`↔`A21-10` should read |
+| :--- | :--- |
+| **Confirming the factory wiring is intact** — the manual's own `B2799` harness test | **Below 1 Ω** `[RM-Y]` |
+| **Confirming your isolation in (9.3) succeeded** | **Open circuit** — the opposite |
+| Either case, terminals to body ground | **10 kΩ or higher** `[RM-Y]` |
+
+⚠️ Attention: Measure with **both `D23` and `A21` disconnected**. A reading taken
+with either still plugged in is meaningless.
+
+##### Codes that are not caused by this conversion
+
+Every other code in the immobiliser chapter is a fault on the **key side** of the
+system — the key, its transponder chip, the antenna coil or the amplifier. None is
+caused by swapping an engine or by the isolation in (9.3). If one appears it is a
+genuine pre-existing fault in the recipient car, not a consequence of your work.
+
+| Code    | Detection item                         | Cause                                                    |
+| :------ | :------------------------------------- | :------------------------------------------------------- |
+| `B2784` | Antenna coil open or short             | Antenna coil fault                                       |
+| `B2793` | Transponder chip malfunction           | Faulty key                                               |
+| `B2794` | Unmatched encryption code              | Key with an incomplete key code                          |
+| `B2795` | Unmatched key code                     | Unregistered key                                         |
+| `B2796` | No communication in immobiliser system | Key has no chip, or key-to-ECU communication failed      |
+| `B2797` | Communication malfunction No. 1        | Key or wire harness                                      |
+| `B2798` | Communication malfunction No. 2        | Same cause as `B2796`                                    |
 
 ☝️ Advice: **`B2796` and `B2798` matter because their names sound like the problem
 you have and are not.** The manual defines both as being output *"when a key that
@@ -2213,12 +2252,9 @@ communication between the key and transponder key ECU is not possible"* `[RM-Y]`
 `EFIO` and `EFII` in (9.3) does not touch it and will not set these codes.
 
 ⚠️ Attention: This is why the manual's triage order is what it is. **Clear any
-key-side code first.** A bad key or a failing coil produces symptoms that look
-like an immobiliser lockout while having nothing to do with the ECM, and chasing
-`B2799` underneath one of those wastes the ignition-cycle budget.
-
-Diagnostic check: with `D23` and `A21` disconnected, measure resistance across
-the three pairs in (9.2). Each should read **below 1 Ω**. `[RM-Y]`
+key-side code first** `[RM-Y]`. A bad key or a failing coil produces symptoms that
+look like an immobiliser lockout while having nothing to do with the ECM, and
+chasing `B2799` underneath one of those wastes the ignition-cycle budget.
 
 ⚠️ Attention: Third-party immobilizer bypass modules and EEPROM modification exist.
 They are not recommended for a daily-driven vehicle and are not covered here.
@@ -2366,6 +2402,8 @@ before and after the conversion. `[C]`
 ⚠️ Attention: The most-reported subjective complaint is **rev hang, worse than the
 1NZ-FE**. A lightweight flywheel does not fix it. `[C]`
 
+---
+
 <a id="budget"></a>
 
 ## Budget
@@ -2400,127 +2438,6 @@ the **$780 catalytic converter** — see [Parts Manifest](#parts-manifest).
 
 ---
 
-<a id="appendix-a"></a>
-
-## Appendix A — Wrong-Engine Quarantine
-
-Half the danger in a swap workbook is a confidently-stated number that belongs to
-a different engine. The values below circulate in connection with this
-conversion and are **wrong for the 2ZR-FE**. They are listed specifically so
-they can be recognised and rejected.
-
-| Value in circulation                                 | Actually belongs to                          | Correct 2ZR-FE value                           |
-| :--------------------------------------------------- | :------------------------------------------- | :--------------------------------------------- |
-| Head bolts **"36 ft·lbf + 90° + 90°"**               | **1ZZ-FE / 2AZ-FE**                          | **49 N·m + 90° + 45°**, mark at 135°           |
-| Head bolts, 8 mm bi-hexagon                          | **1NZ-FE** (the engine coming out)           | **10 mm** bi-hexagon                           |
-| Flywheel "38 ft·lbf + 90°"                           | **1NZ-FE**, via a misprinted imperial column | 49 N·m + 90° = **36 ft·lbf**                   |
-| Bell housing **"22 ft·lbf"**                         | The **internal case-half** bolt              | **33 N·m / 24 ft·lbf**, 7 bolts                |
-| Rod cap "18 ft·lbf"                                  | **2AZ-FE**                                   | **20 N·m / 15 ft·lbf** + 90°                   |
-| Engine moving control rod **"64 N·m"**               | **2AZ-FE, 2004 Camry**                       | 100 N·m transaxle side, 120 N·m at crossmember |
-| Insulator "80 N·m" + hangers "25 N·m"                | **1AD/2AD-FTV diesel**                       | See Phase 7                                    |
-| Chain tensioner slipper "19 N·m"                     | **2AZ-FE**                                   | ⚠️ **Not published** — see below               |
-| Chain tensioner slipper "18.5 N·m"                   | **1ZZ-FE**                                   | ⚠️ Not published                               |
-| Chain tensioner slipper "20.5 N·m"                   | **2ZZ-GE**                                   | ⚠️ Not published                               |
-| Chain tensioner slipper "9.0 N·m"                    | **1NZ-FE**                                   | ⚠️ Not published                               |
-| Transaxle oil "75W-90, 3 qt"                         | Community practice, not a spec               | **GL-4, SAE 75W, 1.9 ℓ**                       |
-| Coolant "5.5 ℓ"                                      | Community estimate                           | **4.8 ℓ** M/T                                  |
-| Differential shim part numbers `90564-41014`–`41032` | Not in any factory manual                    | Lettered plate washers **AA–UU**               |
-| Applied model **`AZE151L`**                          | **Scion xB**, `2AZ-FE` 2.4 ℓ                 | The xD is **`ZSP110L-AHMRKA`**                 |
-
-⚠️ Advice: **Toyota manual RM3027** is a complete 2ZR-FE "Engine Assembly" mount
-table and is easy to find. It is **JDM Auris/ist — not US-market xD or
-Corolla.** Its crossmember figure is 99 N·m against the xD's 70/160/95 and the
-Corolla's 113/157/52. It _partially_ agrees with the US Corolla on the insulator
-rows, which makes it **more** dangerous, not less. Do not use it for a US
-vehicle.
-
-### Specifications that genuinely do not exist
-
-Publishing these as gaps is more useful than filling them with a guess.
-
-| Item                                               | Status                                                                                                            |
-| :------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| Cylinder head cover torque                         | **Toyota publishes none.** An absence, not a gap                                                                  |
-| 2ZR-FE valve clearance                             | **Not applicable** — hydraulic lash adjusters                                                                     |
-| Chain tensioner slipper bolt                       | Not located for the 2ZR-FE                                                                                        |
-| Head bolt tightening **sequence** (1–10)           | Illustration only in the manual, not text                                                                         |
-| Timing chain cover sequence, 26 bolts              | Illustration only                                                                                                 |
-| A/C compressor mounting bolts                      | Not located                                                                                                       |
-| Drive belt idler pulley, as a distinct row         | Not located                                                                                                       |
-| Engine coolant temperature sensor torque           | Not located                                                                                                       |
-| LH transaxle mounting **bracket** to case bolts    | Not located — the manuals route this to an "Engine Assembly / Installation" document absent from both mirrors     |
-| xD RH insulator — which of 45/88/52 N·m goes where | **Genuinely unpublished.** Three torques, two illustration labels                                                 |
-| Oil pump relief valve plug                         | Sources give 49 and 37 N·m irreconcilably. **Treat as not found**                                                 |
-| Radiator and block drain cocks                     | No torque printed — hand-tight                                                                                    |
-| ABS tone rings                                     | Never addressed by any source — **and not needed**, because nothing in this procedure changes the hubs. See (7.3) |
-| Fastener part numbers generally                    | The repair manual names joints, not part numbers                                                                  |
-
-☝️ Advice: Row labels such as "No.1 / No.2 front and rear mounting bracket" do
-**not exist** in the 2ZR-FE repair manual. That naming comes from other engine
-families — do not go looking for them.
-
-<a id="appendix-b"></a>
-
-## Appendix B — Bolt-on Reference
-
-☝️ Advice: **None of this is required for the conversion.** It is collected here
-so that the main procedure stays a stock-replacement document.
-
-### Measured output
-
-| Configuration                                | Wheel hp | Torque    |
-| :------------------------------------------- | -------: | :-------- |
-| Stock, plus intake                           |      123 | 121 lb·ft |
-| Plus long-tube header and 2.25–2.5" mid pipe |      134 | 134 lb·ft |
-| Plus prototype intake manifold               |      148 | 137 lb·ft |
-
-The header and mid pipe alone added approximately 15 lb·ft at 3000 rpm.
-Realistic naturally-aspirated ceiling is around 150 wheel hp. `[C]`
-
-☝️ Advice: The 2ZR-FE has **no variable valve lift** — only cam phasing, advance
-and retard. The strong pull above 4000 rpm that gets described as VTEC-like is
-cam timing, not a lift change. `[C]`
-
-### Exhaust
-
-A long-tube header will not bolt to any OEM midpipe; reputable kits ship an extra
-flange and gasket. Installation notes from builders: the coating will be
-scratched during installation, the bracket tab must be bent to fit from
-underneath, **an indent must be made in the firewall for A/F sensor clearance**,
-the rear O2 sensor requires an extension because of the header length, and a
-**flex joint** should be fitted or the engine vibrates noticeably at idle with the
-A/C engaged. `[C]`
-
-### Gearing
-
-| Option                     | Effect                                                   |
-| :------------------------- | :------------------------------------------------------- |
-| QRP 5th gear set, 0.725:1  | From 0.815:1. Drops 70 mph from 3,228 to 2,871 rpm       |
-| 4.31 final drive, 04–06 xB | Drop-in. In-gear top speeds 29 / 54 / 80 / 101 / 121 mph |
-| Helical LSD                | 20-spline axles — fits the xD differential               |
-| EC60 / EC67 6-speed        | See below                                                |
-
-⚠️ Attention: On the 6-speed — the EC-series cases are shorter than the C-series
-because Toyota moved to a two-piece case design, so no hammer work is needed to
-fit one. However the EC67 uses a **special throwout bearing with an integrated
-cylinder**, so the entire clutch hydraulic system must change. One builder who
-fitted an EC60 reported first gear is far too short and concluded it "isn't
-really worth it" on an otherwise stock car. `[C]`
-
-### Driveline strength
-
-| Output        | Recommendation                         |
-| :------------ | :------------------------------------- |
-| Up to ~150 hp | Yaris differential and shafts adequate |
-| 150–250 bhp   | xD driveline                           |
-| Above 250 bhp | Custom shafts                          |
-
-☝️ Advice: Automatic transaxles begin slipping above approximately 275 hp; keep
-boosted builds on a U340E to 220–230 hp. Not relevant to this conversion, but it
-comes up constantly. `[C]`
-
----
-
 <a id="references"></a>
 
 ## References
@@ -2535,15 +2452,6 @@ comes up constantly. `[C]`
 - **Toyota Corolla and Scion xD repair manuals**, 2ZR-FE. All `[RM-C]` values.
   Accessible via the [Operation CHARM](https://charm.li/) mirror and
   [workshop-manuals.com](https://workshop-manuals.com/).
-
-☝️ Advice for anyone verifying these figures: appending `/sitemap.xml` to a
-workshop-manuals.com model path returns a complete leaf-URL inventory — 7,233
-URLs for the Corolla — which removes all page-number guessing. Note that
-`toyotaguru.us`, widely linked in older threads, is now a parked domain.
-
-⚠️ Attention: The XP90 workshop manual contains **printing errors in its imperial
-and kgf·cm columns**. Every imperial figure in this document was recomputed from
-the N·m value. Set your wrench from the N·m column.
 
 ### Community sources
 
@@ -2587,30 +2495,8 @@ the N·m value. Set your wrench from the N·m column.
 part numbers; [car-part.com](https://www.car-part.com/) for salvage harness and
 ECM sourcing, which is more productive than auction sites for these items.
 
-### What could not be retrieved
-
-Stated plainly, because a reader deserves to know where this document is thin.
-
-- **A full Yaris-versus-xD ECU pinout spreadsheet.** The document everyone cites
-  is a dead Google Sheets link, returning HTTP 410. No replacement was found.
-  This is the single most valuable lost artefact in the community record.
-- **A third private build document**, linked from one builder's own public
-  checklist, returns HTTP 401. Contents unknown.
-- **Page 24 of the main guide thread**, posts 415–417.
-- **Build photographs.** Mount comparison shots, the `C20` lock tab, the pin
-  release views, the `CA2` connector, and the manual-versus-automatic pedal
-  assemblies exist only as forum image attachments. One builder lost
-  approximately thirty photographs when his phone died and says so himself. Two
-  survive publicly, at `jeff.epicwelding.com/yaris_mounts1.jpg` and
-  `yaris_mounts2.jpg`.
-- **The community's immobilizer bypass method**, withheld deliberately. See (9.3).
-- A 2ZR-FE flywheel bolt torque confirmed against a factory manual. See Phase 4.
-
-☝️ Advice: The figures in this document are drawn from two factory manuals and
-cross-checked against every builder's account that could be located. Where a
-value is marked `[C]`, it has not been confirmed against a manual — verify it by
-trial fit or measurement before relying on it. Where a value is absent, it is
-absent because it could not be found, not because it was omitted for brevity.
-
 If you complete this conversion, **photograph it.** The gap in this document is
 not specifications any more. It is pictures.
+
+Good Luck 👋,<br/>
+-Ron Adams

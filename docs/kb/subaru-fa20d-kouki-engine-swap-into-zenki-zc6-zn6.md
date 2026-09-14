@@ -1,6 +1,6 @@
 ---
-title: "Subaru FA20D Kouki Engine and Wiring Harness Swap into a Zenki ZN6/ZC6 Scion FR-S or Subaru BRZ"
-subtitle: Installation and Instruction Conversion procedure for swapping a 2017–2020 FA20D engine, ECM, and wiring harness into a 2013–2016 Scion FR-S or Subaru BRZ, retaining the original manual transaxle
+title: "Subaru FA20D Late-Model (Kouki) Engine Swap into an Early-model (Zenki) ZN6/ZC6 Scion FR-S or Subaru BRZ"
+subtitle: Installation and Instruction Conversion procedure for swapping a 2017–2020 FA20D engine, ECM, and wiring harness into a 2013–2016 Scion FR-S or Subaru BRZ, retaining the original manual transmission
 datePublished: "2026-09-13T18:10:00"
 published: true
 author: Ron. A (@brz_typera)
@@ -21,18 +21,35 @@ tags:
 
 ## Introduction
 
+<figure>
+  <img src="/kb/subaru-fa20d-kouki-engine-swap-into-zenki-zc6-zn6/FA20-engine-top.jpg" alt="FA20D red top late-model kouki from a Subaru BRZ engine bay" />
+  <figcaption>
+    Figure 0: Subaru BRZ engine bay with a late-model FA20D red top kouki.
+  </figcaption>
+</figure>
+
 This article describes procedures and precautions for replacing the 2013–2016
 ("zenki") `FA20D` engine, engine control module, and engine wiring harness of a
 `ZN6` Scion FR-S or `ZC6` Subaru BRZ with the 2017–2020 ("kouki") `FA20D`
 engine, ECM, and harness from a later `ZN6`/`ZC6` donor. The recipient's own
-manual transaxle, clutch hydraulics, axles, and body wiring stay in the car.
+manual transmission, clutch hydraulics, axles, and body wiring stay in the car.
 Please be sure to read it before beginning work and carry out correct
 installation and handling.
 
+**Read this before you source a donor.** The reason DIY attempts at this swap stall
+is almost always due to electical/ECU issues. The engine ECM, the
+vehicle's immobilizer/Smart Entry hardware, and the ignition keys form a single
+matched security set on this platform `[RM-Z]` `[RM-K]` `[C]`, and the factory
+ECM is locked against exactly the cross-VIN, cross-generation pairing this swap
+needs. Unlocking it means dealer-only registration tooling, or reverse-
+engineering a security scheme Subaru and Toyota have never published `[RM-K]`.
+**This document defaults to a standalone ECU** ([Phase 2, Option A](#phase-2))
+rather than the factory one, because for most builders that R&D/tooling/dealer
+barrier is inaccessible or takes more time than a standalone ECU does.
+
 Subaru and Toyota did not sanction this conversion and do not publish a
 procedure for it. This document is assembled from two factory workshop
-manuals — one fully text-searchable, one a scanned 221 MB combined manual with
-no text layer, OCR'd chapter by chapter for this document — and from
+manuals, and from
 `ft86club.com` build threads, some of which document a professional mechanic's
 completed cross-generation swap. Where the manuals speak, they are quoted.
 Where only the community speaks, that is marked. Where nobody knows, that is
@@ -41,19 +58,19 @@ marked too.
 The following symbols are displayed for important points, which must be
 observed.
 
-| Note         |                                                                                                    |
-| :----------- | :------------------------------------------------------------------------------------------------- |
-| ☠️ Warning   | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
-| ⚠️ Advice    | For your safety and that of your vehicle (mishandling may result in injury or accident)            |
-| ☝️ Advice    | Describes information that is useful for performing the work efficiently                           |
+| Note       |                                                                                                    |
+| :--------- | :------------------------------------------------------------------------------------------------- |
+| ☠️ Warning | Safety precautions that must be observed (Improper handling may result in death or serious injury) |
+| ⚠️ Advice  | For your safety and that of your vehicle (mishandling may result in injury or accident)            |
+| ☝️ Advice  | Describes information that is useful for performing the work efficiently                           |
 
 Source markers are displayed for every specification.
 
-| Marker   | Meaning                                                                                                        |
-| :------- | :-------------------------------------------------------------------------------------------------------------- |
-| `[RM-Z]` | 2012–2013 Subaru BRZ factory service manual set (zenki) — Engine Mechanical, Electrical Wiring, Transmission, Quick Reference Index |
+| Marker   | Meaning                                                                                                                                                                             |
+| :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[RM-Z]` | 2012–2013 Subaru BRZ factory service manual set (zenki) — Engine Mechanical, Electrical Wiring, Transmission, Quick Reference Index                                                 |
 | `[RM-K]` | 2017 Subaru BRZ factory service manual `G4440BE` (kouki) — a single scanned combined manual, OCR'd by chapter for this document. Cited by PDF page and section code (e.g. `ES-685`) |
-| `[C]`    | Community-reported, mainly `ft86club.com` forum threads. **Verify by trial fit or measurement before relying on it** |
+| `[C]`    | Community-reported, mainly `ft86club.com` forum threads. **Verify by trial fit or measurement before relying on it**                                                                |
 
 <details>
   <summary>⚠️ Advice — General</summary>
@@ -64,11 +81,12 @@ Source markers are displayed for every specification.
   and MY2017–2020 calibrations. OBD-II readiness monitors, local inspection
   requirements, and any engine-change approval process are the installer's
   responsibility.
-- **The hardest part of this swap is not mechanical.** The engine ECM, the
-  vehicle's immobilizer/Smart Entry hardware, and the ignition keys form a single
-  matched security set on this platform `[RM-Z]` `[RM-K]` `[C]`. Read
-  [Phase 2](#phase-2) in full, and decide your immobilizer strategy, **before**
-  you buy a donor.
+- **The hardest part of this swap is not mechanical — see the immobilizer
+  note above.** Read [Phase 2](#phase-2) in full, and decide your immobilizer
+  strategy, **before** you buy a donor. The registration procedure that would
+  let you keep the factory ECM is gated behind dealer-only tooling and a
+  "REGISTRATION MANUAL FOR IMMOBILIZER" that isn't published in either factory
+  manual set consulted for this document `[RM-K]`.
 - The descriptions in this manual are intended for automobile mechanics or
   persons with basic knowledge of maintenance. Do not attempt this conversion by
   inexperienced persons only.
@@ -79,41 +97,80 @@ Source markers are displayed for every specification.
 
 ### Summary of the Conversion
 
-**Why.** The zenki and kouki `FA20D` share the same 2.0 ℓ naturally-aspirated
-flat-four architecture — this is not a displacement swap. What the kouki engine
-brings is a **Hall-effect crankshaft position sensor** in place of the zenki's
-sensor `[C]`, a factory **"Track Mode"** throttle and traction-control
-calibration reported to sharpen throttle response and permit disabling traction
-control, and modestly more rated horsepower `[C]`. Whether the kouki long block
-also carries a piston-ring revision addressing the zenki engine's widely
-discussed oil-consumption complaints is **not confirmed by either factory
-manual** in the sections reviewed for this document, and no `ft86club.com`
-thread found during research states it outright either — treat it as an
-unconfirmed possibility, not a documented reason, until you find a primary
-source.
+**Why.** The zenki and kouki `FA20D` share the same 2.0ℓ naturally-aspirated
+flat-four architecture — this is not a displacement swap, and it does not chase
+big power. It makes economic sense under one specific condition: a
+running or rebuildable **kouki-generation `FA20D`, complete with its harness
+and ECM, is cheap and available** — off a salvage donor with a totalled body,
+for example — **and you already have a healthy zenki chassis** you have no
+interest in parting with. Under those terms, the concrete, confirmed gains are:
+
+- A **Hall-effect crankshaft position sensor** `[C]`, in place of the zenki's
+  magnetic-pickup sensor. This is a hardware property of the sensor itself, so
+  it holds regardless of which [Phase 2](#phase-2) immobilizer/ECU strategy you
+  pick. A Hall-effect sensor outputs a clean digital signal down to and
+  including zero RPM, where a variable-reluctance sensor's signal amplitude
+  falls with speed and can become unreadable at cranking speeds — in principle
+  a steadier signal through cold starts and cranking. Neither factory manual
+  states this as a design rationale, and no primary source found during
+  research draws that connection explicitly either — treat it as a general
+  property of the sensor type, not a documented Subaru rationale.
+- A factory **"Track Mode"** throttle and traction-control calibration and
+  modestly more rated horsepower `[C]` — **but these are calibration, not
+  hardware, and only come along for the ride if you keep the factory ECM**
+  ([Phase 2, Option B](#phase-2)). This document's default path,
+  [Option A](#phase-2)'s standalone ECU, discards the factory tune entirely —
+  reproducing either of these depends on your own tune, not on having sourced
+  a kouki engine.
+
+Whether the kouki long block also carries a piston-ring revision addressing the
+zenki engine's widely discussed oil-consumption complaints is **not confirmed
+by either factory manual** in the sections reviewed for this document, and no
+`ft86club.com` thread found during research states it outright either — treat
+it as an unconfirmed possibility, not a documented reason, until you find a
+primary source.
+
+**Why not the `FA24D` instead.** If you don't already have a kouki `FA20D`
+sitting in front of you, price out the alternative before committing to this
+document. The `FA24D` — Subaru's 2.4ℓ successor engine, from the ZD8/ZN8-
+generation GR86/BRZ — is a larger, genuinely more powerful engine, and the
+community has already built out harness solutions for swapping _it_ into this
+same first-generation chassis `[C]`, including complete plug-in swap harnesses
+from more than one vendor. For roughly the same order of effort — a comparable
+cross-generation ECU/harness/immobilizer job — the `FA24D` is the better engine
+to end up with. This document exists for the case where a kouki `FA20D` has
+already fallen into your lap cheaply and an `FA24D` swap isn't what you're set
+up to do; it is not a claim that the kouki `FA20D` is the best engine available
+for this chassis.
+
+**Why this document suggests a standalone ECU.** Keeping the factory ECM on an
+early-model chassis asks for three things a home build rarely has: **R&D**
+time to reverse-engineer an unpublished immobilizer/registration scheme,
+**tooling** to do that reverse-engineering, or **dealership-only registration
+tooling** to do it the documented way `[RM-K]` `[C]`. None of that is cheap in
+time or money, and a botched attempt risks a car that intermittently won't
+start. That's why this document defaults to a standalone ECU rather than the
+factory one. **[Phase 2, Option A](#phase-2)** covers the standalone-ECU route
+this document treats as the default; **Option B** is there for builders who do
+have dealer-level access and want to keep the factory ECM anyway.
 
 The work divides into five stages.
 
 - **Source a complete, matching donor.** One donor car, one model year, engine
-  and harness and ECM and immobilizer components together. See
-  [Phase 0](#phase-0) and why "one donor" matters more here than it did for
-  other swaps.
+  and harness and ECM together. See [Phase 0](#phase-0) and why "one donor"
+  matters more here than it did for other swaps.
 - **Decide the immobilizer strategy.** This has to happen before teardown, not
-  after. See [Phase 2](#phase-2).
-- **Harvest the donor** — engine, harness, ECM, and (depending on your
-  immobilizer path) its keys and security components, as matched, un-cut
-  assemblies.
+  after — and for most builders it means budgeting for a standalone ECU rather
+  than the factory one. See [Phase 2](#phase-2).
+- **Harvest the donor** — engine, harness, ECM, and (only if pursuing
+  [Phase 2, Option B](#phase-2)) its keys and security components, as matched,
+  un-cut assemblies.
 - **Install into the recipient** on the recipient's own mounts and against the
   recipient's own manual transaxle — the bellhousing interface is unchanged
   across both generations `[RM-K]`.
 - **Wire it in and commission it** — the injector feed relocation and the
   charging-system protocol change are the two wiring gotchas specific to this
   generation gap.
-
-☝️ Advice: Unlike the NCP91/xD conversion this document is styled after, this
-swap does not require stripping the recipient down to a rolling shell. The
-transaxle, clutch, axles, subframe, body harness, and dash all stay exactly
-where they are.
 
 ---
 
@@ -146,12 +203,12 @@ where they are.
 
 ### Recipient Vehicle — "Zenki"
 
-| Item              | Specification                                                                        |
-| :---------------- | :------------------------------------------------------------------------------------ |
-| **Applied model** | `ZN6` (Scion FR-S) or `ZC6` (Subaru BRZ)                                              |
-| Model-year letter | `A`–`D` in the applied-model code — 2012/03 through 2016/07 production `[C]`          |
-| Engine            | `FA20D` 2.0 ℓ DOHC, naturally aspirated                                               |
-| Transaxle         | `TL70` 6-speed manual — **retained**, not part of this conversion                     |
+| Item              | Specification                                                                |
+| :---------------- | :--------------------------------------------------------------------------- |
+| **Applied model** | `ZN6` (Scion FR-S) or `ZC6` (Subaru BRZ)                                     |
+| Model-year letter | `A`–`D` in the applied-model code — 2012/03 through 2016/07 production `[C]` |
+| Engine            | `FA20D` 2.0ℓ DOHC, naturally aspirated                                       |
+| Transaxle         | `TL70` 6-speed manual — **retained**, not part of this conversion            |
 
 ☝️ Advice: Scion badged this chassis "FR-S"; Subaru badged it "BRZ." Both are the
 same `ZN6`/`ZC6` platform and take the same engine, harness, and ECM — the badge
@@ -159,12 +216,12 @@ does not change anything in this document.
 
 ### Donor Vehicle — "Kouki"
 
-| Item              | Specification                                                                                     |
-| :---------------- | :-------------------------------------------------------------------------------------------------- |
+| Item              | Specification                                                                                                               |
+| :---------------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | **Applied model** | `ZN6` (**Toyota 86** — Scion was discontinued in 2016, so the 2017+ Toyota-badged car is not an FR-S) or `ZC6` (Subaru BRZ) |
-| Model-year letter | `E`–`H` — production from 2016/07 through the platform's final MY2020, marketed in the US as the **"2017 BRZ"** `[C]` |
-| Engine            | `FA20D` 2.0 ℓ DOHC, naturally aspirated — same displacement and block family as zenki |
-| Transaxle         | `TL70` 6-speed manual — **not used**; the recipient's own transaxle stays in the car               |
+| Model-year letter | `E`–`H` — production from 2016/07 through the platform's final MY2020, marketed in the US as the **"2017 BRZ"** `[C]`       |
+| Engine            | `FA20D` 2.0ℓ DOHC, naturally aspirated — same displacement and block family as zenki                                        |
+| Transaxle         | `TL70` 6-speed manual — **not used**; the recipient's own transaxle stays in the car                                        |
 
 ⚠️ Advice: **Prefer a manual-transmission donor, and confirm the swap thread
 you're following used one too.** Community reports indicate automatic-transmission
@@ -178,8 +235,8 @@ This is the single most important sourcing rule in this document, and it
 exists because the generation gap is not clean.
 
 A `ft86club.com` poster who had already completed this class of swap put it
-plainly: *"the engine loom from an early 2012/2013 motor is different to the
-later 2015/2016 motor and... the 2017 motor is quite different again"* `[C]`.
+plainly: _"the engine loom from an early 2012/2013 motor is different to the
+later 2015/2016 motor and... the 2017 motor is quite different again"_ `[C]`.
 That is at least **three** harness sub-generations across zenki alone, before
 kouki is even considered. Buying an engine from one car and a harness or ECM
 from another — even both nominally "zenki" or both nominally "kouki" — risks
@@ -196,17 +253,17 @@ you commit to the purchase.
   <summary>⚠️ Advice — do not attempt to mix generations of ECU and sensors</summary>
 
 A `ft86club.com` thread citing Subaru's own documented changed-parts list for a
-cross-generation swap lists: *"Changed fuel pressure sensor, changed specs of
+cross-generation swap lists: _"Changed fuel pressure sensor, changed specs of
 cam angle sensor plate, changed specs of crank angle sensor, changed shape of
-crank angle sensor plate, changed engine harness, changed alternator, etc."*
+crank angle sensor plate, changed engine harness, changed alternator, etc."_
 `[C]`. A professional mechanic who performed the reverse-direction swap (a
 newer long block onto an older ECU) had to source and fit, piece by piece, "the
 reluctor wheels on all the cam gears," "the crank trigger ring that goes
 between the flywheel and crankshaft," "the crank sensor bracket that bolts to
 the back of the block," and an older-generation DI fuel rail — specifically
-*because* he kept the older ECM `[C]`. Another contributor on the same thread
-was blunter: *"The cam and crank sensor plates from 2017 will confound a 2016
-ECU"* `[C]`.
+_because_ he kept the older ECM `[C]`. Another contributor on the same thread
+was blunter: _"The cam and crank sensor plates from 2017 will confound a 2016
+ECU"_ `[C]`.
 
 This document's whole strategy is to avoid that piecemeal path by taking the
 **entire** kouki engine + harness + ECM + sensor set together, matched, from
@@ -222,40 +279,41 @@ one donor — never pairing a kouki ECM with zenki sensors or vice versa.
 
 ### ① Harvested from the donor vehicle
 
-| No. | Product name                                          | Qty | Notes                                                                                    |
-| --: | :----------------------------------------------------- | :-- | :---------------------------------------------------------------------------------------- |
-|   ① | `FA20D` engine assembly, dressed                       | 1   | Complete long block with intake, DBW throttle body, exhaust manifold, alternator          |
-|   ② | Engine control module (ECM)                            | 1   | 4 connectors, `A33`–`A36` `[RM-K]` — same connector naming as zenki, **not interchangeable calibration** |
-|   ③ | Engine wiring harness, complete                         | 1   | Do not cut. Remove with the ECM attached as one assembly                                  |
-|   ④ | Crankshaft position sensor + crank angle sensor plate    | 1   | ⚠️ **The plate is a separate part, mounted between crank and flywheel, not the sensor itself** `[RM-K]` — see [Phase 4](#phase-4) |
-|   ⑤ | Camshaft/VVT position sensors                           | 4   | One per bank per cam. Comes with the harness, do not substitute zenki units `[RM-K]`      |
-|   ⑥ | Knock sensors                                           | 2   | One per bank `[RM-K]`                                                                     |
-|   ⑦ | Camshaft timing oil control valves                      | 4   | One per bank per cam                                                                      |
-|   ⑧ | Flywheel (M/T)                                          | 1   | Carries the crank angle sensor plate — must come from the donor, matched to ④ `[RM-K]`    |
-|   ⑨ | Clutch cover / pressure plate                           | 1   | Physically interchangeable across generations — see [Phase 4](#phase-4) for whether to reuse the recipient's own |
-|  ⑩ | Fuel pressure sensor and DI fuel rail                    | 1   | Generation-specific; take the donor's, do not mix with zenki-generation parts `[C]`        |
-|  ⑪ | Immobilizer/Smart Entry components                      | —   | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)    |
-|  ⑫ | At least one working ignition key                       | ≥1  | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)    |
+| No. | Product name                                          | Qty | Notes                                                                                                                             |
+| --: | :---------------------------------------------------- | :-- | :-------------------------------------------------------------------------------------------------------------------------------- |
+|   ① | `FA20D` engine assembly, dressed                      | 1   | Complete long block with intake, DBW throttle body, exhaust manifold, alternator                                                  |
+|   ② | Engine control module (ECM)                           | 1   | 4 connectors, `A33`–`A36` `[RM-K]` — same connector naming as zenki, **not interchangeable calibration**                          |
+|   ③ | Engine wiring harness, complete                       | 1   | Do not cut. Remove with the ECM attached as one assembly                                                                          |
+|   ④ | Crankshaft position sensor + crank angle sensor plate | 1   | ⚠️ **The plate is a separate part, mounted between crank and flywheel, not the sensor itself** `[RM-K]` — see [Phase 4](#phase-4) |
+|   ⑤ | Camshaft/VVT position sensors                         | 4   | One per bank per cam. Comes with the harness, do not substitute zenki units `[RM-K]`                                              |
+|   ⑥ | Knock sensors                                         | 2   | One per bank `[RM-K]`                                                                                                             |
+|   ⑦ | Camshaft timing oil control valves                    | 4   | One per bank per cam                                                                                                              |
+|   ⑧ | Flywheel (M/T)                                        | 1   | Carries the crank angle sensor plate — must come from the donor, matched to ④ `[RM-K]`                                            |
+|   ⑨ | Clutch cover / pressure plate                         | 1   | Physically interchangeable across generations — see [Phase 4](#phase-4) for whether to reuse the recipient's own                  |
+|   ⑩ | Fuel pressure sensor and DI fuel rail                 | 1   | Generation-specific; take the donor's, do not mix with zenki-generation parts `[C]`                                               |
+|   ⑪ | Immobilizer/Smart Entry components                    | —   | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                            |
+|   ⑫ | At least one working ignition key                     | ≥1  | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                            |
 
 ### ② Retained from the recipient vehicle
 
-| No. | Product name                                    | Notes                                                                                                  |
-| --: | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-|  ⑬ | `TL70` manual transaxle                          | Bellhousing bolt pattern is unchanged across generations — **3 bolts and 2 nuts, 50 N·m** `[RM-K]` — see [Phase 4](#phase-4) |
-|  ⑭ | Front and rear engine mounting insulators        | ☝️ Reused if in good condition — kouki torque values differ from the zenki figures on file, see [Phase 4](#phase-4) |
-|  ⑮ | Axles, front subframe/crossmember                | Unchanged                                                                                                |
-|  ⑯ | Body wiring harness, dash cluster, body ECU/BCM  | Unchanged, unless the immobilizer strategy in [Phase 2](#phase-2) requires otherwise                    |
-|  ⑰ | Clutch disc, release bearing, hydraulics          | Reusable if condition allows — see [Phase 4](#phase-4)                                                  |
+| No. | Product name                                    | Notes                                                                                                                        |
+| --: | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+|   ⑬ | `TL70` manual transaxle                         | Bellhousing bolt pattern is unchanged across generations — **3 bolts and 2 nuts, 50 N·m** `[RM-K]` — see [Phase 4](#phase-4) |
+|   ⑭ | Front and rear engine mounting insulators       | ☝️ Reused if in good condition — kouki torque values differ from the zenki figures on file, see [Phase 4](#phase-4)          |
+|   ⑮ | Axles, front subframe/crossmember               | Unchanged                                                                                                                    |
+|   ⑯ | Body wiring harness, dash cluster, body ECU/BCM | Unchanged, unless the immobilizer strategy in [Phase 2](#phase-2) requires otherwise                                         |
+|   ⑰ | Clutch disc, release bearing, hydraulics        | Reusable if condition allows — see [Phase 4](#phase-4)                                                                       |
 
 ### ③ Purchased new
 
-| No. | Product name                             | Notes                                                                                    |
-| --: | :---------------------------------------- | :----------------------------------------------------------------------------------------- |
-|  ⑱ | Crank/cam sensor O-rings                  | New each time, oil-lubricated on install `[RM-Z]` `[RM-K]`                                 |
-|  ⑲ | Engine mount hardware                     | New bolts/nuts at the torques in [Phase 4](#phase-4), particularly the crossmember nuts    |
-|  ⑳ | Wiring materials for the injector-feed fix | See [Phase 5](#phase-5) — gauge to match the existing harness, appropriate fuse and terminal |
-|  ㉑ | Dielectric grease                         | All reconnected engine and chassis connectors                                             |
-|  ㉒ | FIPG / gasket set as required by teardown | Valve covers, oil pan, etc., depending on how far the donor engine is serviced before install |
+| No. | Product name                                                                 | Notes                                                                                                                                                    |
+| --: | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   ⑱ | Crank/cam sensor O-rings                                                     | New each time, oil-lubricated on install `[RM-Z]` `[RM-K]`                                                                                               |
+|   ⑲ | Engine mount hardware                                                        | New bolts/nuts at the torques in [Phase 4](#phase-4), particularly the crossmember nuts                                                                  |
+|   ⑳ | Wiring materials for the injector-feed fix                                   | See [Phase 5](#phase-5) — gauge to match the existing harness, appropriate fuse and terminal                                                             |
+|  ㉑ | Dielectric grease                                                            | All reconnected engine and chassis connectors                                                                                                            |
+|  ㉒ | FIPG / gasket set as required by teardown                                    | Valve covers, oil pan, etc., depending on how far the donor engine is serviced before install                                                            |
+|  ㉓ | **Link G5 ECU Plug-In** — **only if pursuing [Phase 2, Option A](#phase-2)** | LHD: part `241-4200`; RHD: part `241-4000` `[C]` — see [Phase 2, Option A](#phase-2) for the required PCLink trigger and DI fuel pressure sensor changes |
 
 Confirmation: Upon collecting these parts, immediately check that nothing is
 damaged and that the harness has not been cut.
@@ -268,15 +326,15 @@ damaged and that the harness has not been cut.
 
 ### Hand and shop tools
 
-| Tool                                            | Tool                                        |
-| :----------------------------------------------- | :------------------------------------------- |
-| Metric socket set, 1/2" and 3/8" drive           | Torque wrench, 5–25 N·m range                |
-| Torque wrench, 20–90 N·m range                   | Breaker bar                                  |
-| Engine hoist and load leveller                   | Engine stand                                 |
-| Transmission jack                                | Connector pin release pick                   |
-| Soldering iron, heat-shrink                       | Multimeter, with continuity and resistance   |
-| Thread-locking compound                          | Anti-seize compound                          |
-| Catch pans, drain pans                            | Safety glasses, work gloves                  |
+| Tool                                   | Tool                                       |
+| :------------------------------------- | :----------------------------------------- |
+| Metric socket set, 1/2" and 3/8" drive | Torque wrench, 5–25 N·m range              |
+| Torque wrench, 20–90 N·m range         | Breaker bar                                |
+| Engine hoist and load leveller         | Engine stand                               |
+| Transmission jack                      | Connector pin release pick                 |
+| Soldering iron, heat-shrink            | Multimeter, with continuity and resistance |
+| Thread-locking compound                | Anti-seize compound                        |
+| Catch pans, drain pans                 | Safety glasses, work gloves                |
 
 ### Scan tool
 
@@ -284,12 +342,12 @@ damaged and that the harness has not been cut.
 (Subaru Select Monitor / SSM4, or an aftermarket equivalent with immobilizer
 functions) is not optional for this conversion**, regardless of which
 immobilizer strategy you pick in [Phase 2](#phase-2). The kouki factory manual
-states explicitly, for ECM replacement: *"the engine control computer for
+states explicitly, for ECM replacement: _"the engine control computer for
 model with immobilizer is replaced, be sure to register the immobilizer
-system"* and *"do not use the one with a wrong specification"* `[RM-K]`, and
-separately: *"When replacing the engine control computer, perform registration
+system"_ and _"do not use the one with a wrong specification"_ `[RM-K]`, and
+separately: _"When replacing the engine control computer, perform registration
 of the identification code. (For registration procedure, refer to
-'REGISTRATION MANUAL FOR IMMOBILIZER.')"* `[RM-K]`. **That registration manual
+'REGISTRATION MANUAL FOR IMMOBILIZER.')"_ `[RM-K]`. **That registration manual
 is not part of either factory manual set researched for this document** — plan
 on a dealer, locksmith, or specialist shop for the actual registration step
 unless you go the standalone-ECU route in [Phase 2](#phase-2).
@@ -357,7 +415,7 @@ unless you go the standalone-ECU route in [Phase 2](#phase-2).
 <figure>
   <img data-pending-src="/kb/subaru-fa20d-kouki-engine-swap-into-zenki-zc6-zn6/figure-01.jpg" src="/kb/no-image-available.svg" alt="Donor kouki-generation Toyota 86 or Subaru BRZ engine bay before teardown" />
   <figcaption>
-    Figure 1: The donor kouki `FA20D`. Photograph the ECM connectors, the
+    Figure 1: The donor kouki FA20D. Photograph the ECM connectors, the
     alternator, and the crank sensor mounting location before anything is
     disconnected.
   </figcaption>
@@ -391,16 +449,16 @@ alternator's charging-control wiring.
 
 (1.2) Harvest in the following order:
 
-| Item                                                  | Disposition |
-| :------------------------------------------------------ | :----------- |
-| Engine wiring harness with ECM attached, uncut          | **Keep**    |
-| Engine assembly, dressed (intake, DBW throttle body, exhaust manifold, alternator) | **Keep**    |
-| Crankshaft and camshaft position sensors                | **Keep**    |
-| Knock sensors, OCV assemblies                            | **Keep**    |
-| Fuel pressure sensor, DI fuel rail                        | **Keep**    |
-| Flywheel                                                 | **Keep** — carries the crank angle sensor plate |
-| Clutch cover / pressure plate                             | Keep — see [Phase 4](#phase-4) for whether it's needed |
-| Immobilizer components and at least one key               | **Keep only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2) |
+| Item                                                                               | Disposition                                                                                 |
+| :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Engine wiring harness with ECM attached, uncut                                     | **Keep**                                                                                    |
+| Engine assembly, dressed (intake, DBW throttle body, exhaust manifold, alternator) | **Keep**                                                                                    |
+| Crankshaft and camshaft position sensors                                           | **Keep**                                                                                    |
+| Knock sensors, OCV assemblies                                                      | **Keep**                                                                                    |
+| Fuel pressure sensor, DI fuel rail                                                 | **Keep**                                                                                    |
+| Flywheel                                                                           | **Keep** — carries the crank angle sensor plate                                             |
+| Clutch cover / pressure plate                                                      | Keep — see [Phase 4](#phase-4) for whether it's needed                                      |
+| Immobilizer components and at least one key                                        | **Keep only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2) |
 
 (1.3) Remove the wiring harness with the ECM attached, as one assembly. Do not
 cut it.
@@ -427,14 +485,14 @@ choice.
 
 On this platform, the ECM, the immobilizer/Smart Entry hardware, and the
 ignition key(s) form a single matched security set. A `ft86club.com` poster
-explained the mechanism directly: *"there is a set of modules in the car that
+explained the mechanism directly: _"there is a set of modules in the car that
 form a security set and this includes at least the dash cluster, immobiliser
 module and the engine ecu plus rfid chips in keys. If you swap out any of the
 modules in the security set then car wont start unless you go through a
-specific procedure to sync in each new module into car"* `[C]`. The kouki
+specific procedure to sync in each new module into car"_ `[C]`. The kouki
 factory manual confirms the same architecture from its own side: a
 `Certification ECU` (Smart Key ECU) collates an encrypted ID exchange with the
-key and *"sends them to the engine control computer"* `[RM-K]`, and an ECM swap
+key and _"sends them to the engine control computer"_ `[RM-K]`, and an ECM swap
 on an immobilizer-equipped car requires registration via a "REGISTRATION MANUAL
 FOR IMMOBILIZER" that is **not included in either factory manual set** consulted
 for this document `[RM-K]`.
@@ -443,7 +501,40 @@ Three strategies are documented or reported in the community. None is a clean
 "just plug it in."
 
 <details open>
-  <summary>Option A — bring the whole donor security set</summary>
+  <summary>Option A — bypass with a standalone ECU</summary>
+
+Replace the factory ECM entirely with a plug-in aftermarket standalone ECU that
+has no immobilizer dependency — the **[Link G5 ECU Plug-In, part `241-4200`](https://dealers.linkecu.com/GT86-LHD)**
+is an existing plug-in solution for this exact platform `[C]`. This sidesteps
+the whole security-set problem, at the cost of losing the factory ECM's
+calibration and requiring a professional tune. This is the option most
+DIY-accessible: Options B and C both need dealer-level registration tooling
+that is simply out of reach for most home mechanics `[C]`.
+
+⚠️ Advice: **`241-4200` is the left-hand-drive part number.** Due to how tight
+the factory ECU location is, the LHD and RHD units use different mounting
+methods — a right-hand-drive vehicle needs **part `241-4000`** instead `[C]`.
+
+⚠️ Advice: **The plug-in hardware and its supplied sample maps target the
+zenki-generation engine, not kouki.** A 2017+ donor will not run correctly on
+the standard plug-in ECU's out-of-the-box PCLink configuration — the following
+settings must be changed before the engine will run `[C]`:
+
+- **Crank trigger.** The kouki `FA20D` uses a Hall-effect crank sensor instead
+  of a reluctor, consistent with what this document already notes about the
+  generation gap — in PCLink, set **Trigger 1 Type** from `Reluctor` to
+  `Optical/Hall`, and set **Trigger 1 Pull-up** to `ON`.
+- **DI fuel pressure sensor.** The kouki sensor is a 4-pin unit, not the
+  earlier 3-pin part — a change consistent with the fuel-pressure-sensor
+  difference already flagged elsewhere in this document. Wire an **8.2 kΩ
+  pull-up resistor** between **`C7` (`An Volt 4`)** and 5 V, move the **DI Fuel
+  Pressure Source** setting from `An Volt 3` to `An Volt 4`, and recalibrate the
+  pressure curve to **0 kPa at 4.06 V** and **30,000 kPa at 0.46 V**.
+
+</details>
+
+<details>
+  <summary>Option B — bring the whole donor security set</summary>
 
 Harvest the donor's ECM, its immobilizer module (`ID Code Box` or `Transponder
 Key ECU Assembly`), and at least one of its working keys, and have a dealer or
@@ -461,35 +552,21 @@ the shop before committing to sourcing keys and modules from the donor.
 </details>
 
 <details>
-  <summary>Option B — resync the kouki ECM into the existing zenki security set</summary>
+  <summary>Option C (Not recommended) — resync the kouki ECM into the existing zenki security set</summary>
 
 Attempt to register the donor's ECM alone against the recipient's existing
 immobilizer module, dash cluster, and keys, via dealer or SSM4 tooling. **This
 is the least-verified option.** One `ft86club.com` thread on exactly this
-question (*"How to replace ecu / immobilizer system?"*) ends without the
+question (_"How to replace ecu / immobilizer system?"_) ends without the
 original poster ever posting a working procedure, despite claiming to have
 solved it `[C]`. A professional mechanic on a separate completed swap thread
-warned generally that *"slapping ECUs around... prepare to deal with the
-engine immobiliser not wanting to go"* `[C]`, and another poster on the same
+warned generally that _"slapping ECUs around... prepare to deal with the
+engine immobiliser not wanting to go"_ `[C]`, and another poster on the same
 thread stated flatly that the older ECU's calibration is not compatible with
 the newer car's security pairing in the reverse direction — implying the
 mismatch runs both ways `[C]`. Treat this option as unproven; if you pursue it,
 confirm your specific shop's tooling can actually perform a cross-generation
 resync before you tear anything down.
-
-</details>
-
-<details>
-  <summary>Option C — bypass with a standalone ECU</summary>
-
-Replace the factory ECM entirely with a plug-in aftermarket standalone ECU that
-has no immobilizer dependency — a `ft86club`-adjacent harness vendor lists an
-existing plug-in solution for this exact platform `[C]`. This sidesteps the
-whole security-set problem, at the cost of losing the factory ECM's calibration
-and requiring a professional tune. This is the option the community leans
-toward for a clean cross-generation swap specifically **because** Options A and
-B both depend on dealer-level tooling and an unpublished registration
-procedure.
 
 </details>
 
@@ -545,13 +622,13 @@ installs, consistent with an unchanged bolt pattern across generations
 to the **kouki** values, since the incoming engine and its mount bosses are
 kouki-generation:
 
-| Joint                                          | N·m | kgf·cm | ft·lbf | Notes                          | Source   |
-| :---------------------------------------------- | --: | -----: | :----- | :------------------------------ | :------- |
-| Front engine mounting insulator, 4 bolts        |  35 |    357 | 25.8   |                                  | `[RM-K]` |
-| Rear engine mounting insulator No.1, 4 bolts    |  40 |    408 | 29.5   |                                  | `[RM-K]` |
-| Engine rear mounting member, bolts               |  65 |    663 | 47.9   | ×4                               | `[RM-K]` |
-| Engine rear mounting member, nuts                |  55 |    561 | 40.6   | ×2                               | `[RM-K]` |
-| Front crossmember sub-assembly, nuts             |  60 |    612 | 44.2   | **New nuts** — general subframe reinstall spec, unrelated to the mounts above but listed here since it's disturbed during this job | `[RM-K]` |
+| Joint                                        | N·m | kgf·cm | ft·lbf | Notes                                                                                                                              | Source   |
+| :------------------------------------------- | --: | -----: | :----- | :--------------------------------------------------------------------------------------------------------------------------------- | :------- |
+| Front engine mounting insulator, 4 bolts     |  35 |    357 | 25.8   |                                                                                                                                    | `[RM-K]` |
+| Rear engine mounting insulator No.1, 4 bolts |  40 |    408 | 29.5   |                                                                                                                                    | `[RM-K]` |
+| Engine rear mounting member, bolts           |  65 |    663 | 47.9   | ×4                                                                                                                                 | `[RM-K]` |
+| Engine rear mounting member, nuts            |  55 |    561 | 40.6   | ×2                                                                                                                                 | `[RM-K]` |
+| Front crossmember sub-assembly, nuts         |  60 |    612 | 44.2   | **New nuts** — general subframe reinstall spec, unrelated to the mounts above but listed here since it's disturbed during this job | `[RM-K]` |
 
 ⚠️ Advice: A single zenki-side figure of **45 N·m** for "engine mount" was found
 during research, but it came from a spark-plug R&R procedure that merely
@@ -581,6 +658,15 @@ new feed wire is run from the battery/fuse box to the point the kouki harness
 expects it. Confirm continuity with a multimeter before commissioning; do not
 assume the stock firewall connector supplies this feed.
 
+⚠️ Advice: **Whether the firewall connector's shell itself is otherwise
+unchanged between generations is not confirmed.** A separate forum mention
+describes an engine-bay "service connector" changing shape between generations
+— round on zenki, rectangular on kouki `[C]` — but it isn't clear whether that
+is the same connector as the firewall dash-to-engine junction above, or a
+distinct diagnostic connector. Test-fit the two harnesses' firewall connectors
+against each other before assuming they mate, rather than trusting either
+forum account blindly.
+
 (5.3) **Verify the charging system wiring.** The kouki alternator is reported
 to be controlled by the ECM over a single-wire network, with different
 battery-sensing wiring than zenki `[C]`. Confirm the recipient's body harness
@@ -608,8 +694,8 @@ sensor/DI fuel rail wiring.
 engine sat dry for any length of time.
 
 (6.2) **Complete the immobilizer registration chosen in [Phase 2](#phase-2)**
-before attempting to start the car. If using Option A or B, this happens via
-your dealer/locksmith's SSM4-equivalent tooling. If using Option C, confirm the
+before attempting to start the car. If using Option B or C, this happens via
+your dealer/locksmith's SSM4-equivalent tooling. If using Option A, confirm the
 standalone ECU's own security handling (or lack of it) instead.
 
 ⚠️ Advice: Do not repeatedly attempt to start the car through immobilizer
@@ -647,7 +733,8 @@ battery-voltage code.
 this exact conversion. Budget for a complete running donor vehicle (the largest
 single cost), a Subaru-capable scan tool session or dealer visit for the
 immobilizer step in [Phase 2](#phase-2), new mount hardware, and — if pursuing
-Option C — a standalone ECU and professional tune. Treat any total figure here
+Option A — a standalone ECU (e.g. the Link G5 Plug-In `241-4200`) and
+professional tune. Treat any total figure here
 as unverified until a completed build's costs are documented.
 
 ---

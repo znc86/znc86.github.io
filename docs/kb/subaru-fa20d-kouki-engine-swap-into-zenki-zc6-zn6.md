@@ -171,9 +171,9 @@ The work divides into five stages.
 - **Install into the recipient** on the recipient's own mounts and against the
   recipient's own manual transaxle — the bellhousing interface is unchanged
   across both generations `[RM-K]`.
-- **Wire it in and commission it** — the injector feed relocation and the
-  charging-system protocol change are the two wiring gotchas specific to this
-  generation gap.
+- **Wire it in and commission it** — the charging-system protocol change is the
+  one documented wiring gotcha specific to this generation gap, and the
+  engine-to-body harness junction is the one nobody has mapped.
 
 ---
 
@@ -281,41 +281,42 @@ one donor — never pairing a kouki ECM with zenki sensors or vice versa.
 
 ### ① Harvested from the donor vehicle
 
-| No. | Product name                                          | Qty | Notes                                                                                                                             |
-| --: | :---------------------------------------------------- | :-- | :-------------------------------------------------------------------------------------------------------------------------------- |
-|   ① | `FA20D` engine assembly, dressed                      | 1   | Complete long block with intake, DBW throttle body, exhaust manifold, alternator                                                  |
-|   ② | Engine control module (ECM)                           | 1   | 4 connectors, `A33`–`A36` `[RM-K]` — same connector naming as zenki, **not interchangeable calibration**                          |
-|   ③ | Engine wiring harness, complete                       | 1   | Do not cut. Remove with the ECM attached as one assembly                                                                          |
-|   ④ | Crankshaft position sensor + crank angle sensor plate | 1   | ⚠️ **The plate is a separate part, mounted between crank and flywheel, not the sensor itself** `[RM-K]` — see [Phase 4](#phase-4) |
-|   ⑤ | Camshaft/VVT position sensors                         | 4   | One per bank per cam. Comes with the harness, do not substitute zenki units `[RM-K]`                                              |
-|   ⑥ | Knock sensors                                         | 2   | One per bank `[RM-K]`                                                                                                             |
-|   ⑦ | Camshaft timing oil control valves                    | 4   | One per bank per cam                                                                                                              |
-|   ⑧ | Flywheel (M/T)                                        | 1   | Carries the crank angle sensor plate — must come from the donor, matched to ④ `[RM-K]`                                            |
-|   ⑨ | Clutch cover / pressure plate                         | 1   | Physically interchangeable across generations — see [Phase 4](#phase-4) for whether to reuse the recipient's own                  |
-|   ⑩ | Fuel pressure sensor and DI fuel rail                 | 1   | Generation-specific; take the donor's, do not mix with zenki-generation parts `[C]`                                               |
-|   ⑪ | Immobilizer/Smart Entry components                    | —   | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                            |
-|   ⑫ | At least one working ignition key                     | ≥1  | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                            |
+| No. | Product name                                          | Qty | Notes                                                                                                                                                                                                                                      |
+| --: | :---------------------------------------------------- | :-- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   ① | `FA20D` engine assembly, dressed                      | 1   | Complete long block with intake, DBW throttle body, exhaust manifold, alternator                                                                                                                                                           |
+|   ② | Engine control module (ECM)                           | 1   | 4 connectors, `A33`–`A36` `[RM-K]`. The `A` prefix means these land on the **Engine Room Main Wire**, not the Engine Wire `[RM-Z]` — so ③ **and** ④ are both required. Same connector naming as zenki, **not interchangeable calibration** |
+|   ③ | **Engine Wire** (the on-engine harness)               | 1   | Parts from the Engine Room Main Wire at `AC1` (54-pin, black) and `AC2` (8-pin, gray) at the engine unit `[RM-Z]`. Do not cut                                                                                                              |
+|   ④ | **Engine Room Main Wire**                             | 1   | ⚠️ Carries the ECM connectors and runs from the engine bay through the cowl to behind the dash. Meets the recipient's Instrument Panel Wire at `AD1`/`AD2` (48-pin each), `AD3`, `DA1`, `DA2`, `DA3` `[RM-Z]` — see [Phase 5](#phase-5)    |
+|   ⑤ | Crankshaft position sensor + crank angle sensor plate | 1   | ⚠️ **The plate is a separate part, mounted between crank and flywheel, not the sensor itself** `[RM-K]` — see [Phase 4](#phase-4)                                                                                                          |
+|   ⑥ | Camshaft/VVT position sensors                         | 4   | One per bank per cam. Comes with the harness, do not substitute zenki units `[RM-K]`                                                                                                                                                       |
+|   ⑦ | Knock sensors                                         | 2   | One per bank `[RM-K]`                                                                                                                                                                                                                      |
+|   ⑧ | Camshaft timing oil control valves                    | 4   | One per bank per cam                                                                                                                                                                                                                       |
+|   ⑨ | Flywheel (M/T)                                        | 1   | Carries the crank angle sensor plate — must come from the donor, matched to ⑤ `[RM-K]`                                                                                                                                                     |
+|   ⑩ | Clutch cover / pressure plate                         | 1   | Physically interchangeable across generations — see [Phase 4](#phase-4) for whether to reuse the recipient's own                                                                                                                           |
+|   ⑪ | Fuel pressure sensor and DI fuel rail                 | 1   | Generation-specific; take the donor's, do not mix with zenki-generation parts `[C]`                                                                                                                                                        |
+|   ⑫ | Immobilizer/Smart Entry components                    | —   | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                                                                                                                                     |
+|   ⑬ | At least one working ignition key                     | ≥1  | **Only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2)                                                                                                                                                     |
 
 ### ② Retained from the recipient vehicle
 
 | No. | Product name                                    | Notes                                                                                                                                                |
 | --: | :---------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   ⑬ | `TL70` manual transaxle                         | Bellhousing bolt pattern is unchanged across generations — **3 bolts and 2 nuts, 50 N·m** `[RM-K]` — see [Phase 4](#phase-4)                         |
-|   ⑭ | Front and rear engine mounting insulators       | ☝️ Reused if in good condition — kouki torque values differ from the zenki figures on file, see [Phase 4](#phase-4)                                  |
-|   ⑮ | Axles, front subframe/crossmember               | Unchanged                                                                                                                                            |
-|   ⑯ | Body wiring harness, dash cluster, body ECU/BCM | Unchanged under [Phase 2, Option A](#phase-2). ⚠️ Under Options B/C the **dash cluster is implicated in the security set** — see [Phase 2](#phase-2) |
-|   ⑰ | Clutch disc, release bearing, hydraulics        | Reusable if condition allows — see [Phase 4](#phase-4)                                                                                               |
+|   ⑭ | `TL70` manual transaxle                         | Bellhousing bolt pattern is unchanged across generations — **3 bolts and 2 nuts, 50 N·m** `[RM-K]` — see [Phase 4](#phase-4)                         |
+|   ⑮ | Front and rear engine mounting insulators       | ☝️ Reused if in good condition — kouki torque values differ from the zenki figures on file, see [Phase 4](#phase-4)                                  |
+|   ⑯ | Axles, front subframe/crossmember               | Unchanged                                                                                                                                            |
+|   ⑰ | Body wiring harness, dash cluster, body ECU/BCM | Unchanged under [Phase 2, Option A](#phase-2). ⚠️ Under Options B/C the **dash cluster is implicated in the security set** — see [Phase 2](#phase-2) |
+|   ⑱ | Clutch disc, release bearing, hydraulics        | Reusable if condition allows — see [Phase 4](#phase-4)                                                                                               |
 
 ### ③ Purchased new
 
-| No. | Product name                                                                 | Notes                                                                                                                                                    |
-| --: | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   ⑱ | Crank/cam sensor O-rings                                                     | New each time, oil-lubricated on install `[RM-Z]` `[RM-K]`                                                                                               |
-|   ⑲ | Engine mount hardware                                                        | New bolts/nuts at the torques in [Phase 4](#phase-4), particularly the crossmember nuts                                                                  |
-|   ⑳ | Wiring materials for the injector-feed fix                                   | See [Phase 5](#phase-5) — gauge to match the existing harness, appropriate fuse and terminal                                                             |
-|  ㉑ | Dielectric grease                                                            | All reconnected engine and chassis connectors                                                                                                            |
-|  ㉒ | FIPG / gasket set as required by teardown                                    | Valve covers, oil pan, etc., depending on how far the donor engine is serviced before install                                                            |
-|  ㉓ | **Link G5 ECU Plug-In** — **only if pursuing [Phase 2, Option A](#phase-2)** | LHD: part `241-4200`; RHD: part `241-4000` `[C]` — see [Phase 2, Option A](#phase-2) for the required PCLink trigger and DI fuel pressure sensor changes |
+| No. | Product name                                                                 | Notes                                                                                                                                                             |
+| --: | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   ⑲ | Crank/cam sensor O-rings                                                     | New each time, oil-lubricated on install `[RM-Z]` `[RM-K]`                                                                                                        |
+|   ⑳ | Engine mount hardware                                                        | New bolts/nuts at the torques in [Phase 4](#phase-4), particularly the crossmember nuts                                                                           |
+|  ㉑ | Automotive wiring stock, sealed terminals, inline fuses                      | For whatever the harness junction in [Phase 5](#phase-5) turns out to need. Match gauge to the circuit being repaired; adhesive-lined heat-shrink on every splice |
+|  ㉒ | Dielectric grease                                                            | All reconnected engine and chassis connectors                                                                                                                     |
+|  ㉓ | FIPG / gasket set as required by teardown                                    | Valve covers, oil pan, etc., depending on how far the donor engine is serviced before install                                                                     |
+|  ㉔ | **Link G5 ECU Plug-In** — **only if pursuing [Phase 2, Option A](#phase-2)** | LHD: part `241-4200`; RHD: part `241-4000` `[C]` — see [Phase 2, Option A](#phase-2) for the required PCLink trigger and DI fuel pressure sensor changes          |
 
 Confirmation: Upon collecting these parts, immediately check that nothing is
 damaged and that the harness has not been cut.
@@ -453,7 +454,8 @@ alternator's charging-control wiring.
 
 | Item                                                                               | Disposition                                                                                 |
 | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Engine wiring harness with ECM attached, uncut                                     | **Keep**                                                                                    |
+| **Engine Wire** (on-engine harness), uncut                                         | **Keep**                                                                                    |
+| **Engine Room Main Wire** with ECM attached, uncut                                 | **Keep** — this is the harness the ECM plugs into `[RM-Z]`                                  |
 | Engine assembly, dressed (intake, DBW throttle body, exhaust manifold, alternator) | **Keep**                                                                                    |
 | Crankshaft and camshaft position sensors                                           | **Keep**                                                                                    |
 | Knock sensors, OCV assemblies                                                      | **Keep**                                                                                    |
@@ -462,8 +464,17 @@ alternator's charging-control wiring.
 | Clutch cover / pressure plate                                                      | Keep — see [Phase 4](#phase-4) for whether it's needed                                      |
 | Immobilizer components and at least one key                                        | **Keep only if pursuing the "bring the whole security set" path** — see [Phase 2](#phase-2) |
 
-(1.3) Remove the wiring harness with the ECM attached, as one assembly. Do not
-cut it.
+(1.3) **Take both harnesses, not one.** The ECM's `A33`–`A36` connectors land
+on the **Engine Room Main Wire**, which runs from the engine bay through the
+cowl to behind the donor's instrument panel `[RM-Z]`. The **Engine Wire** is
+the separate on-engine harness that parts from it at `AC1` and `AC2` at the
+engine unit. Free the Engine Room Main Wire from the donor's Instrument Panel
+Wire at `AD1`, `AD2`, `AD3`, `DA1`, `DA2` and `DA3` rather than cutting it, and
+remove the Engine Room Main Wire, the Engine Wire, and the ECM together as one
+assembly. See [Phase 5](#phase-5) for the connector table and figures.
+
+⚠️ Warning: Pulling only the on-engine harness leaves the ECM's own harness in
+the donor. Confirm you have both before the shell is scrapped.
 
 (1.4) Remove the engine, out the front, without disturbing the donor's own
 transaxle — the donor's `TL70` is not needed.
@@ -667,28 +678,77 @@ kouki-generation:
 
 ### Phase 5 — Wiring Integration
 
-(5.1) Route the donor's engine harness to the ECM location and connect all four
-connectors, `A33` through `A36` — the connector naming is unchanged from zenki
-`[RM-Z]` `[RM-K]`, but the calibration behind them is not; do not substitute a
-zenki ECM here.
+(5.1) Route the donor's **Engine Room Main Wire** through the cowl to the ECM
+position behind the instrument panel and connect all four ECM connectors,
+`A33` through `A36`. The connector naming is unchanged from zenki `[RM-Z]`
+`[RM-K]`, but the calibration behind them is not; do not substitute a zenki
+ECM here. Join the **Engine Wire** to it at `AC1` and `AC2` at the engine unit.
 
-(5.2) **Fix the injector feed relocation.** Community reports describe a "big
-black plug" at the firewall that carries the injector +12 V feed on zenki
-harnesses; on kouki harnesses, that feed is instead sourced **near the
-battery** `[C]`. Pairing a kouki engine harness with the recipient's zenki dash
-harness — exactly this swap's situation — leaves the injectors unfed unless a
-new feed wire is run from the battery/fuse box to the point the kouki harness
-expects it. Confirm continuity with a multimeter before commissioning; do not
-assume the stock firewall connector supplies this feed.
+(5.2) **Understand where the harnesses actually part company.** There is no
+single "firewall connector" on this chassis. The zenki wiring diagram names
+each harness separately and tables every joining connector `[RM-Z]`:
 
-⚠️ Warning: **Whether the firewall connector's shell itself is otherwise
-unchanged between generations is not confirmed.** A separate forum mention
-describes an engine-bay "service connector" changing shape between generations
-— round on zenki, rectangular on kouki `[C]` — but it isn't clear whether that
-is the same connector as the firewall dash-to-engine junction above, or a
-distinct diagnostic connector. Test-fit the two harnesses' firewall connectors
-against each other before assuming they mate, rather than trusting either
-forum account blindly.
+<figure>
+  <img src="/kb/subaru-fa20d-kouki-engine-swap-into-zenki-zc6-zn6/zenki-wiring-routing-engine-bay.png" alt="Subaru factory electrical wiring routing diagram of the ZC6 engine bay, showing the locations of connectors AB1, AC2, AC1, AL2, AL1, C1 and Cd1 joining the Engine Wire, No. 1 Engine Wire, No. 2 Engine Room Wire, Transmission Wire and Engine Room Main Wire" />
+  <figcaption>
+    Figure 3: Engine-bay harness-joining connectors. Note that the
+    <strong>Engine Wire</strong> and the <strong>Engine Room Main Wire</strong>
+    are separate harnesses, parting at <code>AC1</code>.
+    <code>2013 Subaru BRZ Electrical Wiring.pdf</code>, page 46.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/kb/subaru-fa20d-kouki-engine-swap-into-zenki-zc6-zn6/zenki-wiring-routing-instrument-panel.png" alt="Subaru factory electrical wiring routing diagram of the ZC6 instrument panel, showing connectors AD1, AD2, AD3, DA1, DA2 and DA3 joining the Engine Room Main Wire to the Instrument Panel Wire, plus ground point locations" />
+  <figcaption>
+    Figure 4: Instrument-panel harness-joining connectors. The Engine Room Main
+    Wire meets the Instrument Panel Wire at <code>AD1</code>, <code>AD2</code>,
+    <code>AD3</code>, <code>DA1</code>, <code>DA2</code> and <code>DA3</code>.
+    <code>2013 Subaru BRZ Electrical Wiring.pdf</code>, page 47.
+  </figcaption>
+</figure>
+
+| Connector | Cavities | Joins                                          | Location                       |
+| :-------- | -------: | :--------------------------------------------- | :----------------------------- |
+| `AC1`     |       54 | Engine Room Main Wire ↔ **Engine Wire**       | **Engine Unit** — black shell  |
+| `AC2`     |        8 | Engine Room Main Wire ↔ Engine Wire           | Engine Unit — gray shell       |
+| `AL2`     |        8 | Engine Room Main Wire ↔ Transmission Wire     | Dash Panel — gray shell        |
+| `AD1`     |       48 | Engine Room Main Wire ↔ Instrument Panel Wire | Cowl Side Panel RH             |
+| `AD2`     |       48 | Engine Room Main Wire ↔ Instrument Panel Wire | Instrument Panel Reinforcement |
+| `AD3`     |        4 | Engine Room Main Wire ↔ Instrument Panel Wire | Cowl Side Panel LH             |
+| `DA1`     |       22 | Instrument Panel Wire ↔ Engine Room Main Wire | Behind Glove Box               |
+| `DA2`     |        6 | Instrument Panel Wire ↔ Engine Room Main Wire | Around A/C Unit                |
+| `DA3`     |        4 | Instrument Panel Wire ↔ Engine Room Main Wire | Behind Glove Box               |
+
+Two consequences matter for this swap.
+
+**`AC1` is the practical engine-harness disconnect**, not anything at the
+firewall. At 54 cavities it is the largest connector in the zenki manual, and
+it separates the **Engine Wire** from the **Engine Room Main Wire** at the
+engine unit `[RM-Z]`.
+
+⚠️ Warning: **The ECM does not hang off the Engine Wire.** Its four connectors
+carry the `A` prefix, which in this manual denotes the **Engine Room Main
+Wire** `[RM-Z]` — the harness that runs from the engine bay, through the cowl,
+to the ECM behind the instrument panel. So "take the donor's engine harness
+with the ECM attached" means taking the Engine Room Main Wire as well, and the
+real cross-generation interface becomes that harness meeting the recipient's
+**Instrument Panel Wire** at `AD1`/`AD2`/`AD3` and `DA1`/`DA2`/`DA3`. Identify
+which harness each connector you unplug belongs to before cutting anything
+loose.
+
+☝️ Advice: **Whether these connectors are unchanged on kouki cannot be
+answered from the manuals used for this document, and it is worth knowing
+why.** The zenki source is a true Electrical Wiring Diagram and tables every
+joining connector with cavity count and housing color. The kouki source is the
+repair manual `G4440BE`, which contains **no connector list at all** — it
+names the harness only as "engine wire," shows an unlabelled disconnect
+sequence, and prints connector codes solely for components such as the ECM's
+own `A33`–`A36` `[RM-K]`. Comparing the two would be comparing an EWD against
+a repair manual. **To settle this, obtain the 2017–2020 ZN6/ZC6 Electrical
+Wiring Diagram**, which is a separate publication from the repair manual. Until
+then, treat the table above as documented for the zenki side only, and
+verify the donor's connectors physically.
 
 (5.3) **Verify the charging system wiring.** The kouki alternator is reported
 to be controlled by the ECM over a single-wire network, with different
@@ -742,9 +802,10 @@ battery-voltage code.
   drive cycles.
 - Confirm no stored DTCs related to crank/cam position, knock, or charging
   system after the readiness monitors have had a chance to run.
-- Recheck the injector-feed splice from [Phase 5, (5.2)](#phase-5) under load —
-  a marginal connection there tends to show up as a rough idle or a misfire
-  under acceleration rather than a dead injector outright.
+- Recheck any splice made at the harness junction in
+  [Phase 5, (5.2)](#phase-5) under load. A marginal connection on a power feed
+  tends to show up as a rough idle or a misfire under acceleration rather than
+  as an outright dead circuit.
 
 ---
 
@@ -760,6 +821,6 @@ battery-voltage code.
   961–962, 1650, 1654–1655, 2924–2930, 2967–2968.
 - `[C]` `ft86club.com/forums` — threads on FA20 crankshaft angle sensor type,
   FA20-to-ECU compatibility, engine swaps across model years, immobilizer
-  location and pairing, and a completed cross-generation engine swap build
-  log; and general web research on zenki/kouki harness connector and
-  charging-system differences.
+  location and pairing, ECM/cluster mileage cross-checking, and a completed
+  cross-generation engine swap build log reporting the kouki ECM-controlled
+  single-wire charging system.

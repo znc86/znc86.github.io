@@ -36,34 +36,21 @@ Scion FR-S/Toyota 86 or `ZC6` Subaru BRZ built with the **Aisin TG6A 6-speed
 automatic transmission** to the **TL70 6-speed manual transaxle**, using the
 complete transaxle, pedal box, clutch hydraulics, shift linkage, and
 transmission-case switches harvested from a manual-equipped donor of either
-generation. The recipient's own `FA20D` engine, engine control module, keys,
-and immobilizer pairing **all stay in the car, untouched** — this is a
-transmission conversion, not an engine swap, and it does not carry the
-cross-VIN immobilizer problem documented in this KB's companion article,
-["Subaru FA20D Late-Model (Kouki) Engine Swap into an Early-model (Zenki)
-ZN6/ZC6"](/kb/subaru-fa20d-kouki-engine-swap-into-zenki-zc6-zn6). Please be
-sure to read it before beginning work and carry out correct installation and
-handling.
+generation. The recipient's own `FA20D` engine and control systems
+**all stay in the car, untouched.**
 
 **Read this before you source a donor.** The mechanical part of this
-conversion is well documented by the factory and mostly uninteresting: the
+conversion is well documented by the factory manual: the
 TL70 bolts to the same bellhousing bolt pattern the automatic uses, at the
 same torque. The two places this swap actually bites are electrical, not
 mechanical. First, **the engine control module keeps a running,
-continuously-monitored expectation that a transmission control module exists
-on the CAN bus** — simply unplugging the TCM without changing anything else
+continuously-monitored expectation that an automatic transmission control module exists
+on the CAN bus**, simply unplugging the TCM without changing anything else
 sets a permanent check-engine light `[RM-K]`. Second, **the clutch pedal box
-your recipient was never built with has to go in without a documented
-drilling procedure**, because unlike some shared-platform economy cars, this
-factory manual has no "for Manual Transaxle" firewall template to follow —
-you are trial-fitting a sub-assembly the manual's own exploded views imply
-your body already accepts, but never says so outright. This document
-addresses both problems directly: see [Phase 2](#phase-2) for the ECU/TCM
-strategy and [Phase 4](#phase-4) for the pedal box.
+has to go in without a documented drilling procedure**, because the
+factory service manual has no firewall template to follow.
 
-Subaru and Toyota do not publish an automatic-to-manual conversion procedure
-for this chassis — no OEM part number exists for "automatic body plus manual
-driveline." This document is assembled from the removal/installation and
+This document is assembled from the removal/installation and
 exploded-view procedures of three factory manuals, each covering one half of
 the car (manual transaxle internals, the automatic transaxle, and the shared
 clutch/shift-linkage/driveline chapters), cross-read against each other where
@@ -83,12 +70,12 @@ observed.
 
 Source markers are displayed for every specification.
 
-| Marker   | Meaning                                                                                                                                                                                         |
-| :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[RM-Z-T]` | 2013 Subaru BRZ Transmission manual (zenki). Covers only the **internal** manual-transaxle overhaul — gear sets, synchros, SST tooling. No on-vehicle R&I, pedal box, shifter, driveshaft, or differential content. |
-| `[RM-Z-W]` | 2013 Subaru BRZ Electrical Wiring Diagram `G4400BE` (zenki). A true EWD — connector list, parts-location index, and harness-routing diagrams, both A/T and M/T variants on one set of diagrams. |
+| Marker     | Meaning                                                                                                                                                                                                                                                                                                    |
+| :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[RM-Z-T]` | 2013 Subaru BRZ Transmission manual (zenki). Covers only the **internal** manual-transaxle overhaul — gear sets, synchros, SST tooling. No on-vehicle R&I, pedal box, shifter, driveshaft, or differential content.                                                                                        |
+| `[RM-Z-W]` | 2013 Subaru BRZ Electrical Wiring Diagram `G4400BE` (zenki). A true EWD — connector list, parts-location index, and harness-routing diagrams, both A/T and M/T variants on one set of diagrams.                                                                                                            |
 | `[RM-K]`   | 2017 Subaru BRZ factory service manual `G4440BE` (kouki) — a single combined manual, OCR'd by chapter for this document. Cited by PDF page and section code (e.g. `CL-6`). This manual has **no standalone electrical wiring diagram chapter** — its circuit descriptions are prose, not a connector list. |
-| `[C]`      | Community-reported, mainly `ft86club.com` forum threads. **Verify by trial fit or measurement before relying on it** |
+| `[C]`      | Community-reported, mainly `ft86club.com` forum threads. **Verify by trial fit or measurement before relying on it**                                                                                                                                                                                       |
 
 <details>
   <summary>⚠️ Warning — General</summary>
@@ -111,27 +98,25 @@ Source markers are displayed for every specification.
 ### Summary of the Conversion
 
 **Why.** The automatic ZC6/ZN6 is a strong, inexpensive used-car buy —
-automatics depreciate harder than manuals on this platform, and a healthy
+automatics depreciate faster than manuals on this platform, and a healthy
 `FA20D` behind a slushbox is common on the used market. Converting it to a
 manual gets a cheaper starting chassis to the same end state as a
 factory-manual car, provided the parts and labor cost less than the
-manual-car premium. The engine does not change, so none of the companion
-engine-swap article's ECM/immobilizer/key-matching problem applies here —
-the recipient's own ECM, keys, and immobilizer module never leave the car.
+manual-car premium.
 
 **What actually changes, in one sentence.** Everything that differs between
-a factory M/T car and a factory A/T car of this platform — flywheel vs. drive
+a factory M/T car and a factory A/T car of this platform: flywheel vs. drive
 plate, clutch vs. torque converter, pedal box, shift linkage, starter, the
-transmission-case switches, and the "Transmission Wire" harness branch that
-carries them — has to be converted, individually, in both directions
-(automatic parts out, manual parts in), while the engine, its ECM, the body
+transmission-case switches, and the transmission wire harness branch that
+carries them has to be converted, individually, in both directions
+(automatic parts out, manual parts in). The engine, its ECM, the body
 harness, the dash cluster, the rear differential, and (very likely) the
 propeller shaft stay exactly as they are.
 
 **The two documented gotchas.** First, **the ECM continuously monitors for
 the transmission control module over CAN and sets a fault if it goes
 missing** — `[RM-K]` documents **DTC `U0101`** ("Lost Communication With
-TCM," MIL after 0.5 seconds of lost communication, 1-trip logic) and **DTC
+TCM," check-engine light on after 0.5 seconds of lost communication, 1-trip logic) and **DTC
 `U0402`** ("Invalid Data Received From TCM," after 2 seconds) `[RM-K]`. This
 is not a one-time learned fault from a single disconnection; it is continuous
 monitoring, meaning an A/T-calibrated ECM with no TCM on the bus throws a
@@ -142,15 +127,12 @@ calibration value by transmission type**: 600–800 r/min on automatic,
 transmission types run genuinely different ECM calibrations, not just
 different wiring.
 
-**What does *not* need to change.** The rear differential, its carrier, and
+**What does _not_ need to change.** The rear differential, its carrier, and
 the LSD/non-LSD option are **common parts across both transmissions** —
 `[RM-K]`'s axle/differential chapter gives parallel "Model with LSD" and
 "Model without LSD" procedures with no M/T/A/T split anywhere in that chapter
 `[RM-K]`. The propeller shaft's own exploded view likewise shows one
-part, not an M/T and an A/T version `[RM-K]`. See
-[Phase 4, (4.6)](#phase-4) for the one open question this document could not
-resolve about the propeller shaft's transmission-side coupling, and
-[Phase 4, (4.7)](#phase-4) for the differential.
+part, not an M/T and an A/T version `[RM-K]`.
 
 ---
 
@@ -171,7 +153,6 @@ resolve about the propeller shaft's transmission-side coupling, and
   - [Phase 4 — Mechanical installation](#phase-4)
   - [Phase 5 — Wiring integration](#phase-5)
   - [Phase 6 — Commissioning](#phase-6)
-- [Traction Control, Vehicle Dynamics Control, and Handling](#traction-control)
 - [Post-installation Checks and Precautions](#post-install)
 - [References](#references)
 
@@ -183,33 +164,18 @@ resolve about the propeller shaft's transmission-side coupling, and
 
 ### Recipient Vehicle
 
-| Item              | Specification                                                      |
-| :---------------- | :------------------------------------------------------------------ |
+| Item              | Specification                                                        |
+| :---------------- | :------------------------------------------------------------------- |
 | **Applied model** | `ZN6` (Scion FR-S / Toyota 86) or `ZC6` (Subaru BRZ), any model year |
-| Engine            | `FA20D` 2.0ℓ DOHC, naturally aspirated — **retained, unchanged**    |
-| Transaxle         | Aisin `TG6A` 6-speed automatic — **removed**                       |
+| Engine            | `FA20D` 2.0ℓ DOHC, naturally aspirated — **retained, unchanged**     |
+| Transaxle         | Aisin `TG6A` 6-speed automatic — **removed**                         |
 
 ### Donor Vehicle
 
-| Item              | Specification                                                                                             |
-| :---------------- | :----------------------------------------------------------------------------------------------------------- |
+| Item              | Specification                                                                                                                                                                             |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Applied model** | `ZN6` or `ZC6`, zenki or kouki generation — ☝️ **either generation works**, since the `TL70` is not part of the kouki engine/harness revision the companion engine-swap article documents |
-| Transaxle         | `TL70` 6-speed manual, complete with bellhousing, pedal box, shift linkage, and clutch hydraulics            |
-
-☝️ Advice: Unlike the companion engine-swap article, this conversion does
-**not** require matching the donor's model-year generation to the
-recipient's. The `TL70`, its pedal box, and its shift linkage are not named
-as part of the kouki-generation parts list the companion article documents
-changing `[RM-K]` (companion article); confirm this against your specific
-donor and recipient years before assuming it, but no primary source consulted
-for this document indicates the manual driveline itself was revised between
-generations.
-
-⚠️ Warning: **Confirm the donor's engine bay routing matches your recipient's
-generation** before harvesting the Transmission Wire branch described in
-[Phase 5](#phase-5) — if your donor and recipient are different generations,
-treat the harness connector codes in this document as a starting point to
-verify by continuity test, not a guarantee.
+| Transaxle         | `TL70` 6-speed manual, complete with bellhousing, pedal box, shift linkage, and clutch hydraulics                                                                                         |
 
 ---
 
@@ -219,45 +185,45 @@ verify by continuity test, not a guarantee.
 
 ### ① Harvested from the donor vehicle
 
-| No. | Product name                                                                   | Qty | Notes                                                                                                                                                                                                 |
-| --: | :------------------------------------------------------------------------------ | :-- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   ① | `TL70` manual transaxle ASSY, complete with bellhousing                         | 1   | Mounts to the engine on **3 bolts + 2 nuts at 50 N·m {510 kgf·cm} {36.9 ft·lbf}** `[RM-K]` — same torque as the automatic's mounting, different bolt count (A/T: 2 bolts + 2 nuts) — see [Phase 4](#phase-4) |
-|   ② | Flywheel SUB-ASSY                                                               | 1   | **Not interchangeable with the recipient's drive plate.** 8 bolts, 85 N·m {867 kgf·cm} {62.7 ft·lbf} `[RM-K]` — see [Phase 4](#phase-4)                                                               |
-|   ③ | Clutch disc ASSY and clutch cover ASSY (pressure plate)                         | 1   | Clutch cover: 6 bolts, 16 N·m {163 kgf·cm} {11.8 ft·lbf} `[RM-K]`. Disc facing-to-rivet wear limit 0.8 mm {0.031 in}, runout max 0.7 mm {0.028 in} `[RM-K]`                                            |
-|   ④ | Clutch release cylinder ASSY (external slave, bolts to the bellhousing)         | 1   | 2 bolts, 37 N·m {377 kgf·cm} {27.3 ft·lbf} `[RM-K]` — not a concentric slave                                                                                                                         |
-|   ⑤ | Clutch master cylinder ASSY and reservoir SUB-ASSY                              | 1   | A **separate reservoir from the brake master cylinder** — no shared-reservoir bypass port on this platform `[RM-K]`, unlike some shared-body economy cars — see [Phase 4](#phase-4)                 |
-|   ⑥ | Clutch pedal SUB-ASSY and clutch pedal support SUB-ASSY                         | 1   | Includes assist rods A/B, assist bush, pedal bush ×2, clutch clevis pin ×2, pedal spring, pedal stopper, No.1 clutch pedal cushion — support mounts at 18 N·m {184 kgf·cm} {13.3 ft·lbf} `[RM-K]`    |
-|   ⑦ | Clutch Start Switch Assembly and Clutch Switch Assembly                        | 2   | **Two separate switches, two separate jobs** — starter-crank interlock and cruise-control clutch cutout, respectively `[RM-K]`. Both 8.0 N·m {82 kgf·cm} {5.9 ft·lbf} at the pedal support `[RM-K]` |
-|   ⑧ | Back-Up Light Switch and Neutral Switch (threaded into the transmission case)   | 2   | Each 32.3 N·m {329.4 kgf·cm} {23.8 ft·lbf}, new gasket each `[RM-K]` — on the automatic these two functions are consolidated into one "neutral start switch" `[RM-K]`, see [Phase 5](#phase-5)       |
-|   ⑨ | Floor shift, shift lever ASSY — Lever CP, floor shift control shift lever retainer, stopper, insulator, plate CP, shift & select lever boot | 1   | Rod-operated, not cable `[RM-K]` — see [Phase 4](#phase-4)                                                                                                                                            |
-|  ⑩ | Floor shift control shaft                                                       | 1   | Solid rod linking the shift lever to the transmission's own shift knuckle `[RM-K]`                                                                                                                   |
-|  ⑪ | Starter motor, manual-transmission specification                               | 1   | ⚠️ **Not the same part as the automatic's starter** despite an identical 50 N·m mounting torque — see [Phase 4](#phase-4)                                                                            |
-|  ⑫ | Water by-pass pipe No.1, manual-transmission specification                     | 1   | ⚠️ **Not the same part as the automatic's.** The A/T version carries an extra spigot feeding the transmission oil cooler; the M/T version does not. 2 bolts, 6.4 N·m {65 kgf·cm} {4.7 ft·lbf} `[RM-K]` — see [Phase 4, (4.14)](#phase-4) |
-|  ⑬ | (Optional, only if pursuing [Phase 2, Option B](#phase-2)) Donor's own ECM      | 1   | Only if reusing the donor's already-proven M/T calibration instead of retuning the recipient's own ECM                                                                                               |
+| No. | Product name                                                                                                                                | Qty | Notes                                                                                                                                                                                                                                    |
+| --: | :------------------------------------------------------------------------------------------------------------------------------------------ | :-- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   ① | `TL70` manual transaxle ASSY, complete with bellhousing                                                                                     | 1   | Mounts to the engine on **3 bolts + 2 nuts at 50 N·m {510 kgf·cm} {36.9 ft·lbf}** `[RM-K]` — same torque as the automatic's mounting, different bolt count (A/T: 2 bolts + 2 nuts) — see [Phase 4](#phase-4)                             |
+|   ② | Flywheel SUB-ASSY                                                                                                                           | 1   | **Not interchangeable with the recipient's drive plate.** 8 bolts, 85 N·m {867 kgf·cm} {62.7 ft·lbf} `[RM-K]` — see [Phase 4](#phase-4)                                                                                                  |
+|   ③ | Clutch disc ASSY and clutch cover ASSY (pressure plate)                                                                                     | 1   | Clutch cover: 6 bolts, 16 N·m {163 kgf·cm} {11.8 ft·lbf} `[RM-K]`. Disc facing-to-rivet wear limit 0.8 mm {0.031 in}, runout max 0.7 mm {0.028 in} `[RM-K]`                                                                              |
+|   ④ | Clutch release cylinder ASSY (external slave, bolts to the bellhousing)                                                                     | 1   | 2 bolts, 37 N·m {377 kgf·cm} {27.3 ft·lbf} `[RM-K]` — not a concentric slave                                                                                                                                                             |
+|   ⑤ | Clutch master cylinder ASSY and reservoir SUB-ASSY                                                                                          | 1   | A **separate reservoir from the brake master cylinder** — no shared-reservoir bypass port on this platform `[RM-K]`, unlike some shared-body economy cars — see [Phase 4](#phase-4)                                                      |
+|   ⑥ | Clutch pedal SUB-ASSY and clutch pedal support SUB-ASSY                                                                                     | 1   | Includes assist rods A/B, assist bush, pedal bush ×2, clutch clevis pin ×2, pedal spring, pedal stopper, No.1 clutch pedal cushion — support mounts at 18 N·m {184 kgf·cm} {13.3 ft·lbf} `[RM-K]`                                        |
+|   ⑦ | Clutch Start Switch Assembly and Clutch Switch Assembly                                                                                     | 2   | **Two separate switches, two separate jobs** — starter-crank interlock and cruise-control clutch cutout, respectively `[RM-K]`. Both 8.0 N·m {82 kgf·cm} {5.9 ft·lbf} at the pedal support `[RM-K]`                                      |
+|   ⑧ | Back-Up Light Switch and Neutral Switch (threaded into the transmission case)                                                               | 2   | Each 32.3 N·m {329.4 kgf·cm} {23.8 ft·lbf}, new gasket each `[RM-K]` — on the automatic these two functions are consolidated into one "neutral start switch" `[RM-K]`, see [Phase 5](#phase-5)                                           |
+|   ⑨ | Floor shift, shift lever ASSY — Lever CP, floor shift control shift lever retainer, stopper, insulator, plate CP, shift & select lever boot | 1   | Rod-operated, not cable `[RM-K]` — see [Phase 4](#phase-4)                                                                                                                                                                               |
+|   ⑩ | Floor shift control shaft                                                                                                                   | 1   | Solid rod linking the shift lever to the transmission's own shift knuckle `[RM-K]`                                                                                                                                                       |
+|   ⑪ | Starter motor, manual-transmission specification                                                                                            | 1   | ⚠️ **Not the same part as the automatic's starter** despite an identical 50 N·m mounting torque — see [Phase 4](#phase-4)                                                                                                                |
+|   ⑫ | Water by-pass pipe No.1, manual-transmission specification                                                                                  | 1   | ⚠️ **Not the same part as the automatic's.** The A/T version carries an extra spigot feeding the transmission oil cooler; the M/T version does not. 2 bolts, 6.4 N·m {65 kgf·cm} {4.7 ft·lbf} `[RM-K]` — see [Phase 4, (4.14)](#phase-4) |
+|   ⑬ | (Optional, only if pursuing [Phase 2, Option B](#phase-2)) Donor's own ECM                                                                  | 1   | Only if reusing the donor's already-proven M/T calibration instead of retuning the recipient's own ECM                                                                                                                                   |
 
 ### ② Retained from the recipient vehicle
 
-| No. | Product name                                                            | Notes                                                                                                                                      |
-| --: | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
-|  ⑭ | `FA20D` engine assembly                                                   | **Untouched** — stays matched to its own ECM, keys, and immobilizer pairing                                                                 |
-|  ⑮ | ECM                                                                       | **Reflashed/retuned, not replaced** under this document's recommended [Phase 2, Option A](#phase-2)                                         |
-|  ⑯ | Rear differential, carrier, and half-shafts                               | ☝️ Common hardware across M/T and A/T per `[RM-K]`'s axle/differential chapter — see [Phase 4, (4.7)](#phase-4)                             |
-|  ⑰ | Propeller shaft                                                           | ☝️ Likely reusable — `[RM-K]`'s exploded view shows one part, not an M/T and A/T version — ⚠️ **verify by trial fit**, see [Phase 4, (4.6)](#phase-4) |
-|  ⑱ | Brake pedal support, shaft, bushes, return spring, clevis, pin, stop light switch | Shared mounting with the clutch pedal support — ⚠️ brake pedal *height* differs by spec (145 mm M/T vs. 150 mm A/T from the floor mat `[RM-K]`) — see [Phase 4](#phase-4) |
-|  ⑲ | Accelerator pedal assembly                                                | Drive-by-wire sensor, independent of transmission type — not referenced anywhere in the clutch/transmission chapters `[RM-K]`               |
-|  ⑳ | Body wiring harness, dash cluster, body ECU/BCM                           | Unaffected — no immobilizer or cross-VIN concern on this conversion                                                                          |
+| No. | Product name                                                                      | Notes                                                                                                                                                                     |
+| --: | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|   ⑭ | `FA20D` engine assembly                                                           | **Untouched** — stays matched to its own ECM, keys, and immobilizer pairing                                                                                               |
+|   ⑮ | ECM                                                                               | **Reflashed/retuned, not replaced** under this document's recommended [Phase 2, Option A](#phase-2)                                                                       |
+|   ⑯ | Rear differential, carrier, and half-shafts                                       | ☝️ Common hardware across M/T and A/T per `[RM-K]`'s axle/differential chapter — see [Phase 4, (4.7)](#phase-4)                                                           |
+|   ⑰ | Propeller shaft                                                                   | ☝️ Likely reusable — `[RM-K]`'s exploded view shows one part, not an M/T and A/T version — ⚠️ **verify by trial fit**, see [Phase 4, (4.6)](#phase-4)                     |
+|   ⑱ | Brake pedal support, shaft, bushes, return spring, clevis, pin, stop light switch | Shared mounting with the clutch pedal support — ⚠️ brake pedal _height_ differs by spec (145 mm M/T vs. 150 mm A/T from the floor mat `[RM-K]`) — see [Phase 4](#phase-4) |
+|   ⑲ | Accelerator pedal assembly                                                        | Drive-by-wire sensor, independent of transmission type — not referenced anywhere in the clutch/transmission chapters `[RM-K]`                                             |
+|   ⑳ | Body wiring harness, dash cluster, body ECU/BCM                                   | Unaffected — no immobilizer or cross-VIN concern on this conversion                                                                                                       |
 
 ### ③ Purchased new
 
-| No. | Product name                                                      | Notes                                                                                                                        |
-| --: | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-|  ㉑ | Shift lever pins ×2                                                 | **Non-reusable, new required** `[RM-K]`                                                                                      |
-|  ㉒ | Clutch line banjo/union gaskets                                     | New each time the release-cylinder hydraulic joint is broken `[RM-K]`                                                        |
-|  ㉓ | Clutch fluid, FMVSS No.116 DOT3 or DOT4                              | Separate circuit from brake fluid on this platform `[RM-K]`                                                                  |
-|  ㉔ | Manual transmission gear oil — `MG Gear Oil Special II`              | `[RM-Z-T]`                                                                                                                    |
-|  ㉕ | Differential gear oil LX (with LSD) or LT (without LSD), API GL-5 SAE 75W-85 | Only if the differential is opened — not required if it is reused as-is. Fill 1.15±0.05 L {1.22±0.05 US qt} `[RM-K]`         |
-|  ㉖ | Automotive wiring stock, sealed terminals, inline fuses              | For the Transmission Wire harness conversion in [Phase 5](#phase-5)                                                          |
-|  ㉗ | Dielectric grease                                                   | All reconnected connectors                                                                                                   |
+| No. | Product name                                                                           | Notes                                                                                                                                                            |
+| --: | :------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  ㉑ | Shift lever pins ×2                                                                    | **Non-reusable, new required** `[RM-K]`                                                                                                                          |
+|  ㉒ | Clutch line banjo/union gaskets                                                        | New each time the release-cylinder hydraulic joint is broken `[RM-K]`                                                                                            |
+|  ㉓ | Clutch fluid, FMVSS No.116 DOT3 or DOT4                                                | Separate circuit from brake fluid on this platform `[RM-K]`                                                                                                      |
+|  ㉔ | Manual transmission gear oil — `MG Gear Oil Special II`                                | `[RM-Z-T]`                                                                                                                                                       |
+|  ㉕ | Differential gear oil LX (with LSD) or LT (without LSD), API GL-5 SAE 75W-85           | Only if the differential is opened — not required if it is reused as-is. Fill 1.15±0.05 L {1.22±0.05 US qt} `[RM-K]`                                             |
+|  ㉖ | Automotive wiring stock, sealed terminals, inline fuses                                | For the Transmission Wire harness conversion in [Phase 5](#phase-5)                                                                                              |
+|  ㉗ | Dielectric grease                                                                      | All reconnected connectors                                                                                                                                       |
 |  ㉘ | Standalone ECU or tuning solution — **only if pursuing [Phase 2, Option A](#phase-2)** | A **Link G5 ECU Plug-In** is already a documented plug-in solution for this platform per the companion engine-swap article — reuse it here if not already fitted |
 
 Confirmation: Upon collecting these parts, immediately check that nothing is
@@ -271,17 +237,17 @@ damaged and that the harness has not been cut.
 
 ### Hand and shop tools
 
-| Tool                                   | Tool                                       |
-| :-------------------------------------- | :------------------------------------------ |
-| Metric socket set, 1/2" and 3/8" drive  | Torque wrench, 5–25 N·m range               |
-| Torque wrench, 20–90 N·m range          | Breaker bar                                 |
-| Transmission jack                       | Engine support bar/hoist                    |
-| SST `18355AA000` + `18334AA000` (crankshaft pulley holder) | Used to secure the crankshaft while removing/installing the flywheel or drive plate `[RM-K]` |
-| SST `09325-20010` (MTM extension housing oil seal) or `09325-40010` (ATM) | Different tool per transmission type — see [Phase 4, (4.6)](#phase-4) `[RM-K]` |
-| Connector pin release pick              | Soldering iron, heat-shrink                 |
-| Multimeter, with continuity and resistance | Thread-locking compound                  |
-| Brake/clutch line flare-nut wrench set  | Catch pans, drain pans                      |
-| Thickness/feeler gauge, 0.3 mm           | Safety glasses, work gloves                 |
+| Tool                                                                      | Tool                                                                                         |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
+| Metric socket set, 1/2" and 3/8" drive                                    | Torque wrench, 5–25 N·m range                                                                |
+| Torque wrench, 20–90 N·m range                                            | Breaker bar                                                                                  |
+| Transmission jack                                                         | Engine support bar/hoist                                                                     |
+| SST `18355AA000` + `18334AA000` (crankshaft pulley holder)                | Used to secure the crankshaft while removing/installing the flywheel or drive plate `[RM-K]` |
+| SST `09325-20010` (MTM extension housing oil seal) or `09325-40010` (ATM) | Different tool per transmission type — see [Phase 4, (4.6)](#phase-4) `[RM-K]`               |
+| Connector pin release pick                                                | Soldering iron, heat-shrink                                                                  |
+| Multimeter, with continuity and resistance                                | Thread-locking compound                                                                      |
+| Brake/clutch line flare-nut wrench set                                    | Catch pans, drain pans                                                                       |
+| Thickness/feeler gauge, 0.3 mm                                            | Safety glasses, work gloves                                                                  |
 
 ### Scan tool
 
@@ -390,21 +356,21 @@ procedure before removal `[RM-Z-T]`.
 
 (1.2) Harvest in the following order:
 
-| Item                                                                 | Disposition                                                                                  |
-| :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
-| `TL70` transaxle ASSY, complete with bellhousing                        | **Keep**                                                                                      |
-| Flywheel SUB-ASSY                                                        | **Keep** — recover with the engine-side disassembly if the donor's engine is also disturbed, or pull it directly off the flexplate-equivalent location on the donor's own crankshaft |
-| Clutch disc ASSY, clutch cover ASSY, release cylinder ASSY              | **Keep**                                                                                      |
-| Clutch master cylinder ASSY and reservoir                                | **Keep**                                                                                      |
-| Clutch pedal SUB-ASSY and clutch pedal support SUB-ASSY, with Clutch Start Switch and Clutch Switch | **Keep**, uncut wiring pigtails                                                               |
-| Back-Up Light Switch, Neutral Switch                                     | **Keep**, with gaskets discarded (new gaskets required on install)                            |
-| Floor shift, shift lever ASSY, floor shift control shaft                  | **Keep**                                                                                      |
-| Starter motor                                                            | **Keep**                                                                                      |
-| ECM (only if pursuing [Phase 2, Option B](#phase-2))                     | **Keep only if pursuing Option B**                                                            |
+| Item                                                                                                | Disposition                                                                                                                                                                          |
+| :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Starter motor                                                                                       | **Keep**                                                                                                                                                                             |
+| `TL70` transaxle ASSY, complete with bellhousing                                                    | **Keep**                                                                                                                                                                             |
+| Clutch disc ASSY, clutch cover ASSY, release cylinder ASSY                                          | **Keep**                                                                                                                                                                             |
+| Flywheel SUB-ASSY                                                                                   | **Keep** — recover with the engine-side disassembly if the donor's engine is also disturbed, or pull it directly off the flexplate-equivalent location on the donor's own crankshaft |
+| Clutch master cylinder ASSY and reservoir                                                           | **Keep**                                                                                                                                                                             |
+| Clutch pedal SUB-ASSY and clutch pedal support SUB-ASSY, with Clutch Start Switch and Clutch Switch | **Keep**, uncut wiring pigtails                                                                                                                                                      |
+| Back-Up Light Switch, Neutral Switch                                                                | **Keep**, with gaskets discarded (new gaskets required on install)                                                                                                                   |
+| Floor shift, shift lever ASSY, floor shift control shaft                                            | **Keep**                                                                                                                                                                             |
+| ECM (only if pursuing [Phase 2, Option B](#phase-2))                                                | **Keep only if pursuing Option B**                                                                                                                                                   |
 
-(1.3) **Flywheel removal requires the crankshaft held stationary.** Use SST
-`18355AA000` and `18334AA000` to secure the crankshaft pulley, then remove the
-eight flywheel bolts `[RM-K]` — the same tool and procedure the manual uses
+(1.3) **Flywheel removal requires the crankshaft held stationary.** Use a box wrench
+or SST `18355AA000` and `18334AA000` to secure the crankshaft pulley,
+then remove the eight flywheel bolts `[RM-K]`, the same tool and procedure the manual uses
 for the automatic's drive-plate removal, which is worth knowing if you are
 harvesting from a donor whose engine you are not otherwise disturbing.
 
@@ -423,92 +389,94 @@ should unplug at the harness, not require a splice — see
 transmission tunnel.** It changes what you disconnect and in what order in
 [Phase 3](#phase-3).
 
-Two facts drive this phase. First, idle speed is a different hard-coded
-calibration value by transmission type — automatic 600–800 r/min, manual
-550–750 r/min `[RM-K]` — confirming the ECM's calibration genuinely differs
-between the two factory configurations, not just the wiring around it.
-Second, the ECM continuously monitors the CAN bus for the transmission
-control module and sets a fault if it is not there: **DTC `U0101`** ("Lost
-Communication With TCM"), triggered when communication is "impossible for 0.5
-seconds or more," MIL on within one operation cycle (1-trip logic), and **DTC
-`U0402`** ("Invalid Data Received From TCM"), triggered after 2 seconds
-`[RM-K]`. The exact wording: _"The engine control computer, the transmission
-control computer, the skid control computer (brake actuator ASSY), and the
-combination meter ASSY send and receive data via CAN communication line. When
-a communication error occurs between each computer, the engine control
-computer outputs the DTCs."_ `[RM-K]`
+Two facts drive this phase.
 
-Unlike the companion engine-swap article, **there is no immobilizer problem
-here at all** — confirmed by an exhaustive search of this manual's
-immobilizer/ID Code Box/Transponder Key ECU content, none of which references
-transmission type, the TCM, or the clutch `[RM-K]`. The recipient's ECM,
-keys, and immobilizer module never need to be re-paired for this conversion.
-That changes the shape of the decision: the question here is purely "what
-calibration does the ECM need to run," not "which ECM is allowed to start
-this car."
+- First, idle speed is a different hard-coded
+  calibration value by transmission type — automatic 600–800 r/min, manual
+  550–750 r/min `[RM-K]`, confirming the ECM's calibration genuinely differs
+  between the two factory configurations, not just the wiring around it.
+- Second, the ECM continuously monitors the CAN bus for the automatic transmission
+  control module and sets a fault if it is not there: **DTC `U0101`** ("Lost
+  Communication With TCM"), triggered when communication is "impossible for 0.5
+  seconds or more," check-engine light on within one operation cycle (1-trip logic), and **DTC
+  `U0402`** ("Invalid Data Received From TCM"), triggered after 2 seconds
+  `[RM-K]`.
 
 <details open>
-  <summary>Option A — retune or reflash the recipient's own ECM (recommended)</summary>
+  <summary>Option A — retune or reflash the recipient's own ECM w/ ECUTek (recommended)</summary>
 
 Keep the recipient's own ECM in the car and have it reflashed or retuned to a
-manual-transmission calibration — either the factory M/T ROM for this model
+manual-transmission calibration, either the factory M/T ROM for this model
 year, if your tuner has access to it, or a standalone solution such as the
 **Link G5 ECU Plug-In** already documented as a working plug-in option for
 this platform in the companion engine-swap article. Either path produces an
 ECM that was never built to expect a TCM on the bus, so `U0101`/`U0402` never
 fire in the first place — M/T cars never shipped with a TCM to monitor for.
 
-☝️ Advice: **This option never touches the immobilizer pairing**, because
-the ECM physically in the car never changes — only its calibration does.
-There is no registration step to perform and no dealer visit required for
-this part of the job.
-
 ☝️ Advice: **ECUTek ProECU is the community-documented tool for this
 specific conversion, with a tuning-vendor's confirmation that transmission
 type does not affect the flashing process itself** — Circuit Motorsports,
-answering exactly this question on an ft86club thread, stated plainly:
-_"EcuTek tunes load the same on Automatic and Manual transmission cars... the
-mode does not matter in loading tunes"_ `[C]`. A separate, dedicated ft86club
-guide thread ("How to: Manual Swap FRS/BRZ") walks through the ECU side of an
-automatic-to-manual conversion on this exact platform `[C]`.
+answering exactly this question on the ft86club thread
+["Ecutek on an automatic"](https://www.ft86club.com/forums/showthread.php?t=73599),
+stated plainly: _"EcuTek tunes load the same on Automatic and Manual
+transmission cars... the mode does not matter in loading tunes"_ `[C]`. A
+separate, dedicated ft86club guide thread,
+["How to: Manual Swap FRS/BRZ"](https://www.ft86club.com/forums/showthread.php?t=125318),
+walks through the ECU side of an automatic-to-manual conversion on this
+exact platform `[C]`.
 
-⚠️ Warning: **A version-specific ECUTek RaceROM bug has caused exactly the
+</details>
+
+<details>
+  <summary>⚠️ Warning: A version-specific ECUTek RaceROM bug has caused CEL U0101</summary>
+
+**A version-specific ECUTek RaceROM bug has caused exactly the
 `U0101`/ABS `C1288` fault this document warns about, even on builds that
-otherwise did everything right.** A separate ft86club thread ("ABS C1288 -
-ECU Matching failed") documents multiple builders hitting this after an
-automatic-to-manual conversion — the ABS module kept searching for a TCM that
-no longer existed, despite carrying manual-equivalent part numbers and
-software IDs `[C]`. The fix was software-version-specific, not
-procedural: user `xwd` reported _"There seems to be a bug in the Ecutek
-Racerom v10 code that causes this. After a long series of troubleshooting
-steps, upgrading to Racerom v11 fixed the issue"_, while `DarkPira7e` instead
-had to "back down to Racerom 9 features," and `Celigts` confirmed the same
-root cause after receiving an updated tune file from their tuner `[C]`. **If
-you hit `U0101`/`C1288` after flashing an M/T calibration onto a reflashed
-ECM, check your RaceROM version against known-good ones before assuming the
-hardware conversion itself is at fault.**
+otherwise did everything right.** A separate ft86club thread,
+["ABS C1288 - ECU Matching failed"](https://www.ft86club.com/forums/showthread.php?p=3162105),
+documents multiple builders hitting this after an automatic-to-manual
+conversion, the ABS module kept searching for a TCM that no longer existed,
+despite carrying manual-equivalent part numbers and software IDs `[C]`. The
+fix was software-version-specific. **If you hit `U0101`/`C1288` after
+flashing an M/T calibration onto a reflashed ECM, check your RaceROM version
+against known-good ones before assuming the hardware conversion itself is at
+fault.**
 
-☝️ Advice: **ECUTek license transfers are their own cost to budget for.** The
-author of the ft86club manual-swap guide, who tunes on ECUTek himself, warned:
-_"Anyone on Ecutek (like myself) transferring a license is quite the
-process... you may just want to purchase a new license and sell your old ECU
-with the license attached to it"_ `[C]`. If your recipient's ECM is not
-already ECUTek-licensed, factor a new license into the cost of this option,
-not just the reflash.
+</details>
+
+<details>
+  <summary>☝️ Advice: ECUTek license transfers from ECU to ECU are more cost</summary>
+
+Budget for having to transfer ECUTek licences **only if you swap ECUs**. The
+author of the
+["How to: Manual Swap FRS/BRZ"](https://www.ft86club.com/forums/showthread.php?t=125318)
+guide, who tunes on ECUTek himself, warned: _"Anyone on Ecutek (like myself)
+transferring a license is quite the process... you may just want to purchase
+a new license and sell your old ECU with the license attached to it"_ `[C]`.
+If your recipient's ECM is not already ECUTek-licensed, factor a new license
+into the cost of this option, not just the reflash.
+
+</details>
+
+<details>
+  <summary>☝️ Advice: OpenFlash Tablet (OFT) was raised as a cheaper alternative in
+the same guide thread, but its viability for this specific conversion is
+unconfirmed</summary>
 
 ☝️ Advice: **OpenFlash Tablet (OFT) was raised as a cheaper alternative in
 the same guide thread, but its viability for this specific conversion is
 unconfirmed.** The guide author noted _"If you're stock, that's simple, OFT
 would be straightforward,"_ but another poster, `finch1750`, asked directly
 _"Has anyone confirmed using the AT ecu with OFT and just flashing a MT
-tune?"_ — a question that went unanswered in that thread `[C]`. Treat OFT as
-untested for this specific job until you find a confirmed report, rather than
-assuming it is interchangeable with ECUTek here.
+tune?"_ — a question that went unanswered in that
+[thread](https://www.ft86club.com/forums/showthread.php?t=125318) `[C]`.
+Treat OFT as untested for this specific job until you find a confirmed
+report, rather than assuming it is interchangeable with ECUTek here.
 
 </details>
 
 <details>
-  <summary>Option B — bring the donor's own ECM along with the transmission</summary>
+  <summary>Option B (Not recommended) bring the donor's own ECM along with the transmission</summary>
 
 If the donor's manual-transmission ECM is available and already proven
 working in its own car, harvest it with the rest of the driveline and install
@@ -531,8 +499,9 @@ reflashing the ECM already in the car under Option A.
 describe a harder immobilizer problem with this option than the general
 ECM-replacement rule above implies — this was not found in any factory manual
 consulted for this document, so treat it as unconfirmed but worth planning
-around.** A builder documenting a 2013–2016-specific conversion on ft86club
-(`MujisGarage`) wrote: _"For 13-16 there are a few Modules you want to swap
+around.** A builder documenting a 2013–2016-specific conversion in the same
+["How to: Manual Swap FRS/BRZ"](https://www.ft86club.com/forums/showthread.php?t=125318)
+thread (`MujisGarage`) wrote: _"For 13-16 there are a few Modules you want to swap
 over such as the ECU & BCM! You will also need to replace all interior
 electrical components from the SAME CAR, the reason being is because these
 model years have an issue with the immobilizer tweaking up on you"_, listing
@@ -555,10 +524,10 @@ your registering dealer or locksmith before sourcing parts.
 </details>
 
 <details>
-  <summary>Option C (Not recommended) — leave the A/T-calibrated ECM in place unmodified</summary>
+  <summary>Option C (Not recommended) leave the A/T-calibrated ECM in place unmodified</summary>
 
 Disconnect the TCM and drive with the factory automatic calibration otherwise
-untouched. **This will set a continuous MIL** — `[RM-K]`'s DTC logic for
+untouched. **This will set a continuous check-engine light** — `[RM-K]`'s DTC logic for
 `U0101`/`U0402` is 1-trip, meaning it does not require repeated failures to
 set, only one communication timeout. No primary source consulted for this
 document documents a factory-sanctioned way to suppress this monitor from
@@ -580,6 +549,17 @@ drain the transmission fluid, disconnect the floor shift gear shifting rod
 SUB-ASSY No.1 from the control shaft lever RH, remove the exhaust pipe
 bracket, support the transmission with SST `18632AA010`, remove the engine
 rear mounting member, then separate and remove the transmission `[RM-K]`.
+
+<figure>
+  <img src="/kb/subaru-tl70-manual-transmission-swap-into-automatic-zc6-zn6/kouki-flywheel-driveplate-clutch-comparison.png" alt="Subaru factory exploded view comparing the automatic transmission's drive plate and ring gear sub-assembly against the manual transmission's flywheel, clutch disc, and clutch cover, with torque specifications for each" />
+  <figcaption>
+    Figure 2: Drive plate (A/T, top) against flywheel and clutch (M/T,
+    bottom) — the same engine rear oil seal page covers both, because the
+    crankshaft interface is otherwise identical. Note the drive-plate-spacer
+    bolts torque higher (95 N·m) than the flywheel bolts (85 N·m).
+    <code>2017 Subaru BRZ Service Manual G4440BE</code>, page 906 (EM-52).
+  </figcaption>
+</figure>
 
 (3.2) **Remove the drive plate & ring gear SUB-ASSY**, using SST
 `18355AA000`/`18334AA000` to hold the crankshaft, then remove the eight
@@ -620,23 +600,13 @@ reused; see [Phase 4, (4.4)](#phase-4).
 
 ### Phase 4 — Mechanical Installation
 
-<figure>
-  <img src="/kb/subaru-tl70-manual-transmission-swap-into-automatic-zc6-zn6/kouki-flywheel-driveplate-clutch-comparison.png" alt="Subaru factory exploded view comparing the automatic transmission's drive plate and ring gear sub-assembly against the manual transmission's flywheel, clutch disc, and clutch cover, with torque specifications for each" />
-  <figcaption>
-    Figure 2: Drive plate (A/T, top) against flywheel and clutch (M/T,
-    bottom) — the same engine rear oil seal page covers both, because the
-    crankshaft interface is otherwise identical. Note the drive-plate-spacer
-    bolts torque higher (95 N·m) than the flywheel bolts (85 N·m).
-    <code>2017 Subaru BRZ Service Manual G4440BE</code>, page 906 (EM-52).
-  </figcaption>
-</figure>
-
 (4.1) **Remove the recipient's drive plate spacer FR and drive plate/ring
-gear SUB-ASSY**, if not already done in [Phase 3](#phase-3). Discard both —
+gear SUB-ASSY**, if not already done in [Phase 3, (3.2)](#phase-3) (see
+Figure 2 there). Discard both —
 neither is reused.
 
 (4.2) Mate the donor's flywheel to the recipient's crankshaft, holding it
-stationary with SST `18355AA000`/`18334AA000`. Torque the eight flywheel
+stationary with a box wrench or SST `18355AA000`/`18334AA000`. Torque the eight flywheel
 bolts to **85 N·m {867 kgf·cm} {62.7 ft·lbf}** `[RM-K]` — note this is
 **lower** than the drive-plate-spacer torque it replaces (95 N·m
 {969 kgf·cm} {70.1 ft·lbf} `[RM-K]`), so do not carry the higher figure over
@@ -662,7 +632,7 @@ for its own 2-bolt + 2-nut mounting, but at a different bolt count; use the
 <figure>
   <img src="/kb/subaru-tl70-manual-transmission-swap-into-automatic-zc6-zn6/kouki-flywheel-housing-under-cover-and-oil-cooler.png" alt="Subaru factory exploded view of the automatic-transmission-only engine cover sub-assembly, transmission oil cooler hose No. 1 and No. 3, flywheel housing under cover, and injector driver, all shown on the back of the FA20 engine block" />
   <figcaption>
-    Figure 3: Parts the manual groups together as automatic-only, at the
+    Figure 3: Parts the factory service manual groups together as automatic-only, at the
     engine-to-bellhousing joint: the No. 1 engine cover sub-assembly, the two
     transmission oil cooler hoses, and the flywheel housing under cover.
     None of the three exist on a manual-equipped engine.
@@ -675,12 +645,11 @@ do not block them off.** `[RM-K]`'s own exploded views group three items
 under a "For Automatic Transmission" heading at the back of the block,
 immediately above the flywheel/drive-plate area: the **No. 1 engine cover
 sub-assembly**, and the **No. 1 and No. 3 transmission oil cooler hoses**
-`[RM-K]`. A fourth item, the **flywheel housing under cover**, sits just below
-them on the same page, used during teardown to reach the drive plate & torque
+`[RM-K]`. A fourth item, the **flywheel housing under cover**, used during
+teardown to reach the drive plate & torque
 converter setting bolts through a service hole without fully separating the
-engine and transmission `[RM-K]`. None of the four are shown or referenced
-anywhere in the manual transmission removal/installation procedure. ☝️
-Advice: **there is no block-off plate to source for any of this** — these
+engine and transmission `[RM-K]`. ☝️ Advice: **there is no block-off plate
+to source for any of this** — these
 parts simply do not exist on a manual-equipped block, they are not holes left
 behind that need plugging.
 
@@ -746,25 +715,13 @@ bolts/4 nuts) and the center bearing bracket at **52 N·m {530 kgf·cm}
 (4.7) **The rear differential does not need to change.** `[RM-K]`'s
 axle/differential chapter gives parallel refill procedures for "Model with
 LSD" and "Model without LSD," with no M/T/A/T distinction anywhere in that
-chapter — the LSD option is a trim choice, independent of transmission type
-`[RM-K]`. ☝️ Advice: **community reports commonly cite a different
-final-drive ratio between manual and automatic cars on this platform (often
-quoted as 4.10 vs. 4.30) — this document could not verify a numeric ratio
-figure anywhere in the 2017 combined manual**, despite an exhaustive search
-for ratio tables; treat any specific ratio claim as `[C]`-level until you
-confirm it by counting ring-and-pinion teeth on your own differential. If
-your recipient's differential ratio does turn out to differ from what your
-donor car shipped with, this document does not cover correcting that — it is
-a separate decision about final drive, not a requirement of the transmission
-swap itself. Differential service data, for reference: ring gear runout max
-0.07 mm {0.003 in}; backlash 0.13–0.18 mm {0.005–0.007 in}; side gear
-backlash 0 mm; drive pinion preload (new bearing) 1.39–2.49 N·m
-{14.2–25.4 kgf·cm} {1.03–1.84 ft·lbf} `[RM-K]`.
+chapter, but there is a different final-drive ratio between manual and
+automatic cars on this platform: 4.1 for automatic and 4.3 for manual.
 
 <figure>
   <img src="/kb/subaru-tl70-manual-transmission-swap-into-automatic-zc6-zn6/kouki-floor-shift-lever-assy-exploded.png" alt="Subaru factory exploded view of the floor shift, shift lever assembly for the manual transmission, showing the lever CP, floor shift control shift lever retainer, stopper torqued to 7.5 Newton meters, shift and select lever boot, insulator, and plate CP torqued to 18 Newton meters, connected to the floor shift control shaft" />
   <figcaption>
-    Figure 6: The `TL70` shift lever assembly — rod-operated, not cable.
+    Figure 6: The TL70 shift lever assembly, rod-operated, not cable.
     <code>2017 Subaru BRZ Service Manual G4440BE</code>, page 1642 (MT-12).
   </figcaption>
 </figure>
@@ -806,29 +763,18 @@ reverse for installation. The support carries both the clutch pedal lever and
 the brake pedal on one bracket, fastened with **3 bolts + 4 nuts at 18 N·m
 {184 kgf·cm} {13.3 ft·lbf}** `[RM-K]`.
 
-⚠️ Warning: **This document could not confirm whether an automatic-built
-body has the clutch pedal support's mounting bosses already in place.**
-Unlike some shared-platform economy cars where a factory manual explicitly
-shows a "for Manual Transaxle" firewall inset distinct from the automatic's,
-no equivalent statement exists anywhere in the chapters consulted for this
-document. Given this chassis was built in both configurations on one
-production line from day one — unlike a cross-model donor situation — it is
-plausible the body already accommodates both, but this is an inference, not
-a citation. **Dry-fit the support before drilling or modifying anything**
+⚠️ Warning: **The automatic chassis doesn't have has the clutch pedal support's
+mounting bosses already in place.**
+Dry-fit the support before drilling, mark and re-check before modifying anything.
 `[C]`.
 
 ☝️ Advice: **The brake pedal height differs by spec** — 145 mm {5.709 in} on
 manual cars, 150 mm {5.906 in} on automatic cars, measured from the floor mat
-`[RM-K]`. `[RM-K]`'s clutch chapter does not cover the brake pedal arm itself
-(that procedure lives in the brake chapter, not reviewed for this document),
-so this document cannot confirm whether that 5 mm difference means a
-different brake pedal arm/pad part or simply a pedal-free-play adjustment.
-Measure your recipient's brake pedal height against the manual figure before
+`[RM-K]`. Measure your recipient's brake pedal height against the manual figure before
 assuming the stock brake pedal carries over unmodified.
 
 (4.11) **Install the clutch master cylinder ASSY** to the clutch pedal
-support — **not to the firewall directly**; there is no "clutch master to
-firewall" joint documented in `[RM-K]`. Nuts at 18 N·m
+support — **not to the firewall directly**. Nuts at 18 N·m
 {184 kgf·cm} {13.3 ft·lbf} `[RM-K]`. Connect the push rod clevis pin and
 retaining clip.
 
@@ -838,8 +784,7 @@ through two new gaskets: **18 N·m {184 kgf·cm} {13.3 ft·lbf}**. Release
 cylinder to bellhousing: **37 N·m {377 kgf·cm} {27.3 ft·lbf}** (2 bolts).
 Bleeder plug: **7.8 N·m {80 kgf·cm} {5.8 ft·lbf}** `[RM-K]`. Use FMVSS
 No.116 DOT3 or DOT4 fluid `[RM-K]` — this platform's clutch reservoir is
-separate from the brake reservoir, so there is no bypass port or shared fill
-to account for.
+separate from the brake reservoir.
 
 (4.13) Connect the Clutch Start Switch and Clutch Switch pigtails at the
 pedal support, and the Back-Up Light Switch and Neutral Switch at the
@@ -868,13 +813,13 @@ transmission type.** `[RM-Z-W]`'s parts-location index and connector list
 show this single harness branch carrying entirely different hardware
 depending on which transmission is fitted:
 
-| Connector | Carries                                          | Fitted on |
-| :-------- | :------------------------------------------------ | :-------- |
-| `A20`     | Clutch Start Switch Assembly                       | M/T only  |
-| `A21`     | Clutch Switch Assembly                             | M/T only  |
-| `A18`/`A19` | Transmission Control Module (two connectors)     | A/T only  |
-| `A53`     | Back-Up Light Switch Assembly                      | M/T only  |
-| `A54`/`L2`| Park/Neutral Position Switch Assembly              | A/T only  |
+| Connector   | Carries                                      | Fitted on |
+| :---------- | :------------------------------------------- | :-------- |
+| `A20`       | Clutch Start Switch Assembly                 | M/T only  |
+| `A21`       | Clutch Switch Assembly                       | M/T only  |
+| `A18`/`A19` | Transmission Control Module (two connectors) | A/T only  |
+| `A53`       | Back-Up Light Switch Assembly                | M/T only  |
+| `A54`/`L2`  | Park/Neutral Position Switch Assembly        | A/T only  |
 
 `[RM-Z-W]` — see the connector-location table around the "Parts Location"
 index, and the circuit heading naming "Cruise Control, Electronically
@@ -895,7 +840,7 @@ logic, matching the M/T wiring already present at connector `A20`
 (5.3) **Wire in the Clutch Switch separately — it is not the same circuit as
 (5.2).** `[RM-K]`'s cruise-control diagnostic section documents this switch's
 job directly: cruise control is released when the clutch pedal is depressed,
-and a fault is logged if cruise control is *not* released after the clutch
+and a fault is logged if cruise control is _not_ released after the clutch
 pedal is operated `[RM-K]`. This is a cruise-control safety cutout, wired at
 connector `A21`, independent of the starter-interlock switch at `A20`
 `[RM-Z-W]`.
@@ -918,15 +863,7 @@ a TCM response, so simply removing it from the harness produces no fault.
 Under any other strategy, confirm independently that `U0101`/`U0402` will not
 set before considering the car driveable.
 
-(5.7) **Vehicle speed is unaffected by this conversion.** `[RM-K]`'s DTC
-`P2158` ("Vehicle Speed Sensor 'A'") lists its required components as the
-speed sensor (VSS), the combination meter, and the **skid control ECM** (the
-brake actuator ASSY) `[RM-K]` — vehicle speed on this platform comes from the
-ABS wheel-speed sensors via the skid control module, not from a
-transmission-mounted sensor. The speedometer needs no wiring changes for this
-swap.
-
-(5.8) Apply dielectric grease to every reconnected connector.
+(5.7) Apply dielectric grease to every reconnected connector.
 
 ---
 
@@ -953,53 +890,6 @@ clutch-pedal actuation, verifying the (5.3) Clutch Switch wiring.
 [Phase 4, (4.9)](#phase-4) after the linkage has settled.
 
 ---
-
-<a id="traction-control"></a>
-
-## Traction Control, Vehicle Dynamics Control, and Handling
-
-☝️ Advice: **This question comes up often enough to answer directly: no, the
-traction control / Vehicle Dynamics Control hardware or calibration does not
-need to change, and this document could not find any factory documentation
-of it differing by transmission type at all.**
-
-The skid control ECM (branded on this platform as the "brake actuator ASSY")
-is the single module behind ABS, TRC (Traction Control), Vehicle Dynamics
-Control, brake assist, and hill start assist. `[RM-K]`'s precautions and
-function-inspection sections for this system describe one failsafe behavior,
-one set of wheel-speed-sensor inputs, and one CAN-based torque-reduction
-request to the engine ECM — _"Torque down request for vehicle dynamics
-control (VDC)"_ and _"Torque up request for vehicle dynamics control (VDC)"_
-`[RM-K]` — with **no M/T or A/T branch anywhere in that description**. An
-exhaustive search of this manual's brake-control chapter for any
-transmission-type qualifier on the skid control ECM, TRC, VDC, or hill start
-assist content returned nothing `[RM-K]`. Hill start assist in particular is
-documented as a brake-hold function toggled by the Vehicle Stability Control
-OFF switch, independent of transmission type `[RM-K]`.
-
-This makes sense given how the system actually intervenes: on this platform,
-VDC/TRC manage wheel slip by requesting **engine torque reduction through the
-ETCS-i electronic throttle**, the same drive-by-wire throttle present on both
-transmission types `[RM-K]`. There is no transmission-mediated intervention
-(no automatic downshift-for-traction logic) for this to lose by removing the
-`TG6A` — the mechanism was never transmission-dependent to begin with.
-
-**What does change is not the module, it's the driver.** An automatic BRZ/FR-S
-in its sport/manual-shift mode uses the TCM and ECM together to blip the
-throttle on a paddle-commanded downshift — the zenki wiring diagram's
-connector list includes a dedicated `Paddle Shift Switch` on its own roll
-connector, confirming the hardware exists specifically to feed that mode
-`[RM-Z-W]`. Deleting the TCM removes that TCM-orchestrated blip entirely,
-along with the rest of the automatic's shift logic — the driver now supplies
-rev-matching on downshift directly through clutch and throttle, with no
-electronic assistance from any module. **This is a difference in who performs
-the rev-match, not in what the stability-control system does once the car is
-already turning** — nothing this document found suggests VDC/TRC intervenes
-any differently, sooner, or later, because of it.
-
----
-
-<a id="post-install"></a>
 
 ## Post-installation Checks and Precautions
 
@@ -1034,4 +924,7 @@ any differently, sooner, or later, because of it.
   (engine control, CAN diagnostics and DTC tables), `IT` (interior trim,
   console).
 - `[C]` `ft86club.com/forums` — final-drive ratio claims and general
-  community reporting, flagged inline wherever cited.
+  community reporting, flagged inline wherever cited, including:
+  - [How to: Manual Swap FRS/BRZ](https://www.ft86club.com/forums/showthread.php?t=125318)
+  - [ABS C1288 - ECU Matching failed](https://www.ft86club.com/forums/showthread.php?p=3162105)
+  - [Ecutek on an automatic](https://www.ft86club.com/forums/showthread.php?t=73599)
